@@ -1,14 +1,15 @@
 #!/bin/bash
 #$ -j y
 #$ -l arch=intel*
-#$ -l gpu=1
+##$ -l gpu=1,gpu_arch=nvidia-k40m
+#$ -l gpu=1,gpu_arch=nvidia-m2070
 ##$ -P cs-test
 #$ -P gpu
 #$ -N pw6b0_3d
 #$ -l mem=12G
 #$ -l rmem=12G
 #$ -l h_rt=168:00:00
-module add libs/cuda/4.0.17
+module add libs/cuda/6.5.14
 
 
 cd include
@@ -26,6 +27,6 @@ cd ..
 
 export TIMECOUNTER=0
 source timeused
-./smaug a
+bin/smaug a
 source timeused
 
