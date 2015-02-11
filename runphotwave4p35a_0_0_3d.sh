@@ -2,14 +2,16 @@
 #$ -j y
 #$ -V 
 #$ -l arch=intel*
-#$ -l gpu=1
-#$ -P cs-test
-##$ -P gpu
+##$ -l gpu=1,gpu_arch=nvidia-k40m
+#$ -l gpu=1,gpu_arch=nvidia-m2070
+##$ -P cs-test
+#$ -P gpu
 #$ -N j4p35a_0_0
 #$ -l mem=12G
 #$ -l rmem=12G
 #$ -l h_rt=168:00:00
-module add libs/cuda/4.0.17
+##module add libs/cuda/4.0.17
+module add libs/cuda/6.5.14
 
 #cp solarmodels/Makefile.spicule src/Makefile
 #cp solarmodels/make_inputs.spicule src/make_inputs
