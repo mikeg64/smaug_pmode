@@ -68,7 +68,7 @@ int shift=order*NVAR*dimp;
                         //if(i<((p->n[0])) && j<((p->n[1])))
                          {
 
-                             wmod[fencode3_hdmne1(p,iia,mom1+ii0)+(ordero*NVAR*dimp)]=wmod[fencode3_hdmne1(p,iia,mom1+ii0)+(ordero*NVAR*dimp)]+0.2*dt*dwn1[fencode3_hdmne1(p,iia,mom1+ii0)];
+                             wmod[fencode3_hdmne1(p,iia,mom1+ii0)+(ordero*NVAR*dimp)]=wmod[fencode3_hdmne1(p,iia,mom1+ii0)+(ordero*NVAR*dimp)]+dt*dwn1[fencode3_hdmne1(p,iia,mom1+ii0)];
 
  
                            //  wmod[fencode3_hdmne1(p,iia,energy)+(ordero*NVAR*dimp)]=wmod[fencode3_hdmne1(p,iia,energy)+(ordero*NVAR*dimp)]+dt*dwn1[fencode3_hdmne1(p,iia,energy)];
