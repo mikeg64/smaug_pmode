@@ -79,8 +79,8 @@ yp=(p->xmin[1])+(((real)j)*(p->dx[1]));
 zp=(p->xmin[2])+(((real)k)*(p->dx[2]));
 
 exp_z=exp(-r1/(delta_z*delta_z));
-//exp_xyz=sin(PI*yp*(n1+1)/xxmax)*sin(PI*zp*(n2+1)/yymax)*exp_z;
-exp_xyz=(j>1 && j<ny-2 && k>1 && k<nz-2?sin(PI*(j-2)*(n1+1)/((p->n[1])-3))*sin(PI*(k-2)*(n2+1)/((p->n[2])-3))*exp_z:0.0);
+exp_xyz=sin(PI*yp*(n1+1)/xxmax)*sin(PI*zp*(n2+1)/yymax)*exp_z;
+//exp_xyz=(j>1 && j<ny-2 && k>1 && k<nz-2?sin(PI*(j-2)*(n1+1)/((p->n[1])-3))*sin(PI*(k-2)*(n2+1)/((p->n[2])-3))*exp_z:0.0);
 
 
 
