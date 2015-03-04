@@ -5,8 +5,9 @@
 %directory='/storage2/mikeg/results/spic5b0_3d/';
 %directory='/storage2/mikeg/results/spic3p0a_0_2_3d/';
 %directory='/storage2/mikeg/results/spic4p3a_0_1_3d/';
-directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
+%directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
+directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/';
 extension='.out';
 
 %ndirectory='/storage2/mikeg/results/spic5b0_b1G_3d/images_3d_vsecs/';
@@ -15,11 +16,12 @@ extension='.out';
 %ndirectory='/storage2/mikeg/results/spic5b0_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic3p0a_0_2_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic4p3a_0_1_3d/images_3d_vsecs/';
-ndirectory='/storage2/mikeg/results/spic6p7a_0_0_3d/images_3d_vsecs/';
+%ndirectory='/storage2/mikeg/results/spic6p7a_0_0_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic2p3a_0_3_3d/images_3d_vsecs/';
+ndirectory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/images_3d_vsecs';
 nextension='.jpg';
 
-for i=1:1:1527
+for i=1:100:1203
 %for i=1519:2632
 %for i=2631:2632
     
@@ -118,20 +120,20 @@ clear tmp;
 	mu_gas=0.6;
 	gamma=1.66667;
 
-%sabx=reshape(wd(11,nrange,nrange,nrange),124,124,124);
-%saby=reshape(wd(12,nrange,nrange,nrange),124,124,124);
-%sabz=reshape(wd(13,nrange,nrange,nrange),124,124,124);
-%TP=reshape(wd(9,nrange,nrange,nrange),124,124,124);
-%TP=TP-(sabx.^2.0+saby.^2.0+sabz.^2.0)./2.0;
-%TP=(gamma-1.d0).*TP;
+  sabx=reshape(wd(11,nrange,nrange,nrange),124,124,124);
+saby=reshape(wd(12,nrange,nrange,nrange),124,124,124);
+sabz=reshape(wd(13,nrange,nrange,nrange),124,124,124);
+TP=reshape(wd(9,nrange,nrange,nrange),124,124,124);
+TP=TP-(sabx.^2.0+saby.^2.0+sabz.^2.0)./2.0;
+TP=(gamma-1.d0).*TP;
 
 
 
    %mval is T
   
-  % myval=shiftdim(mu_gas.*TP./R./val2,1);
-
-
+   mytval=shiftdim(mu_gas.*TP./R./val2,1);  
+    
+    
 
 
    %P = [2 1 3];
@@ -152,6 +154,42 @@ clear tmp;
   %h=slice(myval,105, 96,8);
   hold on;
   set(h,'EdgeColor','none','FaceColor','interp');
+  
+  
+  
+   % hcs=contourslice(mytval,[],[],[35 49 80]);
+  hcs=contourslice(mytval,[],[],[49 80]);
+  colors = get(hcs,'cdata');
+colors=unique(cat(1,colors{:}));
+colors=colors(~isnan(colors));
+
+
+% Loop through all the patches returned by CONTOURSLICE, 
+% and designate a linestyle for each
+% Define the line style (note that this can be changed 
+% since the code is written generally)
+linespec = {'-','--',':','-.'};
+%linecspec = {'-','--',':','-.'};
+linestyles = repmat(linespec,1,ceil(length(colors)/length(linespec)));
+linestyles = {linestyles{1:length(colors)}};
+
+
+for n=1:length(hcs)
+    % Find the unique color number associated with the handle
+    color = find(max(get(hcs(n),'cdata'))==colors);
+    % Convert the color to the associated linestyle
+    linestyle = linestyles{color};
+    set(hcs(n),'linestyle',linestyle);
+end
+
+  
+  
+  
+  
+  
+  
+  
+  
   %grid off;
   %set(h,'XData',ax,'YData',ay,'ZData',az);
   hax=get(h,'Children');
@@ -210,7 +248,8 @@ clear tmp;
   %set(hc,'Ylim',[-0.6 0.6]);
   %set(hc,'Ylim',[4*10^5 3*10^6]);
   text(-100,0,165,timetext);
-  title('Vertical Velocity for Solar Atmosphere with a Sinusoidal (0,0) Mode Driver of Period673.4s, Applied at a Height of 100km');
+  %title('Vertical Velocity for Solar Atmosphere with a Sinusoidal (0,0) Mode Driver of Period673.4s, Applied at a Height of 100km');
+  title('Vertical Velocity for Solar Atmosphere with a Sinusoidal (0,2) Mode Driver of Period 300.0s, Applied at a Height of 100km');
   xlabel('x-distance (Mm)');
   ylabel('y-distance (Mm)');
   zlabel('Height (Mm)');
