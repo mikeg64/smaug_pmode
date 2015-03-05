@@ -1,29 +1,34 @@
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/images';
 ndirectory='/fastdata/cs1mkg/smaug/spic5b0_3d/images';
-
-
+%load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
+%load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3d_vverustime.mat');
 
 
 imfile=[ndirectory,'dt_',id,nextension];
 
-%dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
+dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
 %dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
 
 %dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
-dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
+%dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
 
-
-surf(dtplot','LineStyle','none');
+fftt=fft(dtplot');
+% figure;
+% surf(imag(fftt)','LineStyle','none');
+% 
+% figure;
+ps=real(fftt).*real(fftt)+imag(fftt).*imag(fftt);
+surf(real(ps'),'LineStyle','none');
 
 %surf(edifarray(1:900,38:124)','LineStyle','none');
 %surf(efluxarray(1:570,38:124)','LineStyle','none');
 
 hold on
 hc=colorbar();
-%caxis([0.5*10^4 -0.5*10^4]);
-%set(hc,'Zlim',[0.5*10^4 -0.5*10^4]);
+caxis(5e4*[0 1]);
+set(hc,'Zlim',5e4*[0 1]);
 %caxis([0 0.003]);
 %set(hc,'Zlim',[0 0.003]);
 
@@ -48,7 +53,7 @@ ylabel(gca,'Distance (Mm)');
 
 title(gca,'Distance Time Plot for the 0,0 Mode ( x dir)300.0s Driver (Vertical Section at 0.5Mm )');
 
-print('-djpeg', imfile); 
+%print('-djpeg', imfile); 
 
 
 hold off
