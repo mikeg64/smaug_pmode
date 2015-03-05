@@ -35,9 +35,9 @@ efluxtranavg(:,3)=[1.483e4; 1.19e4; 3.576e3; 2.397e3;203.47];
 efluxchromavg(:,3)=[4.061e6; 7.488e6; 7.33e5; 1.133e6;5.186e5];
 
 %(0,3) mode
-efluxcoronaavg(:,4)=[135.7; 0; 202.788; 251.62;8.5];
-efluxtranavg(:,4)=[2.12e3; 0; 1.1536e3; 470.46;8.9];
-efluxchromavg(:,4)=[1.83e6; 0; 5.992e5; 4.928e5;8.7e4];
+efluxcoronaavg(:,4)=[135.7; 833.3; 202.788; 251.62;8.5];
+efluxtranavg(:,4)=[2.12e3; 3.69e3; 1.1536e3; 470.46;8.9];
+efluxchromavg(:,4)=[1.83e6; 2.84e6; 5.992e5; 4.928e5;8.7e4];
 
 
 plot(periodvalues(:,1),efluxtranavg(:,1),'o',periodvalues(:,2),efluxtranavg(:,2),'+',periodvalues(:,3),efluxtranavg(:,3),'x');
