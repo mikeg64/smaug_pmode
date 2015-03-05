@@ -1,5 +1,5 @@
 ntold=nt;
-nt=331;
+%nt=1860;
 
 escor=esumcorona/nt;
 estran=esumtran/nt;
@@ -38,5 +38,11 @@ sumeb=ebsumcorona+ebsumtran+ebsumchrom;
 r7=100*ebsumcorona/sumeb;
 r8=100*ebsumtran/sumeb;
 r9=100*ebsumchrom/sumeb;
+
+
+efluxcorona=esumfluxcorona/nt;
+efluxtran=esumfluxtran/nt;
+efluxchrom=esumfluxchrom/nt;
+
 
 nt=ntold;
