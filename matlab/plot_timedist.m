@@ -1,20 +1,29 @@
+
+%distance time plots created using 
+%pvvt180_01.m
+%pvvt300_01.m
+%pvvt180_00.m
+%pvvt300_00.m
+%these generated from 
+
+
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/images';
 ndirectory='/fastdata/cs1mkg/smaug/spic5b0_3d/images';
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-%load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3d_vverustime.mat');
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3d_vverustime.mat');
 
 
 imfile=[ndirectory,'dt_',id,nextension];
 
-dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
-%dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
+%dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
+dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
 
 %dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
 %dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
 
-fftt=fft(dtplot');
+fftt=fft2(dtplot(500:800,8:116));
 % figure;
 % surf(imag(fftt)','LineStyle','none');
 % 
@@ -27,8 +36,8 @@ surf(real(ps'),'LineStyle','none');
 
 hold on
 hc=colorbar();
-caxis(5e4*[0 1]);
-set(hc,'Zlim',5e4*[0 1]);
+caxis(5e3*[0 1]);
+set(hc,'Zlim',5e3*[0 1]);
 %caxis([0 0.003]);
 %set(hc,'Zlim',[0 0.003]);
 
