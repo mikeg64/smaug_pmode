@@ -173,8 +173,8 @@ dum=long(1)
 dumd=long(1)
 nn=0
 close,1
-openr,1,'/data/ap1vf/3D_196_100_100.ini',/f77_unf
-
+;openr,1,'/data/ap1vf/3D_196_100_100.ini',/f77_unf
+openr,1,'/data/cs1mkg/smaug_spicule1/3D_128_spic_bin.ini',/f77_unf
 
 ;*****************************************************
 
@@ -196,6 +196,7 @@ n3=nx(2)
 x_code=dblarr(n1,n2,n3,ndim)
 w=dblarr(n1,n2,n3,nw)
 
+
 wi=dblarr(n1,n2,n3)
 
 readu,1,x_code
@@ -207,8 +208,8 @@ endfor
 print, n1,n2,n3
 
 ;*************************************************
-stop
-yy=49
+;stop
+yy=63
 
 gamma=1.66666667d0
 ggg=-274.0d0
@@ -285,9 +286,10 @@ plot, z/scale, b0z, title='b0z', charsize=1.2, xtitle='[Mm]'
 
 ;for i=n1-2,0,-1 do b0z[i]=b0z[i]+b0z[i+1]
 
-Bmax=0.10d0  ; mag field Tesla
+;Bmax=0.10d0  ; mag field Tesla
+Bmax=0.0250d0  ; mag field Tesla    ;case 2
 ;Bmin=0.0006d0  ; mag field Tesla
-Bmin=0.0005d0  ; mag field Tesla
+Bmin=0.00005d0  ; mag field Tesla
 
 
 bnmin=min(b0z)
@@ -303,9 +305,20 @@ dbz=deriv1(b0z,z)
 
 xf=dblarr(n1,n2,n3)
 
+;xr=0.3d5
+;yr=0.3d5
 
-xr=0.15d5
-yr=0.15d5
+
+
+;xr=0.15d5
+;yr=0.15d5
+
+xr=0.015d5
+yr=0.015d5
+
+;xr=0.0075d5
+;yr=0.0075d5
+
 
 R2=(xr^2.d0+yr^2.d0)
 
@@ -361,17 +374,17 @@ hh=49
 cs=1.6
 
 hight=strTrim(string(hh),1)
-tvframe, by(hh,*,*), title='by h='+hight, /bar,  CT='rho0',charsize=cs
-tvframe, bx(hh,*,*), title='bx h='+hight, /bar,  CT='rho0',charsize=cs
-tvframe, bz(*,*,yy), title='bz', /bar,  CT='rho0',charsize=cs
-tvframe, xf(*,*,yy), title='xf', /bar,  CT='rho0', $
+tvframe, by(hh,*,*), title='by h='+hight, /bar,charsize=cs ; CT='rho0',
+tvframe, bx(hh,*,*), title='bx h='+hight, /bar,  charsize=cs  ;CT='rho0',
+tvframe, bz(*,*,yy), title='bz', /bar,  charsize=cs  ;CT='rho0',
+tvframe, xf(*,*,yy), title='xf', /bar,   $
          xtitle='x [Mm]', ytitle='z [Mm]',charsize=cs, $ 
          xrange=[min(z)/scale, max(z)/scale], $
-	 yrange=[min(x)/scale, max(x)/scale]
-tvframe, by(*,yy,*), title='by', /bar,  CT='rho0',charsize=cs
-tvframe, bx(*,*,yy), title='bx', /bar,  CT='rho0',charsize=cs
+	 yrange=[min(x)/scale, max(x)/scale];CT='rho0',
+tvframe, by(*,yy,*), title='by', /bar, charsize=cs; CT='rho0',
+tvframe, bx(*,*,yy), title='bx', /bar, charsize=cs; CT='rho0',
 
-stop
+;stop
 
 bb=(bx^2.0+by^2.0+bz^2.0)/2.0/mu
 
@@ -597,7 +610,7 @@ endfor
 
 beta=(bx^2.d0+by^2.d0+bz^2.d0)/2.d0/p
 
-tvframe,beta(*,*,yy), charsize=1.2, title='1/beta', /bar, CT='VpVd'
+tvframe,beta(*,*,yy), charsize=1.2, title='1/beta', /bar ;, CT='VpVd'
 contour, beta(*,*,yy), LEVELS = [0.001,0.01,0.1,1.0, 10.0], $
          C_Annotation = ['1000.0','100.0','10.0','1.0','0.1'], /overplot,/follow
 	 
@@ -612,7 +625,7 @@ T=mu_gas*p/R/rho1
 tvframe,T(*,*,yy), charsize=1.2, title='T', /bar	 	 
 
 
-stop
+;stop
 
 ;lower boundary
 
@@ -674,7 +687,8 @@ tvframe, w(*,yy,*,12), title='by', /bar, charsize=1.5
 ;qq=dbzdz+dbxdx
 ;goto, wwww
 close,1
-openw,1,'/data/ap1vf/3D_tube_196_100_100.ini',/f77_unf
+openw,1,'/data/cs1mkg/smaug_spicule1/3D_128_spic_btube4_bin.ini',/f77_unf
+;openw,1,'/data/ap1vf/3D_tube_196_100_100.ini',/f77_unf
 writeu,1,headline
 writeu,1,it,time,ndim,neqpar,nw
 writeu,1,nx
