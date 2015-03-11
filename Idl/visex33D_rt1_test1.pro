@@ -62,7 +62,7 @@ dumd=long(1)
 ;mpegID = MPEG_OPEN([700,1200],FILENAME='myMovie.mpg') 
 
 window, 0,xsize=1025,ysize=1025,XPOS = 950, YPOS = 300 
-window, 1,xsize=800,ysize=800,XPOS = 500, YPOS = 80
+;window, 1,xsize=800,ysize=800,XPOS = 500, YPOS = 80
 
 
 
@@ -109,7 +109,19 @@ close,2
 
 ;openr,1,'/home/mikeg/proj/sac2.5d-cuda/test_OT.out'
 ;directory='/home/mikeg/proj/sac2.5d-cuda/out_OT_withhyper/'
-directory='../out/'
+;directory='../out/'
+;directory='../spicule6b0_3d/'
+;directory='../spicule5b0_2_3d/'
+;directory='../spicule6b0_3d/'
+;directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/'
+;directory='/fastdata/cs1mkg/smaug/spicule4p35a_0_0_3d/'
+;directory='/fastdata/cs1mkg/smaug/spicule3p07a_0_1_3d/'
+;directory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/'
+;directory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/'
+;directory='/fastdata/cs1mkg/smaug/spicule4b0_3d/'
+directory='/fastdata/cs1mkg/smaug/spic5b0_3d_per/'
+
+
 ;pic=999
 name='zerospic1__'
 ;ndim=2
@@ -265,8 +277,8 @@ zze=zz[zend]
 ;close, 10
 	
 
-;tvframe,rotate(wt(*,*,1)/(wt(*,*,0)+wt(*,*,9)),1),/sample, /bar,title='Vz',$
-;        xtitle='x', ytitle='y',charsize=2.0, CT='dPdT'
+tvframe,rotate(wt(*,*,1)/(wt(*,*,0)+wt(*,*,9)),1),/sample, /bar,title='Vz',$
+       xtitle='x', ytitle='y',charsize=2.0;, CT='dPdT'
 
 
 ;close,10
@@ -297,23 +309,35 @@ tvframe,rotate(wt(*,*,3)/(wt(*,*,0)+wt(*,*,9)),1),/sample, /bar,title='Vy', $
 ;ww=rotate(wt(*,*,3)/(wt(*,*,0)+wt(*,*,9)),1)
 ;writeu,10,ww
 ;close, 10	
+
+tvframe,rotate(wy(*,*,1)/(wy(*,*,0)+wy(*,*,9)),1),/sample, /bar,title='Vz', $
+        xtitle='y', ytitle='z',charsize=2.0;, CT='dPdT'
 	
 
 tvframe,rotate(wy(*,*,2)/(wy(*,*,0)+wy(*,*,9)),1),/sample, /bar,title='Vx', $
         xtitle='y', ytitle='z',charsize=2.0;, CT='dPdT'
+
+tvframe,rotate(wy(*,*,3)/(wy(*,*,0)+wy(*,*,9)),1),/sample, /bar,title='Vy', $
+        xtitle='y', ytitle='z',charsize=2.0;, CT='dPdT'
+
+
 	
+;tvframe,rotate(wy(*,*,2)/(wy(*,*,0)+wy(*,*,9)),1),/sample, /bar,title='Vx', $
+;        xtitle='y', ytitle='z',charsize=2.0;, CT='dPdT'
+
+
 
 tvframe,rotate(wt(*,*,4),1),/bar, /sample, title='e', xtitle='x', ytitle='z', $
         charsize=2.0
 
-tvframe,rotate(wt(*,*,5),1)*sqrt(mu)*1.0e4,/bar,/sample, title='bz', $
-        xtitle='x', ytitle='z', charsize=2.0
+;tvframe,rotate(wt(*,*,5),1)*sqrt(mu)*1.0e4,/bar,/sample, title='bz', $
+;        xtitle='x', ytitle='z', charsize=2.0
 
-tvframe,rotate(wt(*,*,11),1)*sqrt(mu)*1.0e4,/bar,/sample, title='Bx_b', $
-        xtitle='x', ytitle='z', charsize=2.0
+;tvframe,rotate(wt(*,*,11),1)*sqrt(mu)*1.0e4,/bar,/sample, title='Bx_b', $
+;        xtitle='x', ytitle='z', charsize=2.0
 
-tvframe,rotate(wt(*,*,12),1)*sqrt(mu)*1.0e4,/bar,/sample, title='By_b', $
-        xtitle='x', ytitle='z', charsize=2.0
+;tvframe,rotate(wt(*,*,12),1)*sqrt(mu)*1.0e4,/bar,/sample, title='By_b', $
+;        xtitle='x', ytitle='z', charsize=2.0
 
 tvframe,rotate(wt(*,*,8),1),/bar,/sample, title='eb', $
         xtitle='x', ytitle='z', charsize=2.0
@@ -321,10 +345,10 @@ tvframe,rotate(wt(*,*,8),1),/bar,/sample, title='eb', $
 tvframe,rotate(wt(*,*,9),1),/bar,/sample, title='rho_b', $
         xtitle='x', ytitle='z', charsize=2.0
 
-tvframe,rotate(wt(*,*,10),1)*sqrt(mu)*1.0e4,/bar,/sample, title='Bz_b', $
-        xtitle='x', ytitle='z', charsize=2.0, $
-	xrange=[xx[xstart]/scale, xx[xend]/scale], $
-	yrange=[zz[zstart]/scale, zz[zend]/scale]	
+;tvframe,rotate(wt(*,*,10),1)*sqrt(mu)*1.0e4,/bar,/sample, title='Bz_b', $
+;        xtitle='x', ytitle='z', charsize=2.0, $
+;	xrange=[xx[xstart]/scale, xx[xend]/scale], $
+;	yrange=[zz[zstart]/scale, zz[zend]/scale]	
 
 ;stop
 T=mu_gas*TP/R/sarho_t
