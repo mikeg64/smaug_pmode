@@ -72,6 +72,7 @@ title(gca,ptitle);
 
 
 
+clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'evelp5Mm_vh' );
 
 %0,1 mode
 %figure;
@@ -114,89 +115,93 @@ title(gca,ptitle);
 %hold off
 
 
+clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'evelp5Mm_vh' );
 
 
-% %0,2 mode
-% %figure;
-% %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-% load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_2_3d_vverustime.mat');
+%0,2 mode
+%figure;
+%load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_2_3d_rep_xdir_vverustime.mat');
+
+%dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
+%dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
+%dtplot=evelcor_vh;    %  horizontal section in corona at 90
+
+%dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
+%dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
+dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
+
+dtp02=dtplot;
+smode='0,2';
+subplot(2,2,3);
+surf(real(dtp02'),'LineStyle','none');
+zlimv=0.6e3*[-1 1];
+
+%hold on
+hc=colorbar();
+caxis(zlimv);
+set(hc,'Zlim',zlimv);
+
+set(gca,'CameraPosition',[400 45 17320.508]);
+
+set(gca,'YTickLabel',yticks)
+
+
+%colorbar;
+xlabel(gca,'Time (seconds)');
+%xlabel(gca,'Height (Mm)');
+ylabel(gca,'Distance (Mm)');
+
+
+ptitle=[smode,ptitle2];
+title(gca,ptitle);
+
+%hold off
+
+
+clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'evelp5Mm_vh' );
+
 % 
-% %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
-% dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
-% %dtplot=evelcor_vh;    %  horizontal section in corona at 90
-% 
-% %dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
-% %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
-% %dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
-% 
-% dtp02=dtplot;
-% smode='0,2';
-% subplot(2,2,3);
-% surf(real(dtp02'),'LineStyle','none');
-% zlimv=5e3*[0 1];
-% 
-% %hold on
-% hc=colorbar();
-% caxis(zlimv);
-% set(hc,'Zlim',zlimv);
-% 
-% set(gca,'CameraPosition',[400 45 17320.508]);
-% 
-% set(gca,'YTickLabel',yticks)
-% 
-% 
-% %colorbar;
-% xlabel(gca,'Time (seconds)');
-% %xlabel(gca,'Height (Mm)');
-% ylabel(gca,'Distance (Mm)');
-% 
-% 
-% ptitle=[smode,ptitle2];
-% title(gca,ptitle);
-% 
-% %hold off
-% 
-% 
-% %0,3 mode
-% %figure;
-% %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-% load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3_3d_vverustime.mat');
-% 
-% %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
-% dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
-% %dtplot=evelcor_vh;    %  horizontal section in corona at 90
-% 
-% %dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
-% %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
-% %dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
-% 
-% dtp03=dtplot;
-% smode='0,3';
-% subplot(2,2,4);
-% surf(real(dtp02'),'LineStyle','none');
-% zlimv=5e3*[0 1];
-% 
-% %hold on
-% hc=colorbar();
-% caxis(zlimv);
-% set(hc,'Zlim',zlimv);
-% 
-% set(gca,'CameraPosition',[400 45 17320.508]);
-% 
-% set(gca,'YTickLabel',yticks)
-% 
-% 
-% %colorbar;
-% xlabel(gca,'Time (seconds)');
-% %xlabel(gca,'Height (Mm)');
-% ylabel(gca,'Distance (Mm)');
-% 
-% 
-% ptitle=[smode,ptitle2];
-% title(gca,ptitle);
-% 
-% hold off
-% 
+%0,3 mode
+%figure;
+%load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3_3d_xdir_vverustime.mat');
+
+%dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
+%dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
+%dtplot=evelcor_vh;    %  horizontal section in corona at 90
+
+%dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
+%dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
+dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
+
+dtp03=dtplot;
+smode='0,3';
+subplot(2,2,4);
+surf(real(dtp03'),'LineStyle','none');
+zlimv=5e2*[0 1];
+
+%hold on
+hc=colorbar();
+caxis(zlimv);
+set(hc,'Zlim',zlimv);
+
+set(gca,'CameraPosition',[400 45 17320.508]);
+
+set(gca,'YTickLabel',yticks)
+
+
+%colorbar;
+xlabel(gca,'Time (seconds)');
+%xlabel(gca,'Height (Mm)');
+ylabel(gca,'Distance (Mm)');
+
+
+ptitle=[smode,ptitle2];
+title(gca,ptitle);
+
+hold off
+
 % 
 % 
 % 
