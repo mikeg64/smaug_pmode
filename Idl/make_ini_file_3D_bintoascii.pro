@@ -67,13 +67,13 @@ close,1
 ;openr,1,'/data/cs1mkg/smaug_spicule1/spicule2p3a_0_3_3d/zerospic1__592000.out'
 ;openr,1,'/data/cs1mkg/smaug_spicule1/spicule4p3a_0_1_3d/zerospic1__1206000.out'
 ;openr,1,'/data/cs1mkg/smaug_pmode/spicule6b0_3d/zerospic1__302000.out'
-;openr,1,'/data/cs1mkg/smaug_spicule1/3D_128_spic_bvert10G_bin.ini',/f77_unf
+openr,1,'../configs/3D_128_spic_bvert20G_bin.ini',/f77_unf
 ;openr,1,'/data/cs1mkg/smaugtemp/smaug/out/sedov_118000.out'
 
 ;openr,1,'/fastdata/cs1mkg/smaug/spic2p82a_0_0_3d/zerospic1__586000.out'
 ;openr,1,'/fastdata/cs1mkg/smaug/spic2p00a_0_1_3d/zerospic1__588000.out'
-;openr,1,'/fastdata/cs1mkg/smaug/spic1p33a_0_2_3d/zerospic1__581000.out'
-openr,1,'/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/zerospic1__575000.out'
+;openr,1,'/fastdata/cs1mkg/smaug/spic6b0_3_3d/zerospic1__658000.out'
+;openr,1,'/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/zerospic1__575000.out'
 ;openr,1,'/fastdata/cs1mkg/smaug/spic5b0_3d_rep/zerospic1__1456000.out'
 
 
@@ -152,15 +152,15 @@ close,1
 ;openw,1,'/data/cs1mkg/smaug_spicule1/configs/3D_128_spic_btube2_asc.ini'
 ;openw,1,'/data/cs1mkg/smaug_spicule1/configs/3D_128_spic_btube3_asc.ini'
 ;openw,1,'/data/cs1mkg/smaug_spicule1/configs/3D_128_spic_btube4_asc.ini'
-;openw,1,'/data/cs1mkg/smaug_spicule1/3D_128_spic_bvert10G_asc.ini'
+openw,1,'../configs/3D_128_spic_bvert20G_asc.ini'
 ;openw,1,'/data/cs1mkg/smaug_pmode/spicule6b0_3d/zerospic1_asc__302000.ini'
 ;openw,1,'/data/cs1mkg/smaug_spicule1/spicule4p3a_0_1_3d/zerospic1_asc_1206000.ini'
 ;openw,1,'/fastdata/cs1mkg/smaug/spic2p82a_0_0_3d/zerospic1_asc_586000.ini'
 ;openw,1,'/fastdata/cs1mkg/smaug/spic2p00a_0_1_3d/zerospic1_asc_588000.ini'
-;openw,1,'/fastdata/cs1mkg/smaug/spic1p33a_0_2_3d/zerospic1_asc_581000.ini'
-openw,1,'/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/zerospic1_asc_575000.ini'
+;openw,1,'/fastdata/cs1mkg/smaug/spic1p33a_0_2_3d/zerospic1_asc_624000.ini'
+;openw,1,'/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/zerospic1_asc_575000.ini'
 ;/fastdata/cs1mkg/smaug/spic1p79a_0_0_3d/zerospic1__408000.out
-;openw,1,'/fastdata/cs1mkg/smaug/spic5b0_3d_rep/zerospic1_asc_1456000.ini'
+;openw,1,'/fastdata/cs1mkg/smaug/spic6b0_3_3d/zerospic1_asc_658000.ini'
 
 ;openw,1,'//data/cs1mkg/smaugtemp/smaug/out/sedov_asc_118000.ini'
 ;openr,1,'/data/cs1mkg/smaugtemp/smaug/out/sedov_118000.out'
