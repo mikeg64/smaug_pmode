@@ -6,7 +6,7 @@
 #$ -l gpu=1,gpu_arch=nvidia-m2070
 ##$ -P cs-test
 #$ -P gpu
-#$ -N j2p82a_0_0
+#$ -N j2p82a_0_0_b100g
 #$ -l mem=12G
 #$ -l rmem=12G
 #$ -l h_rt=168:00:00
@@ -28,14 +28,16 @@ module add libs/cuda/6.5.14
 #cd ..
 
 cd include
-cp iosmaugparams2p82a_0_0_3d.h iosmaugparams.h
+cp iosmaugparams2p82a_0_0_b100gv.h iosmaugparams.h
 cd ..
 
 cd src
-cp usersource2p82a_0_0_3d.cu usersource.cu
+cp usersource2p82a_0_0_b1v.cu usersource.cu
 cp boundary_3d.cu boundary.cu
 make clean
+#make -f Makefile_3d_k40 smaug
 make -f Makefile_3d smaug
+
 cd ..
 
 

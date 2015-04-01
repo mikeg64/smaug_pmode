@@ -18,7 +18,7 @@ mode=zeros(4);
 mode=[0 1 2 3];
 
 %period values for different modes
-periodvalues=zeros(5,4);
+%periodvalues=zeros(5,4);
 periodvalues(:,1)=[300; 180; 673.4; 435.1;179.98;282.84];  %0,0 mode
 periodvalues(:,2)=[300;180;425.9;307.1;127.27;200.0];    %0,1 mode
 periodvalues(:,3)=[300;180;301.25;205.1;84.84;133.33];   %0,2 mode
@@ -69,12 +69,15 @@ efluxchromavg(:,4)=[1.83e6; 2.84e6; 5.992e5; 4.928e5;8.7e4;2.73e5];
 
 %300;180;231.0;153.8;63.63;100.0
 %20,42,90,117
-ef1Mm(:,4)=[308.232; 292.114; 81.02; 168.06; 108.484; 135.682 ];
-ef2Mm(:,4)=[17.282; 16.3856; 4.5468; 9.4286; 6.086; 7.612 ];
-ef4Mm(:,4)=[16.6456; 15.7817; 4.3797; 9.0818; 5.863; 7.3326];
-ef5p5Mm(:,4)=[16.4929; 15.6369; 4.3395; 8.9986; 5.8088; 7.2653 ];
+ef1Mm(:,4)=[105.93; 119.38; 81.02; 168.06; 108.484; 135.682 ];
+ef2Mm(:,4)=[5.9395; 6.694; 4.5468; 9.4286; 6.086; 7.612 ];
+ef4Mm(:,4)=[5.7205; 6.447; 4.3797; 9.0818; 5.863; 7.3326];
+ef5p5Mm(:,4)=[5.668; 6.388; 4.3395; 8.9986; 5.8088; 7.2653 ];
 
 
-plot(periodvalues(:,1),efluxtranavg(:,1),'o',periodvalues(:,2),efluxtranavg(:,2),'+',periodvalues(:,3),efluxtranavg(:,3),'x');
+%plot(periodvalues(:,1),efluxtranavg(:,1),'o',periodvalues(:,2),efluxtranavg(:,2),'+',periodvalues(:,3),efluxtranavg(:,3),'x');
+%plot(periodvalues(3:6,1),ef1Mm(3:6,1),'o',periodvalues(3:6,2),ef1Mm(3:6,2),'+',periodvalues(3:6,3),ef1Mm(3:6,3),'x',periodvalues(3:6,4),ef1Mm(3:6,4),'s');
+%plot(periodvalues(3:6,1),ef4Mm(3:6,1),'o',periodvalues(3:6,2),ef4Mm(3:6,2),'+',periodvalues(3:6,3),ef4Mm(3:6,3),'x',periodvalues(3:6,4),ef4Mm(3:6,4),'s');
+plot(periodvalues(3:6,1),ef5p5Mm(3:6,1),'o',periodvalues(3:6,2),ef5p5Mm(3:6,2),'+',periodvalues(3:6,3),ef5p5Mm(3:6,3),'x',periodvalues(3:6,4),ef5p5Mm(3:6,4),'s');
 
 

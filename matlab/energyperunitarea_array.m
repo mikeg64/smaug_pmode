@@ -12,7 +12,7 @@
 %directory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/';
 %directory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/';
 %directory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/';
-directory='/fastdata/cs1mkg/smaug/spic5b0_3_3d/';
+directory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic6p7a_0_0_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic4p3a_0_1_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic2p3a_0_3_3d/';
@@ -36,7 +36,7 @@ extension='.out';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/images';
-ndirectory='/fastdata/cs1mkg/smaug/spic5b0_3_3d/images';
+ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic4p3a_0_1_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic3p0a_0_2_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic2p3a_0_3_3d/images';
@@ -56,7 +56,7 @@ nextension='.jpg';
 %wspacename='6p7a_3dmatlab_perturb.mat';
 %wspacename='5b0_3dmatlab_perturb.mat';
 %wspacename='6b0_1_3dmatlab_perturb.mat';
-wspacename='5b0_3_3dmatlab_perturb.mat';
+wspacename='6b0_3_3dmatlab_perturb.mat';
 %wspacename='6b0_2_3dmatlab_perturb.mat';
 
 %uncomment this block if loop starts from i=1
@@ -88,12 +88,12 @@ wspacename='5b0_3_3dmatlab_perturb.mat';
 %period=231;
 %nt=1182;
 
-%period=180.0;
+period=180.0;
 %period=300.0;
 %period=673.4;
 %period=425.9;
 %period=301.25;
-period=63.63;
+%period=63.63;
 
 %nt=890;
 %nt=889;
@@ -102,7 +102,7 @@ period=63.63;
 %nt=1700; %6p7a
 %nt=1360;
 %nt=1000;
-nt=311;
+nt=803;
 
 for i=1:nt %1182
 %for i=99:nt    
