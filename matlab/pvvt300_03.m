@@ -9,7 +9,7 @@
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 bdir='/fastdata/cs1mkg/smaug/';
 rdirectory='spic5b0_3_3d';
-nt=311;
+nt=905;
 
 
 %directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/';

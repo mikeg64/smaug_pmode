@@ -22,8 +22,8 @@ ptitle2=' Mode 300.0s (Vertical Section at 0.5Mm x-dir)';
 
 
 yticks={'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'};
-%yticks={'1.78';'2.22';'2.68';'3.12';'3.57';'4.02';'4.47';'4.91';'5.36';'5.81'};
-%yticks={'0';'0.6667';'1.333';'2.0';'2.667';'3.333';'4.0'};
+%old not used? yticks={'1.78';'2.22';'2.68';'3.12';'3.57';'4.02';'4.47';'4.91';'5.36';'5.81'};
+%%yticks={'0';'0.6667';'1.333';'2.0';'2.667';'3.333';'4.0'};
 
 
 
@@ -121,7 +121,7 @@ clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'e
 %0,2 mode
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_2_3d_rep_xdir_vverustime.mat');
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_2_3d_rep_ydir_vverustime.mat');
 
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
 %dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
@@ -165,7 +165,7 @@ clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'e
 %0,3 mode
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3_3d_xdir_vverustime.mat');
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3_3d_ydir_vverustime.mat');
 
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
 %dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
@@ -179,7 +179,7 @@ dtp03=dtplot;
 smode='0,3';
 subplot(2,2,4);
 surf(real(dtp03'),'LineStyle','none');
-zlimv=5e2*[0 1];
+zlimv=1e1*[-1 1];
 
 %hold on
 hc=colorbar();

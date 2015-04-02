@@ -9,7 +9,7 @@
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 bdir='/fastdata/cs1mkg/smaug/';
 rdirectory='spic6b0_3_3d';
-nt=328;
+nt=803;
 
 
 %directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/';
@@ -160,7 +160,7 @@ clear tmp;
 %     evel2Mm_vh(i,:)=myval(62,62,:);  %vertical section at 2Mm  62
 %     evel1Mm_vh(i,:)=myval(62,31,:);  %vertical section at 1Mm  31
 %     evelp5Mm_vh(i,:)=myval(62,15,:);  %vertical section at 0.5Mm 15
-    
+%     
     
     
     

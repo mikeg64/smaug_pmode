@@ -28,7 +28,7 @@ extension='.out';
 ndirectory=[bdir,rdirectory,'images_3d_vsecs/'];
 nextension='.jpg';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
-wspacename=[rdirectory,'_vverustime.mat']
+wspacename=[rdirectory,'_ydir_vverustime.mat']
 
 
 evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
@@ -140,16 +140,23 @@ clear tmp;
 	gamma=1.66667;
     
     
+ %x dir   
+%     evelchrom_vh(i,:)=myval( :,62,20);  %  horizontal section in chrom at  20
+%     eveltran_vh(i,:)=myval( :,62,42);   %  horizontal section in transition layer at 42
+%     evelcor_vh(i,:)=myval( :,62,90);    %  horizontal section in corona at 90
+% 
+%     evel2Mm_vh(i,:)=myval(62,62,:);  %vertical section at 2Mm  62
+%     evel1Mm_vh(i,:)=myval(31,62,:);  %vertical section at 1Mm  31
+%     evelp5Mm_vh(i,:)=myval(15,62,:);  %vertical section at 0.5Mm 15
     
-    evelchrom_vh(i,:)=myval( :,62,20);  %  horizontal section in chrom at  20
-    eveltran_vh(i,:)=myval( :,62,42);   %  horizontal section in transition layer at 42
-    evelcor_vh(i,:)=myval( :,62,90);    %  horizontal section in corona at 90
+ %y dir   
+    evelchrom_vh(i,:)=myval( 62,:,20);  %  horizontal section in chrom at  20
+    eveltran_vh(i,:)=myval( 62,:,42);   %  horizontal section in transition layer at 42
+    evelcor_vh(i,:)=myval( 62,:,90);    %  horizontal section in corona at 90
 
     evel2Mm_vh(i,:)=myval(62,62,:);  %vertical section at 2Mm  62
-    evel1Mm_vh(i,:)=myval(31,62,:);  %vertical section at 1Mm  31
-    evelp5Mm_vh(i,:)=myval(15,62,:);  %vertical section at 0.5Mm 15
-    
-    
+    evel1Mm_vh(i,:)=myval(62,31,:);  %vertical section at 1Mm  31
+    evelp5Mm_vh(i,:)=myval(62,15,:);  %vertical section at 0.5Mm 15   
     
     
     
