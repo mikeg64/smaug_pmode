@@ -3,8 +3,8 @@
 
 %for i=9:1:9
 itstep=0;
- for i=0:10:581   
-  %for i=200:1:200     
+ %for i=0:10:581   
+  for i=200:1:200     
     directory='/fastdata/cs1mkg/smaug/spic2p82a_0_0_b20gv/';
 extension='.out';
 
@@ -142,27 +142,11 @@ clear tmp;
    az=z(nrange);
    [x1,x2,x3] = meshgrid(nrange,nrange,nrange);
    
-%    val1=reshape(wd(4,nrange,nrange,nrange),124,124,124);
-%    val2=reshape(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange),124,124,124);
-%    uu=shiftdim(val1./val2,1);
-  % val3=reshape(wd(6,nrange,nrange,nrange)+wd(11,nrange,nrange,nrange),124,124,124);
+
    val3=reshape(wd(6,nrange,nrange,nrange)+wd(11,nrange,nrange,nrange),124,124,124);
    uu=shiftdim(val3,1);
-   
-   
-%    val1=reshape(wd(3,nrange,nrange,nrange),124,124,124);
-%    val2=reshape(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange),124,124,124);
-%    uv=shiftdim(val1./val2,1);
- %  val3=reshape(wd(7,nrange,nrange,nrange)+wd(12,nrange,nrange,nrange),124,124,124);
  val3=reshape(wd(7,nrange,nrange,nrange)+wd(12,nrange,nrange,nrange),124,124,124);
    uv=shiftdim(val3,1);
-
-   
-   
-%    val1=reshape(wd(2,nrange,nrange,nrange),124,124,124);
-%    val2=reshape(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange),124,124,124);
-%    uw=shiftdim(val1./val2,1);
-  % val3=reshape(wd(8,nrange,nrange,nrange)+wd(13,nrange,nrange,nrange),124,124,124);
   val3=reshape(wd(8,nrange,nrange,nrange)+wd(13,nrange,nrange,nrange),124,124,124);
    uw=shiftdim(val3,1);
    
@@ -174,6 +158,37 @@ clear tmp;
 
 
    myval=shiftdim(val1./val2,1);
+   
+   %beta=gas pressure/magnetic pressure
+   %beta=pk/(B_0^2/2mu)
+   %compute pressure
+   R=8.3e+003;
+	mu=1.257E-6;
+	mu_gas=0.6;
+	gamma=1.66667;
+    
+    magb=reshape(sqrt(wd(11,nrange,nrange,nrange).^2+wd(12,nrange,nrange,nrange).^2+wd(13,nrange,nrange,nrange).^2),124,124,124);
+    magp=reshape(sqrt(wd(6,nrange,nrange,nrange).^2+wd(7,nrange,nrange,nrange).^2+wd(8,nrange,nrange,nrange).^2),124,124,124);
+
+ 
+TP=reshape(wd(5,nrange,nrange,nrange)+0.5.*(wd(2,nrange,nrange,nrange).^2+wd(3,nrange,nrange,nrange).^2+wd(4,nrange,nrange,nrange).^2)./(wd(1,nrange,nrange,nrange)+wd(9,nrange,nrange,nrange)),124,124,124);
+TP=TP-magb.*magp-0.5.*magp.*magp-0.5*magb.*magb+reshape(wd(10,nrange,nrange,nrange),124,124,124);
+
+
+
+%TP=TP-(umag.*umag)./2.0;
+TP=(gamma-1.d0).*TP;
+
+mu=1;
+beta=mu.*TP./(0.5*(magb.*magb+magp.*magp)+magp.*magb);
+   
+   
+   
+  
+   
+   
+   
+   
 
    
    % Draw the cones, setting the scale factor to 5 to make the cones larger than 
@@ -206,18 +221,18 @@ clear tmp;
   %h= slice(myval,64, 64, 4);
   %h=figure();
   %hold on;
-   maxv=max(max(max(umag)));
-minv=min(min(min(umag)));
-  isovalue=0.1909;
-  %isovalue=maxv;
+   maxv=max(max(max(beta)));
+minv=min(min(min(beta)));
+  %isovalue=0.1909;
+  isovalue=minv+(maxv-minv)/2;
   
   itstep=itstep+1;
   maxva(itstep)=maxv;
   minva(itstep)=minv;
   ava(itstep)=minv+(maxv-minv)/2;
     % isovalue=0.1746;
-     fv = patch(isosurface(x1,x2,x3,umag,isovalue));
-      isonormals(x1,x2,x3,umag,fv)
+     fv = patch(isosurface(x1,x2,x3,beta,isovalue));
+      isonormals(x1,x2,x3,beta,fv)
      set(fv,'FaceColor','red','EdgeColor','none'); 
       daspect([1,1,1])
 view(3); 
@@ -305,8 +320,8 @@ lighting gouraud ;
   
   hold off
    
-   clf;
-   close(gcf);
+%    clf;
+%    close(gcf);
 %   clear all;
   
 end
