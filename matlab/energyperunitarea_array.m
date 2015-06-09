@@ -1,43 +1,47 @@
 
 %directory='/storage2/mikeg/results/spic6b0_1_3d/';
 %directory='/storage2/mikeg/results/spic5b0_b1G_3d/';
-directory='/storage2/mikeg/results/spic6b0_2_3d/';
+%directory='/storage2/mikeg/results/spic6b0_2_3d/';
 %directory='/storage2/mikeg/results/spic4b0_2_3d/';
 %directory='/storage2/mikeg/results/spic3p0a_0_2_3d/';
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 %directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
 %directory='/storage2/mikeg/results/spic4p3a_0_1_3d/';
 %directory='/storage2/mikeg/results/spic4p3_0_1_3d/';
+directory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/';
 extension='.out';
 
 %ndirectory='/storage2/mikeg/results/spic5b0_b1G_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic6b0_1_3d/images_3d_vsecs/';
-ndirectory='/storage2/mikeg/results/spic6b0_2_3d/images_3d_vsecs/';
+%ndirectory='/storage2/mikeg/results/spic6b0_2_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic4b0_2_3d/images/';
 %ndirectory='/storage2/mikeg/results/spic2p3a_0_3_3d/images/';
 %ndirectory='/storage2/mikeg/results/spic6p7a_0_0_3d/images/';
 %ndirectory='/storage2/mikeg/results/spic3p0a_0_2_3d/images/';
 %ndirectory='/storage2/mikeg/results/spic4p3a_0_1_3d/images/';
 %ndirectory='/storage2/mikeg/results/spic4p3_0_1_3d/images/';
+ndirectory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/images';
 nextension='.jpg';
 
 wspacename='6b0_2_3dmatlab_perturb.mat';
-%esumcorona=0;
-%esumtran=0;
-%esumchrom=0;
+ esumcorona=0;
+ esumtran=0;
+ esumchrom=0;
+% 
+ edifcorona=0;
+ ediftran=0;
+ edifchrom=0;
+% 
+ ebsumcorona=0;
+ ebsumtran=0;
+ ebsumchrom=0; 
+% 
+ esumfluxcorona=0;
+ esumfluxtran=0;
+ esumfluxchrom=0;
 
-%edifcorona=0;
-%ediftran=0;
-%edifchrom=0;
-
-ebsumcorona=0;
-ebsumtran=0;
-ebsumchrom=0; 
-
-
-
-%esumarray=zeros(1089,124);
-%esum=zeros(1,124);
+esumarray=zeros(302,124);
+esum=zeros(1,124);
 %for i=1:1089
 %for i=1:1385
 %period=673.4;
@@ -47,8 +51,8 @@ ebsumchrom=0;
 %nt=1182;
 
 period=180.0;
-nt=884;
-for i=334:nt %1182
+nt=302;
+for i=1:nt %1182
 %for i=334:634    
 
 id=int2str(1000*i);
@@ -138,12 +142,18 @@ clear tmp;
 
 
    %myval=shiftdim(val1./val2,1);
-   val1=reshape(wd(5,nrange,nrange,nrange),124,124,124)+reshape(wd(9,nrange,nrange,nrange),124,124,124);
-   val2=reshape(wd(5,nrange,nrange,nrange),124,124,124);
-   val3=reshape(wd(9,nrange,nrange,nrange),124,124,124);
+   val1=reshape(wd(5,nrange,nrange,nrange),124,124,124)+reshape(wd(9,nrange,nrange,nrange),124,124,124); %energy
+   val2=reshape(wd(5,nrange,nrange,nrange),124,124,124);  %perturbed energy
+   val3=reshape(wd(9,nrange,nrange,nrange),124,124,124);  %background energy
+   val4=reshape(wd(1,nrange,nrange,nrange),124,124,124)+reshape(wd(10,nrange,nrange,nrange),124,124,124); %density
+   val5=reshape(wd(2,nrange,nrange,nrange),124,124,124);  % vertical (x) component momentum
    myval=shiftdim(val1,1);
    myval2=shiftdim(val2,1);
    myval3=shiftdim(val3,1);
+   myval4=shiftdim(val4,1);
+   myval5=shiftdim(val5,1);
+   
+   eflux=(gamma-1).*(myval2-(myval5./2)).*(myval5./myval4);
    for ih=1:124
     %total energy
     temp=sum(myval(:,:,ih));
@@ -154,17 +164,24 @@ clear tmp;
     %background energy
     temp=sum(myval3(:,:,ih));
     ebsum(ih)=sum(temp);
+    
+    temp=sum(eflux(:,:,ih));
+    efluxsum(ih)=sum(temp);
    end
 
    
    
-   
+    efluxarray(i,:)=(efluxsum);
 	esumarray(i,:)=(esum);
     edifarray(i,:)=(esumdif./esum);
        
 esumcorona=esumcorona+sum(esum(48:124));
 esumtran=esumtran+sum(esum(39:47));
 esumchrom=esumchrom+sum(esum(1:38)); 
+
+esumfluxcorona=esumfluxcorona+sum(efluxsum(48:124));
+esumfluxtran=esumfluxtran+sum(efluxsum(39:47));
+esumfluxchrom=esumfluxchrom+sum(efluxsum(1:38));
 
 edifcorona=edifcorona+sum(esumdif(48:124));
 ediftran=ediftran+sum(esumdif(39:47));
