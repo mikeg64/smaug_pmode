@@ -8,7 +8,19 @@
 %directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
 %directory='/storage2/mikeg/results/spic4p3a_0_1_3d/';
 %directory='/storage2/mikeg/results/spic4p3_0_1_3d/';
-directory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/';
+%directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/';
+%directory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/';
+%directory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/';
+%directory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/';
+directory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic6p7a_0_0_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic4p3a_0_1_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic2p3a_0_3_3d/';
+%directory='/fastdata/cs1mkg/smaug/spicule4p35a_0_0_3d/';
+%directory='/fastdata/cs1mkg/smaug/spicule3p07a_0_1_3d/';
+%directory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/';
+%directory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/';
 extension='.out';
 
 %ndirectory='/storage2/mikeg/results/spic5b0_b1G_3d/images_3d_vsecs/';
@@ -20,28 +32,55 @@ extension='.out';
 %ndirectory='/storage2/mikeg/results/spic3p0a_0_2_3d/images/';
 %ndirectory='/storage2/mikeg/results/spic4p3a_0_1_3d/images/';
 %ndirectory='/storage2/mikeg/results/spic4p3_0_1_3d/images/';
-ndirectory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/images';
+ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic4p3a_0_1_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic3p0a_0_2_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic2p3a_0_3_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic2p3a_0_0_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/images';
+
 nextension='.jpg';
 
-wspacename='6b0_2_3dmatlab_perturb.mat';
- esumcorona=0;
- esumtran=0;
- esumchrom=0;
-% 
- edifcorona=0;
- ediftran=0;
- edifchrom=0;
-% 
- ebsumcorona=0;
- ebsumtran=0;
- ebsumchrom=0; 
-% 
- esumfluxcorona=0;
- esumfluxtran=0;
- esumfluxchrom=0;
+%wspacename='0p63a0_3_3dmatlab_perturb.mat';
+%wspacename='1p53a0_3_3dmatlab_perturb.mat';
+%wspacename='3p07a0_1_3dmatlab_perturb.mat';
+%wspacename='4p35a0_0_3dmatlab_perturb.mat';
+%wspacename='3p0a_3dmatlab_perturb.mat';
+%wspacename='4p3a_3dmatlab_perturb.mat';
+%wspacename='6p7a_3dmatlab_perturb.mat';
+%wspacename='5b0_3dmatlab_perturb.mat';
+%wspacename='6b0_1_3dmatlab_perturb.mat';
+wspacename='6b0_3_3dmatlab_perturb.mat';
+%wspacename='6b0_2_3dmatlab_perturb.mat';
 
-esumarray=zeros(302,124);
-esum=zeros(1,124);
+
+%uncomment this block if loop starts from i=1
+  esumcorona=0;
+  esumtran=0;
+  esumchrom=0;
+ % 
+  edifcorona=0;
+  ediftran=0;
+  edifchrom=0;
+ % 
+  ebsumcorona=0;
+  ebsumtran=0;
+  ebsumchrom=0; 
+ % 
+  esumfluxcorona=0;
+  esumfluxtran=0;
+  esumfluxchrom=0;
+ 
+ esumarray=zeros(311,124);
+ esum=zeros(1,124);
+
+
 %for i=1:1089
 %for i=1:1385
 %period=673.4;
@@ -51,9 +90,23 @@ esum=zeros(1,124);
 %nt=1182;
 
 period=180.0;
-nt=302;
+%period=300.0;
+%period=673.4;
+%period=425.9;
+%period=301.25;
+%period=63.63;
+
+%nt=890;
+%nt=889;
+%nt=1203;
+%nt=1200;
+%nt=1700; %6p7a
+%nt=1360;
+%nt=1000;
+nt=803;
+
 for i=1:nt %1182
-%for i=334:634    
+%for i=99:nt    
 
 id=int2str(1000*i);
 filename=[directory,'zerospic1__',id,extension];
@@ -186,8 +239,12 @@ esumfluxchrom=esumfluxchrom+sum(efluxsum(1:38));
 edifcorona=edifcorona+sum(esumdif(48:124));
 ediftran=ediftran+sum(esumdif(39:47));
 edifchrom=edifchrom+sum(esumdif(1:38));   
-       
-       
+     
+
+if mod(i,100)==0         
+    save(wspacename); 
+end
+
 end 
 
 escor=esumcorona/nt;

@@ -1,5 +1,16 @@
 ntold=nt;
-nt=331;
+%nt=1860;
+
+%21,43,85,117
+%1,2,4,5p5  height (Mm)
+
+es1=esum(21)/nt;
+es2=esum(43)/nt;
+es4=esum(85)/nt;
+es5p5=esum(117)/nt;
+
+
+
 
 escor=esumcorona/nt;
 estran=esumtran/nt;
@@ -38,5 +49,11 @@ sumeb=ebsumcorona+ebsumtran+ebsumchrom;
 r7=100*ebsumcorona/sumeb;
 r8=100*ebsumtran/sumeb;
 r9=100*ebsumchrom/sumeb;
+
+
+efluxcorona=esumfluxcorona/nt;
+efluxtran=esumfluxtran/nt;
+efluxchrom=esumfluxchrom/nt;
+
 
 nt=ntold;
