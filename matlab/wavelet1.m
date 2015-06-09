@@ -1,7 +1,8 @@
 %wavelet analysis tests
 %input file generated using
 %energyperunitarea_array.m
-load('6b0_3dmatlab_perturb.mat');
+%load('6b0_3dmatlab_perturb.mat');
+load('5b0_3dmatlab_perturb.mat');
 plot(esumarray(:,62));
 hold on
 plot(esumarray(:,31));
@@ -10,6 +11,7 @@ surf(esumarray)
 surf(esumarray(:,20:123))
 scales=2:2:123;
 wname='coif3'
+t=1:1:452;
 cwt(esumarray(:,31),scales,wname,'abslvl');
 cwt(esumarray(:,63),scales,wname,'abslvl');
 cwt(esumarray(:,111),scales,wname,'abslvl');
