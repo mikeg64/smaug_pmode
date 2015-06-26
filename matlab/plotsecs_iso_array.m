@@ -170,18 +170,36 @@ clear tmp;
     magb=reshape(sqrt(wd(11,nrange,nrange,nrange).^2+wd(12,nrange,nrange,nrange).^2+wd(13,nrange,nrange,nrange).^2),124,124,124);
     magp=reshape(sqrt(wd(6,nrange,nrange,nrange).^2+wd(7,nrange,nrange,nrange).^2+wd(8,nrange,nrange,nrange).^2),124,124,124);
 
+% original beta computation by MKG June 2015
+% TP=reshape(wd(5,nrange,nrange,nrange)+0.5.*(wd(2,nrange,nrange,nrange).^2+wd(3,nrange,nrange,nrange).^2+wd(4,nrange,nrange,nrange).^2)./(wd(1,nrange,nrange,nrange)+wd(9,nrange,nrange,nrange)),124,124,124);
+% TP=TP-magb.*magp-0.5.*magp.*magp-0.5*magb.*magb+reshape(wd(10,nrange,nrange,nrange),124,124,124);
+% 
+% %TP=TP-(umag.*umag)./2.0;
+% TP=(gamma-1.d0).*TP;
+% mu=1;
+% beta=mu.*TP./(0.5*(magb.*magb+magp.*magp)+magp.*magb);    
+    
+    
+    
+%  beta computation from IDL routine   
+%   T=dblarr(n1,n2,n3)
+% T[*,*,*]=(w[*,*,*,4]+w[*,*,*,8])
+% T[*,*,*]=T[*,*,*]-(w[*,*,*,1]^2.0+w[*,*,*,2]^2.0+w[*,*,*,3]^2.0)/(w[*,*,*,0]+w[*,*,*,9])/2.0
+% T[*,*,*]=T[*,*,*]-((w[*,*,*,5]+w[*,*,*,10])^2.0+(w[*,*,*,6]+w[*,*,*,11])^2.0+(w[*,*,*,7]+w[*,*,*,12])^2.0)/2.d0
+% beta=dblarr(n1,n2,n3)
+% beta[*,*,*]=(((w[*,*,*,5]+w[*,*,*,10])*sqrt(mu)*1.0e4)^2.0+((w[*,*,*,6]+w[*,*,*,11])*sqrt(mu)*1.0e4)^2.0+$
+%               ((w[*,*,*,7]+w[*,*,*,12])*sqrt(mu)*1.0e4)^2.0)/2.0/((gamma-1.d0)*T[*,*,*])
+%   
+    
+    
  
-TP=reshape(wd(5,nrange,nrange,nrange)+0.5.*(wd(2,nrange,nrange,nrange).^2+wd(3,nrange,nrange,nrange).^2+wd(4,nrange,nrange,nrange).^2)./(wd(1,nrange,nrange,nrange)+wd(9,nrange,nrange,nrange)),124,124,124);
-TP=TP-magb.*magp-0.5.*magp.*magp-0.5*magb.*magb+reshape(wd(10,nrange,nrange,nrange),124,124,124);
+%beta computation updated using IDL
+TP=reshape(wd(5,nrange,nrange,nrange)+wd(9,nrange,nrange,nrange),124,124,124);
+TP=TP-0.5*reshape((wd(2,nrange,nrange,nrange).^2+wd(3,nrange,nrange,nrange).^2+wd(4,nrange,nrange,nrange).^2)./(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange)),124,124,124);
+TP=TP-0.5*reshape((wd(6,nrange,nrange,nrange)+wd(11,nrange,nrange,nrange)).^2+(wd(7,nrange,nrange,nrange)+wd(12,nrange,nrange,nrange)).^2+(wd(8,nrange,nrange,nrange)+wd(13,nrange,nrange,nrange)).^2,124,124,124);
 
+beta=0.5*mu*1.0d8*reshape((wd(6,nrange,nrange,nrange)+wd(11,nrange,nrange,nrange)).^2+(wd(7,nrange,nrange,nrange)+wd(12,nrange,nrange,nrange)).^2+(wd(8,nrange,nrange,nrange)+wd(13,nrange,nrange,nrange)).^2,124,124,124)./((gamma-1.0d0).*TP);
 
-
-%TP=TP-(umag.*umag)./2.0;
-TP=(gamma-1.d0).*TP;
-
-mu=1;
-beta=mu.*TP./(0.5*(magb.*magb+magp.*magp)+magp.*magb);
-   
    
    
   
