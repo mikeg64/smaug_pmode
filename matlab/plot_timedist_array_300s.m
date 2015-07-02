@@ -32,7 +32,7 @@ yticks={'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'};
 
 %0,0 mode
 figure;
-load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3d_rep_xdir_vverustime.mat');
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3d_xdir_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_xdir_vverustime.mat');
 
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
