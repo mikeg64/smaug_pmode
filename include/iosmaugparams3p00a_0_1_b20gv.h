@@ -89,7 +89,7 @@ int finishsteering=0;
 //char *cfgfile="zero1_np0201.ini";
 //char *cfgfile="2D_bhoriz120_2048_1024_asc.ini";
 //char *cfgfile="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_asc_84000.ini";
-char *cfgfile="configs/3D_128_spic_bvert100G_asc.ini";
+char *cfgfile="configs/3D_128_spic_bvert20G_asc.ini";
 
 //char *cfgfile="/fastdata/cs1mkg/smaug/spic2p82a_0_0_b1v/zerospic1_asc_273000.ini";
 //char *cfgfile="/data/cs1mkg/smaug_spicule1/spicule4b0_1_3d/amp10k/zerospic1_asc_902000.ini";
@@ -116,7 +116,7 @@ char *cfgfile="configs/3D_128_spic_bvert100G_asc.ini";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/out/spicule5b4/zerospic1_";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/spicule5b0_3d/zerospic1_";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/spicule4b0_1_3d/amp10k/zerospic1_";
-char *cfgout="/fastdata/cs1mkg/smaug/spic2p82a_0_0_b100gv/zerospic1_";
+char *cfgout="/fastdata/cs1mkg/smaug/spic3p00a_0_1_b20gv/zerospic1_";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/spicule5b0_3d/zerospic1_";
 //char *cfgout="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_";
 
@@ -228,18 +228,14 @@ for(i=0;i<NVAR;i++)
 
 p->chyp[rho]=0.02;
 p->chyp[energy]=0.02;
-p->chyp[b1]=0.2;
-p->chyp[b2]=0.2;
-p->chyp[b3]=0.2;
-
-//p->chyp[b1]=0.02;
-//p->chyp[b2]=0.02;
-//p->chyp[b3]=0.02;
+p->chyp[b1]=0.02;
+p->chyp[b2]=0.02;
+p->chyp[b3]=0.02;
 
 //values used with periodic boundary conditions
-p->chyp[mom1]=0.3;
-p->chyp[mom2]=0.3;
-p->chyp[mom3]=0.3;
+p->chyp[mom1]=0.2;
+p->chyp[mom2]=0.2;
+p->chyp[mom3]=0.2;
 
 //old values for use with continuous boundary conditions
 //p->chyp[mom1]=0.4;
