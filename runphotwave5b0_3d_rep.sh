@@ -1,8 +1,8 @@
 #!/bin/bash
 #$ -j y
 #$ -l arch=intel*
-#$ -l gpu=1,gpu_arch=nvidia-k40m
-##$ -l gpu=1,gpu_arch=nvidia-m2070
+##$ -l gpu=1,gpu_arch=nvidia-k40m
+#$ -l gpu=1,gpu_arch=nvidia-m2070
 ##$ -P cs-test
 #$ -P gpu
 #$ -N pw5b0_rep
@@ -20,7 +20,7 @@ cd src
 cp usersource_5_3d_rep.cu usersource.cu
 cp boundary_3d.cu boundary.cu
 make clean
-make -f Makefile_3d_k40 smaug
+make -f Makefile_3d smaug
 cd ..
 
 
