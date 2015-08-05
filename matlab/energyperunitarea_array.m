@@ -12,7 +12,7 @@
 %directory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/';
 %directory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/';
 %directory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/';
-directory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic6p7a_0_0_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic4p3a_0_1_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic2p3a_0_3_3d/';
@@ -21,6 +21,7 @@ directory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/';
 %directory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/';
+directory='/fastdata/cs1mkg/smaug/spic6b1_1/';
 extension='.out';
 
 %ndirectory='/storage2/mikeg/results/spic5b0_b1G_3d/images_3d_vsecs/';
@@ -36,7 +37,7 @@ extension='.out';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/images';
-ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic4p3a_0_1_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic3p0a_0_2_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic2p3a_0_3_3d/images';
@@ -44,6 +45,7 @@ ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/images';
+ndirectory='/fastdata/cs1mkg/smaug/spic6b1_1/images';
 
 nextension='.jpg';
 
@@ -56,7 +58,7 @@ nextension='.jpg';
 %wspacename='6p7a_3dmatlab_perturb.mat';
 %wspacename='5b0_3dmatlab_perturb.mat';
 %wspacename='6b0_1_3dmatlab_perturb.mat';
-wspacename='6b0_3_3dmatlab_perturb.mat';
+wspacename='6b1_1matlab_perturb.mat';
 %wspacename='6b0_2_3dmatlab_perturb.mat';
 
 
@@ -103,7 +105,8 @@ period=180.0;
 %nt=1700; %6p7a
 %nt=1360;
 %nt=1000;
-nt=803;
+%nt=803;
+nt=748;
 
 for i=1:nt %1182
 %for i=99:nt    
@@ -301,7 +304,7 @@ set(gca,'YTickLabel',{'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'})
 colorbar;
 xlabel(gca,'Time (seconds)');
 ylabel(gca,'Height (Mm)');
-title(gca,'Energy Dependence for the 0,0 Mode with a 673.4s Driver'); 
+title(gca,'Energy Dependence for the 1,1 Mode with a 180.0s Driver'); 
 print('-djpeg', imfile); 
 
 
