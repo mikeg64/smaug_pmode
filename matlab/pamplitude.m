@@ -82,6 +82,138 @@ function amplitude=pamplitude(n,m,t0,ti,a00)
 %   </tr>
 % </tbody></table>
 % <br />
+
+
+
+
+
+
+
+%for 30, 180,300s drivers%
+
+%30s driver  sound speed 188.6km/s
+% <br />
+% <br />
+% <table border="1" style="width: 100%;">
+%   <tbody>
+% <tr>
+%     <td>Mode</td> 
+%     <td>Driver Period (s)</td> 
+%     <td>Amplitude (m/s)</td>
+%     <td>Label</td>
+%   </tr>
+% <tr>
+%     <td>(0,0)</td> 
+%     <td>30.0</td>
+%     <td>7366.1</td>
+%     <td>spic4b0_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,1)</td> 
+%     <td>30.0</td>
+%     <td>2946.4</td>
+%     <td>spic4b0_1_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,2)</td> 
+%     <td>30.0</td>
+%     <td>1473.2</td>
+%     <td>spic4b0_2_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,3)</td> 
+%     <td>30.0</td>
+%     <td>866.6</td>
+%     <td>spic4b0_3_3d</td>
+%   </tr>
+% </tbody></table>
+% <br />
+% <br />
+
+
+%180s driver  sound speed 31.4km/s
+% <br />
+% <br />
+% <table border="1" style="width: 100%;">
+%   <tbody>
+% <tr>
+%     <td>Mode</td> 
+%     <td>Driver Period (s)</td> 
+%     <td>Amplitude (m/s)</td>
+%     <td>Label</td>
+%   </tr>
+% <tr>
+%     <td>(0,0)</td> 
+%     <td>180.0</td>
+%     <td>1210.6</td>
+%     <td>spic6b0_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,1)</td> 
+%     <td>180.0</td>
+%     <td>484.234</td>
+%     <td>spic6b0_1_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,2)</td> 
+%     <td>180.0</td>
+%     <td>242.112</td>
+%     <td>spic6b0_2_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,3)</td> 
+%     <td>180.0</td>
+%     <td>142.42</td>
+%     <td>spic6b0_3_3d</td>
+%   </tr>
+% </tbody></table>
+% <br />
+% <br />
+
+
+%300s driver  sound speed 18.9km/s
+% <br />
+% <br />
+% <table border="1" style="width: 100%;">
+%   <tbody>
+% <tr>
+%     <td>Mode</td> 
+%     <td>Driver Period (s)</td> 
+%     <td>Amplitude (m/s)</td>
+%     <td>Label</td>
+%   </tr>
+% <tr>
+%     <td>(0,0)</td> 
+%     <td>300.0</td>
+%     <td>725.543</td>
+%     <td>spic5b0_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,1)</td> 
+%     <td>300.0</td>
+%     <td>290.217</td>
+%     <td>spic5b0_1_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,2)</td> 
+%     <td>300.0</td>
+%     <td>145.109</td>
+%     <td>spic5b0_2_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,3)</td> 
+%     <td>300.0</td>
+%     <td>85.358</td>
+%     <td>spic5b0_3_3d</td>
+%   </tr>
+% </tbody></table>
+% <br />
+% <br />
+
+
+
+
+
 % </html>
 % 
 
