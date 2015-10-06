@@ -109,7 +109,7 @@ char *cfgfile="configs/3D_128_spic_asc.ini";
 //char *cfgout="/fastdata/cs1mkg/smaug/spicule7_nob/zerospic1";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/out/spicule5b4/zerospic1_";
 //char *cfgout="/fastdata/cs1mkg/smaug/spic4b0_3d/zerospic1_";
-char *cfgout="/fastdata/cs1mkg/smaug/spic5b0_3d_per/zerospic1_";
+char *cfgout="/fastdata/cs1mkg/smaug/spic5b0_3d/zerospic1_";
 //char *cfgout="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_";
 
 //char *cfgout="zero1_np0201.out";
@@ -226,9 +226,9 @@ p->chyp[b3]=0.02;
 //p->chyp[mom2]=0.4;
 //p->chyp[mom3]=0.4;
 
-p->chyp[mom1]=0.08;
-p->chyp[mom2]=0.08;
-p->chyp[mom3]=0.08;
+p->chyp[mom1]=0.2;
+p->chyp[mom2]=0.2;
+p->chyp[mom3]=0.2;
 p->chyp[rho]=0.02;
 
 
@@ -250,7 +250,7 @@ for(int ii=0;ii<NVAR; ii++)
 for(int idir=0; idir<NDIM; idir++)
 for(int ibound=0; ibound<2; ibound++)
 {
-   (p->boundtype[ii][idir][ibound])=0;  //period=0 mpi=1 mpiperiod=2  cont=3 contcd4=4 fixed=5 symm=6 asymm=7
+   (p->boundtype[ii][idir][ibound])=4;  //period=0 mpi=1 mpiperiod=2  cont=3 contcd4=4 fixed=5 symm=6 asymm=7
 }
 
 //set boundary types

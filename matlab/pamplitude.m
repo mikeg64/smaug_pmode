@@ -30,20 +30,17 @@
 
 
 
-function amplitude=pamplitude(n,m,t0,ti,a00)
-    amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );
 
 
 
 
 
 
-
-%% Table of results
+%%Table of results
 % Computed amplitudes and time periods for different values of sound wave speed 
 
 
-%%
+
 % <html>
 % For sound speed 13km/s
 % <br />
@@ -215,11 +212,20 @@ function amplitude=pamplitude(n,m,t0,ti,a00)
 
 
 % </html>
-% 
 
 
 
-%% 
+%%
+
+function amplitude=pamplitude(n,m,t0,ti,a00)
+    amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );
+
+
+
+ 
+
+
+
 
 
 

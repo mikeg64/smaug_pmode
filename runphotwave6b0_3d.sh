@@ -5,7 +5,7 @@
 ##$ -l gpu=1,gpu_arch=nvidia-m2070
 ##$ -P cs-test
 #$ -P gpu
-#$ -N pw6b0_3d
+#$ -N pw6b0_per
 #$ -l mem=12G
 #$ -l rmem=12G
 #$ -l h_rt=168:00:00
