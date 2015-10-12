@@ -89,8 +89,8 @@ int finishsteering=0;
 //char *cfgfile="zero1_np0201.ini";
 //char *cfgfile="2D_bhoriz120_2048_1024_asc.ini";
 //char *cfgfile="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_asc_84000.ini";
-//char *cfgfile="3D_128_spic_asc.ini";
-char *cfgfile="/data/cs1mkg/smaug_spicule1/spicule4b0_3d/zerospic1_asc_776000.ini";
+char *cfgfile="configs/3D_128_spic_asc.ini";
+//char *cfgfile="/data/cs1mkg/smaug_spicule1/spicule4b0_3d/zerospic1_asc_776000.ini";
 //char *cfgfile="/fastdata/cs1mkg/smaug/spic4b0_3d/zerospic1_asc_1077000.ini";
 //char *cfgfile="2D_spicule1_2048_1024_test_asc.ini";
 //char *cfgfile="2D_spiculemuraw1_nohydros_nobg_tube_2048_1024_asc.o";
@@ -109,7 +109,7 @@ char *cfgfile="/data/cs1mkg/smaug_spicule1/spicule4b0_3d/zerospic1_asc_776000.in
 //char *cfgout="/fastdata/cs1mkg/smaug/spicule7_nob/zerospic1";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/out/spicule5b4/zerospic1_";
 //char *cfgout="/fastdata/cs1mkg/smaug/spic4b0_3d/zerospic1_";
-char *cfgout="/data/cs1mkg/smaug_spicule1/spicule4b0_3d/zerospic1_";
+char *cfgout="/fastdata/cs1mkg/smaug/spicule4b0_3d/zerospic1_";
 //char *cfgout="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_";
 
 //char *cfgout="zero1_np0201.out";
@@ -125,8 +125,8 @@ dt=0.001;
 //nt=200000;
 //nt=150000;
 //nt=20;
-nt=2400001;
-//nt=10000;
+;//nt=2400001;
+nt=500000;
 //nt=100;
 
 
@@ -156,8 +156,8 @@ p->dx[2]=dz;
 p->qt=0.0;
 p->it=0;
 
-p->qt=776.0;
-p->it=776001;
+//p->qt=776.0;
+//p->it=776001;
 
 
 
@@ -194,8 +194,8 @@ p->divbon=0.0;
 p->divbfix=0.0;
 p->hyperdifmom=1.0;
 p->readini=1.0;
+//p->cfgsavefrequency=250;
 p->cfgsavefrequency=1000;
-//p->cfgsavefrequency=1;
 
 p->xmax[0]=xmax;
 p->xmax[1]=ymax;
