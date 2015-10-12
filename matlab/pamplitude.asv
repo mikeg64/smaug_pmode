@@ -30,8 +30,6 @@
 
 
 
-function amplitude=pamplitude(n,m,t0,ti,a00)
-    amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );
 
 
 
@@ -39,11 +37,8 @@ function amplitude=pamplitude(n,m,t0,ti,a00)
 
 
 
-%% Table of results
-% Computed amplitudes and time periods for different values of sound wave speed 
 
 
-%%
 % <html>
 % For sound speed 13km/s
 % <br />
@@ -66,19 +61,19 @@ function amplitude=pamplitude(n,m,t0,ti,a00)
 %     <td>(0,1)</td> 
 %     <td>307.7</td>
 %     <td>183.8151</td>
-%   <td>spic_3p07_0_1_3d</td>
+%   <td>spicule3p07a_0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>205.1</td>
 %     <td>137.9961</td>
-%   <td>spic_2p05_0_2_3d</td>
+%   <td>spicule2p05_0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>153.8</td>
 %     <td>108.3381</td>
-%   <td>spic_1p53_0_3_3d</td>
+%   <td>spicule1p53a_0_3_3d</td>
 %   </tr>
 % </tbody></table>
 % <br />
@@ -185,25 +180,25 @@ function amplitude=pamplitude(n,m,t0,ti,a00)
 % <tr>
 %     <td>(0,0)</td> 
 %     <td>300.0</td>
-%     <td>1210.6</td>
+%     <td>725.543</td>
 %     <td>spic5b0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
 %     <td>300.0</td>
-%     <td>484.234</td>
+%     <td>290.217</td>
 %     <td>spic5b0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>300.0</td>
-%     <td>242.112</td>
+%     <td>145.109</td>
 %     <td>spic5b0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>300.0</td>
-%     <td>142.42</td>
+%     <td>85.358</td>
 %     <td>spic5b0_3_3d</td>
 %   </tr>
 % </tbody></table>
@@ -215,11 +210,20 @@ function amplitude=pamplitude(n,m,t0,ti,a00)
 
 
 % </html>
-% 
 
 
 
-%% 
+
+
+function amplitude=pamplitude(n,m,t0,ti,a00)
+    amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );
+
+
+
+ 
+
+
+
 
 
 

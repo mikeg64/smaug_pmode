@@ -36,8 +36,6 @@
 
 
 
-%%Table of results
-% Computed amplitudes and time periods for different values of sound wave speed 
 
 
 
@@ -63,13 +61,13 @@
 %     <td>(0,1)</td> 
 %     <td>307.7</td>
 %     <td>183.8151</td>
-%   <td>spic_3p07_0_1_3d</td>
+%   <td>spicule3p07a_0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>205.1</td>
 %     <td>137.9961</td>
-%   <td>spic_2p05_0_2_3d</td>
+%   <td>spicule2p05_0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
@@ -215,7 +213,7 @@
 
 
 
-%%
+
 
 function amplitude=pamplitude(n,m,t0,ti,a00)
     amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );

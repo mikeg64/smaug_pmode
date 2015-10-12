@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>pamplitude</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-10-06"><meta name="DC.source" content="pamplitude.m"><style type="text/css">
+      --><title>pamplitude</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-10-12"><meta name="DC.source" content="pamplitude.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -68,12 +68,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
   </style></head><body><div class="content"><h1></h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Determination of Driver Wave Amplitudes for Hydrodynamical Simulations of Pmodes in the Solar Atmosphere</a></li></ul></div><h2>Determination of Driver Wave Amplitudes for Hydrodynamical Simulations of Pmodes in the Solar Atmosphere<a name="1"></a></h2><p>The amplitude for the n m mode is given by.</p><p><img src="pamplitude_eq16748.png" alt="$$   A_{nm}=\frac{2(2T_0-1)}{(2T_i-1)(n^2+m^2+2(n+m)+2)}$$"></p><p><a href="http://solarwavetheory.blogspot.co.uk/search/label/solar%20global%20oscillations">http://solarwavetheory.blogspot.co.uk/search/label/solar%20global%20oscillations</a></p><pre>The series for the normal modes are calculated from the following expressions
 for a given of the speed of sound c and a
-value for the length of the simulation box of 4Mm. The frequency is computed using</pre><p><img src="pamplitude_eq99508.png" alt="$$ \omega^2=2 \left( \frac{\pi c_s}{L} \right)^2  $$"></p><p>For the normal modes the wave numbers and frequencies satisfy the following relationship</p><p><img src="pamplitude_eq47593.png" alt="$$ \frac{\omega}{k}=c_s $$"></p><pre class="codeinput"><span class="comment">%%Table of results</span>
-<span class="comment">% Computed amplitudes and time periods for different values of sound wave speed</span>
-
-
-
-<span class="comment">% &lt;html&gt;</span>
+value for the length of the simulation box of 4Mm. The frequency is computed using</pre><p><img src="pamplitude_eq99508.png" alt="$$ \omega^2=2 \left( \frac{\pi c_s}{L} \right)^2  $$"></p><p>For the normal modes the wave numbers and frequencies satisfy the following relationship</p><p><img src="pamplitude_eq47593.png" alt="$$ \frac{\omega}{k}=c_s $$"></p><pre class="codeinput"><span class="comment">% &lt;html&gt;</span>
 <span class="comment">% For sound speed 13km/s</span>
 <span class="comment">% &lt;br /&gt;</span>
 <span class="comment">% &lt;br /&gt;</span>
@@ -95,13 +90,13 @@ value for the length of the simulation box of 4Mm. The frequency is computed usi
 <span class="comment">%     &lt;td&gt;(0,1)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;307.7&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;183.8151&lt;/td&gt;</span>
-<span class="comment">%   &lt;td&gt;spic_3p07_0_1_3d&lt;/td&gt;</span>
+<span class="comment">%   &lt;td&gt;spicule3p07a_0_1_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,2)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;205.1&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;137.9961&lt;/td&gt;</span>
-<span class="comment">%   &lt;td&gt;spic_2p05_0_2_3d&lt;/td&gt;</span>
+<span class="comment">%   &lt;td&gt;spicule2p05_0_2_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,3)&lt;/td&gt;</span>
@@ -244,9 +239,14 @@ value for the length of the simulation box of 4Mm. The frequency is computed usi
 
 
 <span class="comment">% &lt;/html&gt;</span>
-</pre><pre class="codeinput"><span class="keyword">function</span> amplitude=pamplitude(n,m,t0,ti,a00)
+
+
+
+
+
+<span class="keyword">function</span> amplitude=pamplitude(n,m,t0,ti,a00)
     amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );
-</pre><pre class="codeoutput error">Error using pamplitude (line 221)
+</pre><pre class="codeoutput error">Error using pamplitude (line 219)
 Not enough input arguments.
 </pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
@@ -288,8 +288,6 @@ Not enough input arguments.
 
 
 
-%%Table of results
-% Computed amplitudes and time periods for different values of sound wave speed 
 
 
 
@@ -315,13 +313,13 @@ Not enough input arguments.
 %     <td>(0,1)</td> 
 %     <td>307.7</td>
 %     <td>183.8151</td>
-%   <td>spic_3p07_0_1_3d</td>
+%   <td>spicule3p07a_0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>205.1</td>
 %     <td>137.9961</td>
-%   <td>spic_2p05_0_2_3d</td>
+%   <td>spicule2p05_0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
@@ -467,7 +465,7 @@ Not enough input arguments.
 
 
 
-%%
+
 
 function amplitude=pamplitude(n,m,t0,ti,a00)
     amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );
