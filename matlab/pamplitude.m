@@ -73,7 +73,7 @@
 %     <td>(0,3)</td> 
 %     <td>153.8</td>
 %     <td>108.3381</td>
-%   <td>spic_1p53_0_3_3d</td>
+%   <td>spicule1p53a_0_3_3d</td>
 %   </tr>
 % </tbody></table>
 % <br />
