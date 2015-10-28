@@ -4,45 +4,28 @@
 
 
 %%
-% $$   A_{nm}=\frac{2(2T_0-1)}{(2T_i-1)(n^2+m^2+2(n+m)+2)}$$
-
-%%
-% <http://solarwavetheory.blogspot.co.uk/search/label/solar%20global%20oscillations>
-%%
 % 
+% $$  A_{nm}=\frac{2(2T_0-1)}{(2T_i-1)(n^2+m^2+2(n+m)+2)}$$
+% 
+
+%% Frequency Computation
 %  The series for the normal modes are calculated from the following expressions 
 %  for a given of the speed of sound c and a 
 %  value for the length of the simulation box of 4Mm. The frequency is computed using
 %
-% 
-%
 % $$ \omega^2=2 \left( \frac{\pi c_s}{L} \right)^2  $$ 
-%
-%  
-%
 %
 % For the normal modes the wave numbers and frequencies satisfy the
 % following relationship
 %
 % $$ \frac{\omega}{k}=c_s $$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-% <html>
+%% Table of Amplitudes
 % For sound speed 13km/s
-% <br />
-% <br />
+
+%%
+% 
+% <html>
 % <table border="1" style="width: 100%;">
 %   <tbody>
 % <tr>
@@ -55,7 +38,7 @@
 %     <td>(0,0)</td> 
 %     <td>435.1</td>
 %     <td>250</td>
-%    <td>spic_4p35_0_0_3d</td>
+%    <td>spicule_4p35_0_0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
@@ -76,19 +59,16 @@
 %   <td>spicule1p53a_0_3_3d</td>
 %   </tr>
 % </tbody></table>
-% <br />
+% </html>
+% 
 
+%%
+%%
+% for 30, 180,300s drivers
+% 30s driver  sound speed 188.6km/s
 
-
-
-
-
-
-%for 30, 180,300s drivers%
-
-%30s driver  sound speed 188.6km/s
-% <br />
-% <br />
+%%
+% <html>
 % <table border="1" style="width: 100%;">
 %   <tbody>
 % <tr>
@@ -122,13 +102,14 @@
 %     <td>spic4b0_3_3d</td>
 %   </tr>
 % </tbody></table>
-% <br />
-% <br />
+% </html>
+% 
+%%
+% 180s driver  sound speed 31.4km/s
 
-
-%180s driver  sound speed 31.4km/s
-% <br />
-% <br />
+%%
+% 
+% <html>
 % <table border="1" style="width: 100%;">
 %   <tbody>
 % <tr>
@@ -162,13 +143,13 @@
 %     <td>spic6b0_3_3d</td>
 %   </tr>
 % </tbody></table>
-% <br />
-% <br />
-
-
-%300s driver  sound speed 18.9km/s
-% <br />
-% <br />
+% </html>
+%
+%% 
+% 300s driver  sound speed 18.9km/s
+%%
+% 
+% <html>
 % <table border="1" style="width: 100%;">
 %   <tbody>
 % <tr>
@@ -202,14 +183,9 @@
 %     <td>spic5b0_3_3d</td>
 %   </tr>
 % </tbody></table>
-% <br />
-% <br />
-
-
-
-
-
 % </html>
+% 
+
 
 
 

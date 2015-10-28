@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>pamplitude</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-10-12"><meta name="DC.source" content="pamplitude.m"><style type="text/css">
+      --><title>pamplitude</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-10-28"><meta name="DC.source" content="pamplitude.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -83,26 +83,26 @@ value for the length of the simulation box of 4Mm. The frequency is computed usi
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,0)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;435.1&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;500&lt;/td&gt;</span>
-<span class="comment">%    &lt;td&gt;spic_4p35_0_0_3d&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;250&lt;/td&gt;</span>
+<span class="comment">%    &lt;td&gt;spicule_4p35_0_0_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,1)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;307.7&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;183.8151&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;141.4713&lt;/td&gt;</span>
 <span class="comment">%   &lt;td&gt;spicule3p07a_0_1_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,2)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;205.1&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;137.9961&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;70.7357&lt;/td&gt;</span>
 <span class="comment">%   &lt;td&gt;spicule2p05_0_2_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,3)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;153.8&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;108.3381&lt;/td&gt;</span>
-<span class="comment">%   &lt;td&gt;spic_1p53_0_3_3d&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;41.60921&lt;/td&gt;</span>
+<span class="comment">%   &lt;td&gt;spicule1p53a_0_3_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;/tbody&gt;&lt;/table&gt;</span>
 <span class="comment">% &lt;br /&gt;</span>
@@ -129,25 +129,25 @@ value for the length of the simulation box of 4Mm. The frequency is computed usi
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,0)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;30.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;7366.1&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;spic4b0_3d&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;3683.05&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;spicule4b0_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,1)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;30.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;2946.4&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;1473.2&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic4b0_1_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,2)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;30.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;1473.2&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;736.61&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic4b0_2_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,3)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;30.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;866.6&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;433.3&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic4b0_3_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;/tbody&gt;&lt;/table&gt;</span>
@@ -169,25 +169,25 @@ value for the length of the simulation box of 4Mm. The frequency is computed usi
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,0)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;180.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;1210.6&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;605.29&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic6b0_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,1)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;180.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;484.234&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;242.116&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic6b0_1_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,2)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;180.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;242.112&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;121.06&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic6b0_2_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,3)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;180.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;142.42&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;71.21&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic6b0_3_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;/tbody&gt;&lt;/table&gt;</span>
@@ -209,25 +209,25 @@ value for the length of the simulation box of 4Mm. The frequency is computed usi
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,0)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;300.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;725.543&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;362.7712&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic5b0_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,1)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;300.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;290.217&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;145.1085&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic5b0_1_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,2)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;300.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;145.109&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;75.5542&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic5b0_2_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;tr&gt;</span>
 <span class="comment">%     &lt;td&gt;(0,3)&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;300.0&lt;/td&gt;</span>
-<span class="comment">%     &lt;td&gt;85.358&lt;/td&gt;</span>
+<span class="comment">%     &lt;td&gt;42.679&lt;/td&gt;</span>
 <span class="comment">%     &lt;td&gt;spic5b0_3_3d&lt;/td&gt;</span>
 <span class="comment">%   &lt;/tr&gt;</span>
 <span class="comment">% &lt;/tbody&gt;&lt;/table&gt;</span>
@@ -306,26 +306,26 @@ Not enough input arguments.
 % <tr>
 %     <td>(0,0)</td> 
 %     <td>435.1</td>
-%     <td>500</td>
-%    <td>spic_4p35_0_0_3d</td>
+%     <td>250</td>
+%    <td>spicule_4p35_0_0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
 %     <td>307.7</td>
-%     <td>183.8151</td>
+%     <td>141.4713</td>
 %   <td>spicule3p07a_0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>205.1</td>
-%     <td>137.9961</td>
+%     <td>70.7357</td>
 %   <td>spicule2p05_0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>153.8</td>
-%     <td>108.3381</td>
-%   <td>spic_1p53_0_3_3d</td>
+%     <td>41.60921</td>
+%   <td>spicule1p53a_0_3_3d</td>
 %   </tr>
 % </tbody></table>
 % <br />
@@ -352,25 +352,25 @@ Not enough input arguments.
 % <tr>
 %     <td>(0,0)</td> 
 %     <td>30.0</td>
-%     <td>7366.1</td>
-%     <td>spic4b0_3d</td>
+%     <td>3683.05</td>
+%     <td>spicule4b0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
 %     <td>30.0</td>
-%     <td>2946.4</td>
+%     <td>1473.2</td>
 %     <td>spic4b0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>30.0</td>
-%     <td>1473.2</td>
+%     <td>736.61</td>
 %     <td>spic4b0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>30.0</td>
-%     <td>866.6</td>
+%     <td>433.3</td>
 %     <td>spic4b0_3_3d</td>
 %   </tr>
 % </tbody></table>
@@ -392,25 +392,25 @@ Not enough input arguments.
 % <tr>
 %     <td>(0,0)</td> 
 %     <td>180.0</td>
-%     <td>1210.6</td>
+%     <td>605.29</td>
 %     <td>spic6b0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
 %     <td>180.0</td>
-%     <td>484.234</td>
+%     <td>242.116</td>
 %     <td>spic6b0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>180.0</td>
-%     <td>242.112</td>
+%     <td>121.06</td>
 %     <td>spic6b0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>180.0</td>
-%     <td>142.42</td>
+%     <td>71.21</td>
 %     <td>spic6b0_3_3d</td>
 %   </tr>
 % </tbody></table>
@@ -432,25 +432,25 @@ Not enough input arguments.
 % <tr>
 %     <td>(0,0)</td> 
 %     <td>300.0</td>
-%     <td>725.543</td>
+%     <td>362.7712</td>
 %     <td>spic5b0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
 %     <td>300.0</td>
-%     <td>290.217</td>
+%     <td>145.1085</td>
 %     <td>spic5b0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>300.0</td>
-%     <td>145.109</td>
+%     <td>75.5542</td>
 %     <td>spic5b0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>300.0</td>
-%     <td>85.358</td>
+%     <td>42.679</td>
 %     <td>spic5b0_3_3d</td>
 %   </tr>
 % </tbody></table>
