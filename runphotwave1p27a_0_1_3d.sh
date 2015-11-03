@@ -5,7 +5,7 @@
 ##$ -l gpu=1,gpu_arch=nvidia-k40m
 #$ -l gpu=1,gpu_arch=nvidia-m2070
 ##$ -P cs-test
-#$ -P gpu
+#$ -P mhd
 #$ -N j1p27a_0_1
 #$ -l mem=12G
 #$ -l rmem=12G

@@ -62,6 +62,52 @@
 % </html>
 % 
 
+
+%% Table of Amplitudes
+% For sound speed 31.43km/s 
+
+
+%%
+% 
+% <html>
+% <table border="1" style="width: 100%;">
+%   <tbody>
+% <tr>
+%     <td>Mode</td> 
+%     <td>Driver Period (s)</td> 
+%     <td>Amplitude (m/s)</td>
+%     <td>Label</td>
+%   </tr>
+% <tr>
+%     <td>(0,0)</td> 
+%     <td>179.98</td>
+%     <td>605.36</td>
+%    <td>spic1p79a_0_0_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,1)</td> 
+%     <td>127.27</td>
+%     <td>342.83</td>
+%   <td>spic1p27a_0_1_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,2)</td> 
+%     <td>84.84</td>
+%     <td>257.65</td>
+%   <td>spic0p84a_0_2_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,3)</td> 
+%     <td>63.63</td>
+%     <td>202.477</td>
+%   <td>spic0p63a_0_3_3d</td>
+%   </tr>
+% </tbody></table>
+% </html>
+% 
+
+
+
 %%
 %%
 % for 30, 180,300s drivers
