@@ -50,7 +50,7 @@
 %     <td>(0,2)</td> 
 %     <td>205.1</td>
 %     <td>70.7357</td>
-%   <td>spicule2p05_0_2_3d</td>
+%   <td>spicule2p05a_0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
