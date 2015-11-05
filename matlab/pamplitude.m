@@ -38,7 +38,7 @@
 %     <td>(0,0)</td> 
 %     <td>435.1</td>
 %     <td>250</td>
-%    <td>spicule_4p35_0_0_3d</td>
+%    <td>spicule4p35_0_0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
