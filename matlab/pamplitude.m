@@ -232,7 +232,47 @@
 % </html>
 % 
 
+%% Table of amplitudes for normal mode
+% Sound speed is 20km/s
 
+%%
+% 
+% <html>
+% <table border="1" style="width: 100%;">
+%   <tbody>
+% <tr>
+%     <td>Mode</td> 
+%     <td>Driver Period (s)</td> 
+%     <td>Amplitude (m/s)</td>
+%     <td>Label</td>
+%   </tr>
+% <tr>
+%     <td>(0,0)</td> 
+%     <td>282.84</td>
+%     <td>384.82</td>
+%    <td>spic2p82a_0_0_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,1)</td> 
+%     <td>200.00</td>
+%     <td>212.84</td>
+%   <td>spic2p00a_0_1_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,2)</td> 
+%     <td>133.33</td>
+%     <td>163.59</td>
+%   <td>spic1p33a_0_2_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,3)</td> 
+%     <td>100.00</td>
+%     <td>128.47</td>
+%   <td>spic1p00a_0_3_3d</td>
+%   </tr>
+% </tbody></table>
+% </html>
+% 
 
 
 

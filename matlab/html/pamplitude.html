@@ -66,7 +66,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1></h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Determination of Driver Wave Amplitudes for Hydrodynamical Simulations of Pmodes in the Solar Atmosphere</a></li><li><a href="#3">Frequency Computation</a></li><li><a href="#4">Table of Amplitudes</a></li><li><a href="#6">Table of Amplitudes</a></li></ul></div><h2>Determination of Driver Wave Amplitudes for Hydrodynamical Simulations of Pmodes in the Solar Atmosphere<a name="1"></a></h2><p>The amplitude for the n m mode is given by.</p><p><img src="pamplitude_eq51560.png" alt="$$  A_{nm}=\frac{2(2T_0-1)}{(2T_i-1)(n^2+m^2+2(n+m)+2)}$$"></p><h2>Frequency Computation<a name="3"></a></h2><pre>The series for the normal modes are calculated from the following expressions
+  </style></head><body><div class="content"><h1></h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Determination of Driver Wave Amplitudes for Hydrodynamical Simulations of Pmodes in the Solar Atmosphere</a></li><li><a href="#3">Frequency Computation</a></li><li><a href="#4">Table of Amplitudes</a></li><li><a href="#6">Table of Amplitudes</a></li><li><a href="#15">Table of amplitudes for normal mode</a></li></ul></div><h2>Determination of Driver Wave Amplitudes for Hydrodynamical Simulations of Pmodes in the Solar Atmosphere<a name="1"></a></h2><p>The amplitude for the n m mode is given by.</p><p><img src="pamplitude_eq51560.png" alt="$$  A_{nm}=\frac{2(2T_0-1)}{(2T_i-1)(n^2+m^2+2(n+m)+2)}$$"></p><h2>Frequency Computation<a name="3"></a></h2><pre>The series for the normal modes are calculated from the following expressions
 for a given of the speed of sound c and a
 value for the length of the simulation box of 4Mm. The frequency is computed using</pre><p><img src="pamplitude_eq99508.png" alt="$$ \omega^2=2 \left( \frac{\pi c_s}{L} \right)^2  $$"></p><p>For the normal modes the wave numbers and frequencies satisfy the following relationship</p><p><img src="pamplitude_eq47593.png" alt="$$ \frac{\omega}{k}=c_s $$"></p><h2>Table of Amplitudes<a name="4"></a></h2><p>For sound speed 13km/s</p><p>
 <table border="1" style="width: 100%;">
@@ -238,9 +238,43 @@ value for the length of the simulation box of 4Mm. The frequency is computed usi
     <td>spic5b0_3_3d</td>
   </tr>
 </tbody></table>
+</p><h2>Table of amplitudes for normal mode<a name="15"></a></h2><p>Sound speed is 20km/s</p><p>
+<table border="1" style="width: 100%;">
+  <tbody>
+<tr>
+    <td>Mode</td>
+    <td>Driver Period (s)</td>
+    <td>Amplitude (m/s)</td>
+    <td>Label</td>
+  </tr>
+<tr>
+    <td>(0,0)</td>
+    <td>282.84</td>
+    <td>384.82</td>
+   <td>spic2p82a_0_0_3d</td>
+  </tr>
+<tr>
+    <td>(0,1)</td>
+    <td>200.00</td>
+    <td>212.84</td>
+  <td>spic2p00a_0_1_3d</td>
+  </tr>
+<tr>
+    <td>(0,2)</td>
+    <td>133.33</td>
+    <td>163.59</td>
+  <td>spic1p33a_0_2_3d</td>
+  </tr>
+<tr>
+    <td>(0,3)</td>
+    <td>100.00</td>
+    <td>128.47</td>
+  <td>spic1p00a_0_3_3d</td>
+  </tr>
+</tbody></table>
 </p><pre class="codeinput"><span class="keyword">function</span> amplitude=pamplitude(n,m,t0,ti,a00)
     amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );
-</pre><pre class="codeoutput error">Error using pamplitude (line 241)
+</pre><pre class="codeoutput error">Error using pamplitude (line 281)
 Not enough input arguments.
 </pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
@@ -478,7 +512,47 @@ Not enough input arguments.
 % </html>
 % 
 
+%% Table of amplitudes for normal mode
+% Sound speed is 20km/s
 
+%%
+% 
+% <html>
+% <table border="1" style="width: 100%;">
+%   <tbody>
+% <tr>
+%     <td>Mode</td> 
+%     <td>Driver Period (s)</td> 
+%     <td>Amplitude (m/s)</td>
+%     <td>Label</td>
+%   </tr>
+% <tr>
+%     <td>(0,0)</td> 
+%     <td>282.84</td>
+%     <td>384.82</td>
+%    <td>spic2p82a_0_0_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,1)</td> 
+%     <td>200.00</td>
+%     <td>212.84</td>
+%   <td>spic2p00a_0_1_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,2)</td> 
+%     <td>133.33</td>
+%     <td>163.59</td>
+%   <td>spic1p33a_0_2_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,3)</td> 
+%     <td>100.00</td>
+%     <td>128.47</td>
+%   <td>spic1p00a_0_3_3d</td>
+%   </tr>
+% </tbody></table>
+% </html>
+% 
 
 
 
