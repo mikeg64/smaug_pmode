@@ -21,7 +21,7 @@
 %directory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/';
 %directory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/';
-directory='/fastdata/cs1mkg/smaug/spic6b1_1/';
+directory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/';
 extension='.out';
 
 %ndirectory='/storage2/mikeg/results/spic5b0_b1G_3d/images_3d_vsecs/';
@@ -45,7 +45,7 @@ extension='.out';
 %ndirectory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/images';
-ndirectory='/fastdata/cs1mkg/smaug/spic6b1_1/images';
+ndirectory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/images';
 
 nextension='.jpg';
 
@@ -58,7 +58,7 @@ nextension='.jpg';
 %wspacename='6p7a_3dmatlab_perturb.mat';
 %wspacename='5b0_3dmatlab_perturb.mat';
 %wspacename='6b0_1_3dmatlab_perturb.mat';
-wspacename='6b1_1matlab_perturb.mat';
+wspacename='2p05_0_2matlab_perturb.mat';
 %wspacename='6b0_2_3dmatlab_perturb.mat';
 
 
@@ -91,7 +91,7 @@ wspacename='6b1_1matlab_perturb.mat';
 %period=231;
 %nt=1182;
 
-period=180.0;
+period=205.1;
 %period=300.0;
 %period=673.4;
 %period=425.9;
@@ -106,7 +106,7 @@ period=180.0;
 %nt=1360;
 %nt=1000;
 %nt=803;
-nt=748;
+nt=1176;
 
 for i=1:nt %1182
 %for i=99:nt    
@@ -288,11 +288,16 @@ r7=100*ebsumcorona/sumeb;
 r8=100*ebsumtran/sumeb;
 r9=100*ebsumchrom/sumeb;
 
+esumfluxcorona=esumfluxcorona/nt
+esumfluxchrom=esumfluxchrom/nt
+esumflux=esumfluxtran/nt
 
 
+ef1Mmv= sum(efluxarray(: , 20))/nt;  %20
+ef2Mmv=sum(efluxarray(: , 42))/nt;  %42
+ef4Mmv=sum(efluxarray(: , 90))/nt;  %90
+ef5p5Mmv=sum(efluxarray(: , 117))/nt; %117
 
-cmap=colormap(jet(256));
-colormap(cmap);
 
 imfile=[ndirectory,'energyvtime_',id,nextension];
 surf(esumarray','LineStyle','none');
@@ -304,7 +309,7 @@ set(gca,'YTickLabel',{'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'})
 colorbar;
 xlabel(gca,'Time (seconds)');
 ylabel(gca,'Height (Mm)');
-title(gca,'Energy Dependence for the 1,1 Mode with a 180.0s Driver'); 
+title(gca,'Energy Dependence for the 0,1 Mode with a 307.7s Driver'); 
 print('-djpeg', imfile); 
 
 
