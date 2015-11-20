@@ -1,5 +1,5 @@
 
-directory='/fastdata/cs1mkg/smaug/spic6b0_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic6b0_3d/';
 %directory='/storage2/mikeg/results/spic5b0_b1G_3d/';
 %directory='/storage2/mikeg/results/spic4b0_3_3d/';
 %directory='/storage2/mikeg/results/spic5b0_3d/';
@@ -8,23 +8,23 @@ directory='/fastdata/cs1mkg/smaug/spic6b0_3d/';
 %directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic5b0_3d_rep/';
-%directory='/fastdata/cs1mkg/smaug/spic13p47_0_0/';
-%directory='/fastdata/cs1mkg/smaug/spicule4b0_3d/';
+directory='/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/';
+%directory='/fastdata/cs1mkg/smaug/spicule2p05_0_2_3d/';
 extension='.out';
 
 %ndirectory='/storage2/mikeg/results/spic5b0_b1G_3d/images_3d_vsecs/';
-ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3d/images_3d_vsecs/';
+%ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic4b0_3_3d/images_3d_secs/';
 %ndirectory='/storage2/mikeg/results/spic5b0_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic3p0a_0_2_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic4p3a_0_1_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic6p7a_0_0_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic2p3a_0_3_3d/images_3d_vsecs/';
-%ndirectory='/fastdata/cs1mkg/smaug/spic13p47_0_0/images_3d_vsecs/';
-%ndirectory='/fastdata/cs1mkg/smaug/spicule4b0_3d/images_3d_vsecs';
+ndirectory='/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/images_3d_vsecs/';
+%ndirectory='/fastdata/cs1mkg/smaug/spicule2p05_0_2_3d/images_3d_vsecs';
 nextension='.jpg';
 
-for i=1:1:463
+for i=1:1:580
 %for i=1519:2632
 %for i=2631:2632
     
@@ -260,7 +260,7 @@ TP=(gamma-1.d0).*TP;
   %set(hc,'Ylim',[4*10^5 3*10^6]);
   text(-100,0,165,timetext);
   %title('Vertical Velocity for Solar Atmosphere with a Sinusoidal (0,0) Mode Driver of Period673.4s, Applied at a Height of 100km');
-  title('Vertical Velocity for Solar Atmosphere with a Sinusoidal (3,3) Mode Driver of Period 300.0s, Applied at a Height of 100km');
+  title('Vertical Velocity for Solar Atmosphere with a Sinusoidal (3,3) Mode Driver of Period 100.0s, Applied at a Height of 100km');
   xlabel('x-distance (Mm)');
   ylabel('y-distance (Mm)');
   zlabel('Height (Mm)');

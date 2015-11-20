@@ -4,28 +4,45 @@
 
 
 %%
-% 
-% $$  A_{nm}=\frac{2(2T_0-1)}{(2T_i-1)(n^2+m^2+2(n+m)+2)}$$
-% 
+% $$   A_{nm}=\frac{2(2T_0-1)}{(2T_i-1)(n^2+m^2+2(n+m)+2)}$$
 
-%% Frequency Computation
+%%
+% <http://solarwavetheory.blogspot.co.uk/search/label/solar%20global%20oscillations>
+%%
+% 
 %  The series for the normal modes are calculated from the following expressions 
 %  for a given of the speed of sound c and a 
 %  value for the length of the simulation box of 4Mm. The frequency is computed using
 %
+% 
+%
 % $$ \omega^2=2 \left( \frac{\pi c_s}{L} \right)^2  $$ 
+%
+%  
+%
 %
 % For the normal modes the wave numbers and frequencies satisfy the
 % following relationship
 %
 % $$ \frac{\omega}{k}=c_s $$
 
-%% Table of Amplitudes
-% For sound speed 13km/s
 
-%%
-% 
+
+
+
+
+
+
+
+
+
+
+
+
 % <html>
+% For sound speed 13km/s
+% <br />
+% <br />
 % <table border="1" style="width: 100%;">
 %   <tbody>
 % <tr>
@@ -38,7 +55,7 @@
 %     <td>(0,0)</td> 
 %     <td>435.1</td>
 %     <td>250</td>
-%    <td>spicule4p35_0_0_3d</td>
+%    <td>spic_4p35_0_0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
@@ -50,7 +67,7 @@
 %     <td>(0,2)</td> 
 %     <td>205.1</td>
 %     <td>70.7357</td>
-%   <td>spicule2p05a_0_2_3d</td>
+%   <td>spicule2p05_0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
@@ -59,62 +76,19 @@
 %   <td>spicule1p53a_0_3_3d</td>
 %   </tr>
 % </tbody></table>
-% </html>
-% 
-
-
-%% Table of Amplitudes
-% For sound speed 31.43km/s 
-
-
-%%
-% 
-% <html>
-% <table border="1" style="width: 100%;">
-%   <tbody>
-% <tr>
-%     <td>Mode</td> 
-%     <td>Driver Period (s)</td> 
-%     <td>Amplitude (m/s)</td>
-%     <td>Label</td>
-%   </tr>
-% <tr>
-%     <td>(0,0)</td> 
-%     <td>179.98</td>
-%     <td>605.36</td>
-%    <td>spic1p79a_0_0_3d</td>
-%   </tr>
-% <tr>
-%     <td>(0,1)</td> 
-%     <td>127.27</td>
-%     <td>342.83</td>
-%   <td>spic1p27a_0_1_3d</td>
-%   </tr>
-% <tr>
-%     <td>(0,2)</td> 
-%     <td>84.84</td>
-%     <td>257.65</td>
-%   <td>spic0p84a_0_2_3d</td>
-%   </tr>
-% <tr>
-%     <td>(0,3)</td> 
-%     <td>63.63</td>
-%     <td>202.477</td>
-%   <td>spic0p63a_0_3_3d</td>
-%   </tr>
-% </tbody></table>
-% </html>
-% 
+% <br />
 
 
 
-%%
-%%
-% for 30, 180,300s drivers
-% 30s driver  sound speed 188.6km/s
 
-%%
-% <html>
+
+
+
+%for 30, 180,300s drivers%
+
+%30s driver  sound speed 188.6km/s
+% <br />
+% <br />
 % <table border="1" style="width: 100%;">
 %   <tbody>
 % <tr>
@@ -148,14 +122,13 @@
 %     <td>spic4b0_3_3d</td>
 %   </tr>
 % </tbody></table>
-% </html>
-% 
-%%
-% 180s driver  sound speed 31.4km/s
+% <br />
+% <br />
 
-%%
-% 
-% <html>
+
+%180s driver  sound speed 31.4km/s
+% <br />
+% <br />
 % <table border="1" style="width: 100%;">
 %   <tbody>
 % <tr>
@@ -189,13 +162,13 @@
 %     <td>spic6b0_3_3d</td>
 %   </tr>
 % </tbody></table>
-% </html>
-%
-%% 
-% 300s driver  sound speed 18.9km/s
-%%
-% 
-% <html>
+% <br />
+% <br />
+
+
+%300s driver  sound speed 18.9km/s
+% <br />
+% <br />
 % <table border="1" style="width: 100%;">
 %   <tbody>
 % <tr>
@@ -229,11 +202,12 @@
 %     <td>spic5b0_3_3d</td>
 %   </tr>
 % </tbody></table>
-% </html>
-% 
+% <br />
+% <br />
+
 
 %% Table of amplitudes for normal mode
-% Sound speed is 
+% Sound speed is 20km/s
 
 %%
 % 
@@ -248,31 +222,37 @@
 %   </tr>
 % <tr>
 %     <td>(0,0)</td> 
-%     <td>179.98</td>
-%     <td>605.36</td>
-%    <td>spic1p79a_0_0_3d</td>
+%     <td>282.84</td>
+%     <td>384.82</td>
+%    <td>spic2p82a_0_0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
-%     <td>127.27</td>
-%     <td>342.83</td>
-%   <td>spic1p27a_0_1_3d</td>
+%     <td>200.00</td>
+%     <td>212.84</td>
+%   <td>spic2p00a_0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
-%     <td>84.84</td>
-%     <td>257.65</td>
-%   <td>spic0p84a_0_2_3d</td>
+%     <td>133.33</td>
+%     <td>163.59</td>
+%   <td>spic1p33a_0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
-%     <td>63.63</td>
-%     <td>202.477</td>
-%   <td>spic0p63a_0_3_3d</td>
+%     <td>100.00</td>
+%     <td>128.47</td>
+%   <td>spic1p00a_0_3_3d</td>
 %   </tr>
 % </tbody></table>
 % </html>
 % 
+
+
+% </html>
+
+%% %% Table of amplitudes for normal mode
+% Sound speed is 20km/s
 
 
 

@@ -21,7 +21,7 @@
 %directory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/';
 %directory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/';
-directory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/';
+directory='/fastdata/cs1mkg/smaug/spic2p00a_0_1_3d/';
 extension='.out';
 
 %ndirectory='/storage2/mikeg/results/spic5b0_b1G_3d/images_3d_vsecs/';
@@ -45,7 +45,7 @@ extension='.out';
 %ndirectory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/images';
-ndirectory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/images';
+ndirectory='/fastdata/cs1mkg/smaug/spic2p00a_0_1_3d/images';
 
 nextension='.jpg';
 
@@ -58,7 +58,7 @@ nextension='.jpg';
 %wspacename='6p7a_3dmatlab_perturb.mat';
 %wspacename='5b0_3dmatlab_perturb.mat';
 %wspacename='6b0_1_3dmatlab_perturb.mat';
-wspacename='2p05_0_2matlab_perturb.mat';
+wspacename='2p00a_0_1matlab_perturb.mat';
 %wspacename='6b0_2_3dmatlab_perturb.mat';
 
 
@@ -81,7 +81,7 @@ wspacename='2p05_0_2matlab_perturb.mat';
  
  esumarray=zeros(311,124);
  esum=zeros(1,124);
-
+% 
 
 %for i=1:1089
 %for i=1:1385
@@ -91,7 +91,7 @@ wspacename='2p05_0_2matlab_perturb.mat';
 %period=231;
 %nt=1182;
 
-period=205.1;
+period=200.00;
 %period=300.0;
 %period=673.4;
 %period=425.9;
@@ -106,7 +106,7 @@ period=205.1;
 %nt=1360;
 %nt=1000;
 %nt=803;
-nt=1176;
+nt=587;
 
 for i=1:nt %1182
 %for i=99:nt    
@@ -244,7 +244,7 @@ ediftran=ediftran+sum(esumdif(39:47));
 edifchrom=edifchrom+sum(esumdif(1:38));   
      
 
-if mod(i,100)==0         
+if mod(i,20)==0         
     save(wspacename); 
 end
 
