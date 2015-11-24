@@ -32,6 +32,13 @@
 
 
 
+%% Resonant mode for 4Mmx4Mm box n=m and n=1,2,3
+
+
+%%
+% 
+
+% 
 
 
 
@@ -40,7 +47,6 @@
 
 
 % <html>
-% For sound speed 13km/s
 % <br />
 % <br />
 % <table border="1" style="width: 100%;">
@@ -52,35 +58,27 @@
 %     <td>Label</td>
 %   </tr>
 % <tr>
-%     <td>(0,0)</td> 
-%     <td>435.1</td>
-%     <td>250</td>
-%    <td>spic_4p35_0_0_3d</td>
+%     <td>(1,1)</td> 
+%     <td>471.4</td>
+%     <td>57.75</td>
+%   <td>spic4p71a_1_1_3d</td>
 %   </tr>
 % <tr>
-%     <td>(0,1)</td> 
-%     <td>307.7</td>
-%     <td>141.4713</td>
-%   <td>spicule3p07a_0_1_3d</td>
+%     <td>(2,2)</td> 
+%     <td>235.7</td>
+%     <td>51.39</td>
+%   <td>spic2p36_2_2_3d</td>
 %   </tr>
 % <tr>
-%     <td>(0,2)</td> 
-%     <td>205.1</td>
-%     <td>70.7357</td>
-%   <td>spicule2p05_0_2_3d</td>
-%   </tr>
-% <tr>
-%     <td>(0,3)</td> 
-%     <td>153.8</td>
-%     <td>41.60921</td>
-%   <td>spicule1p53a_0_3_3d</td>
+%     <td>(3,3)</td> 
+%     <td>157.1</td>
+%     <td>43.41</td>
+%   <td>spic1p57a_3_3_3d</td>
 %   </tr>
 % </tbody></table>
 % <br />
 
-
-
-
+% 
 
 
 
