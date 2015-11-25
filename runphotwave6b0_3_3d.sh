@@ -3,10 +3,10 @@
 ##$ -V 
 #$ -l arch=intel*
 ##$ -l gpu=1
-#$ -l gpu=1,gpu_arch=nvidia-k40m
-##$ -l gpu=1,gpu_arch=nvidia-m2070
+##$ -l gpu=1,gpu_arch=nvidia-k40m
+#$ -l gpu=1,gpu_arch=nvidia-m2070
 ##$ -P cs-test
-#$ -P gpu
+#$ -P mhd
 #$ -N p6b0p3_3d
 #$ -l mem=12G
 #$ -l rmem=12G
@@ -22,7 +22,9 @@ cd src
 cp usersource6b0_3_3d.cu usersource.cu
 cp boundary_3d.cu boundary.cu
 make clean
-make -f Makefile_3d_k40 smaug
+#make -f Makefile_3d_k40 smaug
+make -f Makefile_3d smaug
+
 cd ..
 
 
