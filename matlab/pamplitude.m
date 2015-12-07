@@ -4,7 +4,7 @@
 
 
 %%
-% $$   A_{nm}=\frac{2(2T_0-1)}{(2T_i-1)(n^2+m^2+2(n+m)+2)}$$
+% $$   A_{nm}^2=\frac{A_{00}^2}{(n^2+m^2+2(n+m)+2)} \frac{T_m-\frac{T_{00}}{4\pi}\sin{\frac{4\pi T_m}{T_0}}}{T_m-\frac{T_s}{4\pi}\sin{\frac{4\pi T_s}{T_0}}}  $$
 
 %%
 % <http://solarwavetheory.blogspot.co.uk/search/label/solar%20global%20oscillations>
@@ -293,8 +293,11 @@
 
 
 
-function amplitude=pamplitude(n,m,t0,ti,a00)
-    amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );
+function amplitude=pamplitude(n,m,t00,tnm,a00,tm)
+    amplitude2=((a00.^2)./(n.^2+m.^2+2.*(n+m)+2)) ;
+    t1=tm-(t00/(4*pi)).*sin(4*pi*tm/t00);
+    t2=tm-(tnm/(4*pi)).*sin(4*pi*tm/tnm);
+    amplitude=sqrt(amplitude2*t1/t2);
 
 
 
