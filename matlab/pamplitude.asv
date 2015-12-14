@@ -4,7 +4,7 @@
 
 
 %%
-% $$   A_{nm}=\frac{2(2T_0-1)}{(2T_i-1)(n^2+m^2+2(n+m)+2)}$$
+% $$   A_{nm}^2=\frac{A_{00}^2}{(n^2+m^2+2(n+m)+2)} \frac{T_m-\frac{T_{00}}{4\pi}\sin{\frac{4\pi T_m}{T_0}}}{T_m-\frac{T_s}{4\pi}\sin{\frac{4\pi T_s}{T_0}}}  $$
 
 %%
 % <http://solarwavetheory.blogspot.co.uk/search/label/solar%20global%20oscillations>
@@ -32,6 +32,13 @@
 
 
 
+%% Resonant mode for 4Mmx4Mm box n=m and n=1,2,3
+
+
+%%
+% 
+
+% 
 
 
 
@@ -40,7 +47,6 @@
 
 
 % <html>
-% For sound speed 13km/s
 % <br />
 % <br />
 % <table border="1" style="width: 100%;">
@@ -52,35 +58,27 @@
 %     <td>Label</td>
 %   </tr>
 % <tr>
-%     <td>(0,0)</td> 
-%     <td>435.1</td>
-%     <td>250</td>
-%    <td>spic_4p35_0_0_3d</td>
+%     <td>(1,1)</td> 
+%     <td>471.4</td>
+%     <td>171.5</td>
+%   <td>spic4p71a_1_1_3d</td>
 %   </tr>
 % <tr>
-%     <td>(0,1)</td> 
-%     <td>307.7</td>
-%     <td>141.4713</td>
-%   <td>spicule3p07a_0_1_3d</td>
+%     <td>(2,2)</td> 
+%     <td>235.7</td>
+%     <td>114.3</td>
+%   <td>spic2p36_2_2_3d</td>
 %   </tr>
 % <tr>
-%     <td>(0,2)</td> 
-%     <td>205.1</td>
-%     <td>70.7357</td>
-%   <td>spicule2p05_0_2_3d</td>
-%   </tr>
-% <tr>
-%     <td>(0,3)</td> 
-%     <td>153.8</td>
-%     <td>41.60921</td>
-%   <td>spicule1p53a_0_3_3d</td>
+%     <td>(3,3)</td> 
+%     <td>157.1</td>
+%     <td>85.8</td>
+%   <td>spic1p57a_3_3_3d</td>
 %   </tr>
 % </tbody></table>
 % <br />
 
-
-
-
+% 
 
 
 
@@ -100,25 +98,25 @@
 % <tr>
 %     <td>(0,0)</td> 
 %     <td>30.0</td>
-%     <td>3683.05</td>
+%     <td>343.4</td>
 %     <td>spicule4b0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
 %     <td>30.0</td>
-%     <td>1473.2</td>
+%     <td>217.2</td>
 %     <td>spic4b0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>30.0</td>
-%     <td>736.61</td>
+%     <td>153.6</td>
 %     <td>spic4b0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>30.0</td>
-%     <td>433.3</td>
+%     <td>117.8</td>
 %     <td>spic4b0_3_3d</td>
 %   </tr>
 % </tbody></table>
@@ -140,25 +138,25 @@
 % <tr>
 %     <td>(0,0)</td> 
 %     <td>180.0</td>
-%     <td>605.29</td>
+%     <td>348.3</td>
 %     <td>spic6b0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
 %     <td>180.0</td>
-%     <td>242.116</td>
+%     <td>220.3</td>
 %     <td>spic6b0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>180.0</td>
-%     <td>121.06</td>
+%     <td>155.8</td>
 %     <td>spic6b0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>180.0</td>
-%     <td>71.21</td>
+%     <td>119.5</td>
 %     <td>spic6b0_3_3d</td>
 %   </tr>
 % </tbody></table>
@@ -180,25 +178,25 @@
 % <tr>
 %     <td>(0,0)</td> 
 %     <td>300.0</td>
-%     <td>362.7712</td>
+%     <td>350</td>
 %     <td>spic5b0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
 %     <td>300.0</td>
-%     <td>145.1085</td>
+%     <td>221.4</td>
 %     <td>spic5b0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>300.0</td>
-%     <td>75.5542</td>
+%     <td>156.5</td>
 %     <td>spic5b0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>300.0</td>
-%     <td>42.679</td>
+%     <td>120.0</td>
 %     <td>spic5b0_3_3d</td>
 %   </tr>
 % </tbody></table>
@@ -223,25 +221,25 @@
 % <tr>
 %     <td>(0,0)</td> 
 %     <td>282.84</td>
-%     <td>384.82</td>
+%     <td>350.3</td>
 %    <td>spic2p82a_0_0_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,1)</td> 
 %     <td>200.00</td>
-%     <td>212.84</td>
+%     <td>213.5</td>
 %   <td>spic2p00a_0_1_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,2)</td> 
 %     <td>133.33</td>
-%     <td>163.59</td>
+%     <td>154.1</td>
 %   <td>spic1p33a_0_2_3d</td>
 %   </tr>
 % <tr>
 %     <td>(0,3)</td> 
 %     <td>100.00</td>
-%     <td>128.47</td>
+%     <td>118.1</td>
 %   <td>spic1p00a_0_3_3d</td>
 %   </tr>
 % </tbody></table>
@@ -250,15 +248,56 @@
 
 
 % </html>
-
+%below need correcting
 %% %% Table of amplitudes for normal mode
-% Sound speed is 20km/s
+% Sound speed is 31.43km/s%below need correcting
+
+%%
+% 
+% <html>
+% <table border="1" style="width: 100%;">
+%   <tbody>
+% <tr>
+%     <td>Mode</td> 
+%     <td>Driver Period (s)</td> 
+%     <td>Amplitude (m/s)</td>
+%     <td>Label</td>
+%   </tr>
+% <tr>
+%     <td>(0,0)</td> 
+%     <td>179.98</td>
+%     <td>348.2</td>
+%    <td>spic2p82a_0_0_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,1)</td> 
+%     <td>127.27</td>
+%     <td>345</td>
+%   <td>spic2p00a_0_1_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,2)</td> 
+%     <td>84.84</td>
+%     <td>344.6</td>
+%   <td>spic1p33a_0_2_3d</td>
+%   </tr>
+% <tr>
+%     <td>(0,3)</td> 
+%     <td>63.63</td>
+%     <td>202.4767</td>
+%   <td>spic1p00a_0_3_3d</td>
+%   </tr>
+% </tbody></table>
+% </html>
+% 
 
 
 
-
-function amplitude=pamplitude(n,m,t0,ti,a00)
-    amplitude=2.*a00.*(2.*t0-1)./((2.*ti-1).*(n.^2+m.^2+2.*(n+m)+2) );
+function amplitude=pamplitude(n,m,t00,tnm,a00,tm)
+    amplitude2=((a00.^2)./(n.^2+m.^2+2.*(n+m)+2)) ;
+    t1=tm-(t00/(4*pi)).*sin(4*pi*tm/t00);
+    t2=tm-(tnm/(4*pi)).*sin(4*pi*tm/tnm);
+    amplitude=sqrt(2*amplitude2*t1/t2);
 
 
 
