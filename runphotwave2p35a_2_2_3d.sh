@@ -2,17 +2,16 @@
 #$ -j y
 #$ -V 
 #$ -l arch=intel*
-#$ -l gpu=1,gpu_arch=nvidia-k40m
-##$ -l gpu=1,gpu_arch=nvidia-m2070
+##$ -l gpu=1,gpu_arch=nvidia-k40m
+#$ -l gpu=1,gpu_arch=nvidia-m2070
+
 ##$ -P cs-test
-#$ -P gpu
-#$ -N j1p33a_0_2
+#$ -P mhd
+#$ -N j2p35a_2_2
 #$ -l mem=12G
 #$ -l rmem=12G
 #$ -l h_rt=168:00:00
-##module add libs/cuda/4.0.17
 module add libs/cuda/6.5.14
-
 
 #cp solarmodels/Makefile.spicule src/Makefile
 #cp solarmodels/make_inputs.spicule src/make_inputs
@@ -30,15 +29,14 @@ module add libs/cuda/6.5.14
 #cd ..
 
 cd include
-cp iosmaugparams1p33a_0_2_3d.h iosmaugparams.h
+cp iosmaugparams2p35a_2_2_3d.h iosmaugparams.h
 cd ..
 
 cd src
-cp usersource1p33a_0_2_3d.cu usersource.cu
+cp usersource2p35a_2_2_3d.cu usersource.cu
 cp boundary_3d.cu boundary.cu
 make clean
-#make -f Makefile_3d smaug
-make -f Makefile_3d_k40 smaug
+make -f Makefile_3d smaug
 cd ..
 
 
