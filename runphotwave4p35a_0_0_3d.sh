@@ -37,6 +37,7 @@ cp usersource4p35a_0_0_3d.cu usersource.cu
 cp boundary_3d.cu boundary.cu
 make clean
 make -f Makefile_3d smaug
+#make -f Makefile_3d_k40 smaug
 cd ..
 
 

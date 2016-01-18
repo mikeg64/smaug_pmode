@@ -65,16 +65,16 @@ delta_x=0.004e6;
 qt=p->qt;
 r1=(xp-xc1)*(xp-xc1);
 delta_z=0.004e6;
-n1=0;
-n2=1;
-AA=219.177;//*(n1+1)*(n2+1);
+n1=3;
+n2=3;
+AA=85.8;//*(n1+1)*(n2+1);
 //AA=10000.0;//*(n1+1)*(n2+1);
 
 //AA=0.0356825*(n1+1)*(n2+1);
 //AA=2000;// ! 2 km/sec
-s_period=307.7e0;
-yp=(p->xmin[1])+(((real)j)*(p->dx[1]));
-zp=(p->xmin[2])+(((real)k)*(p->dx[2]));
+s_period=157.1;
+yp=(p->xmin[1])+(((real)(j-2))*(p->dx[1]));
+zp=(p->xmin[2])+(((real)(k-2))*(p->dx[2]));
 
 exp_z=exp(-r1/(delta_z*delta_z));
 exp_xyz=sin(PI*yp*(n1+1)/xxmax)*sin(PI*zp*(n2+1)/yymax)*exp_z;
