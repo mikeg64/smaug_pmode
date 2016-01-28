@@ -21,8 +21,8 @@ ptitle2=' Mode 180.0s (Vertical Section at 2Mm x-dir)';
 
 
 
-
-yticks={'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'};
+yticks={'1.97';'2.44';'2.91';'3.38';'3.85';'4.31';'4.78';'5.25';'5.72';''};
+%yticks={'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'};
 %old not used? yticks={'1.78';'2.22';'2.68';'3.12';'3.57';'4.02';'4.47';'4.91';'5.36';'5.81'};
 %%yticks={'0';'0.6667';'1.333';'2.0';'2.667';'3.333';'4.0'};
 
@@ -33,7 +33,7 @@ yticks={'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'};
 
 %0,0 mode
 figure;
-load('spic6b0_3d_rep_xdir_vverustime.mat');
+load('4b0matlab_perturb.mat');
 
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_xdir_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_xdir_vverustime.mat');
@@ -79,7 +79,7 @@ clear('efluxarray' );
 
 %0,1 mode
 %figure;
-load('6b0_1_3dmatlab_perturb.mat');
+load('4b0_1_3dmatlab_perturb.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_1_3d_ydir_vverustime_1Mm.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_1_3dxdir_vverustime_1Mm.mat');
@@ -128,7 +128,7 @@ clear('efluxarray' );
 %0,2 mode
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-load('6b0_2_3dmatlab_perturb.mat');
+load('4b0_2_3dmatlab_perturb.mat');
 % title(gca,'Distance Time Plot for the 0,2 Mode (y dir) 180.0s Driver (Horizontal Section in Chromosphere at 1Mm )'); 
 
 ptitle2=' Mode 180.0s (Vertical Section at 2Mm x-dir)';
@@ -176,7 +176,7 @@ clear('efluxarray');
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3_3d_ydir_vverustime_0p5Mm.mat');
-load('6b0_3_3dmatlab_perturb.mat');
+load('4b0_3_3dmatlab_perturb.mat');
 % title(gca,'Distance Time Plot for the 0,3 Mode (y dir) 180.0s Driver (Horizontal Section in Chromosphere at 1Mm )'); 
 
 ptitle2=' Mode 180.0s (Vertical Section at 0.5Mm x-dir)';
@@ -186,7 +186,7 @@ ptitle2=' Mode 180.0s (Vertical Section at 0.5Mm x-dir)';
 
 %dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
- dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
+ dtplot=efluxarray;  %vertical section at 0.5Mm 15
 
 dtp03=dtplot;
 smode='0,3';

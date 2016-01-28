@@ -33,7 +33,7 @@ yticks={'1.97';'2.44';'2.91';'3.38';'3.85';'4.31';'4.78';'5.25';'5.72';''};
 
 %0,0 mode
 figure;
-%load('4b0_1_3dmatlab_perturb.mat');
+load('4b0_1_3dmatlab_perturb.mat');
 
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_xdir_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_xdir_vverustime.mat');
