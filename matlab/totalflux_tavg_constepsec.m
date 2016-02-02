@@ -103,6 +103,6 @@ ef5p5Mm(:,4)=[ 0;0 ;0 ;4.2801 ;0 ; 0.2102;  2.1863];
 
 
 %plot(periodvalues(1:7,1),ef5p5Mm(1:7,1),'o',periodvalues(1:7,2),ef5p5Mm(1:7,2),'+',periodvalues(1:7,3),ef5p5Mm(1:7,3),'x',periodvalues(1:7,4),ef5p5Mm(1:7,4),'s');
-
-plot(periodvalues(1:7,1),log10(efluxcoronaavg(1:7,1)+0.01),'o',periodvalues(1:7,2),log10(efluxcoronaavg(1:7,2)+0.01),'+',periodvalues(1:7,3),log10(efluxcoronaavg(1:7,3)+0.01),'x',periodvalues(1:7,4),log10(efluxcoronaavg(1:7,4)+0.01),'s');
+semilogy(periodvalues(1:7,1),ef5p5Mm(1:7,1),'o',periodvalues(1:7,2),ef5p5Mm(1:7,2),'+',periodvalues(1:7,3),ef5p5Mm(1:7,3),'x',periodvalues(1:7,4),ef5p5Mm(1:7,4),'s');
+%plot(periodvalues(1:7,1),log10(efluxcoronaavg(1:7,1)+0.01),'o',periodvalues(1:7,2),log10(efluxcoronaavg(1:7,2)+0.01),'+',periodvalues(1:7,3),log10(efluxcoronaavg(1:7,3)+0.01),'x',periodvalues(1:7,4),log10(efluxcoronaavg(1:7,4)+0.01),'s');
 

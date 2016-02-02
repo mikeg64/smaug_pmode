@@ -31,11 +31,11 @@ nextension='.jpg';
 wspacename=[rdirectory,'5b0_tranint.mat']
 
 %load(wspacename);
-%load(wspacename);
-i=0;
+load(wspacename);
+%i=0;
 iinit=i+1;
 %%evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
-eveltran_vh=zeros(124,124,nt);   %  horizontal section in transition layer at 42
+%eveltran_vh=zeros(124,124,nt);   %  horizontal section in transition layer at 42
 %%evelcor_vh=zeros(nt,124);    %  horizontal section in corona at 90
 
 %%evel2Mm_vh=zeros(nt,124);  %vertical section at 2Mm  62

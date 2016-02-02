@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -j y
 #$ -V 
-#$ -N jvproc300_00
+#$ -N jvproc30_00
 #$ -l mem=12G
 #$ -l rmem=12G
 ##$ -l h_rt=8:00:00
@@ -12,6 +12,6 @@
 
 export TIMECOUNTER=0
 source timeused
-   matlab -nosplash -nojvm -r "transition_integration300_00"
+   matlab -nosplash -nojvm -r "transition_integration30_00"
 source timeused
 

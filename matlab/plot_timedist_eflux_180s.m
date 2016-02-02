@@ -24,7 +24,7 @@ ptitle2=' Mode 180.0s (Vertical Section at 2Mm x-dir)';
 
 %yticks={'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'};
 yticks={'1.97';'2.44';'2.91';'3.38';'3.85';'4.31';'4.78';'5.25';'5.72';''};
-%%yticks={'0';'0.6667';'1.333';'2.0';'2.667';'3.333';'4.0'};
+%xticks={'0';'0.6667';'1.333';'2.0';'2.667';'3.333';'4.0'};
 
 
 
@@ -33,7 +33,11 @@ yticks={'1.97';'2.44';'2.91';'3.38';'3.85';'4.31';'4.78';'5.25';'5.72';''};
 
 %0,0 mode
 figure;
+<<<<<<< HEAD
+load('../../data/4b0_1_3dmatlab_perturb.mat');
+=======
 load('4b0_1_3dmatlab_perturb.mat');
+>>>>>>> 7b9b1741b4d36d36fece34756a0c6e6a637c8f89
 
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_xdir_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_xdir_vverustime.mat');
@@ -46,32 +50,32 @@ load('4b0_1_3dmatlab_perturb.mat');
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
 %dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
 
-dtp00=dtplot;
+dtp00=dtplot(:,42:124)';
 smode='0,0';
 %subplot(2,2,1);
 %surf(real(dtp00'),'LineStyle','none');
-surf(real(dtp00(:,42:124)'),'LineStyle','none');
+surf(real(dtp00),'LineStyle','none');
 
 zlimv=1e1*[-0.2 1];
 
-hold on
-hc=colorbar();
-caxis(zlimv);
-set(hc,'Zlim',zlimv);
+% hold on
+% hc=colorbar();
+% caxis(zlimv);
+% set(hc,'Zlim',zlimv);
+% 
+% set(gca,'CameraPosition',[400 45 17320.508]);
+% 
+% set(gca,'YTickLabel',yticks);
+% %set(gca,'XTickLabel',xticks);
+% 
+% %colorbar;
+% xlabel(gca,'Time (seconds)');
+% %xlabel(gca,'Height (Mm)');
+% ylabel(gca,'Distance (Mm)');
 
-set(gca,'CameraPosition',[400 45 17320.508]);
 
-set(gca,'YTickLabel',yticks)
-
-
-%colorbar;
-xlabel(gca,'Time (seconds)');
-%xlabel(gca,'Height (Mm)');
-ylabel(gca,'Distance (Mm)');
-
-
-ptitle=[smode,ptitle2];
-title(gca,ptitle);
+% ptitle=[smode,ptitle2];
+% title(gca,ptitle);
 
 %hold off
 

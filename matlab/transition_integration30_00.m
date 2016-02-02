@@ -8,8 +8,8 @@
 %directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 bdir='/fastdata/cs1mkg/smaug/';
-rdirectory='spic5b0_3d';
-nt=686;
+rdirectory='spicule4b0_2_3d';
+nt=655;
 
 
 %directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/';
@@ -28,7 +28,7 @@ extension='.out';
 ndirectory=[bdir,rdirectory,'images_3d_vsecs/'];
 nextension='.jpg';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
-wspacename=[rdirectory,'5b0_tranint.mat']
+wspacename=[rdirectory,'_tranint.mat']
 
 %load(wspacename);
 %load(wspacename);
@@ -245,7 +245,7 @@ eveltran_vh(:,:,i)=eveltran_vh(:,:,i)./8;
   end
   
   
- if mod(i,100)==0         
+ if mod(i,50)==0         
     save(wspacename); 
 end 
   
