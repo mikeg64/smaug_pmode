@@ -24,9 +24,9 @@ ptitle2=' Mode.';
 
 % <<<<<<< HEAD
 %yticks={'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'};
- yticks={'1.80';'2.80';'3.80';'4.80';'5.80';'6.80'};
+% yticks={'1.80';'2.80';'3.80';'4.80';'5.80';'6.80'};
 % =======
-%yticks={'1.97';'2.44';'2.91';'3.38';'3.85';'4.31';'4.78';'5.25';'5.72';''};
+yticks={'1.97';'2.44';'2.91';'3.38';'3.85';'4.31';'4.78';'5.25';'5.72';''};
 %yticks={'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'};
 %old not used? yticks={'1.78';'2.22';'2.68';'3.12';'3.57';'4.02';'4.47';'4.91';'5.36';'5.81'};
 % >>>>>>> 7b9b1741b4d36d36fece34756a0c6e6a637c8f89
@@ -147,10 +147,10 @@ clear('efluxarray' );
 % <<<<<<< HEAD
 % =======
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-load('../../data/5b0_2_3dmatlab_perturb.mat');
+load('4b0_2_3dmatlab_perturb.mat');
 % title(gca,'Distance Time Plot for the 0,2 Mode (y dir) 180.0s Driver (Horizontal Section in Chromosphere at 1Mm )'); 
 
-% ptitle2=' Mode 180.0s (Vertical Section at 2Mm x-dir)';
+ptitle2=' Mode 180.0s (Vertical Section at 2Mm x-dir)';
 % dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
 %dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
@@ -159,22 +159,21 @@ load('../../data/5b0_2_3dmatlab_perturb.mat');
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
 %dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
 
-dtp02=dtplot(:,42:124)';
+dtp02=dtplot;
 smode='0,2';
 subplot(2,2,3);
-surf(real(dtp02),'LineStyle','none');
-zlimv=3e2*[-1 1];
+surf(real(dtp02'),'LineStyle','none');
+zlimv=3e3*[-1 1];
 
 %hold on
 hc=colorbar();
 caxis(zlimv);
 set(hc,'Zlim',zlimv);
-set(gca,'YTickLabel',yticks);
+
 set(gca,'CameraPosition',[400 45 17320.508]);
 % >>>>>>> 7b9b1741b4d36d36fece34756a0c6e6a637c8f89
 % 
-ptitle=[smode,ptitle2];
-title(gca,ptitle);
+
 
 
 %uncomment block from here
@@ -183,7 +182,7 @@ title(gca,ptitle);
 % load('../../data/6b0_2_3dmatlab_perturb');
 % % title(gca,'Distance Time Plot for the 0,2 Mode (y dir) 180.0s Driver (Horizontal Section in Chromosphere at 1Mm )'); 
 % 
-% <<<<<<< HEAD
+<<<<<<< HEAD
 % %ptitle2=' Mode 180.0s (Vertical Section at 2Mm x-dir)';
 % % dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
 % %dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
@@ -266,15 +265,15 @@ title(gca,ptitle);
 % 
 % ptitle=[smode,ptitle2];
 % title(gca,ptitle);
-% =======
+=======
 %0,3 mode
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3_3d_ydir_vverustime_0p5Mm.mat');
-load('../../data/5b0_3_3dmatlab_perturb.mat');
+load('4b0_3_3dmatlab_perturb.mat');
 % title(gca,'Distance Time Plot for the 0,3 Mode (y dir) 180.0s Driver (Horizontal Section in Chromosphere at 1Mm )'); 
 
-% ptitle2=' Mode 180.0s (Vertical Section at 0.5Mm x-dir)';
+ptitle2=' Mode 180.0s (Vertical Section at 0.5Mm x-dir)';
 % dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
 %dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
@@ -283,29 +282,28 @@ load('../../data/5b0_3_3dmatlab_perturb.mat');
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
  dtplot=efluxarray;  %vertical section at 0.5Mm 15
 
-dtp03=dtplot(:,42:124)';
+dtp03=dtplot;
 smode='0,3';
 subplot(2,2,4);
-surf(real(dtp03),'LineStyle','none');
+surf(real(dtp03'),'LineStyle','none');
 zlimv=5e1*[-1 1];
 
 %hold on
 hc=colorbar();
 caxis(zlimv);
 set(hc,'Zlim',zlimv);
-set(gca,'YTickLabel',yticks);
+
 set(gca,'CameraPosition',[400 45 17320.508]);
 
-
+set(gca,'YTickLabel',yticks)
 
 
 %colorbar;
-% xlabel(gca,'Time (seconds)');
-% %xlabel(gca,'Height (Mm)');
-% ylabel(gca,'Distance (Mm)');
-ptitle=[smode,ptitle2];
-title(gca,ptitle);
-% >>>>>>> 7b9b1741b4d36d36fece34756a0c6e6a637c8f89
+xlabel(gca,'Time (seconds)');
+%xlabel(gca,'Height (Mm)');
+ylabel(gca,'Distance (Mm)');
+
+>>>>>>> 7b9b1741b4d36d36fece34756a0c6e6a637c8f89
 
 %uncomment block to here
 
