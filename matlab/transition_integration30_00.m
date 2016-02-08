@@ -8,8 +8,10 @@
 %directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 bdir='/fastdata/cs1mkg/smaug/';
-rdirectory='spicule4b0_2_3d';
-nt=655;
+rdirectory='spicule4b0_3d';
+%rdirectory='matlabdat';
+
+nt=499;
 
 
 %directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/';
@@ -28,14 +30,18 @@ extension='.out';
 ndirectory=[bdir,rdirectory,'images_3d_vsecs/'];
 nextension='.jpg';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
-wspacename=[rdirectory,'_tranint.mat']
-
+wspacename=[bdir,'matlabdat/',rdirectory,'tranint.mat']
+%spic5b0_3d5b0_tranint
 %load(wspacename);
-%load(wspacename);
-i=0;
+load(wspacename);
+%i=0;
 iinit=i+1;
 %%evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
-eveltran_vh=zeros(124,124,nt);   %  horizontal section in transition layer at 42
+
+if i==0
+	eveltran_vh=zeros(124,124,nt);   %  horizontal section in transition layer at 42
+end
+
 %%evelcor_vh=zeros(nt,124);    %  horizontal section in corona at 90
 
 %%evel2Mm_vh=zeros(nt,124);  %vertical section at 2Mm  62
@@ -245,7 +251,7 @@ eveltran_vh(:,:,i)=eveltran_vh(:,:,i)./8;
   end
   
   
- if mod(i,50)==0         
+ if mod(i,25)==0         
     save(wspacename); 
 end 
   
