@@ -4,7 +4,7 @@
 #$ -l arch=intel*
 #$ -l gpu=1,gpu_arch=nvidia-m2070
 ##$ -l gpu=1
-#$ -P mhd
+#$ -P cs-test
 ##$ -P gpu
 #$ -N p4b1p1_3d
 #$ -l mem=12G
