@@ -16,7 +16,7 @@ ni=ni+2*ngi;
 //real xmax = 6.2831853;  
 real xmax=5955555.6e0;
 real xmin=133333.33;
-real dx = (xmax-xmin)/(ni);
+real dx = (xmax-xmin)/(ni-2*ngi);
 //#endif
 
 
@@ -31,7 +31,7 @@ nj=nj+2*ngj;
 //real ymax = 6.2831853; 
 real ymax = 4.0e6;
 real ymin=1953.10;
-real dy = (ymax-ymin)/(nj);    
+real dy = (ymax-ymin)/(nj-2*ngj);    
 //nj=41;
 //#endif
 
@@ -46,7 +46,7 @@ nk=nk+2*ngk;
 real zmax=4.0e6;
 real zmin=1953.1;
 //real dx = xmax/(ni-4);
-real dz = (zmax-zmin)/(nk);
+real dz = (zmax-zmin)/(nk-2*ngk);
 #endif  
 
 
@@ -66,16 +66,16 @@ struct state *state=(struct state *)malloc(sizeof(struct state));
   
 real *x=(real *)calloc(ni,sizeof(real));
 for(i=0;i<ni;i++)
-		x[i]=i*dx;
+		x[i]=(xmin-ngi*dx)+i*dx;
 
 real *y=(real *)calloc(nj,sizeof(real));
 for(i=0;i<nj;i++)
-		y[i]=i*dy;
+		y[i]=(ymin-ngj*dy)+i*dy;
 
 
 real *z=(real *)calloc(nk,sizeof(real));
 for(i=0;i<nk;i++)
-		z[i]=i*dz;
+		z[i]=(zmin-ngk*dz)+i*dz;
 
 int step=0;
 //real tmax = 200;
@@ -131,7 +131,7 @@ dt=0.001;
 //nt=200000;
 //nt=150000;
 //nt=540001;
-nt=4800001;
+nt=360000;
 //nt=10000;
 //nt=100;
 
@@ -204,12 +204,12 @@ p->readini=1.0;
 p->cfgsavefrequency=1000;
 //p->cfgsavefrequency=1;
 
-p->xmax[0]=xmax;
-p->xmax[1]=ymax;
-p->xmax[2]=zmax;
-p->xmin[0]=xmin;
-p->xmin[1]=ymin;
-p->xmin[2]=zmin;
+p->xmax[0]=xmax+ngi*dx;
+p->xmax[1]=ymax+ngj*dy;
+p->xmax[2]=zmax+ngk*dz;
+p->xmin[0]=xmin-ngi*dx;
+p->xmin[1]=ymin-ngj*dy;
+p->xmin[2]=zmin-ngk*dz;
 p->nt=nt;
 p->tmax=tmax;
 p->steeringenabled=steeringenabled;
@@ -232,6 +232,12 @@ p->chyp[b3]=0.02;
 p->chyp[mom1]=0.4;
 p->chyp[mom2]=0.4;
 p->chyp[mom3]=0.4;
+
+p->chyp[mom1]=0.05;
+p->chyp[mom2]=0.05;
+p->chyp[mom3]=0.05;
+
+
 p->chyp[rho]=0.02;
 
 
@@ -253,7 +259,7 @@ for(int ii=0;ii<NVAR; ii++)
 for(int idir=0; idir<NDIM; idir++)
 for(int ibound=0; ibound<2; ibound++)
 {
-   (p->boundtype[ii][idir][ibound])=4;  //period=0 mpi=1 mpiperiod=2  cont=3 contcd4=4 fixed=5 symm=6 asymm=7
+   (p->boundtype[ii][idir][ibound])=0;  //period=0 mpi=1 mpiperiod=2  cont=3 contcd4=4 fixed=5 symm=6 asymm=7
 }
 
 //set boundary types
