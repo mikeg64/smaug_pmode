@@ -232,6 +232,9 @@ p->chyp[mom3]=0.4;
 p->chyp[rho]=0.02;
 
 
+p->chyp[mom1]=0.05;
+p->chyp[mom2]=0.05;
+p->chyp[mom3]=0.05;
 
 
 #ifdef USE_MPI
