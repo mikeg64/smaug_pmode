@@ -646,13 +646,13 @@ int shift=order*NVAR*dimp;
 
 
 f=field;
-kp=0;
+//kp=0;
 
 
-                if((jp==0 || jp==1)  )                
+                if((jp==0 || jp==1)  && ip>1 && ip<((p->n[1])-2) )                
                   wmod[shift+encode3_b(p,ip,jp,kp,f)]=wmod[shift+encode3_b(p,ip,(p->n[1])-4+jp,kp,f)];
 
-                else if(((jp==((p->n[1])-1)) || (jp==((p->n[1])-2))) )          
+                else if(((jp==((p->n[1])-1)) || (jp==((p->n[1])-2))) && ip>1 && ip<((p->n[1])-2) )          
                   wmod[shift+encode3_b(p,ip,jp,kp,f)]=wmod[shift+encode3_b(p,ip,4-(p->n[1])+jp,kp,f)];
 
 
@@ -720,10 +720,10 @@ f=field;
 //kp=0;
 
 
-                if((kp==0 || kp==1)  )                
+                if((kp==0 || kp==1) && ip>1 && ip<((p->n[1])-2) )                
                   wmod[shift+encode3_b(p,ip,jp,kp,f)]=wmod[shift+encode3_b(p,ip,jp,(p->n[2])-4+kp,f)];
 
-                else if(((kp==((p->n[2])-1)) || (kp==((p->n[2])-2))) )          
+                else if(((kp==((p->n[2])-1)) || (kp==((p->n[2])-2))) && ip>1 && ip<((p->n[1])-2))          
                   wmod[shift+encode3_b(p,ip,jp,kp,f)]=wmod[shift+encode3_b(p,ip,jp,4-(p->n[2])+kp,f)];
 
 
@@ -1275,6 +1275,315 @@ if(idir==2)
 
 
 }
+
+
+
+int cuboundary1(struct params **p, struct bparams **bp,struct params **d_p, struct bparams **d_bp, struct state **d_s,  real **d_wmod,  int order,int idir,int field)
+{
+
+
+ dim3 dimBlock(dimblock, 1);
+
+int numBlocks = ((dimproduct_b(*p)+numThreadsPerBlock-1)) / numThreadsPerBlock;
+  
+
+
+
+int i1,i2,i3;
+
+
+
+if(((*p)->it)==-1    )
+{
+    //cudaMemcpy(*d_p,*p, sizeof(struct params), cudaMemcpyHostToDevice);
+
+
+
+	if((*p)->boundtype[field][idir][0]==4)
+	{
+	  //  boundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+          // boundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+if(idir==0)
+	;//boundary0_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+	;//    cudaThreadSynchronize();
+
+if(idir==1)
+	;//boundary1_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	 //   cudaThreadSynchronize();
+	 //   boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	 //   cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+if(idir==2)
+          ;//  boundary2_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	   // boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	  //  cudaThreadSynchronize();
+	#endif
+	}
+
+
+	if((*p)->boundtype[field][idir][0]==0)
+	{
+	  //  boundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+          // boundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+if(idir==0)
+	;//boundary0_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+	;//    cudaThreadSynchronize();
+
+if(idir==1)
+	//boundary1_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	 //   cudaThreadSynchronize();
+	    boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	    cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+if(idir==2)
+          //  boundary2_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	    boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	    cudaThreadSynchronize();
+	#endif
+	}
+
+
+
+
+	if((*p)->boundtype[field][idir][0]==3)
+	{
+
+
+if(idir==0)
+    setboundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,idir,field);
+    //cudaThreadSynchronize();
+if(idir==1)
+    setboundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,idir,field);
+    cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+if(idir==2)
+	    setboundary2_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,idir,field);
+	    cudaThreadSynchronize();
+	#endif
+}
+
+}
+else
+{
+
+/*
+	    boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	    cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+            boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	    
+	    cudaThreadSynchronize();
+	#endif    */
+
+
+	if((*p)->boundtype[field][idir][0]==5)
+	{
+if(idir==0)
+	    boundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+  //cudaThreadSynchronize();
+if(idir==1)
+           boundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	//boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	    cudaThreadSynchronize();
+	    //boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	//    cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+            //boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+if(idir==2)
+	    boundary2_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	    cudaThreadSynchronize();
+	#endif
+	}
+
+	if((*p)->boundtype[field][idir][0]==0)
+	{
+	  //  boundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+          // boundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+if(idir==1)
+	boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	    cudaThreadSynchronize();
+	    //boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	    //cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+if(idir==2)
+            boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	    //boundary2_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	    cudaThreadSynchronize();
+	#endif
+	}
+
+
+	if((*p)->boundtype[field][idir][0]==4)
+	{
+	  //  boundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+          // boundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+if(idir==0)
+	;//boundary0_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+	;//    cudaThreadSynchronize();
+
+if(idir==1)
+	;//boundary1_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	 //   cudaThreadSynchronize();
+	 //   boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	 //   cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+if(idir==2)
+      ;//      boundary2_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	   // boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	  //  cudaThreadSynchronize();
+	#endif
+	}
+
+}
+    
+
+
+}
+
+
+
+int cuboundary2(struct params **p, struct bparams **bp,struct params **d_p, struct bparams **d_bp, struct state **d_s,  real **d_wmod,  int order,int idir,int field)
+{
+
+
+ dim3 dimBlock(dimblock, 1);
+
+int numBlocks = ((dimproduct_b(*p)+numThreadsPerBlock-1)) / numThreadsPerBlock;
+  
+
+
+
+int i1,i2,i3;
+
+
+
+if(((*p)->it)==-1    )
+{
+    //cudaMemcpy(*d_p,*p, sizeof(struct params), cudaMemcpyHostToDevice);
+
+
+
+	if((*p)->boundtype[field][idir][0]==4)
+	{
+	  //  boundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+          // boundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+if(idir==0)
+	boundary0_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+	    cudaThreadSynchronize();
+
+if(idir==1)
+	boundary1_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	 //   cudaThreadSynchronize();
+	 //   boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	 //   cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+if(idir==2)
+            boundary2_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	   // boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	  //  cudaThreadSynchronize();
+	#endif
+	}
+
+
+
+
+
+
+	if((*p)->boundtype[field][idir][0]==3)
+	{
+
+
+if(idir==0)
+    setboundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,idir,field);
+    //cudaThreadSynchronize();
+if(idir==1)
+    setboundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,idir,field);
+    cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+if(idir==2)
+	    setboundary2_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,idir,field);
+	    cudaThreadSynchronize();
+	#endif
+}
+
+}
+else
+{
+
+/*
+	    boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	    cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+            boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	    
+	    cudaThreadSynchronize();
+	#endif    */
+
+
+	if((*p)->boundtype[field][idir][0]==5)
+	{
+if(idir==0)
+	    boundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+  //cudaThreadSynchronize();
+if(idir==1)
+           boundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	//boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	    cudaThreadSynchronize();
+	    //boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	//    cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+            //boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+if(idir==2)
+	    boundary2_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	    cudaThreadSynchronize();
+	#endif
+	}
+
+	if((*p)->boundtype[field][idir][0]==0)
+	{
+	  //  boundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+          // boundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+if(idir==1)
+	;//boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	   ;// cudaThreadSynchronize();
+	    //boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	    //cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+if(idir==2)
+         ;//   boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	    //boundary2_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	   ;// cudaThreadSynchronize();
+	#endif
+	}
+
+
+	if((*p)->boundtype[field][idir][0]==4)
+	{
+	  //  boundary0_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+          // boundary1_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+if(idir==0)
+	boundary0_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,0,field);
+	    cudaThreadSynchronize();
+
+if(idir==1)
+	boundary1_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	 //   cudaThreadSynchronize();
+	 //   boundary1_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,1,field);
+	 //   cudaThreadSynchronize();
+	#ifdef USE_SAC_3D
+if(idir==2)
+            boundary2_contcd4_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	   // boundary2_per_parallel<<<numBlocks, numThreadsPerBlock>>>(*d_p,*d_bp,*d_s, *d_wmod, order,2,field);
+	  //  cudaThreadSynchronize();
+	#endif
+	}
+
+}
+    
+
+
+}
+
 
 
 
