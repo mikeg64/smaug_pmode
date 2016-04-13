@@ -89,10 +89,10 @@ int finishsteering=0;
 //char *cfgfile="zero1_np0201.ini";
 //char *cfgfile="2D_bhoriz120_2048_1024_asc.ini";
 //char *cfgfile="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_asc_84000.ini";
-char *cfgfile="configs/3D_128_spic_asc.ini";
+//char *cfgfile="configs/3D_128_spic_asc.ini";
 //char *cfgfile="/data/cs1mkg/smaug_pmode/spicule6b0_3d/zerospic1_asc_302000.ini";
 //char *cfgfile="/data/cs1mkg/smaug_spicule1/spicule6b0_3d/zerospic1_asc_477000.ini";
-//char *cfgfile="/fastdata/cs1mkg/smaug/spic6b0_3d/zerospic1_asc_505000.ini";
+char *cfgfile="/fastdata/cs1mkg/smaug/spic6b0_3d/zerospic1_asc_392000.ini";
 //char *cfgfile="2D_spicule1_2048_1024_test_asc.ini";
 //char *cfgfile="2D_spiculemuraw1_nohydros_nobg_tube_2048_1024_asc.o";
 //char *cfgfile="2D_spiculemuraw1_nohydros_tube_2048_1024_asc.out";
@@ -157,8 +157,8 @@ p->dx[2]=dz;
 p->qt=0.0;
 p->it=0;
 
-//p->qt=505.0;
-//p->it=505001;
+p->qt=392.0;
+p->it=392001;
 
 
 
