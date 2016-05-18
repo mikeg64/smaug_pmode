@@ -2,10 +2,10 @@
 #$ -j y
 #$ -V 
 #$ -l arch=intel*
-##$ -l gpu=1,gpu_arch=nvidia-k40m
-#$ -l gpu=1,gpu_arch=nvidia-m2070
-##$ -P cs-test
-#$ -P mhd
+#$ -l gpu=1,gpu_arch=nvidia-k40m
+##$ -l gpu=1,gpu_arch=nvidia-m2070
+#$ -P gpu
+##$ -P mhd
 #$ -N j0p63a_0_3
 #$ -l mem=12G
 #$ -l rmem=12G
@@ -37,7 +37,8 @@ cd src
 cp usersource0p63a_0_3_3d.cu usersource.cu
 cp boundary_3d.cu boundary.cu
 make clean
-make -f Makefile_3d smaug
+#make -f Makefile_3d smaug
+make -f Makefile_3d_k40 smaug
 cd ..
 
 

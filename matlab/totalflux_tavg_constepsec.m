@@ -153,7 +153,7 @@ fitval4=a(4).*exp(-b(4).*(f1fit4.^2))+c(4).*(f1fit4.^(-0.1))+d(4).*f1fit4.^2+f(4
 %loglog(freqvalues(1:6,1),ef5p5Mm(1:6,1),'o',freqvalues(1:6,2),ef5p5Mm(1:6,2),'+',freqvalues(1:6,3),ef5p5Mm(1:6,3),'x',freqvalues(1:6,4),ef5p5Mm(1:6,4),'s');
 plot(log10(freqvalues(1:6,1)),log10(ef5p5Mm(1:6,1)),'o',log10(freqvalues(1:6,2)),log10(ef5p5Mm(1:6,2)),'+',log10(freqvalues(1:6,3)),log10(ef5p5Mm(1:6,3)),'x',log10(freqvalues(1:6,4)),log10(ef5p5Mm(1:6,4)),'s');
 hold on;
-% plot(log10(f1fit1),log10(fitval1));
-% 
-% plot(log10(f1fit4),log10(fitval4));
+plot(log10(f1fit1),log10(fitval1));
+
+plot(log10(f1fit4),log10(fitval4));
 
