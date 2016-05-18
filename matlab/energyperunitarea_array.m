@@ -2,7 +2,7 @@
 %directory='/storage2/mikeg/results/spic6b0_1_3d/';
 %directory='/storage2/mikeg/results/spic5b0_b1G_3d/';
 %directory='/storage2/mikeg/results/spic6b0_2_3d/';
-%directory='/fastdata/cs1mkg/smaug/spicule4b0_3d/';
+directory='/fastdata/cs1mkg/smaug/spic4b0_3d/';
 %directory='/storage2/mikeg/results/spic3p0a_0_2_3d/';
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 %directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
@@ -25,8 +25,10 @@
 %directory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/';
-directory='/fastdata/cs1mkg/smaug/spic2p35a_2_2_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic2p35a_2_2_3d/';
 extension='.out';
+
+ndirectory='/fastdata/cs1mkg/smaug/spic4b0_3d/images/';
 
 %ndirectory='/storage2/mikeg/results/spic5b0_b1G_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic6b0_1_3d/images_3d_vsecs/';
@@ -44,7 +46,7 @@ extension='.out';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic5b0_2_3d/images';
-ndirectory='/fastdata/cs1mkg/smaug/spic2p35a_2_2_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic2p35a_2_2_3d/images';
 
 %ndirectory='/fastdata/cs1mkg/smaug/spic4p3a_0_1_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic3p0a_0_2_3d/images';
@@ -66,6 +68,7 @@ nextension='.jpg';
 %wspacename='4p3a_3dmatlab_perturb.mat';
 %wspacename='6p7a_3dmatlab_perturb.mat';
 %wspacename='5b0_3dmatlab_perturb.mat';
+wspacename='4b0_3dmatlab_perturb.mat';
 %wspacename='6b0_1_3dmatlab_perturb.mat';
 %wspacename='0p63a_0_3matlab_perturb.mat';
 %wspacename='6b0_2_3dmatlab_perturb.mat';
@@ -74,7 +77,7 @@ nextension='.jpg';
 %wspacename='s0p63a_0_3_matlab_perturb.mat';
 %wspacename='5b0_2_3dmatlab_perturb.mat';
 %wspacename='5b0_3_3dmatlab_perturb.mat';
-wspacename='2p35a2_2_3dmatlab_perturb.mat';
+%wspacename='2p35a2_2_3dmatlab_perturb.mat';
 
 %nt=890;
 %nt=889;
@@ -84,11 +87,12 @@ wspacename='2p35a2_2_3dmatlab_perturb.mat';
 %nt=1360;
 %nt=1000;
 %nt=803;
-nt=718;
+nt=499;
 
 
 %load(wspacename);
 i=0;
+i=90;
 iinit=i+1;
 
 if i==0
@@ -128,7 +132,7 @@ end
 %period=425.9;
 %period=301.25;
 %period=63.63;
-period=471.4;
+period=30.0;
 
 
 for i=iinit:nt %1182
