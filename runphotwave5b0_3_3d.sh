@@ -8,6 +8,7 @@
 
 ##$ -P cs-test
 #$ -P gpu
+##$ -P mhd
 #$ -N p5b0p3_3d
 #$ -l mem=12G
 #$ -l rmem=12G
@@ -24,6 +25,7 @@ cp usersource5b0_3_3d.cu usersource.cu
 cp boundary_3d.cu boundary.cu
 make clean
 make -f Makefile_3d_k40 smaug
+#make -f Makefile_3d smaug
 cd ..
 
 
