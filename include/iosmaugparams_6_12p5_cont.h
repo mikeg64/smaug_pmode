@@ -14,9 +14,14 @@ ni=124;    //OZT tests
 ni=ni+2*ngi;
 //ni=512;
 //real xmax = 6.2831853;  
-real xmax=5955555.6e0;
-real xmin=133333.33;
-real dx = (xmax-xmin)/(ni);
+real xmax=12.8496e6;
+real xmin=199219.0;
+
+//real xmax=5955555.6e0;
+//real xmin=133333.33;
+
+real dx = (xmax-xmin)/(ni-2*ngi);
+
 //#endif
 
 
@@ -28,10 +33,17 @@ int nj = 124;  //OZT tests
 //int nj=2;  //BW test
 nj=nj+2*ngj;
 //nj=512;
-//real ymax = 6.2831853; 
-real ymax = 4.0e6;
-real ymin=1953.10;
-real dy = (ymax-ymin)/(nj);    
+//real ymax = 6.2831853;
+real ymax=2.56e6;
+real ymin=39687.5;
+
+//real ymax = 4.0e6;
+//real ymin=1953.10;
+
+
+//real dx = xmax/(ni-4);
+real dy = (ymax-ymin)/(nj-2*ngj); 
+   
 //nj=41;
 //#endif
 
@@ -43,10 +55,17 @@ int nk;
 nk=124;    //BW tests
 
 nk=nk+2*ngk;
-real zmax=4.0e6;
-real zmin=1953.1;
+real zmax=2.56e6;
+real zmin=39687.5;
+
+//real zmax=4.0e6;
+//real zmin=1953.1;
+
+
+
 //real dx = xmax/(ni-4);
-real dz = (zmax-zmin)/(nk);
+real dz = (zmax-zmin)/(nk-2*ngk);
+
 #endif  
 
 
@@ -63,19 +82,20 @@ struct state *d_state;
 struct state *state=(struct state *)malloc(sizeof(struct state));
 
 
-  
+//sizes corrected here so that periodic boundary conditions can be used
 real *x=(real *)calloc(ni,sizeof(real));
 for(i=0;i<ni;i++)
-		x[i]=i*dx;
+		x[i]=(xmin-ngi*dx)+i*dx;
 
 real *y=(real *)calloc(nj,sizeof(real));
 for(i=0;i<nj;i++)
-		y[i]=i*dy;
+		y[i]=(ymin-ngj*dy)+i*dy;
 
 
 real *z=(real *)calloc(nk,sizeof(real));
 for(i=0;i<nk;i++)
-		z[i]=i*dz;
+		z[i]=(zmin-ngk*dz)+i*dz;
+
 
 int step=0;
 //real tmax = 200;
@@ -88,15 +108,12 @@ int finishsteering=0;
 //char *cfgfile="zero1_np020203.ini";
 //char *cfgfile="zero1_np0201.ini";
 //char *cfgfile="2D_bhoriz120_2048_1024_asc.ini";
-//char *cfgfile="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_asc_84000.ini";
+//char *cfgfile="/fastdata/cs1mkg/smaug/spic6b0_12p5/zerospic1_asc_45000.ini";
 //char *cfgfile="configs/3D_128_spic_asc.ini";
-//char *cfgfile="/data/cs1mkg/smaug_pmode/spicule6b0_2_3d/zerospic1_asc_263000.ini";
-//char *cfgfile="/data/cs1mkg/smaug_spicule1/spicule6b0_2_3d/zerospic1_asc_431000.ini";
-char *cfgfile="/fastdata/cs1mkg/smaug/spic6b0_2_3d/zerospic1_asc_263000.ini";
-//char *cfgfile="/fastdata/cs1mkg/smaug/spic5b0_3d/zerospic1_asc_79000.ini";
-
-//char *cfgfile="/fastdata/cs1mkg/smaug/spicule5b0_3d/zerospic1_asc_489000.ini";
-//char *cfgfile="/data/cs1mkg/smaug_spicule1/spicule5b0_3d/zerospic1_asc_489000.ini";
+char *cfgfile="configs/3D_128_2p5_2p5_12p5_asc.ini";
+//char *cfgfile="/data/cs1mkg/smaug_pmode/spicule6b0_3d/zerospic1_asc_302000.ini";
+//char *cfgfile="/data/cs1mkg/smaug_spicule1/spicule6b0_3d/zerospic1_asc_477000.ini";
+//char *cfgfile="/fastdata/cs1mkg/smaug/spic6b0_12p5/zerospic1_asc_90000.ini";
 //char *cfgfile="2D_spicule1_2048_1024_test_asc.ini";
 //char *cfgfile="2D_spiculemuraw1_nohydros_nobg_tube_2048_1024_asc.o";
 //char *cfgfile="2D_spiculemuraw1_nohydros_tube_2048_1024_asc.out";
@@ -113,9 +130,8 @@ char *cfgfile="/fastdata/cs1mkg/smaug/spic6b0_2_3d/zerospic1_asc_263000.ini";
 //char *cfgout="/fastdata/cs1mkg/smaug/spicule4_nob/zerospic1";
 //char *cfgout="/fastdata/cs1mkg/smaug/spicule7_nob/zerospic1";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/out/spicule5b4/zerospic1_";
-//char *cfgout="/data/cs1mkg/smaug_spicule1/spicule5b0_3d/zerospic1_";
-char *cfgout="/fastdata/cs1mkg/smaug/spic6b0_2_3d/zerospic1_";
-//char *cfgout="/data/cs1mkg/smaug_spicule1/spicule5b0_3d/zerospic1_";
+//char *cfgout="/fastdata/cs1mkg/smaug/spic4b0_3d/zerospic1_";
+char *cfgout="/fastdata/cs1mkg/smaug/spic6b0_12p5_cont/zerospic1_";
 //char *cfgout="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_";
 
 //char *cfgout="zero1_np0201.out";
@@ -162,8 +178,9 @@ p->dx[2]=dz;
 p->qt=0.0;
 p->it=0;
 
-p->qt=263.0;
-p->it=263001;
+//p->qt=45.0;
+//p->it=45001;
+
 
 
 
@@ -194,14 +211,13 @@ p->cmax=0.02;
 
 p->rkon=0.0;
 p->sodifon=1.0;
-p->courant=0.1;
 p->moddton=0.0;
 p->divbon=0.0;
 p->divbfix=0.0;
 p->hyperdifmom=1.0;
 p->readini=1.0;
 p->cfgsavefrequency=1000;
-//p->cfgsavefrequency=1;
+//p->cfgsavefrequency=100;
 
 p->xmax[0]=xmax;
 p->xmax[1]=ymax;
@@ -228,9 +244,14 @@ p->chyp[energy]=0.02;
 p->chyp[b1]=0.02;
 p->chyp[b2]=0.02;
 p->chyp[b3]=0.02;
+//p->chyp[mom1]=0.15;
+//p->chyp[mom2]=0.15;
+//p->chyp[mom3]=0.15;
+
 p->chyp[mom1]=0.4;
 p->chyp[mom2]=0.4;
 p->chyp[mom3]=0.4;
+
 p->chyp[rho]=0.02;
 
 
@@ -261,6 +282,7 @@ for(int ibound=0; ibound<2; ibound++)
 {
    (p->boundtype[ii][0][ibound])=4;  //period=0 mpi=1 mpiperiod=2  cont=3 contcd4=4 fixed=5 symm=6 asymm=7
 }
+
 
 
 

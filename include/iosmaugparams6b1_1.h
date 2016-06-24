@@ -91,7 +91,7 @@ int finishsteering=0;
 //char *cfgfile="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_asc_84000.ini";
 //char *cfgfile="configs/3D_128_spic_asc.ini";
 
-char *cfgfile="/fastdata/cs1mkg/smaug/spic6b1_1/zerospic1_asc_359000.ini";
+char *cfgfile="/fastdata/cs1mkg/smaug/spic6b1_1/zerospic1_asc_99000.ini";
 //char *cfgfile="/fastdata/cs1mkg/smaug/spic5b0_3d/zerospic1_asc_402000.ini";
 //char *cfgfile="/fastdata/cs1mkg/smaug/spic5b0_3d/zerospic1_asc_79000.ini";
 
@@ -159,11 +159,11 @@ p->dx[0]=dx;
 p->dx[1]=dy;
 p->dx[2]=dz;
 
-p->qt=0.0;
-p->it=0;
+//p->qt=0.0;
+//p->it=0;
 
-p->qt=359.0;
-p->it=359001;
+p->qt=99.0;
+p->it=99001;
 
 
 
@@ -233,9 +233,9 @@ p->chyp[mom1]=0.4;
 p->chyp[mom2]=0.4;
 p->chyp[mom3]=0.4;
 
-p->chyp[mom1]=0.05;
-p->chyp[mom2]=0.05;
-p->chyp[mom3]=0.05;
+//p->chyp[mom1]=0.05;
+//p->chyp[mom2]=0.05;
+//p->chyp[mom3]=0.05;
 
 
 p->chyp[rho]=0.02;
@@ -259,7 +259,7 @@ for(int ii=0;ii<NVAR; ii++)
 for(int idir=0; idir<NDIM; idir++)
 for(int ibound=0; ibound<2; ibound++)
 {
-   (p->boundtype[ii][idir][ibound])=0;  //period=0 mpi=1 mpiperiod=2  cont=3 contcd4=4 fixed=5 symm=6 asymm=7
+   (p->boundtype[ii][idir][ibound])=4;  //period=0 mpi=1 mpiperiod=2  cont=3 contcd4=4 fixed=5 symm=6 asymm=7
 }
 
 //set boundary types

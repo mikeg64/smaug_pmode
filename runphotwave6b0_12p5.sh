@@ -3,8 +3,8 @@
 #$ -l arch=intel*
 ##$ -l gpu=1,gpu_arch=nvidia-k40m
 #$ -l gpu=1,gpu_arch=nvidia-m2070
-#$ -P mhd
-##$ -P gpu
+##$ -P mhd
+#$ -P gpu
 #$ -N pw6b0
 #$ -l mem=12G
 #$ -l rmem=12G

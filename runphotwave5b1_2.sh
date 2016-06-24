@@ -4,7 +4,7 @@
 #$ -l gpu=1
 #$ -l gpu_arch=nvidia-m2070
 ##$ -l gpu_arch=nvidia-k40m
-#$ -P gpu
+#$ -P mhd
 #$ -N p5p1_2
 #$ -l mem=12G
 #$ -l rmem=12G

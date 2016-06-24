@@ -74,20 +74,22 @@ r2=(yp-xc2)*(yp-xc2);
 //delta_x=0.004e6;
 delta_x=0.5e6;
 //delta_z=0.004e6;
-delta_z=0.25e6;
+//delta_z=0.25e6;
+delta_z=0.00833e6;
 
 exp_x=exp(-r2/(delta_x*delta_x));
 
 
 qt=p->qt;
 r1=(xp-xc1)*(xp-xc1);
-n1=0;
-n2=0;
+n1=1;
+n2=1;
 //AA=0.0356825*(n1+1)*(n2+1);
-AA=350;//*(n1+1)*(n2+1);
+//AA=350;//*(n1+1)*(n2+1);
 //AA=2000;// ! 2 km/sec
 s_period=180.e0;
-
+AA=10;
+AA=175.3;
 ny=(p->n[1]);
 nz=(p->n[2]);
 
