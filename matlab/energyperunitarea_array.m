@@ -12,16 +12,16 @@
 %directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d/';
 
 %directory='/fastdata/cs1mkg/smaug/spic4p71a_1_1_3d/';
-%directory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/';
+%  directory='/fastdata/cs1mkg/smaug/spic4b0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/';
-%directory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/';
+% directory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic6p7a_0_0_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic4p3a_0_1_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic2p3a_0_3_3d/';
-directory='/fastdata/cs1mkg/smaug/spic4p35a_0_0_3d/';
-%directory='/fastdata/cs1mkg/smaug/spicule3p07a_0_1_3d/';
-%directory='/fastdata/cs1mkg/smaug/spicule2p05a_0_2_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic4p35a_0_0_3d/';
+ directory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic1p33a_0_2_3d/';
 %directory='/fastdata/cs1mkg/smaug/spicule1p53a_0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic0p63a_0_3_3d/';
@@ -42,12 +42,12 @@ extension='.out';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic4p71a_1_1_3d/images';
-ndirectory='/fastdata/cs1mkg/smaug/spic4p35a_0_0_3d/images';
+%ndirectory='/fastdata/cs1mkg/smaug/spic4p35a_0_0_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3d_rep/images';
-%ndirectory='/fastdata/cs1mkg/smaug/spic6b0_2_3d_rep/images';
-%ndirectory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/images';
+% ndirectory='/fastdata/cs1mkg/smaug/spic6b0_2_3d/images';
+% ndirectory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic5b0_2_3d/images';
-%ndirectory='/fastdata/cs1mkg/smaug/spic2p35a_2_2_3d/images';
+ndirectory='/fastdata/cs1mkg/smaug/spic2p35a_2_2_3d/images';
 
 %ndirectory='/fastdata/cs1mkg/smaug/spic4p3a_0_1_3d/images';
 %ndirectory='/fastdata/cs1mkg/smaug/spic3p0a_0_2_3d/images';
@@ -63,23 +63,23 @@ nextension='.jpg';
 
 %wspacename='0p63a0_3_3dmatlab_perturb.mat';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
-%wspacename='3p07a0_1_3dmatlab_perturb.mat';
-wspacename='4p35a0_0_3dmatlab_perturb.mat';
+% wspacename='2p00a0_1_3dmatlab_perturb.mat';
+% wspacename='4p35a0_0_3dmatlab_perturb.mat';
 %wspacename='3p0a_3dmatlab_perturb.mat';
 %wspacename='4p3a_3dmatlab_perturb.mat';
 %wspacename='6p7a_3dmatlab_perturb.mat';
 %wspacename='5b0_3dmatlab_perturb.mat';
 %wspacename='5b0_3dmatlab_perturb.mat';
-%wspacename='6b0_1_3dmatlab_perturb.mat';
+% wspacename='6b0_1_3dmatlab_perturb.mat';
 %wspacename='0p63a_0_3matlab_perturb.mat';
-%wspacename='6b0_2_3dmatlab_perturb.mat';
+% wspacename='6b0_2_3dmatlab_perturb.mat';
 %wspacename='6b0_3dmatlab_perturb.mat';
 %wspacename='4p71a1_1_3dmatlab_perturb.mat';
 %wspacename='s0p63a_0_3_matlab_perturb.mat';
 %wspacename='5b0_2_3dmatlab_perturb.mat';
-%wspacename='5b0_3_3dmatlab_perturb.mat';
+% wspacename='4b0_3_3dmatlab_perturb.mat';
 %wspacename='2p35a2_2_3dmatlab_perturb.mat';
-
+ wspacename='0p63a0_3_3dmatlab_perturb.mat';
 %nt=890;
 %nt=889;
 %nt=1203;
@@ -88,7 +88,7 @@ wspacename='4p35a0_0_3dmatlab_perturb.mat';
 %nt=1360;
 %nt=1000;
 %nt=803;
-nt=1428;
+nt=372;
 
 
 % load(wspacename);
@@ -127,13 +127,14 @@ end
 %nt=1182;
 
 %period=180.0;
-%period=133.33;
-%period=84.84;
+% period=133.33;
+% period=84.84;
 %period=673.4;
 %period=425.9;
 %period=301.25;
-%period=63.63;
-period=300.0;
+period=63.63;
+% period=205.1;
+% period=153.8;
 
 
 for i=iinit:nt %1182
