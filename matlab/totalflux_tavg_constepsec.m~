@@ -137,11 +137,7 @@ cefc4=cef5p5Mm(:,4);
 %plot(log10(freqvalues(1:6,1)),log10(cef5p5Mm(1:6,1)),'o',log10(freqvalues(1:6,2)),log10(cef5p5Mm(1:6,2)),'+',log10(freqvalues(1:6,3)),log10(cef5p5Mm(1:6,3)),'x',log10(freqvalues(1:6,4)),log10(cef5p5Mm(1:6,4)),'s');
 % plot((freqvalues(1:6,1)),log10(cef5p5Mm(1:6,1)),'o',(freqvalues(1:6,2)),log10(cef5p5Mm(1:6,2)),'+',(freqvalues(1:6,3)),log10(cef5p5Mm(1:6,3)),'x',(freqvalues(1:6,4)),log10(cef5p5Mm(1:6,4)),'s');
 %plot((periodvalues(1:6,1)),log10(cef5p5Mm(1:6,1)),'o',(periodvalues(1:6,2)),log10(cef5p5Mm(1:6,2)),'+',(periodvalues(1:6,3)),log10(cef5p5Mm(1:6,3)),'x',(periodvalues(1:6,4)),log10(cef5p5Mm(1:6,4)),'s');
-%plot((periodvalues(1:6,1)),log10(cef4Mm(1:6,1)),'o',(periodvalues(1:6,2)),log10(cef4Mm(1:6,2)),'+',(periodvalues(1:6,3)),log10(cef4Mm(1:6,3)),'x',(periodvalues(1:6,4)),log10(cef4Mm(1:6,4)),'s');
-
-%plot((periodvalues(1:6,1)),(cef5p5Mm(1:6,1)./ef5p5Mm(1:6,1)),'o',(periodvalues(1:6,2)),(cef5p5Mm(1:6,2)./ef5p5Mm(1:6,2)),'+',(periodvalues(1:6,3)),(cef5p5Mm(1:6,3)./ef5p5Mm(1:6,3)),'x',(periodvalues(1:6,4)),(cef5p5Mm(1:6,4)./ef5p5Mm(1:6,4)),'s');
-%plot((periodvalues(1:6,1)),(cef4Mm(1:6,1)./ef4Mm(1:6,1)),'o',(periodvalues(1:6,2)),(cef4Mm(1:6,2)./ef4Mm(1:6,2)),'+',(periodvalues(1:6,3)),(cef4Mm(1:6,3)./ef4Mm(1:6,3)),'x',(periodvalues(1:6,4)),(cef4Mm(1:6,4)./ef4Mm(1:6,4)),'s');
-plot((periodvalues(1:6,1)),(cef2Mm(1:6,1)./ef2Mm(1:6,1)),'o',(periodvalues(1:6,2)),(cef2Mm(1:6,2)./ef2Mm(1:6,2)),'+',(periodvalues(1:6,3)),(cef2Mm(1:6,3)./ef2Mm(1:6,3)),'x',(periodvalues(1:6,4)),(cef2Mm(1:6,4)./ef2Mm(1:6,4)),'s');
+plot((freqvalues(1:6,1)),log10(cef4Mm(1:6,1)),'o',(freqvalues(1:6,2)),log10(cef4Mm(1:6,2)),'+',(freqvalues(1:6,3)),log10(cef5p5Mm(1:6,3)),'x',(freqvalues(1:6,4)),log10(cef5p5Mm(1:6,4)),'s');
 
 hold on;
 % plot(log10(f1fit1),log10(fitval1));

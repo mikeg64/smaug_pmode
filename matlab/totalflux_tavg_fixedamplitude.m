@@ -117,32 +117,32 @@ f2=freqvalues(:,2);
 f3=freqvalues(:,3);
 f4=freqvalues(:,4);
 
-efc1=ef5p5Mm(:,1);
-efc2=ef5p5Mm(:,2);
-efc3=ef5p5Mm(:,3);
-efc4=ef5p5Mm(:,4);
-
-a(1)=0.4733;
-b(1)=0.3517;
-c(1)=-5.105e5;
-d(1)=-1.936;
-e(1)=7513;
-f(1)=3.842e5;
-
-delta=(200-15)/20;
-f1fit1=15:delta:200;
-fitval1=a(1).*exp(-b(1).*(f1fit1.^2))+c(1).*(f1fit1.^(-0.1))+d(1).*f1fit1.^2+f(1);
-
-
-a(4)=0.4505;
-b(4)=0.08382;
-c(4)=-1.534;
-d(4)=-6.894e-5;
-e(4)=7513;
-f(4)=3.621;
-
-f1fit4=15:delta:200;
-fitval4=a(4).*exp(-b(4).*(f1fit4.^2))+c(4).*(f1fit4.^(-0.1))+d(4).*f1fit4.^2+f(4);
+% efc1=ef5p5Mm(:,1);
+% efc2=ef5p5Mm(:,2);
+% efc3=ef5p5Mm(:,3);
+% efc4=ef5p5Mm(:,4);
+% 
+% a(1)=0.4733;
+% b(1)=0.3517;
+% c(1)=-5.105e5;
+% d(1)=-1.936;
+% e(1)=7513;
+% f(1)=3.842e5;
+% 
+% delta=(200-15)/20;
+% f1fit1=15:delta:200;
+% fitval1=a(1).*exp(-b(1).*(f1fit1.^2))+c(1).*(f1fit1.^(-0.1))+d(1).*f1fit1.^2+f(1);
+% 
+% 
+% a(4)=0.4505;
+% b(4)=0.08382;
+% c(4)=-1.534;
+% d(4)=-6.894e-5;
+% e(4)=7513;
+% f(4)=3.621;
+% 
+% f1fit4=15:delta:200;
+% fitval4=a(4).*exp(-b(4).*(f1fit4.^2))+c(4).*(f1fit4.^(-0.1))+d(4).*f1fit4.^2+f(4);
 
 
 
@@ -155,6 +155,8 @@ fitval4=a(4).*exp(-b(4).*(f1fit4.^2))+c(4).*(f1fit4.^(-0.1))+d(4).*f1fit4.^2+f(4
 %semilogy(freqvalues(1:6,1),ef5p5Mm(1:6,1),'o',freqvalues(1:6,2),ef5p5Mm(1:6,2),'+',freqvalues(1:6,3),ef5p5Mm(1:6,3),'x',freqvalues(1:6,4),ef5p5Mm(1:6,4),'s');
 %loglog(freqvalues(1:6,1),ef5p5Mm(1:6,1),'o',freqvalues(1:6,2),ef5p5Mm(1:6,2),'+',freqvalues(1:6,3),ef5p5Mm(1:6,3),'x',freqvalues(1:6,4),ef5p5Mm(1:6,4),'s');
 % plot(log10(freqvalues(1:6,1)),log10(ef5p5Mm(1:6,1)),'o',log10(freqvalues(1:6,2)),log10(ef5p5Mm(1:6,2)),'+',log10(freqvalues(1:6,3)),log10(ef5p5Mm(1:6,3)),'x',log10(freqvalues(1:6,4)),log10(ef5p5Mm(1:6,4)),'s');
+%plot((periodvalues(1:6,1)),log10(ef5p5Mm(1:6,1)),'o',(periodvalues(1:6,2)),log10(ef5p5Mm(1:6,2)),'+',(periodvalues(1:6,3)),log10(ef5p5Mm(1:6,3)),'x',(periodvalues(1:6,4)),log10(ef5p5Mm(1:6,4)),'s');
+plot((periodvalues(1:6,1)),log10(ef4Mm(1:6,1)),'o',(periodvalues(1:6,2)),log10(ef4Mm(1:6,2)),'+',(periodvalues(1:6,3)),log10(ef4Mm(1:6,3)),'x',(periodvalues(1:6,4)),log10(ef4Mm(1:6,4)),'s');
 % hold on;
 % plot(log10(f1fit1),log10(fitval1));
 % 
