@@ -139,7 +139,7 @@ end
 % period=63.63;
 % period=205.1;
 % period=153.8;
-period=200.0;
+period=435.0;
 
 
 for i=iinit:nt %1182
@@ -331,10 +331,10 @@ esumfluxchrom=esumfluxchrom/nt
 esumflux=esumfluxtran/nt
 
 
-ef1Mmv= sum(efluxarray(: , 20))/nt;  %20
-ef2Mmv=sum(efluxarray(: , 42))/nt;  %42
-ef4Mmv=sum(efluxarray(: , 90))/nt;  %90
-ef5p5Mmv=sum(efluxarray(: , 117))/nt; %117
+% ef1Mmv= sum(efluxarray(: , 20))/nt;  %20
+% ef2Mmv=sum(efluxarray(: , 42))/nt;  %42
+% ef4Mmv=sum(efluxarray(: , 90))/nt;  %90
+% ef5p5Mmv=sum(efluxarray(: , 117))/nt; %117
 
 
 % imfile=[ndirectory,'energyvtime_',id,nextension];
