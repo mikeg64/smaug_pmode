@@ -1,5 +1,6 @@
 
 %directory='/fastdata/cs1mkg/smaug/spic6b0_3d/';
+directory='/fastdata/cs1mkg/smaug/spic6b2_3/';
 %directory='/storage2/mikeg/results/spic5b0_b1G_3d/';
 %directory='/storage2/mikeg/results/spic4b0_3_3d/';
 %directory='/storage2/mikeg/results/spic5b0_3d/';
@@ -8,7 +9,9 @@
 %directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 %directory='/fastdata/cs1mkg/smaug/spic5b0_3d_rep/';
-directory='/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/';
+%directory='/home/mikeg/fuse/icefast/smaug/spic4p71a_1_1_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic4p71a_1_1_3d/';
 %directory='/fastdata/cs1mkg/smaug/spicule2p05_0_2_3d/';
 extension='.out';
 
@@ -20,15 +23,31 @@ extension='.out';
 %ndirectory='/storage2/mikeg/results/spic4p3a_0_1_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic6p7a_0_0_3d/images_3d_vsecs/';
 %ndirectory='/storage2/mikeg/results/spic2p3a_0_3_3d/images_3d_vsecs/';
-ndirectory='/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/images_3d_vsecs/';
+%ndirectory='/fastdata/cs1mkg/smaug/spic1p00a_0_3_3d/images_3d_vsecs/';
+%ndirectory='/home/mikeg/fuse/icefast/smaug/spic4p71a_1_1_3d/images_3d_vsecs/';
+%ndirectory='/fastdata/cs1mkg/smaug/spic4p71a_1_1_3d/images_3d_vsecs/';
 %ndirectory='/fastdata/cs1mkg/smaug/spicule2p05_0_2_3d/images_3d_vsecs';
+ndirectory='/fastdata/cs1mkg/smaug/spic6b2_3/images_vsecs_4p7/';
 nextension='.jpg';
 
-for i=1:1:580
-%for i=1519:2632
+ for i=1:1:777
+%  for i=1:20:777
+% for i=200:200
 %for i=2631:2632
-    
-
+mval=10;
+if i>300
+   mval=10+(i-300)*0.0728155; 
+end
+% if i>300
+%    mval=500; 
+% end
+if i>505
+   mval=25; 
+end
+if i>700
+   mval=25; 
+end
+% mval=1000;
 id=int2str(1000*i);
 filename=[directory,'zerospic1__',id,extension];
 timetext=['time=',int2str(i),'s'];
@@ -144,6 +163,10 @@ TP=(gamma-1.d0).*TP;
    %x2 = permute(x2, P);
    %x3 = permute(x3, P);
    %myval = permute(myval, P);
+  siz=size(myval);
+mysurf=reshape(myval(:,:,100),124,124);
+%49,100
+h=surf(real(mysurf'),'LineStyle','none');
    
    
   %h= slice(myval,64, 64, 4);
@@ -155,7 +178,7 @@ TP=(gamma-1.d0).*TP;
   %h=slice(myval,108, 108,[5 49 85]);  %used for 2,2 mode
   %h=slice(myval,108, 108,[5 49]);  %used for 2,2 mode
   %h=slice(myval,108, 96,[5 49 100]);  %used for 0,1 mode
-  h=slice(myval,65, 65,[5 49 100]);  %used for 0,0 mode
+  %%%h=slice(myval,65, 65,[5 49 100]);  %used for 0,0 mode
   %h=slice(myval,65, 65,[5 49 100]);
   %h=slice(myval,105, 96,8);
   hold on;
@@ -199,23 +222,26 @@ TP=(gamma-1.d0).*TP;
   %grid off;
   %set(h,'XData',ax,'YData',ay,'ZData',az);
   hax=get(h,'Children');
-  set(gca,'CameraPosition',[-606.298 -914.02 280.537]);
-  set(gca,'Xlim',[0 124],'Ylim',[0 124],'Zlim',[0 124]);
-  
-  set(gca,'XTickLabel',{'0';'1.6';'3.2'})
-  set(gca,'YTickLabel',{'0';'1.6';'3.2'})
+  %%%set(gca,'CameraPosition',[-606.298 -914.02 280.537]);
+  view(45,60);  %with surf plot
+  %%%set(gca,'Xlim',[0 124],'Ylim',[0 124],'Zlim',[0 124]);
+  set(gca,'Xlim',[0 124],'Ylim',[0 124],'Zlim',[-mval mval]);  %with surf plot
+  %%%set(gca,'XTickLabel',{'0';'1.6';'3.2'})
+  %%%set(gca,'YTickLabel',{'0';'1.6';'3.2'})
 
+set(gca,'XTickLabel',{'0.06';'0.71';'1.36';'2';'2.65';'3.3';'3.9'})
+set(gca,'YTickLabel',{'0.06';'0.71';'1.36';'2';'2.65';'3.3';'3.9'})
+ 
 
-
-  %set(gca,'YTickLabel',{'0';'1.6';'3.2'})
-  %set(gca,'XTickLabel',{'0';'0.63';'1.26';'1.89';'2.52';'3.15';'3.78'})
-  set(gca,'ZTickLabel',{'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72'})
+  %%%set(gca,'YTickLabel',{'0';'1.6';'3.2'})
+  %%%set(gca,'XTickLabel',{'0';'0.63';'1.26';'1.89';'2.52';'3.15';'3.78'})
+  %%%set(gca,'ZTickLabel',{'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72'})
   %cmap=colormap('Jet');
   
   
   
   
-   max1=max(myval);
+  max1=max(myval);
   max2=max(max1);
   max3=max(max2);
   
@@ -223,8 +249,8 @@ TP=(gamma-1.d0).*TP;
   min2=min(min1);
   min3=min(min2);
   
-  maxval=10;
-  minval=-10;
+  maxval=100;
+  minval=-100;
   
   if min3<minval
       minval=min3;
@@ -242,6 +268,11 @@ TP=(gamma-1.d0).*TP;
       maxval=100;
   end
   
+   minval=min(min(mysurf));
+   maxval=max(max(mysurf));
+   maxval=mval;
+   minval=-mval;
+  
   cmap=colormap(jet(256));
   caxis([minval maxval]);
   %caxis([-0.6 0.6]);
@@ -255,17 +286,20 @@ TP=(gamma-1.d0).*TP;
   
   
   hc=colorbar();
-  set(hc,'Ylim',[minval maxval]);
+  set(hc,'Ylim',[-mval mval]);%surf
+  %%%set(hc,'Ylim',[minval maxval]);
   %set(hc,'Ylim',[-0.6 0.6]);
   %set(hc,'Ylim',[4*10^5 3*10^6]);
-  text(-100,0,165,timetext);
+  %%%text(-100,0,165,timetext);
+   text(-5,-5,2.4*maxval,timetext); %for surf plot
   %title('Vertical Velocity for Solar Atmosphere with a Sinusoidal (0,0) Mode Driver of Period673.4s, Applied at a Height of 100km');
-  title('Vertical Velocity for Solar Atmosphere with a Sinusoidal (3,3) Mode Driver of Period 100.0s, Applied at a Height of 100km');
+  %title('Vertical Velocity for Solar Atmosphere at 2.3Mm with a Sinusoidal (2,3) Mode Driver of Period 180.0s, Applied at a Height of 100km');
+  title('Vertical Velocity for Solar Atmosphere at 4.7Mm with a Sinusoidal (2,3) Mode Driver of Period 180.0s, Applied at a Height of 100km');
   xlabel('x-distance (Mm)');
   ylabel('y-distance (Mm)');
-  zlabel('Height (Mm)');
+  %%%zlabel('Height (Mm)');
   
-  ylabel(hc,'Vz [m/s]');
+  zlabel('Vz [m/s]');  %for surf plot
   
   
   
