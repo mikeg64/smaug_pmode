@@ -200,20 +200,20 @@ erat02_1Mm=cef1Mm(:,3)./cef0p5Mm(:,3);
 erat03_1Mm=cef1Mm(:,4)./cef0p5Mm(:,4);
 
 
-erat00_2Mm=100*cef2Mm(:,1)./cef0p5Mm(:,1);
-erat01_2Mm=100*cef2Mm(:,2)./cef0p5Mm(:,2);
-erat02_2Mm=100*cef2Mm(:,3)./cef0p5Mm(:,3);
-erat03_2Mm=100*cef2Mm(:,4)./cef0p5Mm(:,4);
+erat00_2Mm=cef2Mm(:,1)./cef0p5Mm(:,1);
+erat01_2Mm=cef2Mm(:,2)./cef0p5Mm(:,2);
+erat02_2Mm=cef2Mm(:,3)./cef0p5Mm(:,3);
+erat03_2Mm=cef2Mm(:,4)./cef0p5Mm(:,4);
 
-erat00_4Mm=100*cef4Mm(:,1)./cef0p5Mm(:,1);
-erat01_4Mm=100*cef4Mm(:,2)./cef0p5Mm(:,2);
-erat02_4Mm=100*cef4Mm(:,3)./cef0p5Mm(:,3);
-erat03_4Mm=100*cef4Mm(:,4)./cef0p5Mm(:,4);
+erat00_4Mm=cef4Mm(:,1)./cef0p5Mm(:,1);
+erat01_4Mm=cef4Mm(:,2)./cef0p5Mm(:,2);
+erat02_4Mm=cef4Mm(:,3)./cef0p5Mm(:,3);
+erat03_4Mm=cef4Mm(:,4)./cef0p5Mm(:,4);
 
-erat00_5p5Mm=100*cef5p5Mm(:,1)./cef0p5Mm(:,1);
-erat01_5p5Mm=100*cef5p5Mm(:,2)./cef0p5Mm(:,2);
-erat02_5p5Mm=100*cef5p5Mm(:,3)./cef0p5Mm(:,3);
-erat03_5p5Mm=100*cef5p5Mm(:,4)./cef0p5Mm(:,4);
+erat00_5p5Mm=cef5p5Mm(:,1)./cef0p5Mm(:,1);
+erat01_5p5Mm=cef5p5Mm(:,2)./cef0p5Mm(:,2);
+erat02_5p5Mm=cef5p5Mm(:,3)./cef0p5Mm(:,3);
+erat03_5p5Mm=cef5p5Mm(:,4)./cef0p5Mm(:,4);
 
 
 erat180_1Mm=cef1Mm180./cef0p5Mm180;
@@ -265,14 +265,14 @@ erat300_5p5Mm=cef5p5Mm300./cef0p5Mm300;
 
 
 
-bar(log10(1e8*erat300_4Mm))
+bar(log10(1e8*erat180_5p5Mm))
 set(gca,'XTickLabel',{'(0,0)','(0,1)','(0,2)','(0,3)','(1,1)','(1,2)','(1,3)','(2,2)','(2,3)','(3,3)'})
   %title('Vertical Velocity for Solar Atmosphere at 2.3Mm with a Sinusoidal (2,3) Mode Driver of Period 180.0s, Applied at a Height of 100km');
-  title({'Variation of Energy Flux Ratio at a Height of 4Mm for a Solar Atmosphere';'Excited with a 300s p-Mode Driver Located at a Height of 100km'});
+  title({'Variation of Energy Flux Ratio at a Height of 5.5Mm for a Solar Atmosphere';'Excited with a 180s p-Mode Driver Located at a Height of 100km'});
   %title({'Variation of Energy Flux Ratio at a Height of 5.5Mm for a Solar Atmosphere';'Excited with a p-Mode Driver Located at a Height of 100km'});
   %xlabel('log10(1000000xEnergy Flux)');
   %xlabel('Driver period (s)');
-  ylabel('log10(Energy Ratio Percentage(x)');
+  ylabel('log10(Energy Ratio(x1e8)');
 
 
 

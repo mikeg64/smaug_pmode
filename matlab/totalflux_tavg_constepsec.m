@@ -200,20 +200,20 @@ erat02_1Mm=cef1Mm(:,3)./cef0p5Mm(:,3);
 erat03_1Mm=cef1Mm(:,4)./cef0p5Mm(:,4);
 
 
-erat00_2Mm=100*cef2Mm(:,1)./cef0p5Mm(:,1);
-erat01_2Mm=100*cef2Mm(:,2)./cef0p5Mm(:,2);
-erat02_2Mm=100*cef2Mm(:,3)./cef0p5Mm(:,3);
-erat03_2Mm=100*cef2Mm(:,4)./cef0p5Mm(:,4);
+erat00_2Mm=cef2Mm(:,1)./cef0p5Mm(:,1);
+erat01_2Mm=cef2Mm(:,2)./cef0p5Mm(:,2);
+erat02_2Mm=cef2Mm(:,3)./cef0p5Mm(:,3);
+erat03_2Mm=cef2Mm(:,4)./cef0p5Mm(:,4);
 
-erat00_4Mm=100*cef4Mm(:,1)./cef0p5Mm(:,1);
-erat01_4Mm=100*cef4Mm(:,2)./cef0p5Mm(:,2);
-erat02_4Mm=100*cef4Mm(:,3)./cef0p5Mm(:,3);
-erat03_4Mm=100*cef4Mm(:,4)./cef0p5Mm(:,4);
+erat00_4Mm=cef4Mm(:,1)./cef0p5Mm(:,1);
+erat01_4Mm=cef4Mm(:,2)./cef0p5Mm(:,2);
+erat02_4Mm=cef4Mm(:,3)./cef0p5Mm(:,3);
+erat03_4Mm=cef4Mm(:,4)./cef0p5Mm(:,4);
 
-erat00_5p5Mm=100*cef5p5Mm(:,1)./cef0p5Mm(:,1);
-erat01_5p5Mm=100*cef5p5Mm(:,2)./cef0p5Mm(:,2);
-erat02_5p5Mm=100*cef5p5Mm(:,3)./cef0p5Mm(:,3);
-erat03_5p5Mm=100*cef5p5Mm(:,4)./cef0p5Mm(:,4);
+erat00_5p5Mm=cef5p5Mm(:,1)./cef0p5Mm(:,1);
+erat01_5p5Mm=cef5p5Mm(:,2)./cef0p5Mm(:,2);
+erat02_5p5Mm=cef5p5Mm(:,3)./cef0p5Mm(:,3);
+erat03_5p5Mm=cef5p5Mm(:,4)./cef0p5Mm(:,4);
 
 
 erat180_1Mm=cef1Mm180./cef0p5Mm180;
