@@ -231,6 +231,10 @@ erat300_4Mm=cef4Mm300./cef0p5Mm300;
 erat180_5p5Mm=cef5p5Mm180./cef0p5Mm180;
 erat300_5p5Mm=cef5p5Mm300./cef0p5Mm300;
 
+lg10eratper=[100 180 300 400];
+lg10erat=[-2.1299 -2.2333    -2.3035 -2.3436];
+pvals=periodvalues(1:6,1);
+
 %plot(periodvalues(1:7,1),ef5p5Mm(1:7,1),'o',periodvalues(1:7,2),ef5p5Mm(1:7,2),'+',periodvalues(1:7,3),ef5p5Mm(1:7,3),'x',periodvalues(1:7,4),ef5p5Mm(1:7,4),'s');
 %semilogy(periodvalues(1:6,1),ef5p5Mm(1:6,1),'o',periodvalues(1:6,2),ef5p5Mm(1:6,2),'+',periodvalues(1:6,3),ef5p5Mm(1:6,3),'x',periodvalues(1:6,4),ef5p5Mm(1:6,4),'s');
 %semilogy(periodvalues(1:6,1),(efluxcoronaavg(1:6,1)+0.01),'o',periodvalues(1:6,2),(efluxcoronaavg(1:6,2)+0.01),'+',periodvalues(1:6,3),(efluxcoronaavg(1:6,3)+0.01),'x',periodvalues(1:6,4),(efluxcoronaavg(1:6,4)+0.01),'s');
@@ -239,10 +243,10 @@ erat300_5p5Mm=cef5p5Mm300./cef0p5Mm300;
 %loglog(freqvalues(1:6,1),ef5p5Mm(1:6,1),'o',freqvalues(1:6,2),ef5p5Mm(1:6,2),'+',freqvalues(1:6,3),ef5p5Mm(1:6,3),'x',freqvalues(1:6,4),ef5p5Mm(1:6,4),'s');
 %plot(log10(freqvalues(1:6,1)),log10(cef5p5Mm(1:6,1)),'o',log10(freqvalues(1:6,2)),log10(cef5p5Mm(1:6,2)),'+',log10(freqvalues(1:6,3)),log10(cef5p5Mm(1:6,3)),'x',log10(freqvalues(1:6,4)),log10(cef5p5Mm(1:6,4)),'s');
 % plot((freqvalues(1:6,1)),log10(cef5p5Mm(1:6,1)),'o',(freqvalues(1:6,2)),log10(cef5p5Mm(1:6,2)),'+',(freqvalues(1:6,3)),log10(cef5p5Mm(1:6,3)),'x',(freqvalues(1:6,4)),log10(cef5p5Mm(1:6,4)),'s');
-%plot((periodvalues(1:6,1)),log10(cef5p5Mm(1:6,1)),'o',(periodvalues(1:6,2)),log10(cef5p5Mm(1:6,2)),'+',(periodvalues(1:6,3)),log10(cef5p5Mm(1:6,3)),'x',(periodvalues(1:6,4)),log10(cef5p5Mm(1:6,4)),'s');
-%plot((periodvalues(1:6,1)),log10(cef4Mm(1:6,1)),'o',(periodvalues(1:6,2)),log10(cef4Mm(1:6,2)),'+',(periodvalues(1:6,3)),log10(cef4Mm(1:6,3)),'x',(periodvalues(1:6,4)),log10(cef4Mm(1:6,4)),'s');
-% plot((periodvalues(1:6,1)),log10(erat00_2Mm(1:6)),'o',(periodvalues(1:6,2)),log10(erat01_2Mm(1:6)),'+',(periodvalues(1:6,3)),log10(erat02_2Mm(1:6)),'x',(periodvalues(1:6,4)),log10(erat03_2Mm(1:6)),'s');
-% 
+% plot((periodvalues(1:6,1)),log10(cef5p5Mm(1:6,1)),'o',(periodvalues(1:6,2)),log10(cef5p5Mm(1:6,2)),'+',(periodvalues(1:6,3)),log10(cef5p5Mm(1:6,3)),'x',(periodvalues(1:6,4)),log10(cef5p5Mm(1:6,4)),'s');
+% plot((periodvalues(1:6,1)),log10(cef4Mm(1:6,1)),'o',(periodvalues(1:6,2)),log10(cef4Mm(1:6,2)),'+',(periodvalues(1:6,3)),log10(cef4Mm(1:6,3)),'x',(periodvalues(1:6,4)),log10(cef4Mm(1:6,4)),'s');
+ plot((periodvalues(1:6,1)),log10(erat00_5p5Mm(1:6)),'o',(periodvalues(1:6,2)),log10(erat01_5p5Mm(1:6)),'+',(periodvalues(1:6,3)),log10(erat02_5p5Mm(1:6)),'x',(periodvalues(1:6,4)),log10(erat03_5p5Mm(1:6)),'s',lg10eratper',lg10erat','gs');
+%plot(lg10eratper,lg10erat);
 % %plot((periodvalues(1:6,1)),(cef5p5Mm(1:6,1)./ef5p5Mm(1:6,1)),'o',(periodvalues(1:6,2)),(cef5p5Mm(1:6,2)./ef5p5Mm(1:6,2)),'+',(periodvalues(1:6,3)),(cef5p5Mm(1:6,3)./ef5p5Mm(1:6,3)),'x',(periodvalues(1:6,4)),(cef5p5Mm(1:6,4)./ef5p5Mm(1:6,4)),'s');
 % %plot((periodvalues(1:6,1)),(cef4Mm(1:6,1)./ef4Mm(1:6,1)),'o',(periodvalues(1:6,2)),(cef4Mm(1:6,2)./ef4Mm(1:6,2)),'+',(periodvalues(1:6,3)),(cef4Mm(1:6,3)./ef4Mm(1:6,3)),'x',(periodvalues(1:6,4)),(cef4Mm(1:6,4)./ef4Mm(1:6,4)),'s');
 % %plot((periodvalues(1:6,1)),(cef2Mm(1:6,1)./ef2Mm(1:6,1)),'o',(periodvalues(1:6,2)),(cef2Mm(1:6,2)./ef2Mm(1:6,2)),'+',(periodvalues(1:6,3)),(cef2Mm(1:6,3)./ef2Mm(1:6,3)),'x',(periodvalues(1:6,4)),(cef2Mm(1:6,4)./ef2Mm(1:6,4)),'s');
@@ -265,11 +269,11 @@ erat300_5p5Mm=cef5p5Mm300./cef0p5Mm300;
 
 
 
-bar(log10(1e8*erat180_5p5Mm))
-set(gca,'XTickLabel',{'(0,0)','(0,1)','(0,2)','(0,3)','(1,1)','(1,2)','(1,3)','(2,2)','(2,3)','(3,3)'})
+%bar(log10(1e8*erat180_5p5Mm))
+%set(gca,'XTickLabel',{'(0,0)','(0,1)','(0,2)','(0,3)','(1,1)','(1,2)','(1,3)','(2,2)','(2,3)','(3,3)'})
   %title('Vertical Velocity for Solar Atmosphere at 2.3Mm with a Sinusoidal (2,3) Mode Driver of Period 180.0s, Applied at a Height of 100km');
-  title({'Variation of Energy Flux Ratio at a Height of 5.5Mm for a Solar Atmosphere';'Excited with a 180s p-Mode Driver Located at a Height of 100km'});
-  %title({'Variation of Energy Flux Ratio at a Height of 5.5Mm for a Solar Atmosphere';'Excited with a p-Mode Driver Located at a Height of 100km'});
+%  title({'Variation of Energy Flux Ratio at a Height of 5.5Mm for a Solar Atmosphere';'Excited with a 180s p-Mode Driver Located at a Height of 100km'});
+  title({'Variation of Energy Flux Ratio at a Height of 5.5Mm for a Solar Atmosphere';'Excited with a p-Mode Driver Located at a Height of 100km'});
   %xlabel('log10(1000000xEnergy Flux)');
   %xlabel('Driver period (s)');
   ylabel('log10(Energy Ratio Percentage(x1e8)');
