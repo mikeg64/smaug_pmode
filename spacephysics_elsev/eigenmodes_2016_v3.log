@@ -1,0 +1,1088 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.9.26)  6 JAN 2017 10:20
+entering extended mode
+**C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/eigenmodes_2016_v
+3.tex
+
+(C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/eigenmodes_2016_v3
+.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Users\mikeg\proj\gitclone\smaug_pmode\spacephysics_elsev\elsarticle.cls
+Document Class: elsarticle 2009/09/17, 1.20b: Elsevier Ltd
+\@bls=\dimen102
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\c@tnote=\count88
+\c@fnote=\count89
+\c@cnote=\count90
+\c@ead=\count91
+\c@author=\count92
+\@eadauthor=\toks15
+\c@affn=\count93
+\absbox=\box26
+\keybox=\box27
+\Columnwidth=\dimen106
+\space@left=\dimen107
+\els@boxa=\box28
+\els@boxb=\box29
+\leftMargin=\dimen108
+\@enLab=\toks16
+\@sep=\skip43
+\@@sep=\skip44
+
+(C:\Users\mikeg\proj\gitclone\smaug_pmode\spacephysics_elsev\eigenmodes_2016_v3
+.spl) ("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count94
+)
+\splwrite=\write3
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count95
+\Gm@cntv=\count96
+\c@Gm@tempcnt=\count97
+\Gm@bindingoffset=\dimen109
+\Gm@wd@mp=\dimen110
+\Gm@odd@mp=\dimen111
+\Gm@even@mp=\dimen112
+\Gm@layoutwidth=\dimen113
+\Gm@layoutheight=\dimen114
+\Gm@layouthoffset=\dimen115
+\Gm@layoutvoffset=\dimen116
+\Gm@dimlist=\toks17
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+\appnamewidth=\dimen117
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen118
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen119
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip10
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks19
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks20
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks21
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen127
+\Hy@linkcounter=\count110
+\Hy@pagecounter=\count111
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count112
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `final' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count113
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen128
+\Fld@menulength=\count114
+\Field@Width=\dimen129
+\Fld@charsize=\dimen130
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count115
+\c@Item=\count116
+\c@Hfootnote=\count117
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count118
+\c@bookmark@seq@number=\count119
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip50
+)
+(C:\Users\mikeg\proj\gitclone\smaug_pmode\spacephysics_elsev\eigenmodes_2016_v3
+.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count120
+\scratchdimen=\dimen131
+\scratchbox=\box32
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen132
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks24
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* vratio: 1:1
+* modes: 
+* h-part:(L,W,R)=(106.75394pt, 384.0pt, 106.75394pt)
+* v-part:(T,H,B)=(141.52342pt, 562.0pt, 141.52342pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=384.0pt
+* \textheight=562.0pt
+* \oddsidemargin=34.48395pt
+* \evensidemargin=34.48395pt
+* \topmargin=7.25343pt
+* \headheight=50.0pt
+* \headsep=12.0pt
+* \topskip=10.0pt
+* \footskip=12.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=24.0pt plus 2.0pt minus 12.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring OFF on input line 66.
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count126
+)
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
+
+(C:\Users\mikeg\proj\gitclone\smaug_pmode\spacephysics_elsev\eigenmodes_2016_v3
+.out)
+(C:\Users\mikeg\proj\gitclone\smaug_pmode\spacephysics_elsev\eigenmodes_2016_v3
+.out)
+\@outlinefile=\write4
+
+
+Package natbib Warning: Citation `Ireland2014' on page 1 undefined on input lin
+e 93.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 102.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 102.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[][]\OT1/cmr/m/n/8 Corresponding au-thor at: Cor-po-rate In-for-ma-tion and Com
+-put-ing Ser-vices,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+\OT1/cmr/m/n/8 The Uni-ver-sity of Sheffield, 10-12 Brunswick Street, Sheffield
+, S10 2FN, UK.
+ []
+
+! Misplaced alignment tab character &.
+l.110 ...drodynamic slab in ideal MHD (Goedbloed &
+                                                   Poets). The solar p modes...
+
+? 
+[2]
+
+Package natbib Warning: Citation `Erdelyi2015' on page 3 undefined on input lin
+e 117.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 119.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 119.
+
+
+Package natbib Warning: Citation `Ireland2014' on page 3 undefined on input lin
+e 119.
+
+
+Package natbib Warning: Citation `Bello2009' on page 3 undefined on input line 
+121.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 121.
+
+
+Package natbib Warning: Citation `Bello2010A' on page 3 undefined on input line
+ 121.
+
+
+Package natbib Warning: Citation `Roth2010' on page 3 undefined on input line 1
+23.
+
+[3]
+
+Package natbib Warning: Citation `Fedun2009' on page 4 undefined on input line 
+125.
+
+
+Package natbib Warning: Citation `Khomenko2012' on page 4 undefined on input li
+ne 128.
+
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 139.
+
+[4] [5] <images/VAL3C_rho_temp_fig2.jpg, id=127, 864.22874pt x 481.8pt>
+File: images/VAL3C_rho_temp_fig2.jpg Graphic file (type jpg)
+
+<use images/VAL3C_rho_temp_fig2.jpg>
+Package pdftex.def Info: images/VAL3C_rho_temp_fig2.jpg used on input line 197.
+
+(pdftex.def)             Requested size: 432.11331pt x 240.8994pt.
+
+Overfull \hbox (48.11331pt too wide) in paragraph at lines 197--198
+[][] 
+ []
+
+<images/cutofffrequency_fig4.jpg, id=128, 612.2875pt x 461.725pt>
+File: images/cutofffrequency_fig4.jpg Graphic file (type jpg)
+
+<use images/cutofffrequency_fig4.jpg>
+Package pdftex.def Info: images/cutofffrequency_fig4.jpg used on input line 206
+.
+(pdftex.def)             Requested size: 428.59833pt x 323.20529pt.
+
+Overfull \hbox (44.59833pt too wide) in paragraph at lines 206--207
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+[6 <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/images/VAL3C_rh
+o_temp_fig2.jpg>] [7 <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_els
+ev/images/cutofffrequency_fig4.jpg>] [8]
+<images/fig4_dt_30_180_300_0_vert_2Mm.jpg, id=167, 1006.76125pt x 545.03625pt>
+File: images/fig4_dt_30_180_300_0_vert_2Mm.jpg Graphic file (type jpg)
+
+<use images/fig4_dt_30_180_300_0_vert_2Mm.jpg>
+Package pdftex.def Info: images/fig4_dt_30_180_300_0_vert_2Mm.jpg used on input
+ line 380.
+(pdftex.def)             Requested size: 402.69736pt x 218.01064pt.
+
+Overfull \hbox (18.69736pt too wide) in paragraph at lines 380--381
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg, id=168, 1006.76125pt x 564.1075pt
+>
+File: images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg Graphic file (type jpg)
+ <use images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg>
+Package pdftex.def Info: images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg used on in
+put line 388.
+(pdftex.def)             Requested size: 402.69736pt x 225.63899pt.
+
+Overfull \hbox (18.69736pt too wide) in paragraph at lines 388--389
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<images/fig6_dt_30_180_300_0_horiz_2Mm.jpg, id=169, 1006.76125pt x 564.1075pt>
+File: images/fig6_dt_30_180_300_0_horiz_2Mm.jpg Graphic file (type jpg)
+
+<use images/fig6_dt_30_180_300_0_horiz_2Mm.jpg>
+Package pdftex.def Info: images/fig6_dt_30_180_300_0_horiz_2Mm.jpg used on inpu
+t line 395.
+(pdftex.def)             Requested size: 402.69736pt x 225.63899pt.
+
+Overfull \hbox (18.69736pt too wide) in paragraph at lines 395--396
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg, id=170, 1006.76125pt x 564.1075pt
+>
+File: images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg Graphic file (type jpg)
+ <use images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg>
+Package pdftex.def Info: images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg used on in
+put line 403.
+(pdftex.def)             Requested size: 402.69736pt x 225.63899pt.
+
+Overfull \hbox (18.69736pt too wide) in paragraph at lines 403--404
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
+d on input line 434.
+
+
+Package natbib Warning: Citation `Bogdan2003' on page 9 undefined on input line
+ 441.
+
+[9]
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.456 ...IC & yes & single driver at photosphere &
+                                                   \\
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.458 ...IIC & no & single driver at photosphere &
+                                                    \\
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.460 ...ty & yes & single driver at photosphere &
+                                                    \\
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.462 ...ity & no & single driver at photosphere &
+                                                    \\
+? 
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.464 ...at the photosphere and transition zone. &
+                                                    \\
+? 
+
+Overfull \hbox (56.98686pt too wide) in paragraph at lines 452--467
+ [][] 
+ []
+
+[10 <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/images/fig4_dt
+_30_180_300_0_vert_2Mm.jpg>]
+! Undefined control sequence.
+l.499 ...spheric height is shown in figure \figref
+                                                  {cutofffrequency_fig4} whi...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.499 ... shown in figure \figref{cutofffrequency_
+                                                  fig4} which shows the cuto...
+
+? 
+! Extra }, or forgotten $.
+l.499 ...n in figure \figref{cutofffrequency_fig4}
+                                                   which shows the cutoff pe...
+
+? 
+! Undefined control sequence.
+l.499 ...ere. It is recognised from figure \figref
+                                                  { cutofffrequency_fig4} th...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.500 
+      
+? 
+
+Overfull \hbox (2533.1096pt too wide) in paragraph at lines 499--500
+[]\OT1/cmr/m/n/10 The vari-a-tion of the cut-off with so-lar at-mo-spheric heig
+ht is shown in fig-ure cutofffrequency$[]\OML/cmm/m/it/10 ig\OT1/cmr/m/n/10 4\O
+ML/cmm/m/it/10 whichshowsthecutoffperiodfortheVALIIIcatmopshereandforanisotherm
+alatmosphere:Itisrecognisedfromfigure[]thatthereisanumberofdistinctregionsofpro
+pagationbehaviour:Forthephotospherenearthetemperatureminimumthecutoffperiodis\O
+T1/cmr/m/n/10 300\OML/cmm/m/it/10 shereitisexpectedthatthe\OT1/cmr/m/n/10 5\OML
+/cmm/m/it/10 minutesmodesareevanescent:Inthechromosphereincreasestoavaluegreate
+rthan\OT1/cmr/m/n/10 300\OML/cmm/m/it/10 s; herethefiveminutemodescanpropagate:
+Forthetransitionzonethecutoffdropstoavaluewhichgoesdownto\OT1/cmr/m/n/10 100\OM
+L/cmm/m/it/10 s:Inthecoronaitisseenthatamuchgreaterrangeoffrequenciescanpropaga
+te:$ 
+ []
+
+
+Package natbib Warning: Citation `Malins2007B' on page 11 undefined on input li
+ne 501.
+
+[11 <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/images/fig5_dt
+_30_180_300_0_horiz_p94Mm.jpg>] [12 <C:/Users/mikeg/proj/gitclone/smaug_pmode/s
+pacephysics_elsev/images/fig6_dt_30_180_300_0_horiz_2Mm.jpg>]
+<imagesn/dt_300_vert_x.jpg, id=211, 1528.71124pt x 869.2475pt>
+File: imagesn/dt_300_vert_x.jpg Graphic file (type jpg)
+
+<use imagesn/dt_300_vert_x.jpg>
+Package pdftex.def Info: imagesn/dt_300_vert_x.jpg used on input line 522.
+(pdftex.def)             Requested size: 458.61691pt x 260.77626pt.
+
+Overfull \hbox (74.61691pt too wide) in paragraph at lines 522--523
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imagesn/dt_180_vert_x.jpg, id=212, 953.5625pt x 590.205pt>
+File: imagesn/dt_180_vert_x.jpg Graphic file (type jpg)
+
+<use imagesn/dt_180_vert_x.jpg>
+Package pdftex.def Info: imagesn/dt_180_vert_x.jpg used on input line 530.
+(pdftex.def)             Requested size: 429.09917pt x 265.58978pt.
+
+Overfull \hbox (45.09917pt too wide) in paragraph at lines 530--531
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imagesn/dt_300_vert_y.jpg, id=213, 1406.25375pt x 833.1125pt>
+File: imagesn/dt_300_vert_y.jpg Graphic file (type jpg)
+
+<use imagesn/dt_300_vert_y.jpg>
+Package pdftex.def Info: imagesn/dt_300_vert_y.jpg used on input line 538.
+(pdftex.def)             Requested size: 421.87938pt x 249.93568pt.
+
+Overfull \hbox (37.87938pt too wide) in paragraph at lines 538--539
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imagesn/dt_180_vert_y.jpg, id=214, 1535.7375pt x 801.99625pt>
+File: imagesn/dt_180_vert_y.jpg Graphic file (type jpg)
+
+<use imagesn/dt_180_vert_y.jpg>
+Package pdftex.def Info: imagesn/dt_180_vert_y.jpg used on input line 545.
+(pdftex.def)             Requested size: 460.72481pt x 240.60072pt.
+
+Overfull \hbox (76.72481pt too wide) in paragraph at lines 545--546
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imagesn/dt_300_0_0_hor_x_1Mm.jpg, id=215, 1391.1975pt x 761.84625pt>
+File: imagesn/dt_300_0_0_hor_x_1Mm.jpg Graphic file (type jpg)
+
+<use imagesn/dt_300_0_0_hor_x_1Mm.jpg>
+Package pdftex.def Info: imagesn/dt_300_0_0_hor_x_1Mm.jpg used on input line 55
+3.
+(pdftex.def)             Requested size: 417.36247pt x 228.55563pt.
+
+Overfull \hbox (33.36247pt too wide) in paragraph at lines 553--554
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imagesn/dt_300_hor_x_2p06Mm.jpg, id=216, 1519.6775pt x 888.31876pt>
+File: imagesn/dt_300_hor_x_2p06Mm.jpg Graphic file (type jpg)
+
+<use imagesn/dt_300_hor_x_2p06Mm.jpg>
+Package pdftex.def Info: imagesn/dt_300_hor_x_2p06Mm.jpg used on input line 559
+.
+(pdftex.def)             Requested size: 455.90677pt x 266.49768pt.
+
+Overfull \hbox (71.90677pt too wide) in paragraph at lines 559--560
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: imagesn/dt_300_hor_x_2p06Mm.jpg Graphic file (type jpg)
+<use imagesn/dt_300_hor_x_2p06Mm.jpg>
+Package pdftex.def Info: imagesn/dt_300_hor_x_2p06Mm.jpg used on input line 565
+.
+(pdftex.def)             Requested size: 455.90677pt x 266.49768pt.
+
+Overfull \hbox (71.90677pt too wide) in paragraph at lines 565--566
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imagesn/dt_180_horiz_x_1Mm.jpg, id=217, 989.6975pt x 587.19376pt>
+File: imagesn/dt_180_horiz_x_1Mm.jpg Graphic file (type jpg)
+
+<use imagesn/dt_180_horiz_x_1Mm.jpg>
+Package pdftex.def Info: imagesn/dt_180_horiz_x_1Mm.jpg used on input line 572.
+
+(pdftex.def)             Requested size: 445.35976pt x 264.23474pt.
+
+Overfull \hbox (61.35976pt too wide) in paragraph at lines 572--573
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imagesn/dt_180_horiz_x_2p06Mm.jpg, id=218, 967.615pt x 567.11874pt>
+File: imagesn/dt_180_horiz_x_2p06Mm.jpg Graphic file (type jpg)
+
+<use imagesn/dt_180_horiz_x_2p06Mm.jpg>
+Package pdftex.def Info: imagesn/dt_180_horiz_x_2p06Mm.jpg used on input line 5
+78.
+(pdftex.def)             Requested size: 483.80632pt x 283.55867pt.
+
+Overfull \hbox (99.80632pt too wide) in paragraph at lines 578--579
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: imagesn/dt_180_horiz_x_2p06Mm.jpg Graphic file (type jpg)
+<use imagesn/dt_180_horiz_x_2p06Mm.jpg>
+Package pdftex.def Info: imagesn/dt_180_horiz_x_2p06Mm.jpg used on input line 5
+84.
+(pdftex.def)             Requested size: 483.80632pt x 283.55867pt.
+
+Overfull \hbox (99.80632pt too wide) in paragraph at lines 584--585
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `Ireland2014' on page 13 undefined on input li
+ne 589.
+
+[13 <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/images/fig7_dt
+_30_180_300_0_horiz_4p2Mm.jpg>] [14] [15] [16 <C:/Users/mikeg/proj/gitclone/sma
+ug_pmode/spacephysics_elsev/imagesn/dt_300_vert_x.jpg>] [17 <C:/Users/mikeg/pro
+j/gitclone/smaug_pmode/spacephysics_elsev/imagesn/dt_180_vert_x.jpg>] [18 <C:/U
+sers/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/imagesn/dt_300_vert_y.j
+pg> <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/imagesn/dt_180
+_vert_y.jpg>] [19 <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/
+imagesn/dt_300_0_0_hor_x_1Mm.jpg>] [20 <C:/Users/mikeg/proj/gitclone/smaug_pmod
+e/spacephysics_elsev/imagesn/dt_300_hor_x_2p06Mm.jpg>] [21] [22 <C:/Users/mikeg
+/proj/gitclone/smaug_pmode/spacephysics_elsev/imagesn/dt_180_horiz_x_1Mm.jpg>]
+[23 <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/imagesn/dt_180
+_horiz_x_2p06Mm.jpg>] [24]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.789 ...erdrve_eflux_vperiod_for modes_5p5Mm.jpg}
+                                                  
+? 
+
+LaTeX Warning: File `imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5Mm.jp
+g' not found on input line 789.
+
+
+<imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5Mm.jpg, id=291, 907.39pt 
+x 500.87125pt>
+File: imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5Mm.jpg Graphic file 
+(type jpg)
+
+<use imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5Mm.jpg>
+Package pdftex.def Info: imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5M
+m.jpg used on input line 789.
+(pdftex.def)             Requested size: 362.94957pt x 200.34494pt.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.789 ...erdrve_eflux_vperiod_for modes_5p5Mm.jpg}
+                                                  
+? 
+
+Overfull \hbox (58.22237pt too wide) in paragraph at lines 789--790
+[][] 
+ []
+
+[25 <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/imagesn/ratio_
+varoverdrve_eflux_vperiod_for modes_5p5Mm.jpg>]
+<imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_180s_5p5Mm.jpg, id=298, 90
+7.39pt x 500.87125pt>
+File: imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_180s_5p5Mm.jpg Graphi
+c file (type jpg)
+
+<use imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_180s_5p5Mm.jpg>
+Package pdftex.def Info: imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_18
+0s_5p5Mm.jpg used on input line 798.
+(pdftex.def)             Requested size: 453.6939pt x 250.435pt.
+
+Overfull \hbox (69.6939pt too wide) in paragraph at lines 798--799
+[][] 
+ []
+
+
+<imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_300s_5p5Mm.jpg, id=299, 90
+7.39pt x 500.87125pt>
+File: imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_300s_5p5Mm.jpg Graphi
+c file (type jpg)
+
+<use imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_300s_5p5Mm.jpg>
+Package pdftex.def Info: imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_30
+0s_5p5Mm.jpg used on input line 806.
+(pdftex.def)             Requested size: 453.6939pt x 250.435pt.
+
+Overfull \hbox (69.6939pt too wide) in paragraph at lines 806--807
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26
+
+
+ <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/imagesn/ratio_var
+overdrve_eflux_vperiod_forallmodes_180s_5p5Mm.jpg>] [27 <C:/Users/mikeg/proj/gi
+tclone/smaug_pmode/spacephysics_elsev/imagesn/ratio_varoverdrve_eflux_vperiod_f
+orallmodes_300s_5p5Mm.jpg>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.815 ...rconst_eflux_vperiod_for modes_5p5Mm.jpg}
+                                                  
+? 
+
+LaTeX Warning: File `imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5Mm.j
+pg' not found on input line 815.
+
+
+<imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5Mm.jpg, id=310, 513.92pt
+ x 385.44pt>
+File: imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5Mm.jpg Graphic file
+ (type jpg)
+
+<use imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5Mm.jpg>
+Package pdftex.def Info: imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5
+Mm.jpg used on input line 815.
+(pdftex.def)             Requested size: 308.35437pt x 231.26578pt.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.815 ...rconst_eflux_vperiod_for modes_5p5Mm.jpg}
+                                                  
+? 
+
+Overfull \hbox (3.62717pt too wide) in paragraph at lines 815--816
+[][] 
+ []
+
+
+! LaTeX Error: Environment acknowledgements undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.836 \begin{acknowledgements}
+                              
+? 
+
+! LaTeX Error: \begin{document} ended by \end{acknowledgements}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.839 \end{acknowledgements}
+                            
+? 
+[28
+
+ <C:/Users/mikeg/proj/gitclone/smaug_pmode/spacephysics_elsev/imagesn/ratio_var
+overconst_eflux_vperiod_for modes_5p5Mm.jpg>]
+(C:\Users\mikeg\proj\gitclone\smaug_pmode\spacephysics_elsev\eigenmodes_2016_v3
+.bbl
+
+Package natbib Warning: Empty `thebibliography' environment on input line 11.
+
+)
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 853.
+[29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 853.
+
+(C:\Users\mikeg\proj\gitclone\smaug_pmode\spacephysics_elsev\eigenmodes_2016_v3
+.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 853.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 853.
+Package rerunfilecheck Info: File `eigenmodes_2016_v3.out' has not changed.
+(rerunfilecheck)             Checksum: D1B71455AE9E37C7C834FA641ED3E75E;576.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 853.
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 499 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 7142 strings out of 493921
+ 102834 string characters out of 3147282
+ 208710 words of memory out of 3000000
+ 10209 multiletter control sequences out of 15000+200000
+ 12720 words of font info for 47 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 34i,9n,30p,2235b,449s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{cite.Taroyan2008} has been referenc
+ed but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Lamb1932} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Malins2007A} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.McWhirter1975} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Vernazza1981} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Leenaarts2011} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Kalkofen2012} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Carlsson1995} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Caunt2001} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Shelyag2008} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Griffiths2015} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Lites2008} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Kalkofen2010} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Murawski2010} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Jefferies2006} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Beck2012} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.DeMoortel2005} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Roberts1984} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Leibacher1971} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Ulrich1970} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.Leighton1960} has been referenced but does not
+ exist, replaced by a fixed one
+
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on eigenmodes_2016_v3.pdf (29 pages, 1635618 bytes).
+PDF statistics:
+ 415 PDF objects out of 1000 (max. 8388607)
+ 125 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+
