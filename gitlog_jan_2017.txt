@@ -1,0 +1,837 @@
+commit e75bdce83d96dfdab28356fc611a4900b1afd48f
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Jan 6 11:16:56 2017 +0000
+
+    Matlab scripts to plot figure 1 and 2 cutoff, desnity and temperature
+
+commit ebf14f605594163266e37d5de029dc1df2ea68df
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Jan 6 10:23:03 2017 +0000
+
+    Replaced Astronomy and Astrophysics template with Space Physics Elsevier
+    template
+
+commit 81e33b3d5004315cbc7c5f08e1385d23dd598910
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Nov 30 22:28:40 2016 +0000
+
+    For energy ratios comparing with results for klein gordon model
+
+commit d4c47e4eb1610e7dfac8a10ffe69e06c96c1ffed
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Oct 24 16:15:03 2016 +0100
+
+    Corrected tables for pmode energies in the solar atmosphere
+
+commit a3662d5b7faf581fba0ed5a444a94de99ec8d312
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Oct 3 21:44:18 2016 +0100
+
+    Plots showing energy ratios to the driver energy, i.e. what fraction of
+    the driver energy gets through to a particular height for diffrenet driver
+    periods and modes
+
+commit 1839929d291473dc7269114063e84bc0c8edad57
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Sat Sep 24 21:36:45 2016 +0100
+
+    Including all mode contributions for the driver source energy contribution
+
+commit db313863f2e2531833253d27e1a4eda1dae39726
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Sat Sep 24 20:05:44 2016 +0100
+
+    including reference values for driver energy
+
+commit c44eba5f57106145dfc0107e72caad5619311c14
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Aug 25 15:21:45 2016 +0100
+
+    Results for solar atmosphere energy flux computations for varying
+    frequencies and modes
+
+commit faba437ab84fea959e85bee616435143ca7c054a
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Jul 18 09:00:03 2016 +0100
+
+    Computing avergae energy flux versus time for each driver
+
+commit c558d5e0aa434d825fb0830ffdf71a6f582bd633
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Jul 4 20:22:19 2016 +0100
+
+    Energy flux plots and ratios for constant driver amplitude and fixed
+    driver energy
+
+commit eea3d2995a54de712bce692034b06ae08880bfcc
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Jun 24 14:49:43 2016 +0100
+
+    Input files for 2.5x2.5x12.5Mm flux tube,
+    (1,1),(2,2),(3,3),(1,2),(1,3),(2,3) modes.
+
+commit 02fc1cf928b9945c8595a7ca325e468a5b85ac3c
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Jun 24 14:42:59 2016 +0100
+
+    Updated results for energy flux - completed for fixed energy with normal
+    modes, 30,180 and 300s drivers  for (0,0),(0,1),(0,2),(0,3) modes
+
+commit 5142cdbc99d9704662ce0513796e742c63c72f74
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Jun 13 20:47:15 2016 +0100
+
+    working version of stream, slice and contour plotter
+
+commit d4df807bed41a879c5526ddc6c8a4fb0248d7091
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Jun 13 14:46:57 2016 +0100
+
+    Basic plot examples for quiver, contour, stream lines and iso surface
+
+commit d663cf3361d1330ea0babd022191b7c5f5b47f5b
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri May 27 10:13:32 2016 +0100
+
+     Revised energy flux data at different heights for models with fixed
+     amplitudes of 350m/s
+
+commit 4e8a5c6f70931e8f387da060ae472c1074ee327f
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu May 26 20:03:31 2016 +0100
+
+    Updated models for fixed amplitude =350m/s
+
+commit ebe15ef3359ad37316dfe9786e35d74545ca7d7b
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri May 20 09:21:49 2016 +0100
+
+    Added model for 2.5x2.5x12.5Mm  (128^3) (0,0) mode 180s driver with amplitude 350m/s
+
+commit 791745965b357c937dafb297de3a36ca578e3e72
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed May 18 13:03:45 2016 +0100
+
+    30,180 for the 0,0 mode amplitude 350m/s
+
+commit 8192dca5d6fb49341cec4b9a35cd7ef3ad9be84c
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed May 18 08:18:56 2016 +0100
+
+    Compute energy flux and tabulate results for fixed 350m/s modes and
+    frequencies
+
+commit df4fd0ed45f34e4ab9e7260bd07ec5ec877d056d
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed May 18 06:56:53 2016 +0100
+
+    Updated include, source and script files for investigation with fixed
+    amplitude 350m/s
+
+commit 342fd40a3cd83935e329b2ff36ca8b787735d194
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Apr 13 16:22:11 2016 +0100
+
+    Series of runs with same fixed amplitude of 350m/s
+
+commit 599039148d10ae705820689d25b9d58c0cc361d6
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Mar 15 20:40:52 2016 +0000
+
+    Files for washing machine driver (kink mode driver 90deg out of phase).
+    Also added correct header files for 30s, 180s and 300s (1,1) mode driver
+    with correct definitionb of model boundary
+
+commit 3ff92b8f97b31e270e12216e32da594d03472a4c
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Mar 8 20:40:34 2016 +0000
+
+    Minor changes to periodic BC model runs (reduced hyperdiffusion parameter
+    for momentum from 0.4 to 0.05)
+
+commit ac61095ee3028607643e21deade13ca666197d54
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Mar 8 20:30:04 2016 +0000
+
+    Enabling periodic boundary conditions for 4b1_1 30s (1,1) driver and 6b1_1
+    180s (1,1) driver
+
+commit 1e320938267d4d26f787ef15f00af2029ed68005
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Mar 7 22:29:48 2016 +0000
+
+    Corrected version to compute box dimensions so that periodic boundaries operate correctly with the (1,1) mode driver
+
+commit 79c42b4e697e927630ad96d3a5c824c4f326157c
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Feb 10 22:33:00 2016 +0000
+
+    Integrated transition region plots (averages) horizontal sections across
+    the box
+
+commit 75bd5a72914f51bcda605738d31b1f4b8ab741ac
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Feb 8 22:29:21 2016 +0000
+
+    Correct values for measured fluxes included fitted curves
+
+commit bf583e198c8f2bd77f1b5815966718413e4234d2
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Feb 8 15:15:39 2016 +0000
+
+    velocity time plots integrated across transition layer
+
+commit 2a2fcbd7062ee40868730dd94f146a45e9e49bab
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Feb 5 15:02:06 2016 +0000
+
+    revised flux integration plots for 300s driver
+
+commit e7e5141e6bccfc4d7521424ef423c02e45e42d2b
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Feb 2 15:07:03 2016 +0000
+
+    Energy flux integration versus time plots
+
+commit 7b9b1741b4d36d36fece34756a0c6e6a637c8f89
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Jan 28 14:37:02 2016 +0000
+
+    working enrgy time plot
+
+commit e9df45b64cbc0c3932ecb8637dea1a96c4948361
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Jan 25 22:21:57 2016 +0000
+
+    Routines to compute time plot for integrated enegery flux
+
+commit 315ae37e5849751937c005541d8dd6cc3a0e444e
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Sun Jan 24 20:28:13 2016 +0000
+
+    Updated tables for coronal energy flux
+
+commit a302a00dd6fdc44fd08f211a60c8fcf8243cef04
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Jan 18 08:19:59 2016 +0000
+
+    Correction of amplitudes for c_s=13km/s normal mode
+
+commit db94ddc8f023c10a6b96998b8f07190ba09ece21
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Jan 13 22:05:29 2016 +0000
+
+    calculating distance time plots for 30,180,300s 00 mode for horizontal
+    direction and integrated across transition zone
+
+commit 49cea73901dfe8f40220da4b628d19514d36c892
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Jan 13 07:51:08 2016 +0000
+
+    transition integration nearly ready to run
+
+commit c65fcaf4b272b3df076022fc58960f629317c6f0
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Jan 13 07:43:42 2016 +0000
+
+    Routine to avergae velocities (vz) in transition layer save data later for
+    computation of dt plots for diffrent sections
+
+commit 4aeeacd55f678b097c5ce9c02acd9e7fe706384f
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Jan 12 20:46:43 2016 +0000
+
+    update for 179.98 (0,0) mode
+
+commit 52ff4ffeab64e9688cf342f4cad24d5a471047ce
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Jan 12 20:18:13 2016 +0000
+
+    energy updates
+
+commit df70ed4319de9bbe5adcce0595f4092ff334a918
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Jan 7 13:32:04 2016 +0000
+
+    Revised energyy flux table`
+
+commit 2bf4bb8532afaacdda0852ea96673f57741805da
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Jan 4 09:52:10 2016 +0000
+
+    Next series of runs added a series for normal modes corresponding to
+    cs=34km/s
+     Please enter the commit message for your changes. Lines starting
+
+commit 2749d49dac943f69ceaa836a01cea0c77f035bef
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Dec 17 13:07:04 2015 +0000
+
+    Revised text for paper needs more explanation/discussion for effect of
+    cutoff's
+
+commit d848a7d08d44a835eb779c684f837c7ac74602a9
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Dec 14 20:10:09 2015 +0000
+
+    Amplitude relation was updated (a factor of 2 was missing). The amplitudes
+    in the source terms have been corrected.
+
+commit a93de954468ef7f1f302f1ea2e4b8fb99629819f
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Dec 7 21:10:21 2015 +0000
+
+    Updated relationship for amplitude of the driver for pmode
+    Integrating over the period of the driver with the period of the highest
+    value. All driver modes and periods deliver the same quantity of energy
+    over this period.
+
+commit 3e7b9c05ab3661adf8c96db37f7e71de0220f5dd
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Nov 25 20:06:48 2015 +0000
+
+    Addition of resonant normal modes for (1,1),(2,2) and (3,3) for 12km/s
+
+commit 13a4923dd1f35a692fa87d3ab3e74fc2ea598ac7
+Author: mikeg64 <mikeg64@snowy>
+Date:   Tue Nov 24 21:08:27 2015 +0000
+
+    addition of modes for (n,m)=(1,1),(2,2),(3,3)
+
+commit d157ad1a294abac4aec473be7df277b5c3e9a81b
+Author: mikeg64 <mikeg64@snowy>
+Date:   Tue Nov 24 20:46:26 2015 +0000
+
+    Updated energy flux values
+
+commit e3b828bf4e8d5ece6fe6629dea6f1aca17624ee1
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Nov 20 16:00:33 2015 +0000
+
+    modified normal modes for cs=31.42km/s updated result table
+
+commit 15ea100873349b00ea955baaac43730a636f5828
+Merge: a6a58f1 9bb9289
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Nov 11 17:46:09 2015 +0000
+
+    Merge branch 'master' of https://github.com/mikeg64/smaug_pmode
+    
+    Conflicts:
+    	matlab/html/pamplitude.html
+    	matlab/html/pamplitude_eq51560.png
+
+commit a6a58f15086f3e844a27eed885f984014f789b65
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Nov 11 17:44:04 2015 +0000
+
+    Addition of amplitude table for normal models for cs=20km/s
+
+commit a8631ab25107f8701e84b202cd23e007eeccaa46
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Nov 11 17:35:38 2015 +0000
+
+    Updated the table of amplitudes
+
+commit 9bb9289f9c04f29ec39ed6b78b36f602d795081e
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Nov 6 11:12:49 2015 +0000
+
+    Updating table of energy flux values for series of runs with fixed rate of
+    energy delivery
+
+commit 1337c94ab0077728d50bf7058818ba03d3669571
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Nov 5 14:15:41 2015 +0000
+
+    Updated amplitude table
+
+commit 4fe74924e63603d03de22ad40e8e5eedfd2a9066
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Nov 5 13:33:00 2015 +0000
+
+    Updated inputs for 30s, (0,1),1473.2 driver;  180s, (0,1) 242.116s, (0,1)
+    145.1085, 300s
+
+commit 65b1bc319d26171f13519d82f402707032ab7d91
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Nov 3 21:17:16 2015 +0000
+
+    Normal mode model for 179.98s (0,0) 605.36m/s 127.27s (0,1) 342.83m/s
+    84.84 (0,2) 257.65 m/s 63.63s (0,3) 202.477m/s
+
+commit 00415ddc9eaf8f978976072310cd265982fefcd9
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Oct 28 21:10:00 2015 +0000
+
+    Updated amplitudes and correctly formatted in matlab file
+
+commit 10e08d0936bf3a3445cb9e9aac2f6e3407ac33b3
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Oct 15 11:11:04 2015 +0100
+
+    Corrected model amplitudes so that reonant 180s mode does not become
+    unstable
+
+commit 82cdcad70b8297010ef976b6370b48d3cd33463e
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Oct 12 08:17:23 2015 +0100
+
+    corrected table of amplitudes/driver periods
+
+commit 5451229f3674eab4fcc5735aeeb2c719e77c6ef0
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Oct 12 08:13:21 2015 +0100
+
+    Next inputs for 30,180,300s driver. Next stage for 13km/s normal mode.
+    307.7s, 205.1s and 153.8s driver
+
+commit b80fb2c58b4b55e3dd6410e30122a7a6b31b3d1f
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Oct 12 06:35:10 2015 +0100
+
+    Updted inputs for 30s driver inputs
+
+commit b3015bc168e819a2c1fb8daa6530dc844b97cb95
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Oct 6 12:24:44 2015 +0100
+
+    Revised input files for (0,0) mode with 180s and 300s driver
+
+commit 6172700eff9494e3855282bfca375820fd413af4
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Oct 5 19:58:56 2015 +0100
+
+    Amplitudes for 30,180,300s drivers updated
+
+commit 9bcfedff6b1b7146682dca4a6893dee83e1064de
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Oct 2 18:28:03 2015 +0100
+
+    Corrected values for driver amplitudes so that all normal modes deliver
+    same quantity of energy per unit time corrections and simulations rerun
+    for model with c_s=13km/s
+
+commit 432a299e216229a4775a52f80e16f8b573de20b6
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Oct 2 18:20:54 2015 +0100
+
+    Updated amplitudes for c_s=13km/s series of normal modes. Amplitudes corrected so that allmodes deliver the same quantity of energy per second. See the matlab function matlab/pamplitude.m
+
+commit 3eb767794f182348865969b1a15e17ee1fcdc87f
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Aug 6 21:23:44 2015 +0100
+
+    Model inputs for 4.2km/s phase curve
+    cs=4.2km/s
+    (0,0) driver 1346.87s
+    (0,1) driver 952.38s
+    (0,2) driver 634.92s
+    (0,3) driver 476.19s
+
+commit a07754d5f7dd364226cda4ff5c022d7ec910ccb9
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Aug 5 23:23:19 2015 +0100
+
+    energy flux and distance time plot computations for (1,1) mode at 180s and 300s
+
+commit 5eacab415fced5fd60427fb7cc608160334e57e7
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Jul 27 19:55:13 2015 +0100
+
+    Addition of 20G vertical magnetic field with 300s (0,1) mode driver
+
+commit 0301921476b02fbf1354b2443cc7683483738827
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Jul 27 09:05:05 2015 +0100
+
+    Added models for (1,2) (2,2) (3,3) modes for 180s and 300s drivers
+
+commit 4d8c38a772174cd2bc3e2468c72a622fd16547e6
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Jul 2 14:43:52 2015 +0100
+
+    Updated source files for (1,1)  and (1,2) modes for 180s and 300s drivers
+
+commit e8af1bcb075239e542f11205b9d1bbb5962583da
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Jul 2 09:33:46 2015 +0100
+
+    Corrections for (1,1) 180s and 300s driver models
+
+commit 50e36a7d65798f113125236969eead67761dbbb0
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Jul 2 07:57:39 2015 +0100
+
+    Configuration files for (1,1) modes 180s and 300s driver with amplitude
+    312.5m/s
+
+commit 723a838015db1e04a2a6c703954b9d221dd61a7b
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Jun 30 13:47:10 2015 +0100
+
+    Distance time plots for horizontal sections through model for 180s and
+    300s drivers
+
+commit c58504504f5f9f589bdca15a9e59bf3a290188b5
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Jun 26 10:54:50 2015 +0100
+
+    Analysis of data for p-modes with applied magnetic field. Computation of
+    plasma beta corrected in plotsecs_iso_array
+
+commit 9bd04877327a6947f8b087cc86c25bd23bfed489
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Jun 11 06:21:45 2015 +0100
+
+    Time dist array plot routines for 180s and 300s drivers
+
+commit a4bd042dc4f454cddefe64b9ad2fb52244de2bbf
+Merge: b0832af ef4d061
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Jun 9 09:31:51 2015 +0100
+
+    Merge branch 'master' of https://github.com/mikeg64/smaug_pmode
+    
+    Conflicts:
+    	matlab/energyperunitarea_array.m
+
+commit b0832af37394c207a865ea5e1616490c30d4b29c
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Jun 9 07:25:15 2015 +0100
+
+    new update
+
+commit 097846aeb19a81b426e35e4fa77ab70abb4a0cfc
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Jun 9 07:22:45 2015 +0100
+
+    Further mods
+
+commit 546c617104130e176de8785329901eb4f75ef3e2
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Jun 9 07:19:54 2015 +0100
+
+    energy per unit area
+
+commit ef4d06126ae910fe03c78605fb1721e4653bec37
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Jun 5 09:45:40 2015 +0100
+
+    Addition of computation of plasma beta
+
+commit 104fa01c8a2d62ce84e27a48362640c992bb63d0
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Jun 4 11:45:09 2015 +0100
+
+    Addition of routines to compute stream lines and isosufaces for B field
+
+commit 3079efddd4858084fbebb0ff38b9ef50b5ce6f67
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Apr 13 08:47:46 2015 +0100
+
+    Addition of 10G vertical field model
+
+commit 4e07c85724224fd6db98fa8230ed86b31aab46fd
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Apr 2 08:48:09 2015 +0100
+
+    Updating distnace time plots for x and y directions
+
+commit 99fdd9d5b190fee3db96f201ce21ffa445c2dc46
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Apr 1 22:30:21 2015 +0100
+
+    Updated energy fluxes for normal modes. Addition of 100G vertical field model for 282s (0,0) and 200s (0,1) mode.
+
+commit 4a8b054b1d52add46995b0f21e6a909bdbdb9666
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Sun Mar 29 22:54:56 2015 +0100
+
+    Include files and job scripts for 2p82 (0,0) and 2p00 (0,1) with 20G, 50G and 2000G uniform vertical B field
+
+commit 892e331372ea0e4f82d83929d73e8300165726b7
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Mar 27 20:41:14 2015 +0000
+
+    Started configurations 2p82,(0,0) and 2p00 (0,1) with a20G vertical magnetic field
+
+commit 06fb1323586a9147cfc3b709700bde363f38fcea
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Mar 26 08:16:03 2015 +0000
+
+    correct version of b field computation
+
+commit 9c5f1f011b9987dbe234c87ab67ae026fa214509
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Mar 25 18:28:44 2015 +0000
+
+    Atmospheric model used for 128x128x128 pmode model
+
+commit 95c83a87531e885e06d1b8434c1b8dad75023291
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Mar 24 22:13:49 2015 +0000
+
+commit 887c725f907bf97e4e6f57a17e3d7d23de0dc95b
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Mar 24 21:40:25 2015 +0000
+
+commit bd7d8fdbf2913b50adee9b58865f50760c2b2b0a
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Mar 19 14:31:51 2015 +0000
+
+    initial version with corrections
+
+commit 9cbe9ac7c945f8c6a2825f2ff1d649ad10a1548a
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Mar 18 22:10:45 2015 +0000
+
+    Updated flux values at 1,2,4,5.5Mm (grid points 20,42,90,117)
+
+commit 6c4abc281b3ebd66f35662903d8c41cab6df20a3
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Mar 16 21:04:47 2015 +0000
+
+commit c95de3601cf2a936c4bdbf5316689dfadb1372cb
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Mar 16 19:02:45 2015 +0000
+
+    1. Code for distance-time plots compute for 00,01,02 and 03 modes for 180s,300s driver
+    2. Revised update_atmos and totalflux_tavg to compute flux at specific layers
+
+commit d0ecfa5b7f6a20b7e8994cce9c4f5b7424f332cb
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Mar 12 20:43:29 2015 +0000
+
+    Updated Energy Flux Profiles and Comparison of Normal Mode energy propagation for transition layer and corona
+
+commit 5c897d8643c8ab27be24e259e6d0c34c813e67ae
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Mar 11 20:34:36 2015 +0000
+
+    Input files for C_s=20km/s case with 282.84s driver (0,0) mode and 200.00s driver with (0,1) mode. The initial configuration is a uniform vertical magnetic field of 10G.
+
+commit 464fe428cc8443df454bb5d87a5ddd3e363779f9
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Mar 11 19:52:57 2015 +0000
+
+    znd stage run for case mode case with c_s=20km/s
+
+commit cf8c36b5db4e9cd2ad5ded1085c653096475820b
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Mar 6 17:57:20 2015 +0000
+
+    Updated IDL code for computing vertical magnetic field configuration
+
+commit 821ad7b2414cd6daa182b43410f4f4458c159ef8
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Mar 6 16:38:39 2015 +0000
+
+    First draft of eigen modes paper featuring v. preliminary results!
+
+commit dabcd5cd9bcc444e216ccb2026a67d370ffa69c1
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Mar 5 20:04:01 2015 +0000
+
+commit 2a6fac57c09584c3e28a57177820ce9aa21d1405
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Mar 5 18:55:48 2015 +0000
+
+    Results for calculation of average flux
+
+commit 6b31962e112f6b826d127182d1cfb3df6e3e2390
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Mar 5 17:51:38 2015 +0000
+
+    Plotting temperature profiles and FFT power spectra
+
+commit 1bfefa0295a94a5ed50fc6eac48708ae75626c1d
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Mar 5 08:04:21 2015 +0000
+
+    Temperature distributions and power spectra plots
+
+commit 5fa2b139b17d4365a4bd102a18a3242dc091529f
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Mar 4 18:58:10 2015 +0000
+
+    transition layer temperature contours added to velocity profile plot
+
+commit e2d3da784bc6396f5711e14a698710c0e373c8eb
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Mar 4 10:55:30 2015 +0000
+
+    Continuation run for 300s and 180s (0,0) mode drivers with amplitude 1250m/s. Hyperdiffusion coefficient is 04 for momentum. Using continuous boundary conditions. Objective of run is to seek evidence of beating phenomena in driven wave modes.
+
+commit 9d47938834f7484d827c20215fdc3390e98b8c6c
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Mar 4 10:54:26 2015 +0000
+
+    Running 180s and 300s drivers with periodic boundary conditions 0,0 mode has 500ms amplitude
+    (n.b. earlier runs were 1250m/s). Hyperdiffusion coefficient for momentum is reduced from 0.4 to 0.08
+    addition of source files
+
+commit 606f781f4e939806ec5d3c227aa22c00ea264c81
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Mar 4 09:52:33 2015 +0000
+
+    Running 180s and 300s drivers with periodic boundary conditions 0,0 mode has 500ms amplitude
+    (n.b. earlier runs were 1250m/s). Hyperdiffusion coefficient for momentum is reduced from 0.4 to 0.08
+
+commit be2d040a8b9d455f34bf77badaddb1dbe2e61236
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Mar 3 07:26:41 2015 +0000
+
+    Reverted models  to continuous boundary condition and momentum hyperdiffusion parameter of 0.4.
+
+commit 77ff058b9431c1c4e8b8bff05fdafb5c3cddaaa9
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Mar 2 17:54:41 2015 +0000
+
+    Addition of resource files for mode with c_s=20km/s (this is using periodic boundary conditions)
+
+commit beea87402e4145c43375053653d47d6feabb680e
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Mar 2 15:53:26 2015 +0000
+
+    Removed 0.2 factor correction from hyperdifmomsourcene6_parallel. Correction factor appeared provide correct results. Can try same effect by reducing the momentum hyperdiffusion coefficient  from 0.4 to 0.08
+
+commit a9bfed479c190834ab1b48d4cad1f721dc3b4a8c
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Mar 2 15:38:35 2015 +0000
+
+    Testing with periodic BC's revealed contribution from off diagonal momentum contribution to hyperdiffusion was blowing up. We applied a correction factor of 0.2 to the momentum in hyperdifmomsourcene6_parallel
+
+commit 68e064cbdae5a1a42f8edb95f3e41ab16fb26f3a
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Feb 26 05:47:59 2015 +0000
+
+    Shell scripts and matlab scripts for distance time plots (for 300s, 5b0 and 180s 6b0 drivers)
+    jpg images of results on google drive at
+    http://bit.ly/1LKl3NR
+
+commit c3d6508f702bee3353aca2363b8f39ade6c0f6be
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Feb 26 05:17:39 2015 +0000
+
+    continuation cycle for 179 (0,0), 127 (0,1), 84.84 (0,2) and 63 (0,3) runs (c_s=31.43s)
+
+commit 5635045b5eb5f08e8dca61553ab9b5901867849f
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Feb 20 07:00:25 2015 +0000
+
+    Normal mode oscillations with c_s=31.43 km/s (excessive ???)
+    identifier, driver period, mode
+    1p79a 179.98s (0,0), 1p27a 127.27s (0,1), 0p84 84.84s (0,2), 0p63 63.63s (0,3)
+
+commit f26bf0afa1e99ccd90bcc4566e28bdf5331ea736
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Feb 20 03:57:18 2015 +0000
+
+    Continuation run for 435.1 (0,0), 307.7 (0,1) and 205.1 (0,2) configurations. Also started run of 300.0 (0,3) and 180.0 (0,3) configurations
+
+commit a0cc9b7b98c13cfd9556dade7fc393be4ec8741d
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Tue Feb 17 09:15:06 2015 +0000
+
+    Running 0,3 mode for 180s and 300s driver with amplitude 147.1 m/s
+
+commit 15b5d633051fe8869f08dfc7b6084149d1e92b59
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Wed Feb 11 09:51:14 2015 +0000
+
+    Corrected paths and job scripts for 13km/s normal modes (4p53a_0_0, 3p07a_0_1, 2p05a_0_2, 1p53a_0_3)
+
+commit b3feb8f77805ab23e7e1ad418a62f03791d23977
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Mon Feb 9 20:28:51 2015 +0000
+
+    Normal modes for oscillations with c_s=13km/s
+
+commit 3cef244ac13e7995b8a17b4c4770ed972329c603
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Dec 19 09:48:19 2014 +0000
+
+    2nd stage of repeat of 5b0_2, 6b0_2, 6b0. These were run on M2070 GPU on iceberg cluster so make_inputs_3d modified to set architecture to sm_20  (Keplers use sm_35)
+
+commit eb8a5266b014f31eb16d3419b74ed1579230c72c
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Fri Dec 19 08:25:07 2014 +0000
+
+    Energy per unit area computed using flux relation quoted by T J Bogdan et al ., 2003, ApjJ, 599, 626
+
+commit 48f2a3a6077edf1dbb7e02c66ae97d9d3eebd737
+Author: mikeg64 <m.griffiths@sheffield.ac.uk>
+Date:   Thu Dec 4 07:33:11 2014 +0000
+
+    Current active version of smaug_pmode update boundarysrc and include files
+
+commit b197933eba7c088c40ac0d50ea2c3e774cbb0566
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Mon Nov 24 14:09:10 2014 +0000
+
+    wavelet analsis for averaged energy
+
+commit 9820d8b79f7bc923c246a3dcfa45f0b526ad9e18
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Thu Nov 20 08:17:49 2014 +0000
+
+    smaug_torsion merge from smaug
+
+commit b49f07554d27357cee211f524f7001b0d5b39d12
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Thu Nov 20 08:17:27 2014 +0000
+
+    smaug_mpi merge from smaug
+
+commit fe2cd236a2d78c4c5b97d238da615fe656e2abcb
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Thu Nov 20 08:16:51 2014 +0000
+
+commit f1ff8a6c59962cb52ef6b2538fce4e76ee3eda1a
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Thu Nov 20 06:37:21 2014 +0000
+
+commit ea1704e717165d29c3f4aa2ef6baf24a40f34b54
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Wed Nov 19 13:44:00 2014 +0000
+
+    pmode results agree with past tests and latest version of smaug
+
+commit 39a1d23c06bff5595032cc02dd684aa7375402e5
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Wed Nov 19 10:49:48 2014 +0000
+
+    Initial file used for fluxtube test (VALIIC solar atmosphere)
+
+commit a82276c537e6ef0f3086f496a84a824e16560820
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Wed Nov 19 10:19:10 2014 +0000
+
+    Fluxtube test updates
+
+commit 9c29b1274d1777c0064bf2239d90adf0c5a29e85
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Wed Nov 19 07:34:10 2014 +0000
+
+commit 7cd1693221e4875fe628b348dc1ce14f9632ea0a
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Fri Nov 14 12:23:52 2014 +0000
+
+commit 971575ac2b6f39cada27504b5eccdea176ef840e
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Thu Nov 13 13:54:33 2014 +0000
+
+    added matlab viz tools for pmode analysis
+
+commit 26b18338900b2bdd9b293e97d4ff64c02f7f3a25
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Thu Nov 6 13:36:56 2014 +0000
+
+commit 30fb88d8c415a64204a2233dba42db46890191fa
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Thu Nov 6 13:22:46 2014 +0000
+
+commit e5f078e06fdab2622822d593260500ad1cade2b1
+Author: mikeg64 <mikeg64@993b1211-408a-0410-8964-a8528df93632>
+Date:   Thu Nov 6 13:22:13 2014 +0000

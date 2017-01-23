@@ -1,4 +1,17 @@
 
+To clone this repository
+git clone https://github.com/mikeg64/smaug_pmode
+
+To see all the revisions (i.e. get the required hash code)
+git log > gitlog.txt
+
+
+To goto a particular revision/commit
+git reset --hard HASH-CODE
+
+
+
+
 
 Initial configurations may be found here 
 https://drive.google.com/open?id=0B-AKVl-pk6ziVUFqUzMycWJoODg&authuser=0
