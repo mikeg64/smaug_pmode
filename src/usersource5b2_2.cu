@@ -47,8 +47,13 @@ xc1=xc1Mm*1.0e6;//  !m        z axis
 xc2=xc2Mm*1.0e6;//  !m        x axis
 xc3=xc3Mm*1.0e6;//  !m        x axis
 
-yymax=4.0e6;
-xxmax=4.0e6;
+//yymax=4.0e6;
+//xxmax=4.0e6;
+
+yymax=4.01572e6;
+xxmax=4.01572e6;
+
+
 
 
 xp=(p->xmin[0])+(((real)i)*(p->dx[0]));
@@ -56,7 +61,8 @@ xp=(p->xmin[0])+(((real)i)*(p->dx[0]));
   
 r2=(yp-xc2)*(yp-xc2);
 
-xxmax=4.0e6;
+//xxmax=4.0e6;
+xxmax=4.01572e6;
 
 exp_x=exp(-r2/(delta_x*delta_x));
 delta_x=0.004e6;

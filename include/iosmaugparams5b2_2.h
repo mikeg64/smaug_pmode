@@ -10,12 +10,14 @@ int ngk=2;
 //#ifdef USE_SAC
 //vac ozt
 int ni;
-ni=124;    //OZT tests
+ni=240;    //OZT tests
 ni=ni+2*ngi;
 //ni=512;
 //real xmax = 6.2831853;  
-real xmax=5955555.6e0;
-real xmin=133333.33;
+//real xmax=5955555.6e0;
+//real xmin=133333.33;
+real xmax=5.97981e6;
+real xmin=84814.8;
 real dx = (xmax-xmin)/(ni);
 //#endif
 
@@ -24,13 +26,16 @@ real dx = (xmax-xmin)/(ni);
 // Define the y domain
 //#ifdef USE_SAC
 //vac ozt
-int nj = 124;  //OZT tests
+int nj = 252;  //OZT tests
 //int nj=2;  //BW test
 nj=nj+2*ngj;
 //nj=512;
 //real ymax = 6.2831853; 
-real ymax = 4.0e6;
-real ymin=1953.10;
+//real ymax = 4.0e6;
+//real ymin=1953.10;
+real ymax = 4.01572e6;
+real ymin=8256.44;
+
 real dy = (ymax-ymin)/(nj);    
 //nj=41;
 //#endif
@@ -40,11 +45,14 @@ real dy = (ymax-ymin)/(nj);
 #ifdef USE_SAC_3D
 
 int nk;
-nk=124;    //BW tests
+nk=252;    //BW tests
 
 nk=nk+2*ngk;
-real zmax=4.0e6;
-real zmin=1953.1;
+//real zmax=4.0e6;
+//real zmin=1953.1;
+real zmax = 4.01572e6;
+real zmin=8256.44;
+
 //real dx = xmax/(ni-4);
 real dz = (zmax-zmin)/(nk);
 #endif  
@@ -89,9 +97,10 @@ int finishsteering=0;
 //char *cfgfile="zero1_np0201.ini";
 //char *cfgfile="2D_bhoriz120_2048_1024_asc.ini";
 //char *cfgfile="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_asc_84000.ini";
-char *cfgfile="configs/3D_128_spic_asc.ini";
+//char *cfgfile="configs/3D_128_spic_asc.ini";
+char *cfgfile="configs/pmode_256_256_244_asc.ini";
 
-//char *cfgfile="/fastdata/cs1mkg/smaug/spic5b2_2/zerospic1_asc_717000.ini";
+//char *cfgfile="/fastdata/cs1mkg/smaug/spic5b2_2/zerospic1_asc_573000.ini";
 //char *cfgfile="/fastdata/cs1mkg/smaug/spic5b0_3d/zerospic1_asc_402000.ini";
 //char *cfgfile="/fastdata/cs1mkg/smaug/spic5b0_3d/zerospic1_asc_79000.ini";
 
@@ -114,7 +123,8 @@ char *cfgfile="configs/3D_128_spic_asc.ini";
 //char *cfgout="/fastdata/cs1mkg/smaug/spicule7_nob/zerospic1";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/out/spicule5b4/zerospic1_";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/spicule5b0_3d/zerospic1_";
-char *cfgout="/fastdata/cs1mkg/smaug/spic5b2_2/zerospic1_";
+//char *cfgout="/fastdata/cs1mkg/smaug/spic5b2_2/zerospic1_";
+char *cfgout="/fastdata/cs1mkg/smaug/spic256_5b2_2/zerospic1_";
 //char *cfgout="/data/cs1mkg/smaug_spicule1/spicule5b0_3d/zerospic1_";
 //char *cfgout="/fastdata/cs1mkg/smaug/em6b4_bhor120/zerospic1_";
 
@@ -162,8 +172,8 @@ p->dx[2]=dz;
 p->qt=0.0;
 p->it=0;
 
-//p->qt=717.0;
-//p->it=717001;
+//p->qt=573.0;
+//p->it=573001;
 
 
 
