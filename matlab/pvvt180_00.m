@@ -8,8 +8,8 @@
 %directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 bdir='/fastdata/cs1mkg/smaug/';
-rdirectory='spic6b0_3d_rep';
-nt=889;
+rdirectory='spic6b0_3d';
+nt=1143;
 
 
 %directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/';
@@ -30,16 +30,16 @@ nextension='.jpg';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
 wspacename=[rdirectory,'_ydir_vverustime.mat']
 
+load(wspacename);
+% evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
+% eveltran_vh=zeros(nt,124);   %  horizontal section in transition layer at 42
+% evelcor_vh=zeros(nt,124);    %  horizontal section in corona at 90
+% 
+% evel2Mm_vh=zeros(nt,124);  %vertical section at 2Mm  62
+% evel1Mm_vh=zeros(nt,124);  %vertical section at 1Mm  31
+% evelp5Mm_vh=zeros(nt,124);  %vertical section at 0.5Mm 15
 
-evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
-eveltran_vh=zeros(nt,124);   %  horizontal section in transition layer at 42
-evelcor_vh=zeros(nt,124);    %  horizontal section in corona at 90
-
-evel2Mm_vh=zeros(nt,124);  %vertical section at 2Mm  62
-evel1Mm_vh=zeros(nt,124);  %vertical section at 1Mm  31
-evelp5Mm_vh=zeros(nt,124);  %vertical section at 0.5Mm 15
-
-for i=1:1:nt
+for i=36:1:nt
 %for i=1:100:nt
 %for i=1519:2632
 %for i=2631:2632
@@ -234,9 +234,9 @@ clear tmp;
   end
   
   
- if mod(i,100)==0         
+ %if mod(i,100)==0         
     save(wspacename); 
-end 
+%end 
   
 %   cmap=colormap(jet(256));
 %   caxis([minval maxval]);
