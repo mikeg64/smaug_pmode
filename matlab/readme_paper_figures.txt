@@ -9,4 +9,5 @@ vvproc_30_00_mat.sh runs the matlab job pvvt30_00.m
 vvproc_300_00_mat.sh runs the matlab job pvvt300_00.m
 
 now call scripts to plot the actual td plot
+plot_timedist_array_30_180_300s.m
 
