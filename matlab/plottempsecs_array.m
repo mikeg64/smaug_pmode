@@ -1,19 +1,67 @@
 
+
+bdir='/fastdata/cs1mkg/smaug/';
+% rdirectory='spic5b0_3d';
+rdirectory='spic256_5b2_2';
 %directory='/storage2/mikeg/results/spic6b0_1_3d/';
 %directory='/storage2/mikeg/results/spic4b0_3_3d/';
 %directory='/storage2/mikeg/results/spic4b0_1_3d/';
-directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
+%directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
+%directory='/fastdata/cs1mkg/smaug/spic5b0_1_3d/';
+directory=[bdir,rdirectory,'/'];
 extension='.out';
 
 %ndirectory='/storage2/mikeg/results/spic6b0_1_3d/images_3d_tsecs/';
 %ndirectory='/storage2/mikeg/results/spic4b0_3_3d/images_3d_secs/';
 %ndirectory='/storage2/mikeg/results/spic6b0_1_3d/images_3d_tsecs/';
-ndirectory='/storage2/mikeg/results/spic2p3a_0_3_3d/images_3d_tsecs/';
+%ndirectory='/fastdata/cs1mkg/smaug/spic5b0_1_3d/images_3d_tsec';
+ndirectory=[bdir,rdirectory,'/images_3d_tsecs/'];
+
+
 nextension='.jpg';
+wspacename=[bdir,'matlabdat/',rdirectory,'_vert_tempprofs.mat']
+nt=661;
+% nxo=124;
+% nyo=124;
+% nzo=124;
+% nrange1=3:126;
+% nrange2=3:126;
+% nrange3=3:126;
+% nrange=3:126;
+
+% xmax=4;
+% ymax=4;
+% zmax=6;
 
 
-for i=1:1082
-%for i=540:973    
+%128,256,256 these are input dimensions including ghost cells
+nxo=124;
+nyo=248;
+nzo=248;
+nrange2=3:250;
+nrange3=3:250;
+nrange1=3:126;
+nrange=3:126;
+
+ xmax=4;
+ ymax=4;
+ zmax=4;
+
+
+ etempchrom_h=zeros(nt,nzo,nyo);  %  horizontal section in chrom at  20
+ etemptran1_h=zeros(nt,nzo,nyo);   %  horizontal section in transition layer at 42
+ etemptran2_h=zeros(nt,nzo,nyo);   %  horizontal section in transition layer at 49
+ etempcor_h=zeros(nt,nzo,nyo);    %  horizontal section in corona at 90
+
+etemp_v_x1=zeros(nt,nyo,nxo);  % vertical section
+etemp_v_x2=zeros(nt,nyo,nxo);  % vertical section
+etemp_v_y1=zeros(nt,nyo,nxo);  % vertical section
+etemp_v_y2=zeros(nt,nyo,nxo);  % vertical section
+
+%   for i=1:5:nt
+  for i=660:5:665
+
+
 
 id=int2str(1000*i);
 filename=[directory,'zerospic1__',id,extension];
@@ -81,24 +129,23 @@ clear tmp;
 
 
 
-
 %plot sections through 3d array
    %slice=48;
-   x=linspace(0,4,128);
-   y=linspace(0,4,128);
-   z=linspace(0,6,128);
+   x=linspace(0,xmax,nx(1));
+   y=linspace(0,ymax,nx(2));
+   z=linspace(0,zmax,nx(3));
    
    
    
    
-   nrange=3:126;
+   %nrange=3:126;
    
-   ax=x(nrange);
-   ay=y(nrange);
-   az=z(nrange);
+   ax=x(nrange1);
+   ay=y(nrange2);
+   az=z(nrange3);
    [x1,x2,x3] = meshgrid(ax,ay,az);
-   val1=reshape(wd(2,nrange,nrange,nrange),124,124,124);
-   val2=reshape(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange),124,124,124);
+   val1=reshape(wd(2,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+   val2=reshape(wd(1,nrange1,nrange2,nrange3)+wd(10,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 
 
    %myval=shiftdim(val1./val2,1);
@@ -109,10 +156,10 @@ clear tmp;
 	mu_gas=0.6;
 	gamma=1.66667;
 
-sabx=reshape(wd(11,nrange,nrange,nrange),124,124,124);
-saby=reshape(wd(12,nrange,nrange,nrange),124,124,124);
-sabz=reshape(wd(13,nrange,nrange,nrange),124,124,124);
-TP=reshape(wd(9,nrange,nrange,nrange),124,124,124);
+sabx=reshape(wd(11,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+saby=reshape(wd(12,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+sabz=reshape(wd(13,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+TP=reshape(wd(9,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 TP=TP-(sabx.^2.0+saby.^2.0+sabz.^2.0)./2.0;
 TP=(gamma-1.d0).*TP;
 
@@ -122,9 +169,15 @@ TP=(gamma-1.d0).*TP;
   
    myval=shiftdim(mu_gas.*TP./R./val2,1);
 
+ etempchrom_h(i,:,:)=myval(:,:,20);  %  horizontal section in chrom at  20
+ etemptran1_h(i,:,:)=myval(:,:,42);   %  horizontal section in transition layer at 42
+ etemptran2_h(i,:,:)=myval(:,:,49);   %  horizontal section in transition layer at 49
+ etempcor_h(i,:,:)=myval(:,:,90); %  horizontal section in corona at 90
 
-
-
+etemp_v_y1(i,:,:)=myval(64,:,:);
+etemp_v_y2(i,:,:)=myval(32,:,:);
+etemp_v_x1(i,:,:)=myval(64,:,:);
+etemp_v_x2(i,:,:)=myval(32,:,:);
    %P = [2 1 3];
    %x1 = permute(x1, P);
    %x2 = permute(x2, P);
@@ -137,24 +190,30 @@ TP=(gamma-1.d0).*TP;
   %hold on;
   %h=slice(myval,80, 64,8);
   %h=slice(myval,80, 64,49);
-  h=slice(myval,64, 64,49);
+%   h=slice(myval,64, 64,49);
+  %h=slice(myval(:,:,40:124),124, 124,58);
+  h=slice(myval(:,:,40:116),124, 124,22);
   %h=slice(myval,105, 96,8);
   hold on;
   set(h,'EdgeColor','none','FaceColor','interp');
   %set(h,'XData',ax,'YData',ay,'ZData',az);
   hax=get(h,'Children');
   set(gca,'CameraPosition',[-606.298 -914.02 280.537]);
-  set(gca,'Xlim',[0 124],'Ylim',[0 124],'Zlim',[0 124]);
+  %set(gca,'Xlim',[0 nyo],'Ylim',[0 nzo],'Zlim',[0 nxo-42]);
+  set(gca,'Xlim',[0 nyo],'Ylim',[0 nzo],'Zlim',[0 76]);
   
-  set(gca,'YTickLabel',{'0';'1.6';'3.2'})
-  set(gca,'XTickLabel',{'0';'1.6';'3.2'})
+%   set(gca,'YTickLabel',{'0';'1.6';'3.2'})
+%   set(gca,'XTickLabel',{'0';'1.6';'3.2'})
   %set(gca,'XTickLabel',{'0';'0.67';'1.33';'2.0';'2.67';'3.33';'4.0'})
 
-
+  set(gca,'YTickLabel',{'0';'0.8';'1.6';'2.4';'3.2';'4.0'});
+  set(gca,'XTickLabel',{'0';'0.8';'1.6';'2.4';'3.2';'4.0'});
 
   %set(gca,'YTickLabel',{'0';'1.6';'3.2'})
   %set(gca,'XTickLabel',{'0';'0.63';'1.26';'1.89';'2.52';'3.15';'3.78'})
-  set(gca,'ZTickLabel',{'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72'})
+  %set(gca,'ZTickLabel',{'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72'})
+  %set(gca,'ZTickLabel',{'0.09';'0.67';'1.42';'2.09';'2.76';'3.42';'4.0'})
+  set(gca,'ZTickLabel',{'1.315';'1.738';'2.16';'2.58'})
   %cmap=colormap('Jet');
   cmap=colormap(jet(256));
   %caxis([-4000 5000]);
@@ -172,5 +231,11 @@ TP=(gamma-1.d0).*TP;
   
   hold off
   
-end 
   
+   if mod(i,100)==0         
+%     save(wspacename); 
+   end 
+  
+  
+end 
+%  save(wspacename);  
