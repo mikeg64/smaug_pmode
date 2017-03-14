@@ -6,7 +6,7 @@
 %  for i=2:1:1127
 
 % 300s driver
- for i=1:1:1176
+ for i=871:1:1176
 
        
        
@@ -26,10 +26,11 @@ filename=[directory,'zerospic1__',id,extension];
 imfile=[ndirectory,'im1_',id,nextension];
 timetext=['time=',int2str(i),'s'];
 disp([id filename]);
+
+
+
    fid=fopen(trim(filename));
    %fseek(fid,pictsize(ifile)*(npict(ifile)-1),'bof');
-
-
 try
    headline=trim(setstr(fread(fid,79,'char')'));
 catch
@@ -493,13 +494,14 @@ lighting gouraud ;
   divmap=diverging_map(linspace(0,1,256),[0.23 0.299 0.754],[0.706 0.016 0.15]);
   colormap(divmap);
       
-      ylabel(gca,'Distance(Mm)');
+      ylabel(gca,'x (Mm)');
 zlabel(gca,'Height (Mm)');
-xlabel(gca,'Distance (Mm)');
+xlabel(gca,'y (Mm)');
    text(-110,0,0,timetext); 
 %  title(gca,'Vz Slices, isosurface for 2e6K and Velocity Vectors');
 %    text(0,200,0,timetext);
-title(gca,'Driver Period 300s, Mode 0,1');      
+%title(gca,'Driver Period 300s, Mode 0,1');      
+title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 300s, Mode 0,1 '});      
       
       %colormap(cmap);
       hc=colorbar();

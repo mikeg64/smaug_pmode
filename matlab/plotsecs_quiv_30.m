@@ -2,18 +2,18 @@
 
 
 %for i=9:1:9
-% 180s drver
-%  for i=2:1:1127
+% 30s drver
+  for i=39:1:630
 
 % 300s driver
- for i=1:1:1176
+% for i=1:1:1176
 
        
        
-         directory='/fastdata/cs1mkg/smaug/spic5b0_1_3d/';
+         directory='/fastdata/cs1mkg/smaug/spic4b0_1_3d/';
 extension='.out';
 
-ndirectory='/fastdata/cs1mkg/smaug/spic5b0_1_3d/images_comp/';
+ndirectory='/fastdata/cs1mkg/smaug/spic4b0_1_3d/images_comp/';
 nextension='.jpg';  
        
 % for i=20:1:20     
@@ -35,6 +35,7 @@ try
 catch
    continue;
 end
+
    it=fread(fid,1,'integer*4'); time=fread(fid,1,'float64');
  
    ndim=fread(fid,1,'integer*4');
@@ -493,13 +494,15 @@ lighting gouraud ;
   divmap=diverging_map(linspace(0,1,256),[0.23 0.299 0.754],[0.706 0.016 0.15]);
   colormap(divmap);
       
-      ylabel(gca,'Distance(Mm)');
+      ylabel(gca,'x (Mm)');
 zlabel(gca,'Height (Mm)');
-xlabel(gca,'Distance (Mm)');
+xlabel(gca,'y (Mm)');
    text(-110,0,0,timetext); 
 %  title(gca,'Vz Slices, isosurface for 2e6K and Velocity Vectors');
 %    text(0,200,0,timetext);
-title(gca,'Driver Period 300s, Mode 0,1');      
+%title(gca,'Driver Period 180s, Mode 0,1');      
+%title(gca,'Vz (m/s) Slices, Velocity Vectors and 2e6K isosurface for \nDriver Period 30s, Mode 0,1 ');      
+title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 30s, Mode 0,1 '});      
       
       %colormap(cmap);
       hc=colorbar();
