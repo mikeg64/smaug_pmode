@@ -6,19 +6,53 @@
 %  for i=2:1:1127
 
 % 300s driver
- for i=1:1:895
+ for i=1:1:1428
 
+bdir='/fastdata/cs1mkg/smaug/';
+% rdirectory='spic5b0_3d';
+rdirectory='spic256_5b2_2';
        
        
-%         directory='/fastdata/cs1mkg/smaug/spic5b0_3_3d/';
-        directory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic5b2_3/';
-
+%         directory='/fastdata/cs1mkg/smaug/spic4p35a_0_0_3d/';
+%        directory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic5b2_2/';
+directory=[bdir,rdirectory,'/'];
 extension='.out';
 
-%ndirectory='/fastdata/cs1mkg/smaug/spic5b0_3_3d/images_comp/';
-ndirectory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic5b2_3/images_comp/';
+%ndirectory='/fastdata/cs1mkg/smaug/spic4p35a_0_0_3d/images_comp/';
+%ndirectory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic5b2_2/images_comp/';
+ndirectory=[bdir,rdirectory,'/images_comp/'];
 
 nextension='.jpg';  
+wspacename=[bdir,'matlabdat/',rdirectory,'_vert_tempprofs.mat']
+
+nt=972;
+% nxo=124;
+% nyo=124;
+% nzo=124;
+% nrange1=3:126;
+% nrange2=3:126;
+% nrange3=3:126;
+% nrange=3:126;
+
+% xmax=4;
+% ymax=4;
+% zmax=6;
+
+
+%128,256,256 these are input dimensions including ghost cells
+nxo=124;
+nyo=248;
+nzo=248;
+nrange2=3:250;
+nrange3=3:250;
+nrange1=3:126;
+nrange=3:126;
+
+ xmax=4;
+ ymax=4;
+ zmax=4;
+
+
        
 % for i=20:1:20     
 
@@ -101,34 +135,41 @@ clear tmp;
 
 %plot sections through 3d array
    %slice=48;
-   x=linspace(0,4,128);
-   y=linspace(0,4,128);
-   z=linspace(0,6,128);
+   %x=linspace(0,4,128);
+   %y=linspace(0,4,128);
+   %z=linspace(0,6,128);
+
+   x=linspace(0,xmax,nx(1));
+   y=linspace(0,ymax,nx(2));
+   z=linspace(0,zmax,nx(3));
+
+
+
    
-   xmin=3;
-   xmax=126;
-   ymin=3;
-   ymax=126;  
+   %xmin=3;
+   %xmax=126;
+   %ymin=3;
+   %ymax=126;  
     
    
-   nrange=3:126;
+   %nrange=3:126;
    
-   ax=x(nrange);
-   ay=y(nrange);
-   az=z(nrange);
+   ax=x(nrange1);
+   ay=y(nrange2);
+   az=z(nrange3);
 
       xsec=1:4:128;
    ysec=1:4:128;
    nx=32;
    ny=32;
    
- nxo=124;
-nyo=124;
-nzo=124;
-nrange1=3:126;
-nrange2=3:126;
-nrange3=3:126;
-nrange=3:126;
+% nxo=124;
+%nyo=124;
+%nzo=124;
+%nrange1=3:126;
+%nrange2=3:126;
+%nrange3=3:126;
+%nrange=3:126;
 
 % xmax=4;
 % ymax=4;
@@ -149,6 +190,11 @@ nrange=3:126;
     % Decide where in data space you want to plot cones. This example selects the 
     % full range of x and y in eight steps and the range 3 to 15 in four steps in z 
     % using linspace and meshgrid.
+
+
+
+
+
     nxrange = linspace(xmin,xmax,8);
     nyrange = linspace(ymin,ymax,8);
     nzrange = 3:4:126;
@@ -168,42 +214,42 @@ nrange=3:126;
 
    %plot sections through 3d array
    %slice=48;
-   x=linspace(0,4,128);
-   y=linspace(0,4,128);
-   z=linspace(0,6,128);
+   %x=linspace(0,4,128);
+   %y=linspace(0,4,128);
+   %z=linspace(0,6,128);
    
    
    
    
-   nrange=3:126;
+   %nrange=3:126;
    
-   ax=x(nrange);
-   ay=y(nrange);
-   az=z(nrange);
-%    [x1,x2,x3] = meshgrid(nrange,nrange,nrange);
+   %ax=x(nrange);
+   %ay=y(nrange);
+   %az=z(nrange);
+%    [x1,x2,x3] = meshgrid(nrange1,nrange2,nrange3);
 %    
-%    val1=reshape(wd(4,nrange,nrange,nrange),124,124,124);
-%    val2=reshape(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange),124,124,124);
+%    val1=reshape(wd(4,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+%    val2=reshape(wd(1,nrange1,nrange2,nrange3)+wd(10,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 %    uu=shiftdim(val1./val2,1);
-% %   % val3=reshape(wd(6,nrange,nrange,nrange)+wd(11,nrange,nrange,nrange),124,124,124);
-% %    val3=reshape(wd(6,nrange,nrange,nrange)+wd(11,nrange,nrange,nrange),124,124,124);
+% %   % val3=reshape(wd(6,nrange1,nrange2,nrange3)+wd(11,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+% %    val3=reshape(wd(6,nrange1,nrange2,nrange3)+wd(11,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 % %    uu=shiftdim(val3,1);
 %    
 %    
-%    val1=reshape(wd(3,nrange,nrange,nrange),124,124,124);
-%    val2=reshape(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange),124,124,124);
+%    val1=reshape(wd(3,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+%    val2=reshape(wd(1,nrange1,nrange2,nrange3)+wd(10,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 %    uv=shiftdim(val1./val2,1);
-% %  %  val3=reshape(wd(7,nrange,nrange,nrange)+wd(12,nrange,nrange,nrange),124,124,124);
-% %  val3=reshape(wd(7,nrange,nrange,nrange)+wd(12,nrange,nrange,nrange),124,124,124);
+% %  %  val3=reshape(wd(7,nrange1,nrange2,nrange3)+wd(12,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+% %  val3=reshape(wd(7,nrange1,nrange2,nrange3)+wd(12,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 % %    uv=shiftdim(val3,1);
 % 
 %    
 %    
-%    val1=reshape(wd(2,nrange,nrange,nrange),124,124,124);
-%    val2=reshape(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange),124,124,124);
+%    val1=reshape(wd(2,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+%    val2=reshape(wd(1,nrange1,nrange2,nrange3)+wd(10,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 %    uw=shiftdim(val1./val2,1);
-% %   % val3=reshape(wd(8,nrange,nrange,nrange)+wd(13,nrange,nrange,nrange),124,124,124);
-% %   val3=reshape(wd(8,nrange,nrange,nrange)+wd(13,nrange,nrange,nrange),124,124,124);
+% %   % val3=reshape(wd(8,nrange1,nrange2,nrange3)+wd(13,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+% %   val3=reshape(wd(8,nrange1,nrange2,nrange3)+wd(13,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 % %    uw=shiftdim(val3,1);
 %    
  
@@ -246,8 +292,8 @@ lev=108;
 
 
 
-      val1=reshape(wd(2,nrange,nrange,nrange),124,124,124);
-   val2=reshape(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange),124,124,124);
+      val1=reshape(wd(2,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+   val2=reshape(wd(1,nrange1,nrange2,nrange3)+wd(10,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 
 
    myval=shiftdim(val1./val2,1);
@@ -399,9 +445,9 @@ uw=reshape(uw,[16 16]);
  val2=reshape(wd(1,nrange1,nrange2,nrange3)+wd(10,nrange1,nrange2,nrange3),nxo,nyo,nzo);
 
 
-TP=reshape(wd(5,nrange,nrange,nrange)+wd(9,nrange,nrange,nrange),124,124,124);
-TP=TP-0.5*reshape((wd(2,nrange,nrange,nrange).^2+wd(3,nrange,nrange,nrange).^2+wd(4,nrange,nrange,nrange).^2)./(wd(1,nrange,nrange,nrange)+wd(10,nrange,nrange,nrange)),124,124,124);
-TP=TP-0.5*reshape((wd(6,nrange,nrange,nrange)+wd(11,nrange,nrange,nrange)).^2+(wd(7,nrange,nrange,nrange)+wd(12,nrange,nrange,nrange)).^2+(wd(8,nrange,nrange,nrange)+wd(13,nrange,nrange,nrange)).^2,124,124,124);
+TP=reshape(wd(5,nrange1,nrange2,nrange3)+wd(9,nrange1,nrange2,nrange3),nxo,nyo,nzo);
+TP=TP-0.5*reshape((wd(2,nrange1,nrange2,nrange3).^2+wd(3,nrange1,nrange2,nrange3).^2+wd(4,nrange1,nrange2,nrange3).^2)./(wd(1,nrange1,nrange2,nrange3)+wd(10,nrange1,nrange2,nrange3)),nxo,nyo,nzo);
+TP=TP-0.5*reshape((wd(6,nrange1,nrange2,nrange3)+wd(11,nrange1,nrange2,nrange3)).^2+(wd(7,nrange1,nrange2,nrange3)+wd(12,nrange1,nrange2,nrange3)).^2+(wd(8,nrange1,nrange2,nrange3)+wd(13,nrange1,nrange2,nrange3)).^2,nxo,nyo,nzo);
 
 
 % sabx=reshape(wd(11,nrange1,nrange2,nrange3),nxo,nyo,nzo);
@@ -431,7 +477,7 @@ minv=min(min(min(TP)));
    ax=x(nrange);
    ay=y(nrange);
    az=z(nrange);
-   [x1,x2,x3] = meshgrid(nrange,nrange,nrange);
+   [x1,x2,x3] = meshgrid(nrange1,nrange2,nrange3);
   
   
   
@@ -475,16 +521,16 @@ lighting gouraud ;
   min2=min(min1);
   min3=min(min2);
   
-  maxval=10;
-  minval=-10;
+ % maxval=10;
+ % minval=-10;
 
-%  maxval=2;
-%  minval=-2;
+  maxval=2;
+  minval=-2;
 
 
 
-mval=200;
-%  mval=5;
+%mval=200;
+  mval=5;
 
   
   if min3<minval
@@ -517,7 +563,7 @@ xlabel(gca,'y (Mm)');
 %  title(gca,'Vz Slices, isosurface for 2e6K and Velocity Vectors');
 %    text(0,200,0,timetext);
 %title(gca,'Driver Period 300s, Mode 0,1');      
-title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 300s, Mode 2,3 '});      
+title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 435s, Normal Mode 0,0 '});      
       
       %colormap(cmap);
       hc=colorbar();

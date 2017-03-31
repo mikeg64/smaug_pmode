@@ -6,17 +6,18 @@
 %  for i=2:1:1127
 
 % 300s driver
- for i=1:1:895
+ for i=1:1:1176
 
        
+         directory='/fastdata/cs1mkg/smaug/spic3p07a_0_1_3d/';
        
 %         directory='/fastdata/cs1mkg/smaug/spic5b0_3_3d/';
-        directory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic5b2_3/';
+%        directory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic5b2_2/';
 
 extension='.out';
 
-%ndirectory='/fastdata/cs1mkg/smaug/spic5b0_3_3d/images_comp/';
-ndirectory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic5b2_3/images_comp/';
+ndirectory='/fastdata/cs1mkg/smaug/spic3p07a_0_1_3d/images_comp/';
+%ndirectory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic5b2_2/images_comp/';
 
 nextension='.jpg';  
        
@@ -475,16 +476,16 @@ lighting gouraud ;
   min2=min(min1);
   min3=min(min2);
   
-  maxval=10;
-  minval=-10;
+ % maxval=10;
+ % minval=-10;
 
-%  maxval=2;
-%  minval=-2;
+  maxval=2;
+  minval=-2;
 
 
 
-mval=200;
-%  mval=5;
+%mval=200;
+  mval=5;
 
   
   if min3<minval
@@ -517,7 +518,7 @@ xlabel(gca,'y (Mm)');
 %  title(gca,'Vz Slices, isosurface for 2e6K and Velocity Vectors');
 %    text(0,200,0,timetext);
 %title(gca,'Driver Period 300s, Mode 0,1');      
-title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 300s, Mode 2,3 '});      
+title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 307s, Normal Mode 0,1 '});      
       
       %colormap(cmap);
       hc=colorbar();

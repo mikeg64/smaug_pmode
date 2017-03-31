@@ -30,16 +30,16 @@ nextension='.jpg';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
 wspacename=[rdirectory,'_ydir_vverustime.mat']
 
-load(wspacename);
-% evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
-% eveltran_vh=zeros(nt,124);   %  horizontal section in transition layer at 42
-% evelcor_vh=zeros(nt,124);    %  horizontal section in corona at 90
+%load(wspacename);
+ evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
+ eveltran_vh=zeros(nt,124);   %  horizontal section in transition layer at 42
+ evelcor_vh=zeros(nt,124);    %  horizontal section in corona at 90
 % 
-% evel2Mm_vh=zeros(nt,124);  %vertical section at 2Mm  62
-% evel1Mm_vh=zeros(nt,124);  %vertical section at 1Mm  31
-% evelp5Mm_vh=zeros(nt,124);  %vertical section at 0.5Mm 15
+ evel2Mm_vh=zeros(nt,124);  %vertical section at 2Mm  62
+ evel1Mm_vh=zeros(nt,124);  %vertical section at 1Mm  31
+ evelp5Mm_vh=zeros(nt,124);  %vertical section at 0.5Mm 15
 
-for i=36:1:nt
+for i=1:1:nt
 %for i=1:100:nt
 %for i=1519:2632
 %for i=2631:2632

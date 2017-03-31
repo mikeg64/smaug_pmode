@@ -3,17 +3,17 @@
 
 %for i=9:1:9
 % 30s drver
-  for i=39:1:630
-
+   for i=383:1:578
+%for i=200:200
 % 300s driver
 % for i=1:1:1176
 
        
        
-         directory='/fastdata/cs1mkg/smaug/spic4b0_1_3d/';
+         directory='/fastdata/cs1mkg/smaug/spic4b0_3_3d/';
 extension='.out';
 
-ndirectory='/fastdata/cs1mkg/smaug/spic4b0_1_3d/images_comp/';
+ndirectory='/fastdata/cs1mkg/smaug/spic4b0_3_3d/images_comp/';
 nextension='.jpg';  
        
 % for i=20:1:20     
@@ -360,7 +360,7 @@ uw=reshape(uw,[16 16]);
 
 %comment out these lines to view figure for interactive mode (uncomment for
 %batch work)
- figure('Visible','off','IntegerHandle','Off');
+  figure('Visible','off','IntegerHandle','Off');
   hold on;
 
 
@@ -502,7 +502,7 @@ xlabel(gca,'y (Mm)');
 %    text(0,200,0,timetext);
 %title(gca,'Driver Period 180s, Mode 0,1');      
 %title(gca,'Vz (m/s) Slices, Velocity Vectors and 2e6K isosurface for \nDriver Period 30s, Mode 0,1 ');      
-title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 30s, Mode 0,1 '});      
+title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 30s, Mode 0,3 '});      
       
       %colormap(cmap);
       hc=colorbar();
@@ -516,9 +516,9 @@ title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver P
   
   hold off
    
-   clf;
-   close(gcf);
-   clear all;
+    clf;
+    close(gcf);
+    clear all;
   
 end
   

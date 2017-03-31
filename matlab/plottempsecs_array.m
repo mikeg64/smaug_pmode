@@ -20,7 +20,7 @@ ndirectory=[bdir,rdirectory,'/images_3d_tsecs/'];
 
 nextension='.jpg';
 wspacename=[bdir,'matlabdat/',rdirectory,'_vert_tempprofs.mat']
-nt=661;
+nt=972;
 % nxo=124;
 % nyo=124;
 % nzo=124;
@@ -59,7 +59,7 @@ etemp_v_y1=zeros(nt,nyo,nxo);  % vertical section
 etemp_v_y2=zeros(nt,nyo,nxo);  % vertical section
 
 %   for i=1:5:nt
-  for i=660:5:665
+  for i=321:1:660
 
 
 
@@ -186,8 +186,8 @@ etemp_v_x2(i,:,:)=myval(32,:,:);
    
    
   %h= slice(myval,64, 64, 4);
-  %figure('Visible','off','IntegerHandle','Off');
-  %hold on;
+  figure('Visible','off','IntegerHandle','Off');
+  hold on;
   %h=slice(myval,80, 64,8);
   %h=slice(myval,80, 64,49);
 %   h=slice(myval,64, 64,49);

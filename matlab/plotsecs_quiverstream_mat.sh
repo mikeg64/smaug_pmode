@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -j y
 #$ -V 
-#$ -N compp180_00
+#$ -N compp180_01
 #$ -l mem=12G
 #$ -l rmem=12G
 ##$ -l h_rt=8:00:00

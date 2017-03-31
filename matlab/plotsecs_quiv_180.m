@@ -3,23 +3,26 @@
 
 %for i=9:1:9
 % 180s drver
-  for i=869:1:1127
+%   for i=358:1:1126
 
 % 300s driver
 % for i=1:1:1176
 
+ for i=1:1:768
+%for i=0:5:30         
        
-       
-         directory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/';
+%          directory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/';
+            directory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic6b2_3/';
+      
 extension='.out';
 
-ndirectory='/fastdata/cs1mkg/smaug/spic6b0_1_3d/images_comp/';
+%  ndirectory='/fastdata/cs1mkg/smaug/spic6b0_3_3d/images_comp/';
+ndirectory='/fastdata/cs1mkg/smaug/fastdata/cs1mkg/smaug/spic6b2_3/images_comp/';
 nextension='.jpg';  
        
 % for i=20:1:20     
 
-%for i=200:200
-%for i=0:5:30    
+ 
 
 id=int2str(1000*i);
 filename=[directory,'zerospic1__',id,extension];
@@ -144,6 +147,10 @@ nrange=3:126;
     % using linspace and meshgrid.
     nxrange = linspace(xmin,xmax,8);
     nyrange = linspace(ymin,ymax,8);
+    
+%     nxrange = linspace(xmin,xmax,32);
+%     nyrange = linspace(ymin,ymax,32);    
+    
     nzrange = 3:4:126;
     [cx cy cz] = meshgrid(nxrange,nyrange,nzrange);
     
@@ -200,7 +207,9 @@ nrange=3:126;
 % %    uw=shiftdim(val3,1);
 %    
  
-lev=63;
+% lev=63;
+%lev=92;
+lev=108;
 % %   nr2=lev:1:lev;
 % %    nr1=1:8:124;
 % %    nr3=1:8:124;
@@ -367,9 +376,10 @@ uw=reshape(uw,[16 16]);
        
        hold on;
      %h=slice(myval,65, 65,[5 49 100]); 
-     h=slice(myval,[], [63],[5 49 100]); 
-       
-       
+    % h=slice(myval,[], [63],[5 49 100]); %used for (0,0),(0,1),(0,2)  etc.
+    %   h=slice(myval,[], [93],[5 49 100]); 
+       h=slice(myval,[], [109],[5 49 100]); 
+  
        
        hold on;
        set(h,'EdgeColor','none','FaceColor','interp');
@@ -466,7 +476,15 @@ lighting gouraud ;
   min3=min(min2);
   
   maxval=10;
-  minval=-10;
+   minval=-10;
+
+%  maxval=2;
+%  minval=-2;
+
+
+
+  mval=200;
+  %mval=5;
   
   if min3<minval
       minval=min3;
@@ -476,12 +494,12 @@ lighting gouraud ;
       maxval=max3;
   end
   
-  if minval > -200
-        minval=-200;
+  if minval > -mval
+        minval=-mval;
   end
   
-  if maxval<200
-      maxval=200;
+  if maxval<mval
+      maxval=mval;
   end
   
   cmap=colormap(jet(256));
@@ -497,7 +515,7 @@ xlabel(gca,'y (Mm)');
    text(-110,0,0,timetext); 
 %  title(gca,'Vz Slices, isosurface for 2e6K and Velocity Vectors');
 %    text(0,200,0,timetext);
-title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 180s, Mode 0,1 '});      
+title(gca,{'Slices for Vz (m/s), Velocity Vectors and 2e6K isosurface';'Driver Period 180s, Mode 2,2 '});      
       
       %colormap(cmap);
       hc=colorbar();

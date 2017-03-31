@@ -51,7 +51,7 @@ dtp00=dtplot';
 smode='0,0';
 subplot(1,3,1);
 surf(real(dtp00),'LineStyle','none');
-zlimv=2e2*[-1 1];
+zlimv=2.5e2*[-1 1];
 
 hold on
 hc=colorbar();
@@ -103,7 +103,7 @@ dtp01=dtplot';
 smode='0,0';
 subplot(1,3,2);
 surf(real(dtp01),'LineStyle','none');
-zlimv=40e2*[-1 1];
+zlimv=80e2*[-1 1];
 
 hold on
 hc=colorbar();

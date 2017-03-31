@@ -34,18 +34,21 @@ xticks={'0';'1.333';'3.666'};
 
 %0,0 mode
 figure;
-load('/fastdata/cs1mkg/smaug/matlabdat/spicule4b0_3dtranint.mat');
+%load('/fastdata/cs1mkg/smaug/matlabdat/spicule4b0_3dtranint.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_xdir_vverustime.mat');
+%load('/data/cs1mkg/smaug_pmode/matlab/spic6b0_3d_ydir_vverustime.mat');
+load('/data/cs1mkg/smaug_pmode/matlab/spic4b0_3d_ydir_vverustime.mat');
 
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
-dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
+%dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
 
-%dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
+dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
 %dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
 siz=size(dtplot);
-dtp00=reshape(dtplot(62,:,:),124,siz(3));
+%dtp00=reshape(dtplot(62,:,:),124,siz(3));
+dtp00=dtplot;
 smode='0,0';
 subplot(1,3,1);
 surf(real(dtp00'),'LineStyle','none');
@@ -81,19 +84,21 @@ clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'e
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_1_3d_ydir_vverustime_1Mm.mat');
-load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3d5b0_tranint.mat');
+%load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3d5b0_tranint.mat');
+load('/data/cs1mkg/smaug_pmode/matlab/spic6b0_3d_ydir_vverustime.mat');
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
-dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
+%dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
-%ptitle2=' Mode 180.0s (Vertical Section at 2Mm x-dir)';
-ptitle2=' Mode 300.0s ';
+ptitle2=' Mode 180.0s (Vertical Section at 2Mm x-dir)';
+%ptitle2=' Mode 300.0s ';
 
-%dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
+dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
 %dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
 
 siz=size(dtplot);
-dtp01=reshape(dtplot(62,:,:),124,siz(3));
+%dtp01=reshape(dtplot(62,:,:),124,siz(3));
+dtp00=dtplot;
 smode='0,0';
 subplot(1,3,2);
 surf(real(dtp01'),'LineStyle','none');
@@ -129,20 +134,22 @@ clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'e
 %0,2 mode
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3dtranint.mat');
-%ptitle2=' Mode 180.0s (Vertical Section at 2Mm x-dir)';
-ptitle2=' Mode 180.0s ';
+%load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3dtranint.mat');
+load('/data/cs1mkg/smaug_pmode/matlab/spic5b0_3d_ydir_vverustime.mat');
+ptitle2=' Mode 300.0s (Vertical Section at 2Mm x-dir)';
+%ptitle2=' Mode 300.0s ';
 
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
-dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
+%dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
 
-%dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
+dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
 %dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
 
 siz=size(dtplot);
-dtp02=reshape(dtplot(62,:,:),124,siz(3));
+%dtp02=reshape(dtplot(62,:,:),124,siz(3));
+dtp00=dtplot;
 smode='0,0';
 subplot(1,3,3);
 surf(real(dtp02'),'LineStyle','none');
