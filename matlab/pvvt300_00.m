@@ -28,7 +28,7 @@ extension='.out';
 ndirectory=[bdir,rdirectory,'images_3d_vsecs/'];
 nextension='.jpg';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
-wspacename=[rdirectory,'_ydir_vverustime.mat']
+wspacename=[/fastdata/cs1mkg/smaug/matlabdat/',rdirectory,'_ydir_vverustime.mat']
 
 
 evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
@@ -52,7 +52,13 @@ imfile=[ndirectory,'im1_',id,nextension];
 disp([id filename]);
    fid=fopen(trim(filename));
    %fseek(fid,pictsize(ifile)*(npict(ifile)-1),'bof');
+
+try
    headline=trim(setstr(fread(fid,79,'char')'));
+catch
+   continue;
+end
+
    it=fread(fid,1,'integer*4'); time=fread(fid,1,'float64');
  
    ndim=fread(fid,1,'integer*4');

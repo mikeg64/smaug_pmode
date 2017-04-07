@@ -8,8 +8,8 @@
 %directory='/storage2/mikeg/results/spic6p7a_0_0_3d/';
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 bdir='/fastdata/cs1mkg/smaug/';
-rdirectory='spic6b0_2_3d_rep';
-nt=890;
+rdirectory='spic6b0_2_3d';
+nt=1128;
 
 
 %directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/';
@@ -28,7 +28,7 @@ extension='.out';
 ndirectory=[bdir,rdirectory,'images_3d_vsecs/'];
 nextension='.jpg';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
-wspacename=[rdirectory,'ydir_vverustime.mat']
+wspacename=['/fastdata/cs1mkg/smaug/matlabdat/',rdirectory,'ydir_vverustime.mat']
 
 %load(wspacename);
 evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20

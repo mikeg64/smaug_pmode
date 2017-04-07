@@ -9,7 +9,7 @@
 %directory='/storage2/mikeg/results/spic2p3a_0_3_3d/';
 bdir='/fastdata/cs1mkg/smaug/';
 rdirectory='spic5b0_1_3d';
-nt=1860;
+nt=1178;
 
 
 %directory='/fastdata/cs1mkg/smaug/spic5b0_2_3d_rep/';
@@ -28,7 +28,7 @@ extension='.out';
 ndirectory=[bdir,rdirectory,'images_3d_vsecs/'];
 nextension='.jpg';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
-wspacename=[rdirectory,'_ydir_vverustime.mat']
+wspacename=['/fastdata/cs1mkg/smaug/matlabdat/',rdirectory,'_ydir_vverustime_1Mm.mat']
 
 
 evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
@@ -141,23 +141,23 @@ clear tmp;
     
     
 %  x-direction    
-%    evelchrom_vh(i,:)=myval( :,62,20);  %  horizontal section in chrom at  20
-%    eveltran_vh(i,:)=myval( :,62,42);   %  horizontal section in transition layer at 42
-%    evelcor_vh(i,:)=myval( :,62,90);    %  horizontal section in corona at 90
+%    evelchrom_vh(i,:)=myval( :,31,20);  %  horizontal section in chrom at  20
+%    eveltran_vh(i,:)=myval( :,31,42);   %  horizontal section in transition layer at 42
+%    evelcor_vh(i,:)=myval( :,31,90);    %  horizontal section in corona at 90
 
-%    evel2Mm_vh(i,:)=myval(62,62,:);  %vertical section at 2Mm  62
-%    evel1Mm_vh(i,:)=myval(31,62,:);  %vertical section at 1Mm  31
-%    evelp5Mm_vh(i,:)=myval(15,62,:);  %vertical section at 0.5Mm 15
+%    evel2Mm_vh(i,:)=myval(62,31,:);  %vertical section at 2Mm  62
+%    evel1Mm_vh(i,:)=myval(31,31,:);  %vertical section at 1Mm  31
+%    evelp5Mm_vh(i,:)=myval(15,31,:);  %vertical section at 0.5Mm 15
     
     
       % y direction
-    evelchrom_vh(i,:)=myval( 62,:,20);  %  horizontal section in chrom at  20
-    eveltran_vh(i,:)=myval( 62,:,42);   %  horizontal section in transition layer at 42
-    evelcor_vh(i,:)=myval( 62,:,90);    %  horizontal section in corona at 90
+    evelchrom_vh(i,:)=myval( 31,:,20);  %  horizontal section in chrom at  20
+    eveltran_vh(i,:)=myval( 31,:,42);   %  horizontal section in transition layer at 42
+    evelcor_vh(i,:)=myval( 31,:,90);    %  horizontal section in corona at 90
 
-    evel2Mm_vh(i,:)=myval(62,62,:);  %vertical section at 2Mm  62
-    evel1Mm_vh(i,:)=myval(62,31,:);  %vertical section at 1Mm  31
-    evelp5Mm_vh(i,:)=myval(62,15,:);  %vertical section at 0.5Mm 15
+    evel2Mm_vh(i,:)=myval(31,62,:);  %vertical section at 2Mm  62
+    evel1Mm_vh(i,:)=myval(31,31,:);  %vertical section at 1Mm  31
+    evelp5Mm_vh(i,:)=myval(31,15,:);  %vertical section at 0.5Mm 15
     
     
     

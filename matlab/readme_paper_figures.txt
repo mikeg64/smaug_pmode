@@ -20,3 +20,48 @@ display velocity vectors in a vertical slice
 display isosurface for temperature (typically 2e6K surface)
 plotsecs_quiverstream_array.m
 plotsecs_quiverstream_mat.sh  script to run batch job
+
+
+
+Generate distance-time plots for 00,01,02,03 modes for 180s driver
+vvproc_180_00_mat.sh
+pvvt180_00.m
+
+vvproc_180_01_mat.sh
+pvvt180_01.m
+
+vvproc_180_02_mat.sh
+pvvt180_02.m
+
+vvproc_180_03_mat.sh
+pvvt180_03.m
+
+
+
+To generate an array of 4 time-dist plots run
+plot_timedist_array_180s.m
+
+
+
+
+Generate distance-time plots for 00,01,02,03 modes for 300s driver
+vvproc_300_00_mat.sh
+pvvt300_00.m
+
+vvproc_300_01_mat.sh
+pvvt300_01.m
+
+vvproc_300_02_mat.sh
+pvvt300_02.m
+
+vvproc_300_03_mat.sh
+pvvt300_03.m
+
+To generate an array of 4 time-dist plots run
+plot_timedist_array_300s.m
+
+
+
+
+
+
