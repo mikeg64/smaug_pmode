@@ -17,7 +17,7 @@
 %title(gca,'Distance Time Plot for the 0,0 Mode (x dir) 300.0s Driver (Horizontal Section in Transition Layer at 2.06Mm )'); 
 %title(gca,'Distance Time Plot for the 0,0 Mode (x dir) 300.0s Driver (Horizontal Section in Corona at 4.3Mm )');
 ptitle1='Distance Time Plot for the ';
-ptitle2=' Mode 300.0s (Vertical Section at 2Mm x-dir)';
+ptitle2=' Mode 300.0s (Vertical Section at 2Mm)';
 
 
 
@@ -32,7 +32,7 @@ yticks={'0.09';'0.99';'1.94';'2.88';'3.83';'4.77';'5.72';'6.67'};
 
 %0,0 mode
 figure;
-load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3d_xdir_vverustime.mat');
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3d_ydir_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_xdir_vverustime.mat');
 
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
@@ -49,12 +49,19 @@ subplot(2,2,1);
 surf(real(dtp00'),'LineStyle','none');
 zlimv=6e3*[-1 1];
 
+
+xlimv=[0 1100]; %time limit
+ylimv=[0 124];
+
 hold on
 hc=colorbar();
 caxis(zlimv);
-set(hc,'Zlim',zlimv);
+%set(hc,'Zlim',zlimv);
+set(gca,'Xlim',xlimv,'Ylim',ylimv);
 
-set(gca,'CameraPosition',[400 45 17320.508]);
+ view(0,90);
+%set(gca,'CameraPosition',[400 45 17320.508]);
+
 
 set(gca,'YTickLabel',yticks)
 
@@ -77,28 +84,38 @@ clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'e
 %0,1 mode
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_1_3d_xdir_vverustime_1Mm.mat');
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_1_3d_ydir_vverustime_1Mm.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_1_3d_xdir_vverustime.mat');
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
 %dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
-ptitle2=' Mode 300.0s (Vertical Section at 1Mm x-dir)';
-dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
-%dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
+ptitle2=' Mode 300.0s (Vertical Section at 1Mm)';
+% dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
+dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
 %dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
 
 dtp01=dtplot;
 smode='0,1';
 subplot(2,2,2);
 surf(real(dtp01'),'LineStyle','none');
-zlimv=10e2*[-2 1];
+zlimv=5e2*[-1 1];
+
+xlimv=[0 800]; %time limit
+ylimv=[0 124];
 
 hold on
 hc=colorbar();
 caxis(zlimv);
-set(hc,'Zlim',zlimv);
+%set(hc,'Zlim',zlimv);
+set(gca,'Xlim',xlimv,'Ylim',ylimv,'Zlim',zlimv);
+ view(0,90);
+%set(gca,'CameraPosition',[400 45 17320.508]);
 
-set(gca,'CameraPosition',[400 45 17320.508]);
+
+
+
+
+
 
 set(gca,'YTickLabel',yticks)
 
@@ -121,8 +138,8 @@ clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'e
 %0,2 mode
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
-load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_2_3d_rep_ydir_vverustime.mat');
-ptitle2=' Mode 300.0s (Vertical Section at 2Mm x-dir)';
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_2_3d_ydir_vverustime.mat');
+ptitle2=' Mode 300.0s (Vertical Section at 2Mm)';
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
 %dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
@@ -135,14 +152,19 @@ dtp02=dtplot;
 smode='0,2';
 subplot(2,2,3);
 surf(real(dtp02'),'LineStyle','none');
-zlimv=2e3*[-1 1];
+zlimv=1.4e3*[-1 1];
 
-%hold on
+xlimv=[0 1170]; %time limit
+ylimv=[0 124];
+
+hold on
 hc=colorbar();
 caxis(zlimv);
-set(hc,'Zlim',zlimv);
+%set(hc,'Zlim',zlimv);
+set(gca,'Xlim',xlimv,'Ylim',ylimv,'Zlim',zlimv);
+ view(0,90);
+%set(gca,'CameraPosition',[400 45 17320.508]);
 
-set(gca,'CameraPosition',[400 45 17320.508]);
 
 set(gca,'YTickLabel',yticks)
 
@@ -166,28 +188,32 @@ clear('evelchrom_vh', 'eveltran_vh', 'evelcor_vh','evel2Mm_vh', 'evel1Mm_vh', 'e
 %figure;
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic6b0_3d_rep_vverustime.mat');
 %load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3_3d_ydir_vverustime_0p5Mm.mat');
-load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3_3d_ydir_vverustime.mat');
-ptitle2=' Mode 300.0s (Vertical Section at 2Mm x-dir)';
+load('/fastdata/cs1mkg/smaug/matlabdat/spic5b0_3_3d_ydir_vverustime_0p5Mm.mat');
+ptitle2=' Mode 300.0s (Vertical Section at 0.5Mm)';
 %dtplot=evelchrom_vh;  %  horizontal section in chrom at  20
 %dtplot=eveltran_vh;   %  horizontal section in transition layer at 42
 %dtplot=evelcor_vh;    %  horizontal section in corona at 90
 
-dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
+% dtplot=evel2Mm_vh;  %vertical section at 2Mm  62
 %dtplot=evel1Mm_vh;  %vertical section at 1Mm  31
-%dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
+dtplot=evelp5Mm_vh;  %vertical section at 0.5Mm 15
 
 dtp03=dtplot;
 smode='0,3';
 subplot(2,2,4);
 surf(real(dtp03'),'LineStyle','none');
-zlimv=10e1*[-1 1];
+zlimv=90e1*[-1 1];
 
-%hold on
+xlimv=[0 1170]; %time limit
+ylimv=[0 124];
+
+hold on
 hc=colorbar();
 caxis(zlimv);
-set(hc,'Zlim',zlimv);
-
-set(gca,'CameraPosition',[400 45 17320.508]);
+%set(hc,'Zlim',zlimv);
+set(gca,'Xlim',xlimv,'Ylim',ylimv,'Zlim',zlimv);
+ view(0,90);
+%set(gca,'CameraPosition',[400 45 17320.508]);
 
 set(gca,'YTickLabel',yticks)
 
