@@ -28,7 +28,7 @@ extension='.out';
 ndirectory=[bdir,rdirectory,'images_3d_vsecs/'];
 nextension='.jpg';
 %wspacename='1p53a0_3_3dmatlab_perturb.mat';
-wspacename=[/fastdata/cs1mkg/smaug/matlabdat/',rdirectory,'_ydir_vverustime.mat']
+wspacename=['/fastdata/cs1mkg/smaug/matlabdat/',rdirectory,'_ydir_vverustime.mat']
 
 
 evelchrom_vh=zeros(nt,124);  %  horizontal section in chrom at  20
