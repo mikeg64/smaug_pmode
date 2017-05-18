@@ -1,19 +1,19 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.6.1)  21 MAR 2017 14:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.6)  15 APR 2017 14:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**eigenmodes_2016_v3.tex
-(./eigenmodes_2016_v3.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+**eigenmodes_2016_v5.tex
+(./eigenmodes_2016_v5.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (./elsarticle.cls
 Document Class: elsarticle 2009/09/17, 1.20b: Elsevier Ltd
 \@bls=\dimen102
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -27,48 +27,48 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 96.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/pifont.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upzd.fd
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upsy.fd
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 \c@tnote=\count88
@@ -89,8 +89,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 \@sep=\skip43
 \@@sep=\skip44
 
-(./eigenmodes_2016_v3.spl)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+(./eigenmodes_2016_v5.spl)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
 \bibsep=\skip46
@@ -98,21 +98,20 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count94
 )
 \splwrite=\write3
-\openout3 = `eigenmodes_2016_v3.spl'.
+\openout3 = `eigenmodes_2016_v5.spl'.
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count95
@@ -130,41 +129,41 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \appnamewidth=\dimen117
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen118
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen119
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count98
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count99
 \leftroot@=\count100
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count101
 \DOTSCASE@=\count102
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box30
 \strutbox@=\box31
 \big@size=\dimen120
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count103
 \c@MaxMatrixCols=\count104
 \dotsspace@=\muskip10
@@ -185,111 +184,111 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip48
 \multlinetaggap=\skip49
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen127
 \Hy@linkcounter=\count110
 \Hy@pagecounter=\count111
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count112
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `final' set `true' on input line 4319.
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Option `final' set `true' on input line 4322.
+Package hyperref Info: Hyper figures OFF on input line 4446.
+Package hyperref Info: Link nesting OFF on input line 4451.
+Package hyperref Info: Hyper index ON on input line 4454.
+Package hyperref Info: Plain pages OFF on input line 4461.
+Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
+Package hyperref Info: Bookmarks ON on input line 4691.
 \c@Hy@tempcnt=\count113
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5041.
+LaTeX Info: Redefining \url on input line 5044.
 \XeTeXLinkMargin=\dimen128
 \Fld@menulength=\count114
 \Field@Width=\dimen129
 \Fld@charsize=\dimen130
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
+Package hyperref Info: Hyper figures OFF on input line 6298.
+Package hyperref Info: Link nesting OFF on input line 6303.
+Package hyperref Info: Hyper index ON on input line 6306.
+Package hyperref Info: backreferencing OFF on input line 6313.
+Package hyperref Info: Link coloring OFF on input line 6318.
+Package hyperref Info: Link coloring with OCG OFF on input line 6323.
+Package hyperref Info: PDF/A mode OFF on input line 6328.
+LaTeX Info: Redefining \ref on input line 6368.
+LaTeX Info: Redefining \pageref on input line 6372.
 \Hy@abspage=\count115
 \c@Item=\count116
 \c@Hfootnote=\count117
@@ -297,20 +296,20 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
 \Fld@listcount=\count118
 \c@bookmark@seq@number=\count119
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip50
 )
-(./eigenmodes_2016_v3.aux)
-\openout1 = `eigenmodes_2016_v3.aux'.
+(./eigenmodes_2016_v5.aux)
+\openout1 = `eigenmodes_2016_v5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
@@ -327,7 +326,7 @@ LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen131
@@ -340,18 +339,18 @@ LaTeX Font Info:    ... okay on input line 67.
 \MPnumerator=\count124
 \makeMPintoPDFobject=\count125
 \everyMPtoPDFconversion=\toks24
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
+(grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -393,11 +392,11 @@ e
 
 \AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring OFF on input line 67.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count126
 )
@@ -405,9 +404,9 @@ LaTeX Info: Redefining \ref on input line 67.
 LaTeX Info: Redefining \pageref on input line 67.
 LaTeX Info: Redefining \nameref on input line 67.
 
-(./eigenmodes_2016_v3.out) (./eigenmodes_2016_v3.out)
+(./eigenmodes_2016_v5.out) (./eigenmodes_2016_v5.out)
 \@outlinefile=\write4
-\openout4 = `eigenmodes_2016_v3.out'.
+\openout4 = `eigenmodes_2016_v5.out'.
 
 
 
@@ -415,12 +414,12 @@ Package natbib Warning: Citation `Ireland2015' on page 1 undefined on input lin
 e 91.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 98.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 98.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Underfull \hbox (badness 10000) in paragraph at lines 98--98
@@ -455,16 +454,20 @@ Package natbib Warning: Citation `Brown1978' on page 1 undefined on input line
 110.
 
 
+Package natbib Warning: Citation `Goedbloed2004' on page 1 undefined on input l
+ine 110.
+
+
 Package natbib Warning: Citation `Hill1976' on page 1 undefined on input line 1
 10.
 
 
-Package natbib Warning: Citation `Goedbloed&Poets' on page 1 undefined on input
- line 110.
+Package natbib Warning: Citation `Brown1978' on page 1 undefined on input line 
+110.
 
 [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package natbib Warning: Citation `Roberts1984' on page 2 undefined on input lin
 e 112.
@@ -477,7 +480,6 @@ ine 112.
 Package natbib Warning: Citation `Erdelyi2015' on page 2 undefined on input lin
 e 113.
 
-[2]
 
 LaTeX Warning: Command \r invalid in math mode on input line 115.
 
@@ -485,9 +487,10 @@ LaTeX Warning: Command \r invalid in math mode on input line 115.
 LaTeX Warning: Command \r invalid in math mode on input line 115.
 
 
-Package natbib Warning: Citation `Ireland2014' on page 3 undefined on input lin
+Package natbib Warning: Citation `Ireland2015' on page 2 undefined on input lin
 e 115.
 
+[2]
 
 Package natbib Warning: Citation `Beck2012' on page 3 undefined on input line 1
 17.
@@ -503,6 +506,16 @@ LaTeX Warning: Command \r invalid in math mode on input line 117.
 Package natbib Warning: Citation `Bello2010A' on page 3 undefined on input line
  117.
 
+./eigenmodes_2016_v5.tex:117: Undefined control sequence.
+l.117 ...x above granules is around 3000W/m\textss
+                                                  {2} whilst above the inter...
+
+? 
+./eigenmodes_2016_v5.tex:117: Undefined control sequence.
+l.117 ... intergranules it is around 955W/m\textss
+                                                  {2}. Most of the acoustic ...
+
+? 
 
 Package natbib Warning: Citation `Roth2010' on page 3 undefined on input line 1
 19.
@@ -550,24 +563,18 @@ Package amsmath Warning: Foreign command \over;
 (amsmath)                 on input line 132.
 
 
-LaTeX Warning: Reference `eqdens' on page 4 undefined on input line 158.
-
-
-LaTeX Warning: Reference `eqpk' on page 4 undefined on input line 158.
-
-[4]
-
-Package natbib Warning: Citation `Caunt2001' on page 5 undefined on input line 
+Package natbib Warning: Citation `Caunt2001' on page 4 undefined on input line 
 168.
 
 
-Package natbib Warning: Citation `Griffiths2015' on page 5 undefined on input l
+Package natbib Warning: Citation `Griffiths2015' on page 4 undefined on input l
 ine 168.
 
 
-Package natbib Warning: Citation `Shelyag2008' on page 5 undefined on input lin
+Package natbib Warning: Citation `Shelyag2008' on page 4 undefined on input lin
 e 168.
 
+[4]
 
 Package natbib Warning: Citation `Murawski2010' on page 5 undefined on input li
 ne 182.
@@ -592,7 +599,7 @@ ne 182.
 Package natbib Warning: Citation `McWhirter1975' on page 5 undefined on input l
 ine 182.
 
-<images/VAL3C_rho_temp_fig2.jpg, id=49, 864.22874pt x 481.8pt>
+<images/VAL3C_rho_temp_fig2.jpg, id=81, 864.22874pt x 481.8pt>
 File: images/VAL3C_rho_temp_fig2.jpg Graphic file (type jpg)
 
 <use images/VAL3C_rho_temp_fig2.jpg>
@@ -607,7 +614,7 @@ Overfull \hbox (48.11331pt too wide) in paragraph at lines 189--190
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/cutofffrequency_fig4.jpg, id=50, 612.2875pt x 461.725pt>
+<images/cutofffrequency_fig4.jpg, id=82, 612.2875pt x 461.725pt>
 File: images/cutofffrequency_fig4.jpg Graphic file (type jpg)
 
 <use images/cutofffrequency_fig4.jpg>
@@ -626,10 +633,6 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Package natbib Warning: Citation `Malins2007A' on page 5 undefined on input lin
 e 208.
 
-
-LaTeX Warning: Reference `eqpointdriver' on page 5 undefined on input line 208.
-
-
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -642,29 +645,12 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-
-LaTeX Warning: Reference `eqsindriver3d' on page 5 undefined on input line 214.
-
-
-[5]
-
-LaTeX Warning: Reference `eqsindriver3d' on page 6 undefined on input line 220.
-
-
-
-LaTeX Warning: Reference `eqpointdriver' on page 6 undefined on input line 220.
-
-
-[6 <./images/VAL3C_rho_temp_fig2.jpg>]
+[5] [6 <./images/VAL3C_rho_temp_fig2.jpg>]
 
 Package natbib Warning: Citation `Leighton1960' on page 7 undefined on input li
 ne 232.
 
-
-LaTeX Warning: Reference `eqdriverenergy' on page 7 undefined on input line 233
-.
-
-./eigenmodes_2016_v3.tex:237: Argument of \frac  has an extra }.
+./eigenmodes_2016_v5.tex:237: Argument of \frac  has an extra }.
 <inserted text> 
                 \par 
 l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
@@ -672,21 +658,21 @@ l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
 
 ? 
 Runaway argument?
-./eigenmodes_2016_v3.tex:237: Paragraph ended before \frac  was complete.
+./eigenmodes_2016_v5.tex:237: Paragraph ended before \frac  was complete.
 <to be read again> 
                    \par 
 l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
                                                   {T_m-\frac{T_{00}}{4\pi}  ...
 
 ? 
-./eigenmodes_2016_v3.tex:237: Missing $ inserted.
+./eigenmodes_2016_v5.tex:237: Missing $ inserted.
 <inserted text> 
                 $
 l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
                                                   {T_m-\frac{T_{00}}{4\pi}  ...
 
 ? 
-./eigenmodes_2016_v3.tex:237: Argument of \frac  has an extra }.
+./eigenmodes_2016_v5.tex:237: Argument of \frac  has an extra }.
 <inserted text> 
                 \par 
 l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
@@ -694,28 +680,28 @@ l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
 
 ? 
 Runaway argument?
-./eigenmodes_2016_v3.tex:237: Paragraph ended before \frac  was complete.
+./eigenmodes_2016_v5.tex:237: Paragraph ended before \frac  was complete.
 <to be read again> 
                    \par 
 l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
                                                   {T_m-\frac{T_{00}}{4\pi}  ...
 
 ? 
-./eigenmodes_2016_v3.tex:237: Missing $ inserted.
+./eigenmodes_2016_v5.tex:237: Missing $ inserted.
 <inserted text> 
                 $
 l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
                                                   {T_m-\frac{T_{00}}{4\pi}  ...
 
 ? 
-./eigenmodes_2016_v3.tex:237: Missing } inserted.
+./eigenmodes_2016_v5.tex:237: Missing } inserted.
 <inserted text> 
                 }
 l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
                                                   {T_m-\frac{T_{00}}{4\pi}  ...
 
 ? 
-./eigenmodes_2016_v3.tex:237: Display math should end with $$.
+./eigenmodes_2016_v5.tex:237: Display math should end with $$.
 <to be read again> 
                    \par 
 l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
@@ -723,70 +709,56 @@ l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
 
 ? 
 [7 <./images/cutofffrequency_fig4.jpg>]
-./eigenmodes_2016_v3.tex:237: Extra }, or forgotten \endgroup.
+./eigenmodes_2016_v5.tex:237: Extra }, or forgotten \endgroup.
 <recently read> }
                  
 l.237 ...{2}T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac
                                                   {T_m-\frac{T_{00}}{4\pi}  ...
 
 ? 
-./eigenmodes_2016_v3.tex:237: Missing $ inserted.
+./eigenmodes_2016_v5.tex:237: Missing $ inserted.
 <inserted text> 
                 $
 l.237 ...T_{rat}}{(n^2+m^2+2(n+m)+2)}\dot \frac{T_
                                                   m-\frac{T_{00}}{4\pi}   \s...
 
 ? 
-./eigenmodes_2016_v3.tex:237: Extra }, or forgotten $.
+./eigenmodes_2016_v5.tex:237: Extra }, or forgotten $.
 l.237 ...\pi}   \sin(\frac{4\pi T_m}{T_{00}})    }
                                                   {T_m-\frac{T_{s}}{4\pi}   ...
 
 ? 
-./eigenmodes_2016_v3.tex:238: You can't use `\eqno' in math mode.
+./eigenmodes_2016_v5.tex:238: You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
 l.238 \end{equation}
                     
 ? 
-./eigenmodes_2016_v3.tex:238: Missing $ inserted.
+./eigenmodes_2016_v5.tex:238: Missing $ inserted.
 <inserted text> 
                 $
 l.238 \end{equation}
                     
 ? 
-./eigenmodes_2016_v3.tex:238: Missing } inserted.
+./eigenmodes_2016_v5.tex:238: Missing } inserted.
 <inserted text> 
                 }
 l.238 \end{equation}
                     
 ? 
 
-LaTeX Warning: Reference `eqdriverenergy' on page 8 undefined on input line 250
-.
-
-
-LaTeX Warning: Reference `simsetstab' on page 8 undefined on input line 250.
-
-
-LaTeX Warning: Reference `eqmodeamplitude2' on page 8 undefined on input line 2
-50.
-
-
 Package natbib Warning: Citation `Leighton1960' on page 8 undefined on input li
 ne 250.
 
-
-LaTeX Warning: Reference `simperiods' on page 8 undefined on input line 268.
-
-<images/fig4_dt_30_180_300_0_vert_2Mm.jpg, id=77, 1006.76125pt x 545.03625pt>
+<images/fig4_dt_30_180_300_0_vert_2Mm.jpg, id=115, 1011.78pt x 594.22pt>
 File: images/fig4_dt_30_180_300_0_vert_2Mm.jpg Graphic file (type jpg)
 
 <use images/fig4_dt_30_180_300_0_vert_2Mm.jpg>
 Package pdftex.def Info: images/fig4_dt_30_180_300_0_vert_2Mm.jpg used on input
  line 352.
-(pdftex.def)             Requested size: 402.69736pt x 218.01064pt.
+(pdftex.def)             Requested size: 404.70483pt x 237.68379pt.
 
-Overfull \hbox (18.69736pt too wide) in paragraph at lines 352--353
+Overfull \hbox (20.70483pt too wide) in paragraph at lines 352--353
 [][] 
  []
 
@@ -794,9 +766,10 @@ Overfull \hbox (18.69736pt too wide) in paragraph at lines 352--353
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg, id=78, 1006.76125pt x 564.1075pt>
+<images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg, id=116, 1006.76125pt x 564.1075pt
+>
 File: images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg Graphic file (type jpg)
-<use images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg>
+ <use images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg>
 Package pdftex.def Info: images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg used on in
 put line 360.
 (pdftex.def)             Requested size: 402.69736pt x 225.63899pt.
@@ -808,7 +781,8 @@ Overfull \hbox (18.69736pt too wide) in paragraph at lines 360--361
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/fig6_dt_30_180_300_0_horiz_2Mm.jpg, id=79, 1006.76125pt x 564.1075pt>
+
+<images/fig6_dt_30_180_300_0_horiz_2Mm.jpg, id=117, 1006.76125pt x 564.1075pt>
 File: images/fig6_dt_30_180_300_0_horiz_2Mm.jpg Graphic file (type jpg)
 
 <use images/fig6_dt_30_180_300_0_horiz_2Mm.jpg>
@@ -824,9 +798,10 @@ Overfull \hbox (18.69736pt too wide) in paragraph at lines 367--368
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg, id=80, 1006.76125pt x 564.1075pt>
+<images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg, id=118, 1006.76125pt x 564.1075pt
+>
 File: images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg Graphic file (type jpg)
-<use images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg>
+ <use images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg>
 Package pdftex.def Info: images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg used on in
 put line 375.
 (pdftex.def)             Requested size: 402.69736pt x 225.63899pt.
@@ -843,31 +818,31 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Package natbib Warning: Citation `Bogdan2003' on page 9 undefined on input line
  396.
 
-./eigenmodes_2016_v3.tex:411: Extra alignment tab has been changed to \cr.
+./eigenmodes_2016_v5.tex:411: Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
 l.411 ...IC & yes & single driver at photosphere &
                                                    \\
 ? 
-./eigenmodes_2016_v3.tex:413: Extra alignment tab has been changed to \cr.
+./eigenmodes_2016_v5.tex:413: Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
 l.413 ...IIC & no & single driver at photosphere &
                                                     \\
 ? 
-./eigenmodes_2016_v3.tex:415: Extra alignment tab has been changed to \cr.
+./eigenmodes_2016_v5.tex:415: Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
 l.415 ...ty & yes & single driver at photosphere &
                                                     \\
 ? 
-./eigenmodes_2016_v3.tex:417: Extra alignment tab has been changed to \cr.
+./eigenmodes_2016_v5.tex:417: Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
 l.417 ...ity & no & single driver at photosphere &
                                                     \\
 ? 
-./eigenmodes_2016_v3.tex:419: Extra alignment tab has been changed to \cr.
+./eigenmodes_2016_v5.tex:419: Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
 l.419 ...at the photosphere and transition zone. &
@@ -891,35 +866,30 @@ ine 434.
 Package natbib Warning: Citation `Taroyan2008' on page 10 undefined on input li
 ne 440.
 
-
-LaTeX Warning: Reference `kgequation1' on page 10 undefined on input line 440.
-
-
-LaTeX Warning: Reference `cutoff' on page 10 undefined on input line 440.
-
-./eigenmodes_2016_v3.tex:454: Undefined control sequence.
+[10 <./images/fig4_dt_30_180_300_0_vert_2Mm.jpg>]
+./eigenmodes_2016_v5.tex:454: Undefined control sequence.
 l.454 ...spheric height is shown in figure \figref
                                                   {cutofffrequency_fig4} whi...
 
 ? 
-./eigenmodes_2016_v3.tex:454: Missing $ inserted.
+./eigenmodes_2016_v5.tex:454: Missing $ inserted.
 <inserted text> 
                 $
 l.454 ... shown in figure \figref{cutofffrequency_
                                                   fig4} which shows the cuto...
 
 ? 
-./eigenmodes_2016_v3.tex:454: Extra }, or forgotten $.
+./eigenmodes_2016_v5.tex:454: Extra }, or forgotten $.
 l.454 ...n in figure \figref{cutofffrequency_fig4}
                                                    which shows the cutoff pe...
 
 ? 
-./eigenmodes_2016_v3.tex:454: Undefined control sequence.
+./eigenmodes_2016_v5.tex:454: Undefined control sequence.
 l.454 ...ere. It is recognised from figure \figref
                                                   { cutofffrequency_fig4} th...
 
 ? 
-./eigenmodes_2016_v3.tex:455: Missing $ inserted.
+./eigenmodes_2016_v5.tex:455: Missing $ inserted.
 <inserted text> 
                 $
 l.455 
@@ -939,13 +909,12 @@ oesdownto\OT1/cmr/m/n/10 100\OML/cmm/m/it/10 s:Inthecoronaitisseenthatamuchgrea
 terrangeoffrequenciescanpropagate:$ 
  []
 
-[10 <./images/fig4_dt_30_180_300_0_vert_2Mm.jpg>]
 
 Package natbib Warning: Citation `Malins2007B' on page 11 undefined on input li
 ne 456.
 
 [11 <./images/fig5_dt_30_180_300_0_horiz_p94Mm.jpg>]
-<imagesn/dt_300_vert_x.jpg, id=117, 1528.71124pt x 869.2475pt>
+<imagesn/dt_300_vert_x.jpg, id=156, 1528.71124pt x 869.2475pt>
 File: imagesn/dt_300_vert_x.jpg Graphic file (type jpg)
 
 <use imagesn/dt_300_vert_x.jpg>
@@ -956,10 +925,11 @@ Overfull \hbox (74.61691pt too wide) in paragraph at lines 477--478
 [][] 
  []
 
+[12 <./images/fig6_dt_30_180_300_0_horiz_2Mm.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagesn/dt_180_vert_x.jpg, id=118, 953.5625pt x 590.205pt>
+<imagesn/dt_180_vert_x.jpg, id=162, 953.5625pt x 590.205pt>
 File: imagesn/dt_180_vert_x.jpg Graphic file (type jpg)
 
 <use imagesn/dt_180_vert_x.jpg>
@@ -973,7 +943,7 @@ Overfull \hbox (45.09917pt too wide) in paragraph at lines 485--486
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagesn/dt_300_vert_y.jpg, id=119, 1406.25375pt x 833.1125pt>
+<imagesn/dt_300_vert_y.jpg, id=163, 1406.25375pt x 833.1125pt>
 File: imagesn/dt_300_vert_y.jpg Graphic file (type jpg)
 
 <use imagesn/dt_300_vert_y.jpg>
@@ -987,7 +957,7 @@ Overfull \hbox (37.87938pt too wide) in paragraph at lines 493--494
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagesn/dt_180_vert_y.jpg, id=120, 1535.7375pt x 801.99625pt>
+<imagesn/dt_180_vert_y.jpg, id=164, 1535.7375pt x 801.99625pt>
 File: imagesn/dt_180_vert_y.jpg Graphic file (type jpg)
 
 <use imagesn/dt_180_vert_y.jpg>
@@ -1001,7 +971,7 @@ Overfull \hbox (76.72481pt too wide) in paragraph at lines 500--501
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagesn/dt_300_0_0_hor_x_1Mm.jpg, id=121, 1391.1975pt x 761.84625pt>
+<imagesn/dt_300_0_0_hor_x_1Mm.jpg, id=165, 1391.1975pt x 761.84625pt>
 File: imagesn/dt_300_0_0_hor_x_1Mm.jpg Graphic file (type jpg)
 
 <use imagesn/dt_300_0_0_hor_x_1Mm.jpg>
@@ -1016,7 +986,7 @@ Overfull \hbox (33.36247pt too wide) in paragraph at lines 508--509
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagesn/dt_300_hor_x_2p06Mm.jpg, id=122, 1519.6775pt x 888.31876pt>
+<imagesn/dt_300_hor_x_2p06Mm.jpg, id=166, 1519.6775pt x 888.31876pt>
 File: imagesn/dt_300_hor_x_2p06Mm.jpg Graphic file (type jpg)
 
 <use imagesn/dt_300_hor_x_2p06Mm.jpg>
@@ -1044,7 +1014,7 @@ Overfull \hbox (71.90677pt too wide) in paragraph at lines 520--521
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagesn/dt_180_horiz_x_1Mm.jpg, id=123, 989.6975pt x 587.19376pt>
+<imagesn/dt_180_horiz_x_1Mm.jpg, id=167, 989.6975pt x 587.19376pt>
 File: imagesn/dt_180_horiz_x_1Mm.jpg Graphic file (type jpg)
 
 <use imagesn/dt_180_horiz_x_1Mm.jpg>
@@ -1059,7 +1029,7 @@ Overfull \hbox (61.35976pt too wide) in paragraph at lines 527--528
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagesn/dt_180_horiz_x_2p06Mm.jpg, id=124, 967.615pt x 567.11874pt>
+<imagesn/dt_180_horiz_x_2p06Mm.jpg, id=168, 967.615pt x 567.11874pt>
 File: imagesn/dt_180_horiz_x_2p06Mm.jpg Graphic file (type jpg)
 
 <use imagesn/dt_180_horiz_x_2p06Mm.jpg>
@@ -1088,116 +1058,15 @@ Overfull \hbox (99.80632pt too wide) in paragraph at lines 539--540
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `eqwaveenergyfluxintegral' on page 12 undefined on inp
-ut line 543.
-
-
-LaTeX Warning: Reference `energyfluxpowerlaw' on page 12 undefined on input lin
-e 544.
-
-
-Package natbib Warning: Citation `Ireland2014' on page 12 undefined on input li
+Package natbib Warning: Citation `Ireland2014' on page 13 undefined on input li
 ne 544.
 
-[12 <./images/fig6_dt_30_180_300_0_horiz_2Mm.jpg>]
-
-./eigenmodes_2016_v3.tex:710: LaTeX Error: Too many unprocessed floats.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.710 \centering
-                
-? 
-./eigenmodes_2016_v3.tex:710: Undefined control sequence.
-\@xfloat ...@fltovf \fi \global \setbox \@currbox 
-                                                  \color@vbox \normalcolor \...
-l.710 \centering
-                
-? 
-./eigenmodes_2016_v3.tex:710: Missing number, treated as zero.
-<to be read again> 
-                   \color@vbox 
-l.710 \centering
-                
-? 
-./eigenmodes_2016_v3.tex:737: Undefined control sequence.
-\@largefloatcheck ->\ifdim \ht \@currbox 
-                                         >\textheight \@tempdima -\textheigh...
-l.737 \end{table*}
-                  
-? 
-./eigenmodes_2016_v3.tex:737: Missing number, treated as zero.
-<to be read again> 
-                   >
-l.737 \end{table*}
-                  
-? 
-./eigenmodes_2016_v3.tex:737: Undefined control sequence.
-<argument> \@currbox 
-                     
-l.737 \end{table*}
-                  
-? 
-./eigenmodes_2016_v3.tex:737: Argument of \@xnext has an extra }.
-<inserted text> 
-                \par 
-l.737 \end{table*}
-                  
-? 
-Runaway argument?
-\@currbox \@currlist \ifnum \count \@currbox >\z@ \advance \@pageht \@pagedp \E
-TC.
-./eigenmodes_2016_v3.tex:737: Paragraph ended before \@xnext was complete.
-<to be read again> 
-                   \par 
-l.737 \end{table*}
-                  
-? 
-./eigenmodes_2016_v3.tex:737: Extra \else.
-\end@float ...pdima \penalty \@floatpenalty \else 
-                                                  \vadjust {\penalty -\@Miv ...
-l.737 \end{table*}
-                  
-? 
-./eigenmodes_2016_v3.tex:737: You can't use `\vadjust' in vertical mode.
-\end@float ...nalty \@floatpenalty \else \vadjust 
-                                                  {\penalty -\@Miv \vbox {}\...
-l.737 \end{table*}
-                  
-? 
-./eigenmodes_2016_v3.tex:737: Argument of \@xnext has an extra }.
-<inserted text> 
-                \par 
-l.737 \end{table*}
-                  
-? 
-Runaway argument?
-\@currbox \@currlist \ifnum \count \@currbox >\z@ \advance \@pageht \@pagedp \E
-TC.
-./eigenmodes_2016_v3.tex:737: Paragraph ended before \@xnext was complete.
-<to be read again> 
-                   \par 
-l.737 \end{table*}
-                  
-? 
-[13 <./images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg>] [14] [15]
-
-./eigenmodes_2016_v3.tex:740: LaTeX Error: Float(s) lost.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.740 \clearpage
-                
-? 
-[16 <./imagesn/dt_300_vert_x.jpg>] [17 <./imagesn/dt_180_vert_x.jpg>] [18 <./im
-agesn/dt_300_vert_y.jpg> <./imagesn/dt_180_vert_y.jpg>] [19 <./imagesn/dt_300_0
-_0_hor_x_1Mm.jpg>] [20 <./imagesn/dt_300_hor_x_2p06Mm.jpg>] [21] [22 <./imagesn
-/dt_180_horiz_x_1Mm.jpg>] [23 <./imagesn/dt_180_horiz_x_2p06Mm.jpg>] [24]
-./eigenmodes_2016_v3.tex:744: Missing $ inserted.
+[13 <./images/fig7_dt_30_180_300_0_horiz_4p2Mm.jpg>] [14] [15] [16 <./imagesn/d
+t_300_vert_x.jpg>] [17 <./imagesn/dt_180_vert_x.jpg>] [18 <./imagesn/dt_300_ver
+t_y.jpg> <./imagesn/dt_180_vert_y.jpg>] [19 <./imagesn/dt_300_0_0_hor_x_1Mm.jpg
+>] [20 <./imagesn/dt_300_hor_x_2p06Mm.jpg>] [21] [22 <./imagesn/dt_180_horiz_x_
+1Mm.jpg>] [23 <./imagesn/dt_180_horiz_x_2p06Mm.jpg>] [24]
+./eigenmodes_2016_v5.tex:744: Missing $ inserted.
 <inserted text> 
                 $
 l.744 ...erdrve_eflux_vperiod_for modes_5p5Mm.jpg}
@@ -1208,7 +1077,7 @@ LaTeX Warning: File `imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5Mm.jp
 g' not found on input line 744.
 
 
-<imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5Mm.jpg, id=200, 907.39pt 
+<imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5Mm.jpg, id=241, 907.39pt 
 x 500.87125pt>
 File: imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5Mm.jpg Graphic file 
 (type jpg)
@@ -1218,7 +1087,7 @@ Package pdftex.def Info: imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5M
 m.jpg used on input line 744.
 (pdftex.def)             Requested size: 362.94957pt x 200.34494pt.
 
-./eigenmodes_2016_v3.tex:744: Missing $ inserted.
+./eigenmodes_2016_v5.tex:744: Missing $ inserted.
 <inserted text> 
                 $
 l.744 ...erdrve_eflux_vperiod_for modes_5p5Mm.jpg}
@@ -1230,7 +1099,7 @@ Overfull \hbox (58.22237pt too wide) in paragraph at lines 744--745
  []
 
 [25 <./imagesn/ratio_varoverdrve_eflux_vperiod_for modes_5p5Mm.jpg>]
-<imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_180s_5p5Mm.jpg, id=207, 90
+<imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_180s_5p5Mm.jpg, id=248, 90
 7.39pt x 500.87125pt>
 File: imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_180s_5p5Mm.jpg Graphi
 c file (type jpg)
@@ -1245,173 +1114,7 @@ Overfull \hbox (69.6939pt too wide) in paragraph at lines 753--754
  []
 
 
-<imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_300s_5p5Mm.jpg, id=208, 90
+<imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_300s_5p5Mm.jpg, id=249, 90
 7.39pt x 500.87125pt>
 File: imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_300s_5p5Mm.jpg Graphi
-c file (type jpg)
-
-<use imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_300s_5p5Mm.jpg>
-Package pdftex.def Info: imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_30
-0s_5p5Mm.jpg used on input line 761.
-(pdftex.def)             Requested size: 453.6939pt x 250.435pt.
-
-Overfull \hbox (69.6939pt too wide) in paragraph at lines 761--762
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[26
-
-
- <./imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_180s_5p5Mm.jpg>]
-[27 <./imagesn/ratio_varoverdrve_eflux_vperiod_forallmodes_300s_5p5Mm.jpg>]
-./eigenmodes_2016_v3.tex:770: Missing $ inserted.
-<inserted text> 
-                $
-l.770 ...rconst_eflux_vperiod_for modes_5p5Mm.jpg}
-                                                  
-? 
-
-LaTeX Warning: File `imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5Mm.j
-pg' not found on input line 770.
-
-
-<imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5Mm.jpg, id=219, 513.92pt
- x 385.44pt>
-File: imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5Mm.jpg Graphic file
- (type jpg)
-
-<use imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5Mm.jpg>
-Package pdftex.def Info: imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5
-Mm.jpg used on input line 770.
-(pdftex.def)             Requested size: 308.35437pt x 231.26578pt.
-
-./eigenmodes_2016_v3.tex:770: Missing $ inserted.
-<inserted text> 
-                $
-l.770 ...rconst_eflux_vperiod_for modes_5p5Mm.jpg}
-                                                  
-? 
-
-Overfull \hbox (3.62717pt too wide) in paragraph at lines 770--771
-[][] 
- []
-
-
-./eigenmodes_2016_v3.tex:791: LaTeX Error: Environment acknowledgements undefin
-ed.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.791 \begin{acknowledgements}
-                              
-? 
-
-./eigenmodes_2016_v3.tex:794: LaTeX Error: \begin{document} ended by \end{ackno
-wledgements}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.794 \end{acknowledgements}
-                            
-? 
-[28
-
- <./imagesn/ratio_varoverconst_eflux_vperiod_for modes_5p5Mm.jpg>]
-(./eigenmodes_2016_v3.bbl
-./eigenmodes_2016_v3.bbl:63: Undefined control sequence.
-l.63   Five-Minute Oscillation}. \aplett
-                                         7, 191--192.
-? 
-./eigenmodes_2016_v3.bbl:113: Undefined control sequence.
-l.113   quiet-sun}. \apjs
-                          45, 635--725.
-? 
-)
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 810.
-[29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 810.
- (./eigenmodes_2016_v3.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 810.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 810.
-
-
-Package rerunfilecheck Warning: File `eigenmodes_2016_v3.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `eigenmodes_2016_v3.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  4806683728586690298AC6A06483DE8D;455.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 810.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 454 ({)
-### bottom level
-(\end occurred when \ifnum on line 737 was incomplete)
-(\end occurred when \ifx on line 737 was incomplete)
-(\end occurred when \ifnum on line 737 was incomplete)
-(\end occurred when \ifnum on line 737 was incomplete)
-(\end occurred when \ifnum on line 737 was incomplete)
-(\end occurred when \ifnum on line 737 was incomplete)
-(\end occurred when \ifnum on line 737 was incomplete)
-(\end occurred when \iffalse on line 737 was incomplete) 
-Here is how much of TeX's memory you used:
- 7290 strings out of 493117
- 105569 string characters out of 6135434
- 213462 words of memory out of 5000000
- 10520 multiletter control sequences out of 15000+600000
- 13021 words of font info for 48 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 34i,9n,34p,2730b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti8.pfb>
-Output written on eigenmodes_2016_v3.pdf (29 pages, 1608702 bytes).
-PDF statistics:
- 356 PDF objects out of 1000 (max. 8388607)
- 282 compressed objects within 3 object streams
- 123 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+c 

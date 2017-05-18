@@ -1,0 +1,25 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: eigenmodes_2016_v2.aux
+Case mismatch error between cite keys leibacher1982 and Leibacher1982
+---line 130 of file eigenmodes_2016_v2.aux
+ : \citation{leibacher1982
+ :                        }
+I'm skipping whatever remains of this command
+The style file: elsarticle-num-names.bst
+Database file #1: eigenmodes_2016_v1.bib
+Warning--I didn't find a database entry for "Erdelyi2015"
+Warning--I didn't find a database entry for "Ireland2014"
+Warning--I didn't find a database entry for "Bello2009"
+Warning--I didn't find a database entry for "Bello2010A"
+Warning--I didn't find a database entry for "Carlsson2007"
+Warning--I didn't find a database entry for "Roth2010"
+Warning--I didn't find a database entry for "Bogdan2000"
+Warning--I didn't find a database entry for "Bello2010B"
+Warning--I didn't find a database entry for "Freij2014"
+Warning--I didn't find a database entry for "Fedun2009"
+Warning--I didn't find a database entry for "Khomenko2012"
+Warning--I didn't find a database entry for "Bogdan2003"
+Warning--I didn't find a database entry for "Malins2007B"
+Warning--I didn't find a database entry for "Leibacher1982"
+Warning--empty title in Leighton1960
+Warning--missing publisher in Lamb1932
+(There was 1 error message)

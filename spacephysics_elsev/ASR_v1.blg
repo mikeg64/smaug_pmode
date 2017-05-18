@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ASR_v1.aux
+The style file: elsarticle-harv.bst
+Database file #1: ASR_v1.bib
+Warning--empty journal in Griffiths2017
+Warning--empty publisher in Lamb1932
+Warning--empty title in Leighton1960
+You've used 36 entries,
+            2821 wiz_defined-function locations,
+            887 strings with 11522 characters,
+and the built_in function-call counts, 18989 in all, are:
+= -- 1871
+> -- 1098
+< -- 22
++ -- 411
+- -- 373
+* -- 1704
+:= -- 3453
+add.period$ -- 111
+call.type$ -- 36
+change.case$ -- 306
+chr.to.int$ -- 36
+cite$ -- 39
+duplicate$ -- 677
+empty$ -- 1213
+format.name$ -- 482
+if$ -- 3819
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 38
+newline$ -- 117
+num.names$ -- 148
+pop$ -- 284
+preamble$ -- 1
+purify$ -- 267
+quote$ -- 0
+skip$ -- 516
+stack$ -- 0
+substring$ -- 964
+swap$ -- 130
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 318
+warning$ -- 3
+while$ -- 144
+width$ -- 0
+write$ -- 400
+(There were 3 warnings)

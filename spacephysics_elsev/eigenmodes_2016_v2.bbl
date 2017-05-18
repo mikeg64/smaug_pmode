@@ -1,0 +1,259 @@
+\begin{thebibliography}{33}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\url{#1}\endgroup}\fi
+\providecommand{\bibinfo}[2]{#2}
+
+\bibitem[{{Leighton}(1960)}]{Leighton1960}
+\bibinfo{author}{R.~B. {Leighton}}, in: \bibinfo{editor}{R.~N. {Thomas}} (Ed.),
+  \bibinfo{booktitle}{Aerodynamic Phenomena in Stellar Atmospheres},
+  vol.~\bibinfo{volume}{12} of \emph{\bibinfo{series}{IAU Symposium}},
+  \bibinfo{pages}{321--325}, \bibinfo{year}{1960}.
+
+\bibitem[{{Ulrich}(1970)}]{Ulrich1970}
+\bibinfo{author}{R.~K. {Ulrich}}, \bibinfo{title}{{The Five-Minute Oscillations
+  on the Solar Surface}}, \bibinfo{journal}{\apj} \bibinfo{volume}{162}
+  (\bibinfo{year}{1970}) \bibinfo{pages}{993},
+  \doi{\bibinfo{doi}{10.1086/150731}}.
+
+\bibitem[{{Leibacher} and {Stein}(1971)}]{Leibacher1971}
+\bibinfo{author}{J.~W. {Leibacher}}, \bibinfo{author}{R.~F. {Stein}},
+  \bibinfo{title}{{A New Description of the Solar Five-Minute Oscillation}},
+  \bibinfo{journal}{\aplett} \bibinfo{volume}{7} (\bibinfo{year}{1971})
+  \bibinfo{pages}{191--192}.
+
+\bibitem[{{Vernazza} et~al.(1981){Vernazza}, {Avrett}, and
+  {Loeser}}]{Vernazza1981}
+\bibinfo{author}{J.~E. {Vernazza}}, \bibinfo{author}{E.~H. {Avrett}},
+  \bibinfo{author}{R.~{Loeser}}, \bibinfo{title}{{Structure of the solar
+  chromosphere. III - Models of the EUV brightness components of the
+  quiet-sun}}, \bibinfo{journal}{\apjs} \bibinfo{volume}{45}
+  (\bibinfo{year}{1981}) \bibinfo{pages}{635--725},
+  \doi{\bibinfo{doi}{10.1086/190731}}.
+
+\bibitem[{{Roberts} et~al.(1984){Roberts}, {Edwin}, and {Benz}}]{Roberts1984}
+\bibinfo{author}{B.~{Roberts}}, \bibinfo{author}{P.~M. {Edwin}},
+  \bibinfo{author}{A.~O. {Benz}}, \bibinfo{title}{{On coronal oscillations}},
+  \bibinfo{journal}{\apj} \bibinfo{volume}{279} (\bibinfo{year}{1984})
+  \bibinfo{pages}{857--865}, \doi{\bibinfo{doi}{10.1086/161956}}.
+
+\bibitem[{{De Moortel}(2005)}]{DeMoortel2005}
+\bibinfo{author}{I.~{De Moortel}}, \bibinfo{title}{{An overview of coronal
+  seismology}}, \bibinfo{journal}{Philosophical Transactions of the Royal
+  Society of London Series A} \bibinfo{volume}{363} (\bibinfo{year}{2005})
+  \bibinfo{pages}{2743--2760}, \doi{\bibinfo{doi}{10.1098/rsta.2005.1665}}.
+
+\bibitem[{{Beck} et~al.(2012){Beck}, {Rezaei}, and {Puschmann}}]{Beck2012}
+\bibinfo{author}{C.~{Beck}}, \bibinfo{author}{R.~{Rezaei}},
+  \bibinfo{author}{K.~G. {Puschmann}}, \bibinfo{title}{{The energy of waves in
+  the photosphere and lower chromosphere. II. Intensity statistics}},
+  \bibinfo{journal}{\aap} \bibinfo{volume}{544} \bibinfo{eid}{A46},
+  \doi{\bibinfo{doi}{10.1051/0004-6361/201219242}}.
+
+\bibitem[{{Carlsson} and {Stein}(1992)}]{Carlsson1992}
+\bibinfo{author}{M.~{Carlsson}}, \bibinfo{author}{R.~F. {Stein}},
+  \bibinfo{title}{{Non-LTE radiating acoustic shocks and CA II K2V bright
+  points}}, \bibinfo{journal}{\apjl} \bibinfo{volume}{397}
+  (\bibinfo{year}{1992}) \bibinfo{pages}{L59--L62},
+  \doi{\bibinfo{doi}{10.1086/186544}}.
+
+\bibitem[{{Cauzzi} et~al.(2008){Cauzzi}, {Reardon}, {Uitenbroek}, {Cavallini},
+  {Falchi}, {Falciani}, {Janssen}, {Rimmele}, {Vecchio}, and
+  {W{\"o}ger}}]{Cauzzi2008}
+\bibinfo{author}{G.~{Cauzzi}}, \bibinfo{author}{K.~P. {Reardon}},
+  \bibinfo{author}{H.~{Uitenbroek}}, \bibinfo{author}{F.~{Cavallini}},
+  \bibinfo{author}{A.~{Falchi}}, \bibinfo{author}{R.~{Falciani}},
+  \bibinfo{author}{K.~{Janssen}}, \bibinfo{author}{T.~{Rimmele}},
+  \bibinfo{author}{A.~{Vecchio}}, \bibinfo{author}{F.~{W{\"o}ger}},
+  \bibinfo{title}{{The solar chromosphere at high resolution with IBIS. I. New
+  insights from the Ca II 854.2 nm line}}, \bibinfo{journal}{\aap}
+  \bibinfo{volume}{480} (\bibinfo{year}{2008}) \bibinfo{pages}{515--526},
+  \doi{\bibinfo{doi}{10.1051/0004-6361:20078642}}.
+
+\bibitem[{{Jefferies} et~al.(2006){Jefferies}, {McIntosh}, {Armstrong},
+  {Bogdan}, {Cacciani}, and {Fleck}}]{Jefferies2006}
+\bibinfo{author}{S.~M. {Jefferies}}, \bibinfo{author}{S.~W. {McIntosh}},
+  \bibinfo{author}{J.~D. {Armstrong}}, \bibinfo{author}{T.~J. {Bogdan}},
+  \bibinfo{author}{A.~{Cacciani}}, \bibinfo{author}{B.~{Fleck}},
+  \bibinfo{title}{{Low-frequency magneto-acoustic waves in the solar
+  chromosphere}}, in: \bibinfo{booktitle}{Proceedings of SOHO 18/GONG
+  2006/HELAS I, Beyond the spherical Sun}, vol. \bibinfo{volume}{624} of
+  \emph{\bibinfo{series}{ESA Special Publication}}, \bibinfo{pages}{16.1},
+  \bibinfo{year}{2006}.
+
+\bibitem[{{Penn} and {Labonte}(1993)}]{Penn1993}
+\bibinfo{author}{M.~J. {Penn}}, \bibinfo{author}{B.~J. {Labonte}},
+  \bibinfo{title}{{The source of 5 minute period photospheric umbral
+  oscillations}}, \bibinfo{journal}{\apj} \bibinfo{volume}{415}
+  (\bibinfo{year}{1993}) \bibinfo{pages}{383--396},
+  \doi{\bibinfo{doi}{10.1086/173172}}.
+
+\bibitem[{{Bogdan}(2006)}]{Bogdan2006}
+\bibinfo{author}{T.~J. {Bogdan}}, \bibinfo{title}{{Effect of Thermal Conduction
+  on Acoustic Waves in Coronal Loops}}, \bibinfo{journal}{\apj}
+  \bibinfo{volume}{643} (\bibinfo{year}{2006}) \bibinfo{pages}{532--539},
+  \doi{\bibinfo{doi}{10.1086/502622}}.
+
+\bibitem[{{Murawski} and {Zaqarashvili}(2010)}]{Murawski2010}
+\bibinfo{author}{K.~{Murawski}}, \bibinfo{author}{T.~V. {Zaqarashvili}},
+  \bibinfo{title}{{Numerical simulations of spicule formation in the solar
+  atmosphere}}, \bibinfo{journal}{\aap} \bibinfo{volume}{519}
+  \bibinfo{eid}{A8}, \doi{\bibinfo{doi}{10.1051/0004-6361/201014128}}.
+
+\bibitem[{{Kalkofen} et~al.(2010){Kalkofen}, {Rossi}, {Bodo}, and
+  {Massaglia}}]{Kalkofen2010}
+\bibinfo{author}{W.~{Kalkofen}}, \bibinfo{author}{P.~{Rossi}},
+  \bibinfo{author}{G.~{Bodo}}, \bibinfo{author}{S.~{Massaglia}},
+  \bibinfo{title}{{Acoustic waves in a stratified atmosphere. IV.
+  Three-dimensional nonlinear hydrodynamics}}, \bibinfo{journal}{\aap}
+  \bibinfo{volume}{520} \bibinfo{eid}{A100},
+  \doi{\bibinfo{doi}{10.1051/0004-6361/200912996}}.
+
+\bibitem[{{Lites} et~al.(2008){Lites}, {Kubo}, {Socas-Navarro}, {Berger},
+  {Frank}, {Shine}, {Tarbell}, {Title}, {Ichimoto}, {Katsukawa}, {Tsuneta},
+  {Suematsu}, {Shimizu}, and {Nagata}}]{Lites2008}
+\bibinfo{author}{B.~W. {Lites}}, \bibinfo{author}{M.~{Kubo}},
+  \bibinfo{author}{H.~{Socas-Navarro}}, \bibinfo{author}{T.~{Berger}},
+  \bibinfo{author}{Z.~{Frank}}, \bibinfo{author}{R.~{Shine}},
+  \bibinfo{author}{T.~{Tarbell}}, \bibinfo{author}{A.~{Title}},
+  \bibinfo{author}{K.~{Ichimoto}}, \bibinfo{author}{Y.~{Katsukawa}},
+  \bibinfo{author}{S.~{Tsuneta}}, \bibinfo{author}{Y.~{Suematsu}},
+  \bibinfo{author}{T.~{Shimizu}}, \bibinfo{author}{S.~{Nagata}},
+  \bibinfo{title}{{The Horizontal Magnetic Flux of the Quiet-Sun Internetwork
+  as Observed with the Hinode Spectro-Polarimeter}}, \bibinfo{journal}{\apj}
+  \bibinfo{volume}{672} \bibinfo{eid}{1237-1253},
+  \doi{\bibinfo{doi}{10.1086/522922}}.
+
+\bibitem[{{Gascoyne} et~al.(2011){Gascoyne}, {Jain}, and
+  {Hindman}}]{Gascoyne2011}
+\bibinfo{author}{A.~{Gascoyne}}, \bibinfo{author}{R.~{Jain}},
+  \bibinfo{author}{B.~W. {Hindman}}, \bibinfo{title}{{Sensitivity of p-mode
+  absorption on magnetic region properties and kernel functions}},
+  \bibinfo{journal}{\aap} \bibinfo{volume}{526} \bibinfo{eid}{A93},
+  \doi{\bibinfo{doi}{10.1051/0004-6361/201015898}}.
+
+\bibitem[{{Jain} et~al.(2011){Jain}, {Gascoyne}, and {Hindman}}]{Jain2011}
+\bibinfo{author}{R.~{Jain}}, \bibinfo{author}{A.~{Gascoyne}},
+  \bibinfo{author}{B.~W. {Hindman}}, \bibinfo{title}{{Interaction of p modes
+  with a collection of thin magnetic tubes}}, \bibinfo{journal}{\mnras}
+  \bibinfo{volume}{415} (\bibinfo{year}{2011}) \bibinfo{pages}{1276--1279},
+  \doi{\bibinfo{doi}{10.1111/j.1365-2966.2011.18778.x}}.
+
+\bibitem[{{Konkol} et~al.(2012){Konkol}, {Murawski}, and
+  {Zaqarashvili}}]{Konkol2012}
+\bibinfo{author}{P.~{Konkol}}, \bibinfo{author}{K.~{Murawski}},
+  \bibinfo{author}{T.~V. {Zaqarashvili}}, \bibinfo{title}{{Numerical
+  simulations of magnetoacoustic oscillations in a gravitationally stratified
+  solar corona}}, \bibinfo{journal}{\aap} \bibinfo{volume}{537}
+  \bibinfo{eid}{A96}, \doi{\bibinfo{doi}{10.1051/0004-6361/201117943}}.
+
+\bibitem[{{Hindman} et~al.(1996){Hindman}, {Zweibel}, and
+  {Cally}}]{Hindman1996}
+\bibinfo{author}{B.~W. {Hindman}}, \bibinfo{author}{E.~G. {Zweibel}},
+  \bibinfo{author}{P.~S. {Cally}}, \bibinfo{title}{{Driven Acoustic
+  Oscillations within a Vertical Magnetic Field}}, \bibinfo{journal}{\apj}
+  \bibinfo{volume}{459} (\bibinfo{year}{1996}) \bibinfo{pages}{760},
+  \doi{\bibinfo{doi}{10.1086/176940}}.
+
+\bibitem[{{James} et~al.(2003){James}, {Erd{\'e}lyi}, and {De
+  Pontieu}}]{James2003}
+\bibinfo{author}{S.~P. {James}}, \bibinfo{author}{R.~{Erd{\'e}lyi}},
+  \bibinfo{author}{B.~{De Pontieu}}, \bibinfo{title}{{Can ion-neutral damping
+  help to form spicules?}}, \bibinfo{journal}{\aap} \bibinfo{volume}{406}
+  (\bibinfo{year}{2003}) \bibinfo{pages}{715--724},
+  \doi{\bibinfo{doi}{10.1051/0004-6361:20030685}}.
+
+\bibitem[{{Marsh} and {Walsh}(2006)}]{Marsh2006}
+\bibinfo{author}{M.~S. {Marsh}}, \bibinfo{author}{R.~W. {Walsh}},
+  \bibinfo{title}{{p-Mode Propagation through the Transition Region into the
+  Solar Corona. I. Observations}}, \bibinfo{journal}{\apj}
+  \bibinfo{volume}{643} (\bibinfo{year}{2006}) \bibinfo{pages}{540--548},
+  \doi{\bibinfo{doi}{10.1086/501450}}.
+
+\bibitem[{{Zhukov}(2002)}]{Zhukov2002}
+\bibinfo{author}{V.~I. {Zhukov}}, \bibinfo{title}{{Oscillations on the Sun in
+  regions with a vertical magnetic field. I. Sunspot umbral oscillations}},
+  \bibinfo{journal}{\aap} \bibinfo{volume}{386} (\bibinfo{year}{2002})
+  \bibinfo{pages}{653--657}, \doi{\bibinfo{doi}{10.1051/0004-6361:20020279}}.
+
+\bibitem[{{Khomenko} and {Calvo Santamaria}(2013)}]{Khomenko2013}
+\bibinfo{author}{E.~{Khomenko}}, \bibinfo{author}{I.~{Calvo Santamaria}},
+  \bibinfo{title}{{Magnetohydrodynamic waves driven by p-modes}},
+  \bibinfo{journal}{Journal of Physics Conference Series}
+  \bibinfo{volume}{440}~(\bibinfo{number}{1}) \bibinfo{eid}{012048},
+  \doi{\bibinfo{doi}{10.1088/1742-6596/440/1/012048}}.
+
+\bibitem[{{Griffiths} et~al.(2015){Griffiths}, {Fedun}, and
+  {Erd{\'e}lyi}}]{Griffiths2015}
+\bibinfo{author}{M.~K. {Griffiths}}, \bibinfo{author}{V.~{Fedun}},
+  \bibinfo{author}{R.~{Erd{\'e}lyi}}, \bibinfo{title}{{A Fast MHD Code for
+  Gravitationally Stratified Media using Graphical Processing Units: SMAUG}},
+  \bibinfo{journal}{Journal of Astrophysics and Astronomy} \bibinfo{volume}{36}
+  (\bibinfo{year}{2015}) \bibinfo{pages}{197--223},
+  \doi{\bibinfo{doi}{10.1007/s12036-015-9328-y}}.
+
+\bibitem[{{Shelyag} et~al.(2008){Shelyag}, {Fedun}, and
+  {Erd{\'e}lyi}}]{Shelyag2008}
+\bibinfo{author}{S.~{Shelyag}}, \bibinfo{author}{V.~{Fedun}},
+  \bibinfo{author}{R.~{Erd{\'e}lyi}}, \bibinfo{title}{{Magnetohydrodynamic code
+  for gravitationally-stratified media}}, \bibinfo{journal}{\aap}
+  \bibinfo{volume}{486} (\bibinfo{year}{2008}) \bibinfo{pages}{655--662},
+  \doi{\bibinfo{doi}{10.1051/0004-6361:200809800}}.
+
+\bibitem[{{Caunt} and {Korpi}(2001)}]{Caunt2001}
+\bibinfo{author}{S.~E. {Caunt}}, \bibinfo{author}{M.~J. {Korpi}},
+  \bibinfo{title}{A {3D} {MHD} model of astrophysical flows: Algorithms, tests
+  and parallelisation}, \bibinfo{journal}{\aap} \bibinfo{volume}{369}
+  (\bibinfo{year}{2001}) \bibinfo{pages}{706--728},
+  \doi{\bibinfo{doi}{10.1051/0004-6361:20010157}}.
+
+\bibitem[{{Carlsson} and {Stein}(1995)}]{Carlsson1995}
+\bibinfo{author}{M.~{Carlsson}}, \bibinfo{author}{R.~F. {Stein}},
+  \bibinfo{title}{{Does a nonmagnetic solar chromosphere exist?}},
+  \bibinfo{journal}{\apjl} \bibinfo{volume}{440} (\bibinfo{year}{1995})
+  \bibinfo{pages}{L29--L32}, \doi{\bibinfo{doi}{10.1086/187753}}.
+
+\bibitem[{{Kalkofen}(2012)}]{Kalkofen2012}
+\bibinfo{author}{W.~{Kalkofen}}, \bibinfo{title}{{The Validity of Dynamical
+  Models of the Solar Atmosphere}}, \bibinfo{journal}{\solphys}
+  \bibinfo{volume}{276} (\bibinfo{year}{2012}) \bibinfo{pages}{75--95},
+  \doi{\bibinfo{doi}{10.1007/s11207-011-9898-z}}.
+
+\bibitem[{{Leenaarts} et~al.(2011){Leenaarts}, {Carlsson}, {Hansteen}, and
+  {Gudiksen}}]{Leenaarts2011}
+\bibinfo{author}{J.~{Leenaarts}}, \bibinfo{author}{M.~{Carlsson}},
+  \bibinfo{author}{V.~{Hansteen}}, \bibinfo{author}{B.~V. {Gudiksen}},
+  \bibinfo{title}{{On the minimum temperature of the quiet solar
+  chromosphere}}, \bibinfo{journal}{\aap} \bibinfo{volume}{530}
+  \bibinfo{eid}{A124}, \doi{\bibinfo{doi}{10.1051/0004-6361/201016392}}.
+
+\bibitem[{{McWhirter} et~al.(1975){McWhirter}, {Thonemann}, and
+  {Wilson}}]{McWhirter1975}
+\bibinfo{author}{R.~W.~P. {McWhirter}}, \bibinfo{author}{P.~C. {Thonemann}},
+  \bibinfo{author}{R.~{Wilson}}, \bibinfo{title}{{The heating of the solar
+  corona. II - A model based on energy balance}}, \bibinfo{journal}{\aap}
+  \bibinfo{volume}{40} (\bibinfo{year}{1975}) \bibinfo{pages}{63--73}.
+
+\bibitem[{{Malins}(2007)}]{Malins2007A}
+\bibinfo{author}{C.~{Malins}}, \bibinfo{title}{{On transition region convection
+  cells in simulations of $\{$p$\}$-mode propagation}},
+  \bibinfo{journal}{Astronomische Nachrichten} \bibinfo{volume}{328}
+  (\bibinfo{year}{2007}) \bibinfo{pages}{752--755},
+  \doi{\bibinfo{doi}{10.1002/asna.200710786}}.
+
+\bibitem[{{Lamb}(1932)}]{Lamb1932}
+\bibinfo{author}{H.~{Lamb}}, \bibinfo{title}{{Hydrodynamics}},
+  \bibinfo{year}{1932}.
+
+\bibitem[{{Taroyan} and {Erd{\'e}lyi}(2008)}]{Taroyan2008}
+\bibinfo{author}{Y.~{Taroyan}}, \bibinfo{author}{R.~{Erd{\'e}lyi}},
+  \bibinfo{title}{{Global Acoustic Resonance in a Stratified Solar
+  Atmosphere}}, \bibinfo{journal}{\solphys} \bibinfo{volume}{251}
+  (\bibinfo{year}{2008}) \bibinfo{pages}{523--531},
+  \doi{\bibinfo{doi}{10.1007/s11207-008-9154-3}}.
+
+\end{thebibliography}

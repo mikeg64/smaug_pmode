@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{25}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
@@ -8,6 +8,11 @@
 {Beck}, C., {Rezaei}, R., {Puschmann}, K.~G., Aug. 2012. {The energy of waves
   in the photosphere and lower chromosphere. II. Intensity statistics}. \aap
   544, A46.
+
+\bibitem[{{Brown} et~al.(1978){Brown}, {Stebbins}, and {Hill}}]{Brown1978}
+{Brown}, T.~M., {Stebbins}, R.~T., {Hill}, H.~A., Jul. 1978. {Long-period
+  oscillations of the apparent solar diameter - Observations}. \apj 223,
+  324--338.
 
 \bibitem[{{Carlsson} and {Stein}(1995)}]{Carlsson1995}
 {Carlsson}, M., {Stein}, R.~F., Feb. 1995. {Does a nonmagnetic solar
@@ -21,11 +26,21 @@
 {De Moortel}, I., Dec. 2005. {An overview of coronal seismology}. Philosophical
   Transactions of the Royal Society of London Series A 363, 2743--2760.
 
+\bibitem[{Goedbloed and Poedts(2004)}]{Goedbloed2004}
+Goedbloed, J., Poedts, S., 2004. Principles of Magnetohydrodynamics: With
+  Applications to Laboratory and Astrophysical Plasmas. Cambridge University
+  Press.
+\newline\urlprefix\url{https://books.google.co.uk/books?id=FvM6rMJob-cC}
+
 \bibitem[{{Griffiths} et~al.(2015){Griffiths}, {Fedun}, and
   {Erd{\'e}lyi}}]{Griffiths2015}
 {Griffiths}, M.~K., {Fedun}, V., {Erd{\'e}lyi}, R., Mar. 2015. {A Fast MHD Code
   for Gravitationally Stratified Media using Graphical Processing Units:
   SMAUG}. Journal of Astrophysics and Astronomy 36, 197--223.
+
+\bibitem[{{Hill}(1976)}]{Hill1976}
+{Hill}, H.~A., Aug. 1976. {Talk on Solar Diameter Oscillations}. The
+  Observatory 96, 130--132.
 
 \bibitem[{{Ireland} et~al.(2015){Ireland}, {McAteer}, and
   {Inglis}}]{Ireland2015}
