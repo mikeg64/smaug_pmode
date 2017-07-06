@@ -1,24 +1,29 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{50}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 
+\bibitem[{{Banerjee} et~al.(2007){Banerjee}, {Erd{\'e}lyi}, {Oliver}, and
+  {O'Shea}}]{Bannerjee2007}
+{Banerjee}, D., {Erd{\'e}lyi}, R., {Oliver}, R., {O'Shea}, E., 2007. {Present
+  and Future Observing Trends in Atmospheric Magnetoseismology}. \solphys 246,
+  3--29.
+
 \bibitem[{{Beck} et~al.(2012){Beck}, {Rezaei}, and {Puschmann}}]{Beck2012}
-{Beck}, C., {Rezaei}, R., {Puschmann}, K.~G., Aug. 2012. {The energy of waves
-  in the photosphere and lower chromosphere. II. Intensity statistics}. \aap
-  544, A46.
+{Beck}, C., {Rezaei}, R., {Puschmann}, K.~G., 2012. {The energy of waves in the
+  photosphere and lower chromosphere. II. Intensity statistics}. \aap 544, A46.
 
 \bibitem[{{Bello Gonz{\'a}lez} et~al.(2009){Bello Gonz{\'a}lez}, {Flores
   Soriano}, {Kneer}, and {Okunev}}]{Bello2009}
-{Bello Gonz{\'a}lez}, N., {Flores Soriano}, M., {Kneer}, F., {Okunev}, O., Dec.
+{Bello Gonz{\'a}lez}, N., {Flores Soriano}, M., {Kneer}, F., {Okunev}, O.,
   2009. {Acoustic waves in the solar atmosphere at high spatial resolution}.
   \aap 508, 941--950.
 
 \bibitem[{{Bello Gonz{\'a}lez} et~al.(2010){Bello Gonz{\'a}lez}, {Flores
   Soriano}, {Kneer}, {Okunev}, and {Shchukina}}]{Bello2010A}
 {Bello Gonz{\'a}lez}, N., {Flores Soriano}, M., {Kneer}, F., {Okunev}, O.,
-  {Shchukina}, N., Nov. 2010. {Acoustic waves in the solar atmosphere at high
+  {Shchukina}, N., 2010. {Acoustic waves in the solar atmosphere at high
   spatial resolution. II. Measurement in the Fe I 5434 {\AA} line}. \aap 522,
   A31.
 
@@ -27,8 +32,8 @@
   {Nordlund}}]{Bogdan2003}
 {Bogdan}, T.~J., {Carlsson}, M., {Hansteen}, V.~H., {McMurry}, A., {Rosenthal},
   C.~S., {Johnson}, M., {Petty-Powell}, S., {Zita}, E.~J., {Stein}, R.~F.,
-  {McIntosh}, S.~W., {Nordlund}, {\AA}., Dec. 2003. {Waves in the Magnetized
-  Solar Atmosphere. II. Waves from Localized Sources in Magnetic Flux
+  {McIntosh}, S.~W., {Nordlund}, {\AA}., 2003. {Waves in the Magnetized Solar
+  Atmosphere. II. Waves from Localized Sources in Magnetic Flux
   Concentrations}. \apj 599, 626--660.
 
 \bibitem[{{Brown} et~al.(1978){Brown}, {Stebbins}, and {Hill}}]{Brown1978}
@@ -44,23 +49,66 @@
 {Caunt}, S.~E., {Korpi}, M.~J., Apr. 2001. A {3D} {MHD} model of astrophysical
   flows: Algorithms, tests and parallelisation. \aap 369, 706--728.
 
+\bibitem[{{Christensen-Dalsgaard}(2002)}]{Christensen-Dalsgaard2002}
+{Christensen-Dalsgaard}, J., 2002. {Helioseismology}. Reviews of Modern Physics
+  74, 1073--1129.
+
 \bibitem[{{De Moortel}(2005)}]{DeMoortel2005}
-{De Moortel}, I., Dec. 2005. {An overview of coronal seismology}. Philosophical
+{De Moortel}, I., 2005. {An overview of coronal seismology}. Philosophical
   Transactions of the Royal Society of London Series A 363, 2743--2760.
 
-\bibitem[{{Erd{\'e}lyi} et~al.(2007){Erd{\'e}lyi}, {Fedun}, {Malins}, and
-  {Pint{\'e}r}}]{Erdelyi2007}
-{Erd{\'e}lyi}, R., {Fedun}, V., {Malins}, C., {Pint{\'e}r}, B., May 2007.
-  {Trapped Eigenoscillations in the Lower Solar Atmosphere: Is there a Resonant
-  Coupling?} In: {Heinzel}, P., {Dorotovi{\v c}}, I., {Rutten}, R.~J. (Eds.),
-  The Physics of Chromospheric Plasmas. Vol. 368 of Astronomical Society of the
-  Pacific Conference Series. p. Heinzel.
+\bibitem[{{De Pontieu} and {Erd{\'e}lyi}(2006)}]{DePontieu2006}
+{De Pontieu}, B., {Erd{\'e}lyi}, R., 2006. {The nature of moss and lower
+  atmospheric seismology}. Philosophical Transactions of the Royal Society of
+  London Series A 364, 383--394.
+
+\bibitem[{{De Pontieu} et~al.(2005){De Pontieu}, {Erd{\'e}lyi}, and {De
+  Moortel}}]{DePontieu2005}
+{De Pontieu}, B., {Erd{\'e}lyi}, R., {De Moortel}, I., 2005. {How to Channel
+  Photospheric Oscillations into the Corona}. \apjl 624, L61--L64.
+
+\bibitem[{{De Pontieu} et~al.(2003{\natexlab{a}}){De Pontieu}, {Erd{\'e}lyi},
+  and {de Wijn}}]{DePontieu2003B}
+{De Pontieu}, B., {Erd{\'e}lyi}, R., {de Wijn}, A.~G., 2003{\natexlab{a}}.
+  {Intensity Oscillations in the Upper Transition Region above Active Region
+  Plage}. \apjl 595, L63--L66.
+
+\bibitem[{{De Pontieu} et~al.(2003{\natexlab{b}}){De Pontieu}, {Tarbell}, and
+  {Erd{\'e}lyi}}]{DePontieu2003A}
+{De Pontieu}, B., {Tarbell}, T., {Erd{\'e}lyi}, R., 2003{\natexlab{b}}.
+  {Correlations on Arcsecond Scales between Chromospheric and Transition Region
+  Emission in Active Regions}. \apj 590, 502--518.
+
+\bibitem[{{Didkovsky} et~al.(2013){Didkovsky}, {Kosovichev}, {Judge}, {Wieman},
+  and {Woods}}]{Didkovsky2013}
+{Didkovsky}, L., {Kosovichev}, A., {Judge}, D., {Wieman}, S., {Woods}, T.,
+  2013. {Variability of Solar Five-Minute Oscillations in the Corona as
+  Observed by the Extreme Ultraviolet Spectrophotometer (ESP) on the Solar
+  Dynamics Observatory/Extreme Ultraviolet Variability Experiment (SDO/EVE)}.
+  \solphys 287, 171--184.
+
+\bibitem[{{Erd{\'e}lyi}(2006{\natexlab{a}})}]{Erdelyi2006B}
+{Erd{\'e}lyi}, R., 2006{\natexlab{a}}. {Magnetic coupling of waves and
+  oscillations in the lower solar atmosphere: can the tail wag the dog?}
+  Philosophical Transactions of the Royal Society of London Series A 364,
+  351--381.
+
+\bibitem[{{Erd{\'e}lyi}(2006{\natexlab{b}})}]{Erdelyi2006A}
+{Erd{\'e}lyi}, R., 2006{\natexlab{b}}. {Magnetic seismology of the lower solar
+  atmosphere}. In: Proceedings of SOHO 18/GONG 2006/HELAS I, Beyond the
+  spherical Sun. Vol. 624 of ESA Special Publication. p. 15.1.
+
+\bibitem[{{Erd{\'e}lyi} et~al.(2007){Erd{\'e}lyi}, {Malins}, {T{\'o}th}, and
+  {de Pontieu}}]{Erdelyi2007}
+{Erd{\'e}lyi}, R., {Malins}, C., {T{\'o}th}, G., {de Pontieu}, B., 2007.
+  {Leakage of photospheric acoustic waves into non-magnetic solar atmosphere}.
+  \aap 467, 1299--1311.
 
 \bibitem[{{Erd{\'e}lyi} et~al.(submitted 2017){Erd{\'e}lyi}, {Zheng}, {Verth},
   and {Keys}}]{Erdelyi2017}
 {Erd{\'e}lyi}, R., {Zheng}, R., {Verth}, G., {Keys}, P., submitted 2017.
   {Ubiquitous concurrent intensity oscillations in the solar atmosphere
-  detected by SDO/AIA}. \apj, 25.
+  detected by SDO/AIA}. \apj, 25 pages.
 
 \bibitem[{{Fedun} et~al.(2009){Fedun}, {Erd{\'e}lyi}, and
   {Shelyag}}]{Fedun2009}
@@ -76,7 +124,7 @@ Goedbloed, J., Poedts, S., 2004. Principles of Magnetohydrodynamics: With
 
 \bibitem[{{Griffiths} et~al.(2017){Griffiths}, {Erd{\'e}lyi}, and
   {Fedun}}]{Griffiths2017}
-{Griffiths}, M., {Erd{\'e}lyi}, R., {Fedun}, V., 4 2017. {Videos of
+{Griffiths}, M., {Erd{\'e}lyi}, R., {Fedun}, V., 2017. {Videos of
   Magnetohydrodynamics Simulations of Solar Atmosphere Wave Dynamics Generated
   by Solar Global Oscillating Eigenmodes}.
 \newline\urlprefix\url{https://figshare.com/articles/Videos_of_Magnetohydrodynamics_Simulations_of_Solar_Atmosphere_Wave_Dynamics_Generated_by_Solar_Global_Oscillating_Eigenmodes/4818490}
@@ -95,14 +143,14 @@ Goedbloed, J., Poedts, S., 2004. Principles of Magnetohydrodynamics: With
   {Inglis}}]{Ireland2015}
 {Ireland}, J., {McAteer}, R.~T.~J., {Inglis}, A.~R., 2015. {Coronal Fourier
   Power Spectra: Implications for Coronal Seismology and Coronal Heating}. \apj
-  798, 1.
+  798, 12.
 
 \bibitem[{{Jefferies} et~al.(2006){Jefferies}, {McIntosh}, {Armstrong},
   {Bogdan}, {Cacciani}, and {Fleck}}]{Jefferies2006}
 {Jefferies}, S.~M., {McIntosh}, S.~W., {Armstrong}, J.~D., {Bogdan}, T.~J.,
-  {Cacciani}, A., {Fleck}, B., Oct. 2006. {Low-frequency magneto-acoustic waves
-  in the solar chromosphere}. In: Proceedings of SOHO 18/GONG 2006/HELAS I,
-  Beyond the spherical Sun. Vol. 624 of ESA Special Publication. p. 16.1.
+  {Cacciani}, A., {Fleck}, B., 2006. {Low-frequency magneto-acoustic waves in
+  the solar chromosphere}. In: Proceedings of SOHO 18/GONG 2006/HELAS I, Beyond
+  the spherical Sun. Vol. 624 of ESA Special Publication. p. 16.1.
 
 \bibitem[{{Kalkofen}(2012)}]{Kalkofen2012}
 {Kalkofen}, W., 2012. {The Validity of Dynamical Models of the Solar
@@ -110,13 +158,24 @@ Goedbloed, J., Poedts, S., 2004. Principles of Magnetohydrodynamics: With
 
 \bibitem[{{Kalkofen} et~al.(2010){Kalkofen}, {Rossi}, {Bodo}, and
   {Massaglia}}]{Kalkofen2010}
-{Kalkofen}, W., {Rossi}, P., {Bodo}, G., {Massaglia}, S., Sep. 2010. {Acoustic
-  waves in a stratified atmosphere. IV. Three-dimensional nonlinear
-  hydrodynamics}. \aap 520, A100.
+{Kalkofen}, W., {Rossi}, P., {Bodo}, G., {Massaglia}, S., 2010. {Acoustic waves
+  in a stratified atmosphere. IV. Three-dimensional nonlinear hydrodynamics}.
+  \aap 520, A100.
 
 \bibitem[{{Khomenko} and {Calvo Santamaria}(2013)}]{Khomenko2013}
-{Khomenko}, E., {Calvo Santamaria}, I., Jun. 2013. {Magnetohydrodynamic waves
-  driven by p-modes}. Journal of Physics Conference Series 440~(1), 012048.
+{Khomenko}, E., {Calvo Santamaria}, I., 2013. {Magnetohydrodynamic waves driven
+  by p-modes}. Journal of Physics Conference Series 440~(1), 012048.
+
+\bibitem[{{Kosovichev} and {Zhao}(2016{\natexlab{a}})}]{Kosovichev2016A}
+{Kosovichev}, A.~G., {Zhao}, J., 2016{\natexlab{a}}. {Reconstruction of Solar
+  Subsurfaces by Local Helioseismology}. In: {Rozelot}, J.-P., {Neiner}, C.
+  (Eds.), Lecture Notes in Physics, Berlin Springer Verlag. Vol. 914 of Lecture
+  Notes in Physics, Berlin Springer Verlag. p.~25.
+
+\bibitem[{{Kosovichev} and {Zhao}(2016{\natexlab{b}})}]{Kosovichev2016B}
+{Kosovichev}, A.~G., {Zhao}, J., 2016{\natexlab{b}}. {Solar-Cycle Evolution of
+  Subsurface Flows and Magnetic Field}. In: AAS/Solar Physics Division Meeting.
+  Vol.~47 of AAS/Solar Physics Division Meeting. p. 7.09.
 
 \bibitem[{{Lamb}(1932)}]{Lamb1932}
 {Lamb}, H., 1932. {Hydrodynamics}.
@@ -139,7 +198,7 @@ Goedbloed, J., Poedts, S., 2004. Principles of Magnetohydrodynamics: With
   {Suematsu}, {Shimizu}, and {Nagata}}]{Lites2008}
 {Lites}, B.~W., {Kubo}, M., {Socas-Navarro}, H., {Berger}, T., {Frank}, Z.,
   {Shine}, R., {Tarbell}, T., {Title}, A., {Ichimoto}, K., {Katsukawa}, Y.,
-  {Tsuneta}, S., {Suematsu}, Y., {Shimizu}, T., {Nagata}, S., Jan. 2008. {The
+  {Tsuneta}, S., {Suematsu}, Y., {Shimizu}, T., {Nagata}, S., 2008. {The
   Horizontal Magnetic Flux of the Quiet-Sun Internetwork as Observed with the
   Hinode Spectro-Polarimeter}. \apj 672, 1237--1253.
 
@@ -147,23 +206,27 @@ Goedbloed, J., Poedts, S., 2004. Principles of Magnetohydrodynamics: With
 {Malins}, C., 2007. {On transition region convection cells in simulations of
   $\{$p$\}$-mode propagation}. Astronomische Nachrichten 328, 752--755.
 
+\bibitem[{{Mathioudakis} et~al.(2013){Mathioudakis}, {Jess}, and
+  {Erd{\'e}lyi}}]{Mathioudakis2013}
+{Mathioudakis}, M., {Jess}, D.~B., {Erd{\'e}lyi}, R., 2013. {Alfv{\'e}n Waves
+  in the Solar Atmosphere. From Theory to Observations}. \ssr 175, 1--27.
+
 \bibitem[{{McWhirter} et~al.(1975){McWhirter}, {Thonemann}, and
   {Wilson}}]{McWhirter1975}
 {McWhirter}, R.~W.~P., {Thonemann}, P.~C., {Wilson}, R., 1975. {The heating of
   the solar corona. II - A model based on energy balance}. \aap 40, 63--73.
 
 \bibitem[{{Murawski} and {Zaqarashvili}(2010)}]{Murawski2010}
-{Murawski}, K., {Zaqarashvili}, T.~V., Sep. 2010. {Numerical simulations of
-  spicule formation in the solar atmosphere}. \aap 519, 9.
+{Murawski}, K., {Zaqarashvili}, T.~V., 2010. {Numerical simulations of spicule
+  formation in the solar atmosphere}. \aap 519, 9.
 
 \bibitem[{{Pint{\'e}r} and {Erd{\'e}lyi}(2011)}]{Pinter2011}
-{Pint{\'e}r}, B., {Erd{\'e}lyi}, R., Jul. 2011. {Effects of Magnetic Fields in
-  the Solar Atmosphere on Global Oscillations}. Space Science Review 158,
-  471--504.
+{Pint{\'e}r}, B., {Erd{\'e}lyi}, R., 2011. {Effects of Magnetic Fields in the
+  Solar Atmosphere on Global Oscillations}. Space Science Review 158, 471--504.
 
 \bibitem[{{Roberts} et~al.(1984){Roberts}, {Edwin}, and {Benz}}]{Roberts1984}
-{Roberts}, B., {Edwin}, P.~M., {Benz}, A.~O., Apr. 1984. {On coronal
-  oscillations}. \apj 279, 857--865.
+{Roberts}, B., {Edwin}, P.~M., {Benz}, A.~O., 1984. {On coronal oscillations}.
+  \apj 279, 857--865.
 
 \bibitem[{{Roth} et~al.(2010){Roth}, {Franz}, {Bello Gonz{\'a}lez},
   {Mart{\'{\i}}nez Pillet}, {Bonet}, {Gandorfer}, {Barthol}, {Solanki},
@@ -177,12 +240,16 @@ Goedbloed, J., Poedts, S., 2004. Principles of Magnetohydrodynamics: With
 
 \bibitem[{{Shelyag} et~al.(2008){Shelyag}, {Fedun}, and
   {Erd{\'e}lyi}}]{Shelyag2008}
-{Shelyag}, S., {Fedun}, V., {Erd{\'e}lyi}, R., Aug. 2008. {Magnetohydrodynamic
-  code for gravitationally-stratified media}. \aap 486, 655--662.
+{Shelyag}, S., {Fedun}, V., {Erd{\'e}lyi}, R., 2008. {Magnetohydrodynamic code
+  for gravitationally-stratified media}. \aap 486, 655--662.
 
 \bibitem[{{Taroyan} and {Erd{\'e}lyi}(2008)}]{Taroyan2008}
 {Taroyan}, Y., {Erd{\'e}lyi}, R., 2008. {Global Acoustic Resonance in a
   Stratified Solar Atmosphere}. \solphys 251, 523--531.
+
+\bibitem[{{Thompson}(2006)}]{Thompson2006}
+{Thompson}, M.~J., 2006. {Magnetohelioseismology}. Philosophical Transactions
+  of the Royal Society of London Series A 364, 297--311.
 
 \bibitem[{{T{\'o}th}(1996)}]{Toth1996}
 {T{\'o}th}, G., 1996. {A General Code for Modeling {MHD} Flows on Parallel
@@ -190,13 +257,17 @@ Goedbloed, J., Poedts, S., 2004. Principles of Magnetohydrodynamics: With
   Communications 34, 245.
 
 \bibitem[{{Ulrich}(1970)}]{Ulrich1970}
-{Ulrich}, R.~K., Dec. 1970. {The Five-Minute Oscillations on the Solar
-  Surface}. \apj 162, 993.
+{Ulrich}, R.~K., 1970. {The Five-Minute Oscillations on the Solar Surface}.
+  \apj 162, 993.
 
 \bibitem[{{Vernazza} et~al.(1981){Vernazza}, {Avrett}, and
   {Loeser}}]{Vernazza1981}
-{Vernazza}, J.~E., {Avrett}, E.~H., {Loeser}, R., Apr. 1981. {Structure of the
-  solar chromosphere. III - Models of the EUV brightness components of the
+{Vernazza}, J.~E., {Avrett}, E.~H., {Loeser}, R., 1981. {Structure of the solar
+  chromosphere. III - Models of the EUV brightness components of the
   quiet-sun}. Astrophysical Journal Supplement Series 45, 635--725.
+
+\bibitem[{{Wang}(2011)}]{Wang2011}
+{Wang}, T., 2011. {Standing Slow-Mode Waves in Hot Coronal Loops: Observations,
+  Modeling, and Coronal Seismology}. \ssr 158, 397--419.
 
 \end{thebibliography}
