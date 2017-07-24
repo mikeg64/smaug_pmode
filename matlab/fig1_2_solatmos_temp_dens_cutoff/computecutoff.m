@@ -65,10 +65,10 @@ for i=1:nr
 % >>>>>>> 836a07ebb402cd182deb5d8b75a7b9f0486036c1
 end
 
-figure;
-title('Compare cutoff isothermal and stratified atmos');
-plot(height./1e6,atc0,height./1e6,atisoc0);
-
-figure;
-title('Compare cutoff for fitted model and computation from VALIIIc data');
-plot(height./1e6,atc0,hc./1e6,cutoff/(2*pi));
+% figure;
+% title('Compare cutoff isothermal and stratified atmos');
+% plot(height./1e6,atc0,height./1e6,atisoc0);
+% 
+% figure;
+% title('Compare cutoff for fitted model and computation from VALIIIc data');
+% plot(height./1e6,atc0,hc./1e6,cutoff/(2*pi));
