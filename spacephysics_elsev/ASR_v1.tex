@@ -157,11 +157,11 @@ observed variations are unlikely to provide temperature rises well-known in the 
 
 Using the IMAX instrument on the Sunrise observatory, \citet{Roth2010}  reported evidence for the excitation of solar acoustic oscillations excited by turbulent flows  in the dark intergranular lanes.  Individual sunquakes with epicentres near the solar surface and located in the intergranular lanes, are assumed to feed continuously energy into the resonant $p$-modes of the Sun and provide sources for acoustic oscillations. \citet{Roth2010} presents wavefronts rippling near a granule and oriented along the direction of the intergranular lane. Using simultaneous observations of the Na and K lines with Doppler measurements, \citet{Jefferies2006} shows that inclined magnetic field lines provide portals along which magneto-acoustic energy can propagate at the intergranular boundaries.
 
-There is a large body of computational work already undertaken to understand the propagation of waves in the solar atmosphere. Previous work, e.g. \citet{Erdelyi2007}, has considered point source drivers with a gaussian velocity distribution. Later, \citet{Fedun2009} studied the oscillatory response of the 3D solar atmosphere to the leakage of photospheric motion results are discussed in detail. High-frequency waves are shown to propagate from the lower atmosphere across the transition region, experiencing relatively low reflection, and transmitting most of their energy into the corona. It is also observed that the thin transition region becomes a wave guide for horizontally propagating surface waves for a wide range of driver periods, and particularly at those periods that support chromospheric standing waves. Additionally, the magnetic field acts as a waveguide for both high- and low-frequency waves originating from the photosphere and propagating through the transition region into the solar corona.  Other work, e.g.  \citet{Murawski2010}, has demonstrated that a strong initial pulse may lead to the quasi periodic rising of chromospheric material into the lower corona in the form of spicules, see also e.g. \citet{Khomenko2013}. \citet{Kalkofen2010} considered the propagation of acoustic modes in a stratified hydrodynamical model of the solar atmosphere they employed a cylindrically symmetric driver with a diameter of approximately 1 Mm. They conclude that for driving regions of sizes smaller than the atmospheric scale height they are able to reproduce expansion waves which are characteristic of chromospheric bright points. With a weak horizontal magnetic field, the physics within the interior of supergranulation cells \citet{Lites2008} is suitably simple for undertaking hydrodynamic modelling. The modes modelled in this paper are mimicking global eigenmodes, the coherence length of eigenoscillations at the photosphere is 4 Mm, and the power peaks at 5 mins. 
+There is a large body of computational work already undertaken to understand the propagation of waves in the solar atmosphere. Previous work, e.g. \citet{Erdelyi2007}, has considered point source drivers with a gaussian velocity distribution. Later, \citet{Fedun2009} studied the oscillatory response of the 3D solar atmosphere to the leakage of photospheric motion results are discussed in detail. High-frequency waves are shown to propagate from the lower atmosphere across the transition region, experiencing relatively low reflection, and transmitting most of their energy into the corona. It is also observed that the thin transition region becomes a wave guide for horizontally propagating surface waves for a wide range of driver periods, and particularly at those periods that support chromospheric standing waves. Additionally, the magnetic field acts as a waveguide for both high- and low-frequency waves originating from the photosphere and propagating through the transition region into the solar corona.  Other work, e.g.  \citet{Murawski2010}, has demonstrated that a strong initial pulse may lead to the quasi periodic rising of chromospheric material into the lower corona in the form of spicules, see also e.g. \citet{Khomenko2013}. \citet{Kalkofen2010}, considered the propagation of acoustic modes in a stratified hydrodynamical model of the solar atmosphere with a cylindrically symmetric driver of diameter 1Mm, they conclude that for driving regions of sizes smaller than the atmospheric scale height they are able to reproduce expansion waves which are similar to chromospheric bright points. With a weak horizontal magnetic field, the physics within the interior of supergranulation cells \citet{Lites2008} is suitably simple for undertaking hydrodynamic modelling. The modes modelled in this paper are mimicking global eigenmodes, the coherence length of eigenoscillations at the photosphere is 4 Mm, and the power peaks at 5 mins. 
 
 \section{Numerical Computation Methods}
 
-The 3D numerical simulations described here were undertaken using Sheffield MHD Accelerated Using GPUs \citep[SMAUG,][]{Griffiths2015}, the GPU implementation of the Sheffield Advanced Code \citep[SAC,][]{Shelyag2008}. SAC and SMAUG are numerical MHD solvers allowing us to model the time-dependent evolution of photospheric oscillations in the solar atmosphere. SAC is a derivative of the versatile advection code (VAC) developed by \citep{Toth1996}. With the upper boundary of our model in the solar corona and the lower boundary in the photosphere the SMAUG code is well suited for modelling the leakage of wave energy from the photosphere, through the transition region and into the corona. We used open boundary conditions for the lower and upper boundaries which allowed us to model wave propagation for time scales characterised by the 5-minute $p$-mode induced oscillations. The general system of ideal MHD equations are
+The 3D numerical simulations described here were undertaken using Sheffield MHD Accelerated Using GPUs \citep[SMAUG,][]{Griffiths2015}, the GPU implementation of the Sheffield Advanced Code \citep[SAC,][]{Shelyag2008}. SAC and SMAUG are numerical MHD solvers allowing us to model the time-dependent evolution of photospheric oscillations in the solar atmosphere. SAC is a derivative of the versatile advection code (VAC) developed by \citep{Toth1996}.  The general system of ideal MHD equations are
 \begin{eqnarray}
 && {{\partial \rho}\over{\partial t}}+\nabla\cdot\left( \rho{\mathbf v}\right)=0, \label{e1} \\
 && {{\partial ( \rho {\bf v})}\over{\partial t}}+\nabla\cdot\left( {\bf v}\rho {\bf v}-{\bf B B}\right)+\nabla p_t=\rho{\bf g}, \label{e2}\\
@@ -183,7 +183,13 @@ Equations (\ref{e1}) - (\ref{e6}) are applicable to an ideal compressible plasma
 && e = \tilde{e}+e_b,  \nonumber \\
 && {\mathbf B} = \tilde{\mathbf B}+{\mathbf B}_b.  \nonumber 
 \end{eqnarray}
-where $\tilde{\rho}$ is the  perturbed density,  $\tilde{e}$ is the perturbed energy and $\tilde{\bf B}$  is the perturbed magnetic field. The background quantities with a subscript $\it{b}$ do not change in time, as we assume a magneto-hydrostatic equilibrium of the background plasma. Hyper-diffusion and hyper-resistivity are implemented to achieve numerical stability of the computed solution of the MHD equations \citep[see for example][]{Caunt2001}.  The full set of MHD equations, including the hyper-diffusion source terms are given in \citet{Griffiths2015} and \citet{Shelyag2008}.
+where $\tilde{\rho}$ is the  perturbed density,  $\tilde{e}$ is the perturbed energy and $\tilde{\bf B}$  is the perturbed magnetic field. The background quantities with a subscript $\it{b}$ do not change in time, as we assume a magneto-hydrostatic equilibrium of the background plasma. 
+
+The SMAUG code is a fully non-linear MHD numerical finite element solver for simulating, linear and non-linear wave propagation in strongly magnetised plasma with structuring and stratification. The solver applies a fourth order central differencing technique to the spatial derivatives and the Euler or fourth order Runge-Kutta method to solve the temporal derivatives. By virtue of their symmetry, central differencing schemes are conservative, with the desired side effect that the solver conserves the divergence of the magnetic field. The application of central differencing to hyperbolic differential equations results in unstable solutions with a spurious oscillatory behaviour.  Hyper-diffusion and hyper-resistivity are implemented to achieve numerical stability of the computed solution of the MHD equations \citep[see for example][]{Caunt2001}.  The primary purpose of the diffusion terms is to compensate for the anti-diffusion from truncation errors arising in the computation of temporal and spatial derivatives. When the diffusion is correctly tuned the resulting evolution is non-diffusive. In addition, the diffusion terms control the steepness of shocks by becoming large wherever the compression is large. The full set of MHD equations, including the hyper-diffusion source terms are given in \citet{Griffiths2015} and \citet{Shelyag2008}.
+
+\section{Computational Model}
+
+With the magnetic-field-free quiet Sun in mind, we set $\vec{B}=0$ in the MHD equations.  The computational box used for our simulations represents a volume of the solar atmosphere  with dimensions $L_{ x}= 4$ Mm and $L_{y} =4$ Mm. The model utilises a representation of the solar atmosphere with gravitational stratification in the $z$-direction and with a height of $L_{z} =6$ Mm. The computational box comprises an array of elements of dimension $128 \times 128 \times 128$. The upper boundary of our model  is in the solar corona and the lower boundary in the photosphere. The SMAUG code is well suited for modelling the leakage of wave energy from the photosphere, through the transition region and into the corona. We used open boundary conditions for the lower and upper boundaries which allowed us to model wave propagation for time scales characterised by the 5-minute $p$-mode induced oscillations. The computational model is excited by an extended vertical velocity driver located at the photosphere, this acoustic $p$-mode driver excites waves which propagate into a realistic 3D model of the solar atmosphere. In the following two sections we describe the solar atmospheric model and the implementation of the driver. 
 
 \section{Solar Atmospheric Model}
 To simulate oscillatory phenomena in the solar corona a physically representative model of the solar atmosphere is needed. 
@@ -202,17 +208,10 @@ models of the solar atmosphere. There is much discussion about model validity an
 demonstrate the reliability of the assumptions used to construct realistic models of the solar chromosphere, see \citet{Carlsson1995}, \citet{Kalkofen2012}. The contention arises from the dynamical nature of the solar chromosphere; for example local dynamo action has been suggested as a mechanism of Joule heating in the solar chromosphere, see \citet{Leenaarts2011}. The model atmosphere employed here is an observationally derived semi-empirical representation of the quiet sun. With the fundamental assumption of hydrostatic equilibrium a model of the chromosphere in equilibrium is constructed using the VALIIIc model, see \citet{Vernazza1981}. For the region of the solar atmosphere above 2.5 Mm the results of the energy balance model of solar coronal heating has been used \citep[see][]{McWhirter1975}, his model includes an acoustic contribution comparable to the hydrostatic pressure. The corresponding temperature and density profiles are shown in Figure (\ref{Fig1}).
 
 \section{Numerical Drivers for $p$-mode Oscillations}
-For this study, the model requires a driver mimicing the solar global oscillations.  The overview of observational studies identified a range of physical phenomena resulting in oscillatory behaviour and delivering energy into the solar atmosphere.  The results presented here extend earlier work undertaken by  \citet{Malins2007A}, for their study, point drivers were used to represent periodic buffeting or turbulent motions in the photosphere. The point driver is described by Equation (\ref{e7}) 
-\begin{equation}
-V_{z}=A \sin\left({2\pi t}\over{T_s} \right)  \exp\left( -\frac{(x-x_0)^{2}}{\Delta x^2} \right)
-\exp\left( -\frac{(z-z_0)^{2}}{\Delta z^{2}}\right).
-\label{e7}
-\end{equation}
-Here, $\Delta x$ and $\Delta z$ are the driver width in the $x$ and $z$-directions correspondingly. In our 2D model 
-we choose $\Delta x= 4$ Mm and $\Delta z=4$ km. The results of the study demonstrated surface wave 
-phenomena and structures in the transition region and highlighted the characteristics of the oscillatory 
-phenomena as a result of frequency cut-offs induced by the stratified solar atmosphere. In contrast to the 
-earlier models, the whole boundary of the model was perturbed.  In the real Sun, photospheric $p$-mode 
+For this study, the model requires a driver mimicing the solar global oscillations.  The overview of observational studies identified a range of physical phenomena resulting in oscillatory behaviour and delivering energy into the solar atmosphere.  The results presented here extend earlier work undertaken by  \citet{Malins2007A}, for their study, point drivers were used to represent periodic buffeting of turbulent motions in the photosphere. The results of the study demonstrated surface wave 
+phenomena and structures in the transition region. The study highlighted the characteristics of the oscillatory 
+phenomena as a result of frequency cut-offs induced by the stratified solar atmosphere. For the simulations presented in this paper, 
+in contrast to the earlier models, the whole boundary of the model was perturbed.  In the real Sun, photospheric $p$-mode 
 oscillations have a horizontal wavelength and coherence. Here, these excitations are represented with a 
 vertical velocity driver located at the photosphere, his acoustic $p$-mode driver excites waves which propagate 
 into a realistic 3D model of the solar atmosphere. Drivers representing different modes are considered, for 
@@ -220,15 +219,14 @@ example  an extended driver with a sinusoidal dependence and a wavelength of 8 M
 middle of the base of a computational domain of dimension 4 Mm represents  a {\it fundamental mode}. 
 A driver with wavelength 4 Mm applied the same way represents the {\it first harmonic} and {\it second harmonic} 
 with wavelength 2 Mm was also considered. Drivers may be constructed as an ensemble of these solar 
-global eigenmodes.  The vertical location of this extended driver is coincident with the location of the temperature minimum which is 
-0.5 Mm above the lower boundary of the model i.e. the photosphere. Such a driver may be represented 
+global eigenmodes.  Such a driver may be represented 
 by an Equation (\ref{e8}) such as  
 \begin{equation}
 V_{z}=A_{nm} \sin\left(\frac{2\pi t}{T_s} \right)\sin\left(  \frac{(n+1)\pi x}{L_x} \right)  \sin\left(\frac{(m+1)\pi y}{L_y} \right)
 \exp\left( -\frac{(z-z_0)^2}{\Delta z^2} \right),
 \label{e8}
 \end{equation}
-where the mode is defined by the index $n$ and $m$ in Equations (\ref{e7}) and (\ref{e8}). Since we are investigating the leakage of energy into the solar atmosphere, for consistency, it is necessary to ensure that for the different modes the driver amplitude is set to a value which provides the same total amount of energy over the model cross section and per unit time. For the $n$, $m$ mode the energy, $E_{nm}$ as a function of $z$ and time may be written as;
+In equation (\ref{e8}) $L_{x}$ and $L_{y}$ are the lengths of the base of the simulation box in the $x$ and $y$ directions respectively. $T_{s}$ is the period and $A_{nm}$ is the amplitude of the driver, the indices $n$ and $m$ define the mode. $\Delta z$ is the width of the driver which was set here to $4km$, the parameter $z_{0}$ was set so that the vertical driver location is coincident with the location of the temperature minimum which is 0.5 Mm above the lower boundary of the model i.e. the photosphere.   Since we are investigating the leakage of energy into the solar atmosphere, for consistency, it is necessary to ensure that for the different modes the driver amplitude is set to a value which provides the same total amount of energy over the model cross section and per unit time. For the $n$, $m$ mode the energy, $E_{nm}$ as a function of $z$ and time may be written as;
 \begin{equation}
 E_{nm}(z,t)= \rho A_{nm}^{2} I_{nm}  \sin{\left(\frac{2\pi t}{T_s} \right)}^2
 \exp{\left( -\frac{(z-z_0)^2}{\Delta z^{2}} \right)}^2,
@@ -258,8 +256,9 @@ $$
 This relation was used to determine the amplitudes for the higher order modes, starting from the $A_{00}$ mode we used  $A_{00}=350\, ms^{-1}$.
 
 \section{Numerical Analysis}
+
 Hydrodynamic simulations have been undertaken for a selection of drivers covering a range of time periods, modes and amplitudes supplying the same amount of energy, see Equation (\ref{e9}). For this investigation we have been guided by the requirement that  different driver modes deliver the same total amount of energy 
-over the model cross section and when integrated over a time interval corresponding to the period of the longest period driver used for the set of simulations. Three sets of simulations have been considered. Set (a) are the drivers selected because of their period, Set (b) are series of normal modes and Set (c) are normal modes with equal mode numbers (see Table (\ref{Table1})). The amplitudes for each of the modes are determined by using  Equation (\ref{e10}). To use this relation, we assume 
+over the model cross section and when integrated over a time interval corresponding to the period of the longest period driver used for the set of simulations. With the objective to analyse and understand the nature of the energy propagation of the different modes and driver frequencies we consider a number of cases.   Three sets of simulations have been considered. Set (A) are the drivers selected because of their period, Set (B) and (C) are series of normal modes, set (C) are normal modes with equal mode numbers (see Table (\ref{Table1})). The driver periods for the normal modes are determined using the mode numbers, a value for the speed of sound (see table (\ref{Table2})) and equation (\ref{e11}). The amplitudes for each of the modes are determined by using  Equation (\ref{e10}). To use this relation, we assume 
 that the $(0, 0)$ mode for the 300 s driver has an amplitude of 350 m/s \citep[see][]{Leighton1960}.
 \begin{table}
 \centering
@@ -267,20 +266,22 @@ that the $(0, 0)$ mode for the 300 s driver has an amplitude of 350 m/s \citep[s
 \hline
 set   &  description\\
 \hline
-a &  Modes for the 30, 180 and 300 s driver. \\
+A &  Modes for the 30, 180 and 300 s driver. \\
 \hline
-b &  Normal Modes corresponding to different values of $c_s$ \\
+B &  Normal Modes corresponding to different values of $c_s$ \\
 \hline
-c & Normal Modes for equal mode values (i.e. $n=m$)  \\
+C & Normal Modes for equal mode values (i.e. $n=m$)  \\
 \hline
 \end{tabular} 
 \caption{Sets of simulations used to characterise oscillatory motions arising from an extended photospheric driver.}
 \label{Table1}
 \end{table}
-The driver periods for Set (a) correspond to the dominant atmospheric modes of oscillation, for example, the 5-minute mode and the 3-minute chromospheric mode. The 30 s driver was selected because this corresponds to a frequency below that of the atmospheric cut-off and we can use the propagation characteristics as a test of our simulations. The periods for the normal modes were determined for different values of the speed of sound ($c_s$) in the solar atmosphere at different heights. The periods for the resulting drivers are shown in Tables (\ref{Table2})  ,   (\ref{Tableamps_equalmodenumber}) and (\ref{Tableamps_30_180_300}) .
-$$
+The driver periods for Set (A) correspond to the dominant atmospheric modes of oscillation, for example, the 5-minute mode and the 3-minute chromospheric mode. The 30 s driver was selected because this corresponds to a frequency below that of the atmospheric cut-off and we can use the propagation characteristics as a test of our simulations. The periods for the normal modes were determined for different values of the speed of sound ($c_s$) in the solar atmosphere at different heights. The periods for the resulting drivers are shown in Tables (\ref{Table2})  ,   (\ref{Tableamps_equalmodenumber}) and (\ref{Tableamps_30_180_300}) .
+\begin{equation}
 \omega_{nm}^{2}= 2\left(\frac{\pi c_{s}}{L} \right)^{2},
-$$
+\label{e11}
+\end{equation}
+
 where $L$ is the box length.
 \begin{table}
 \centering
@@ -298,7 +299,7 @@ Mode &  $20$ km/s &  $
 0,3  & 100.0 & 63.6  \\
 \hline
 \end{tabular} 
-\caption{Time periods of extended photospheric drivers for normal modes, corresponding to $c_s$ at different heights. The first mode number corresponds to the mode for the $x$-direction and the second number the mode for the $y$-direction.}
+\caption{The table shows the driver periods used for different wave modes. The first mode number corresponds to the mode for the $x$-direction and the second number the mode for the $y$-direction. The table corresponds to the normal modes labelled set B. The table column headings show the value of the speed of sound, $c_s$, computed for the normal modes using equation \ref{e11}. }
 \label{Table2}
 \end{table}
 
@@ -317,7 +318,7 @@ Mode   &  Period (s) \\
 \hline
 
 \end{tabular} 
-\caption{Time periods of extended photospheric drivers for normal modes corresponding to equal mode numbers.}
+\caption{The table shows the driver periods used for different wave modes. The first mode number corresponds to the mode for the $x$-direction and the second number the mode for the $y$-direction. The table corresponds to the normal modes labelled set C. The table column headings show the value of the speed of sound, $c_s$, computed for the normal modes using equation \ref{e11}.}
 \label{Tableamps_equalmodenumber}
 \end{table*}
 
@@ -337,7 +338,7 @@ Mode   & 30 s driver amplitude & 180 s s driver amplitude & 300 s s driver ampli
 0,3 & 117.8 & 119.5 & 120.0 \\
 \hline
 \end{tabular} 
-\caption{Amplitudes of extended photospheric drivers for modes with different driver periods.}
+\caption{The table shows the driver amplitudes used for different wave modes. The first mode number corresponds to the mode for the $x$-direction and the second number the mode for the $y$-direction. The table corresponds to the modes labelled set A. The table column headings show the driver period each table entry shows the amplitude computed using equation \ref{e10}.}
 \label{Tableamps_30_180_300}
 \end{table*}
 
@@ -366,7 +367,7 @@ Mode   & 30 s driver amplitude & 180 s s driver amplitude & 300 s s driver ampli
 %282.84 & 0.1986 & 0.004007 & 0.001845 &  9.7821x$10^{-4}$ \\
 \hline
 \end{tabular} 
-\caption{ $(0, 0)$ mode energy ratio.}
+\caption{ $(0, 0)$ mode energy ratio, the energy is the ratio of the energy flux at a given height to the energy flux at the location of the driver.}
 \label{Table00mode}
 \end{table*}
 
@@ -390,7 +391,7 @@ Mode   & 30 s driver amplitude & 180 s s driver amplitude & 300 s s driver ampli
 200.0 & 0.1126 &  4.4180x$10^{-4}$ &  2.0186x$10^{-5}$ & 6.3062 x$10^{-6}$ \\
 \hline
 \end{tabular} 
-\caption{ $(0, 1)$ mode energy ratio.}
+\caption{ $(0, 1)$ mode energy ratio, the energy is the ratio of the energy flux at a given height to the energy flux at the location of the driver.}
 \label{Table01mode}
 \end{table*}
 
@@ -414,7 +415,7 @@ Mode   & 30 s driver amplitude & 180 s s driver amplitude & 300 s s driver ampli
 133.33 & 0.0497 & 1.9731x$10^{-4}$7.9834 x$10^{-5}$ & 5.6267 x$10^{-5}$\\
 \hline
 \end{tabular} 
-\caption{ $(0, 2)$ mode energy ratio.}
+\caption{ $(0, 2)$ mode energy ratio, the energy is the ratio of the energy flux at a given height to the energy flux at the location of the driver.}
 \label{Table02mode}
 \end{table*}
 
@@ -438,7 +439,7 @@ Mode   & 30 s driver amplitude & 180 s s driver amplitude & 300 s s driver ampli
 100.0 & 0.0151 & 3.0678x$10^{-5}$ & 2.8527x$10^{-6}$ & 1.6707x$10^{-6}$\\
 \hline
 \end{tabular} 
-\caption{$(0, 3)$ mode energy ratio.}
+\caption{$(0, 3)$ mode energy ratio, the energy is the ratio of the energy flux at a given height to the energy flux at the location of the driver.}
 \label{Table03mode}
 \end{table*}
 
@@ -470,7 +471,7 @@ $(2, 3)$ & 0.2732 & 0.0008 & 2.1443x$10^{-6}$ &  1.7045x$10^{-6}$\\
 $(3, 3)$ & 0.2205 & 0.0006 & 1.9711x$10^{-7}$ &  2.6756x$10^{-7}$\\
 \hline
 \end{tabular} 
-\caption{180 s driver energy ratio.}
+\caption{180 s driver energy ratio, the energy is the ratio of the energy flux at a given height to the energy flux at the location of the driver.}
 \label{Table180mode}
 \end{table*}
 
@@ -502,7 +503,7 @@ $(2, 3)$ & 0.2328 & 0.0017 & 2.4839x$10^{-7}$ &  2.0699x$10^{-7}$\\
 $(3, 3)$ & 0.2036 & 0.0012 & 7.2069x$10^{-8}$ &  4.944x$10^{-8}$\\
 \hline
 \end{tabular} 
-\caption{300 s driver energy ratio.}
+\caption{300 s driver energy ratio, the energy is the ratio of the energy flux at a given height to the energy flux at the location of the driver.}
 \label{Table300mode}
 \end{table*}
 
@@ -521,20 +522,7 @@ $(3, 3)$ & 0.2036 & 0.0012 & 7.2069x$10^{-8}$ &  4.944x$10^{-8}$\\
 %\includegraphics[scale=0.5]{images/pm30s_sindrv_n0_4b03d_dt.jpg}
 %\caption{Three-dimensional snapshots of the evolution of Vz showing the development of the initial perturbation in the nonmagnetic equilibrium generated by the 30-second-period %driver (in ms?1) at the times (a) t = 112 seconds, (b) t = 216 seconds, (c) t = 244 seconds, and (d) t = 316 seconds. The z-axis corresponds to height measured in megameters and the x and y %horizontal axes are parallel to the solar surface. }
 %\end{figure*}
-With the objective to analyse and understand the nature of the frequency shifts of the excited modes, we consider a number of cases.  To determine how wave energy propagation is influenced by the wave modes and frequencies, we compute the time averaged wave energy flux integrated over the cross-sectional area of the simulation box at different heights. The area of integration is perpendicular to the model $z$-axis.
-\begin{equation}
-F_{int}= \frac{1}{t_{max}} \int_{0}^{t_{max}} \int {\mathbf F}_{wave} \cdot d{\mathbf A}dt,
-\label{e11}
-\end{equation}
-where the wave energy flux $\bf{F}_{wave}$ is given by
-$$
-{\mathbf F}_{wave}=\tilde{p}_{k} {\mathbf v}+\frac{1}{\mu_{0}}\left({\mathbf B}_{b}\cdot \tilde{{\mathbf B}}\right){\mathbf v}-\frac{1}{\mu_{0}}
-\left({\mathbf v}\cdot \tilde{\mathbf B}\right){\mathbf B}_{b}.
-$$
-The expression for the wave energy flux is dependent on the perturbed kinetic pressure, $\tilde{p}_{k}$, given by \citet{Bogdan2003}
-$$
-\tilde{p}_{k}=\left(\gamma - 1\right)\left( \tilde{e}-\frac{ \left( \tilde{\rho} +\rho_b \right){\mathbf v}^2}{2}-\frac{{\tilde {\mathbf B}}^2}{2}-{\mathbf B}_b \cdot  \tilde{\mathbf B}\right).
-$$
+
 % this table DOES NOT HAVE a \label !!!! i.e. not present in text !
 %\begin{table*}
 %\centering
@@ -587,32 +575,46 @@ regions of propagation behaviour. For the photosphere, near the temperature mini
 it is expected that the 5 minutes modes are evanescent. In the chromosphere the cut-off period increases to a value greater than 300 s, 
 therefore the five minute modes can propagate once they are either excited here or can propagate here due to e.g. leakage. For the transition zone the cut-off drops to a value which goes down to 100 s. In the corona, it is seen that a much greater range of frequencies can propagate.
 
+To determine how wave energy propagation is influenced by the wave modes and frequencies, we compute the time averaged wave energy flux integrated over the cross-sectional area of the simulation box at different heights. The area of integration is perpendicular to the model $z$-axis.
+\begin{equation}
+F_{int}= \frac{1}{t_{max}} \int_{0}^{t_{max}} \int {\mathbf F}_{wave} \cdot d{\mathbf A}dt,
+\label{e11}
+\end{equation}
+where the wave energy flux $\bf{F}_{wave}$ is given by
+$$
+{\mathbf F}_{wave}=\tilde{p}_{k} {\mathbf v}.
+$$
+The expression for the wave energy flux is dependent on the perturbed kinetic pressure, $\tilde{p}_{k}$, given by \citet{Bogdan2003}
+$$
+\tilde{p}_{k}=\left(\gamma - 1\right)\left( \tilde{e}-\frac{ \left( \tilde{\rho} +\rho_b \right){\mathbf v}^2}{2}\right).
+$$
+
 The full set of videos for all the simulations performed have been made publically available on the digital media repository hosted by The University of Sheffield, see \citet{Griffiths2017}. Each video shows the value of the vertical component of the plasma velocity ($z$-component) along different slices through the simulation box. The scale shows the velocity in m/s. The green vectors represent the velocity directions along a single slice through the simulation. The green surface at a height of 3.5 Mm is the 2 MK temperature isosurface. 
 Each video is labelled using three numbers. The first number is the driver period in seconds. The following 2 integers are each of the mode indices for the $x$- and $y$-direction, respectively.
 \begin{figure}[h]
 \includegraphics[scale=1.8]{imrescale/fig2_dt_30_180_300_0_vert_2Mm.jpg}
-\caption{Time-distance plot for fundamental mode $(0,0)$ and 30, 180 and 300 s driver period for the $z$ component of the velocity for a vertical slice across the box  taken at 2 Mm and shows  the profile of $v_{z}$ through the solar atmosphere for different time steps (the left hand plot shows the case for the 30 s driver, the centre plot the case for the 180 s driver and the right hand plot shows the case for the 300 s  driver). }
+\caption{Time-distance plot for the fundamental mode $(0,0)$ and 30, 180 and 300 s driver period for the $z$ component of the velocity for a vertical slice across the box  taken at 2 Mm and shows  the profile of $v_{z}$ through the solar atmosphere for different time steps (the left hand plot shows the case for the 30 s driver, the centre plot the case for the 180 s driver and the right hand plot shows the case for the 300 s  driver). }
 \label{Fig3}
 \end{figure}
 \begin{figure}[h]
 \includegraphics[scale=1]{imrescale/fig3_dt_30_180_300_0_horiz_p94Mm.jpg}
-\caption{Time-distance plot for fundamental mode $(0,0)$  and 30, 180 and 300 s driver period for the $z$ component of the velocity for a horizontal slice across the box  taken at 0.94 Mm shows  the profile of $ v_{z}$ across the simulation box at a given point (left hand is 30 s driver, centre is 180 s driver and the right hand is the 300 s driver). }
+\caption{Time-distance plot for the fundamental mode $(0,0)$  and 30, 180 and 300 s driver period for the $z$ component of the velocity for a horizontal slice across the box  taken at 0.94 Mm shows  the profile of $ v_{z}$ across the simulation box at a given point (left hand is 30 s driver, centre is 180 s driver and the right hand is the 300 s driver). }
 \label{Fig4}
 \end{figure}
 \begin{figure}[h]
 \includegraphics[scale=1]{imrescale/fig4_dt_30_180_300_0_horiz_2Mm.jpg}
-\caption{Time-distance plot for fundamental model and 30, 180 and 300 s driver period for the $z$ component of the velocity for a horizontal slice across the box  taken at the transition zone shows  the profile of $v_{z}$ across the simulation box at a height of 2 Mm (left hand is 30 s driver, centre is 180 s driver and the right hand is the 300 s driver). }
+\caption{Time-distance plot for the fundamental model and 30, 180 and 300 s driver period for the $z$ component of the velocity for a horizontal slice across the box  taken at the transition zone shows  the profile of $v_{z}$ across the simulation box at a height of 2 Mm (left hand is 30 s driver, centre is 180 s driver and the right hand is the 300 s driver). }
 \label{Fig5}
 \end{figure}
 \begin{figure}[h]
 \includegraphics[scale=1]{imrescale/fig5_dt_30_180_300_0_horiz_4p2Mm.jpg}
-\caption{Time-distance plot for fundamental model and 30, 180 and 300 s driver period for the z component of the velocity for a horizontal slice across the box  taken at 4.2 Mm shows  the profile of $v_{z}$ across the simulation box (left hand is 30 s driver, centre is 180 s driver and the right hand is the 300 s driver). }
+\caption{Time-distance plot for the fundamental mode and 30, 180 and 300 s driver period for the $z$ component of the velocity for a horizontal slice across the box  taken at 4.2 Mm shows  the profile of $v_{z}$ across the simulation box (left hand is 30 s driver, centre is 180 s driver and the right hand is the 300 s driver). }
 \label{Fig6}
 \end{figure}
 For the fundamental modes $(0, 0)$  illustrated in Figures (\ref{Fig3}-\ref{Fig6})  we observe that there is no significant structure at the transition zone. However, the 30 s mode demonstrates the rapid expansion of the perturbation at the penetration height of the the transition region. This is accompanied with an increase in the transverse velocity $(v_x)$. This observation is true for all 30, 180 and 300 s driver scenarios. As the mode order is increased from $n=0$, to $n=1$ and then $n=2$ it is observed that transition region structuring becomes apparent and is more reminiscent of the observations of \citet{Malins2007A}.
 
 For the fundamental modes with the 30, 180 and 300 s drivers we have produced time-distance plots of the plasma velocity, $v_z$, i.e., in the same direction as the driver and in the direction of increasing height through the solar atmosphere.  Figure (\ref{Fig7})
- shows the time-distance plots for a vertical section through the simulation box. Since this was a fundamental mode the section was taken through the middle of the simulation box. The plots show that the greatest amplitude arises in the transition region, in particular for the 180 s driver. Looking at the result for the 30 s driver, it is seen that the initial travelling response reaches a response at around 0.5 Mm corresponding to a cut-off of 200 s. The maximum amplitude is coherent with the maximum occurring at the same frequency as that of the driver. For the first 70 periods, maxima appear in the transition zone. It also appears that the transition zone is essentially a source of excitation with frequency lower than that of the driver, however, at longer time periods these motions occur with reduced amplitude but with the same period as the driver. For the 180 and 300 s drivers it is observed that the amplitude in the transition zone is larger than that for the 30 s driver by a factor of up to 20. For the 30, 180 and 300 s cases we observe the travelling wave in the chromosphere and in the solar corona. Although the 180 s mode shows the greatest excitation both the 180 and 300 s drivers become evanescent due the the cut-off period for the upper atmosphere. Figures \ref{Fig11} and \ref{Fig14} show the time-distance plots for a horizontal section taken at a height of 0.94 Mm, i.e. through the chromosphere. The travelling modes in these plots propagate as plane modes with a frequency consistent with that of the driver. The greatest intensity is observed for the 180 s driver. Propagation for the transition zone shows the most powerful response for the 180 s driver followed by the 300 s driver. The response for the 30 s driver decays rapidly after the first ten cycles. As we move into the solar corona there is further attenuation with the greatest signal reduction for the 30 s driver.
+ shows the time-distance plots for a vertical section through the simulation box. Since this was a fundamental mode the section was taken through the middle of the simulation box. The plots show that the greatest amplitude arises in the transition region, in particular for the 180 s driver. Looking at the result for the 30 s driver, it is seen that the initial travelling response reaches a response at around 0.5 Mm corresponding to a cut-off of 200 s. The maximum amplitude is coherent with the maximum occurring at the same frequency as that of the driver. For the first 70 periods, maxima appear in the transition zone. It also appears that the transition zone is essentially a source of excitation with frequency lower than that of the driver, however, at longer time periods these motions occur with reduced amplitude but with the same period as the driver. For the 180 and 300 s drivers it is observed that the amplitude in the transition zone is larger than that for the 30 s driver by a factor of up to 20. For the 30, 180 and 300 s cases we observe the travelling wave in the chromosphere and in the solar corona. Although the 180 s mode shows the greatest excitation both the 180 and 300 s drivers become evanescent due the the cut-off period for the upper atmosphere. The intensity peak for the 180s  driver is a result of the Chromospheric resonance which is well documented, see for example \citet{Fleck1991}.  Figures \ref{Fig11} and \ref{Fig14} show the time-distance plots for a horizontal section taken at a height of 0.94 Mm, i.e. through the chromosphere. The travelling modes in these plots propagate as plane modes with a frequency consistent with that of the driver. The greatest intensity is observed for the 180 s driver. Propagation for the transition zone shows the most powerful response for the 180 s driver followed by the 300 s driver. The response for the 30 s driver decays rapidly after the first ten cycles. As we move into the solar corona there is further attenuation with the greatest signal reduction for the 30 s driver.
 
 The time-distance plots for horizontal sections are illustrated in Figures (\ref{Fig11}-\ref{Fig16}), at an atmospheric height of 4.2 Mm there is a clear indication of the propagation of waves across the transition zone. For the case of the 30 s driver it can be seen that  the propagation is cut-off after the first 270 s of the simulation. All three driver cases indicate a peak with a width of around 90 s. This peak exhibits a degree of splitting which is most clear for the 300 s driver.  This effect may be attributable to the superposition of waves reflected from the boundaries of the chromosphere.
 
@@ -620,7 +622,7 @@ The time-distance plots for horizontal sections are illustrated in Figures (\ref
 
 \begin{figure}[h]
 \includegraphics[scale=0.8]{imrescale/dt_300_vert_x.jpg}
-\caption{Time-distance plot for fundamental model with 300 s period for the z component of the velocity. $x$-direction }
+\caption{Time-distance plot for the fundamental mode with the 300 s period for the z component of the velocity. $x$-direction }
 \label{Fig7}
 \end{figure}
 
@@ -693,7 +695,13 @@ for the $z$  component of the velocity. $x$-direction}
 \label{Fig16}
 \end{figure*}
 
-Using Equation (\ref{e11}), we compute the energy flux integral for the range of driver frequencies, modes and at different atmospheric heights. Figure (\ref{Fig17}) shows the variation of the energy flux ratio. We compute the ratio of the energy flux at a height of 5.5 Mm to the driver energy ratio. Figure \ref{Fig18} and \ref{Fig19} show the energy ratios for the different modes. Fitting  the  data for the $(0, 0)$ mode against the power law shown in equation (\ref{energyfluxpowerlaw}) gives the values shown in Table \ref{Table3}. The power law values are in agreement with the values obtained from the observational results of \citet{Ireland2015} who are distinguishing a flat power spectrum for high frequencies and a power spectrum for low frequencies.
+Using Equation (\ref{e11}), we compute the energy flux integral for the range of driver frequencies, modes and at different atmospheric heights. Figure (\ref{Fig17}) shows the variation of the energy flux ratio.  Figure \ref{Fig18} and \ref{Fig19} show the energy ratios for the different modes. Fitting  the  data for the $(0, 0)$ mode against the power law shown in equation (\ref{energyfluxpowerlaw}) gives the values shown in Table \ref{Table3}, we obtain power laws for the energy flux at 5.5Mm and the energy flux at 2Mm. \ref{Fig20} shows a comparison of the energy flux ratio for the $(0,0)$-mode with the observational power law ratio from the results of  \citet{Ireland2015}. For the simulation results we compute the ratio of the energy flux at 5.5Mm to the energy flux at 2Mm. For the observational data we compute the ratio of the power laws for the results at 193{\AA} and the results at 193{\AA}. Six pairs of period and flux values were used for the fitting procedure. The results suggest that our simulated data give rise to a flat power spectrum as opposed to the power law suggested by \citet{Ireland2015}.
+
+
+
+
+
+
 \begin{equation}
 P(z)= aT^{b}+c,
 \label{energyfluxpowerlaw}
@@ -702,13 +710,13 @@ P(z)= aT^{b}+c,
 \centering
 \begin{tabular}{cccc}
 \hline
-   &  Fitted Values & Ireland (171{\AA}) & Ireland (193{\AA}) \\
+   &  ((00) mode at 5.5Mm) &  ((00) mode at 2Mm) & Ireland (171{\AA}) & Ireland (193{\AA}) \\
 \hline
-a & -6.199x$10^{-9}$ &  $10^{0.57}$ & $10^{-0.1}$ \\
+a & -0.000805 &-0.003733 &  $10^{0.57}$ & $10^{-0.1}$ \\
 \hline
-b & 1.762 & 1.72 & 2.2 \\
+b & 2.732  & 2.716 & 1.72 & 2.2 \\
 \hline
-c & 0.002872 & $10^{-3}$ & $10^{-3.52}$ \\
+c & 1.096x$10^{4}  & 4.724x$10^{4} & $10^{-3}$ & $10^{-3.52}$ \\
 \hline
 \end{tabular} 
 \caption{ Power law coefficients for relationship between power and time-period of atmospheric oscillation.}
@@ -717,7 +725,7 @@ c & 0.002872 & $10^{-3}$ & $10^{-3.52}$ \\
 
 
 
-The Tables \ref{Table00mode},\ref{Table01mode},\ref{Table02mode} and \ref{Table03mode} show the resulting values of the energy flux from the simulations at different heights. All the modes for the driver periods 180 and 300 s are shown as a bar chart in Figures (\ref{Fig18}) and (\ref{Fig19}) see also tables \ref{Table180mode} and \ref{Table300mode}. For both the 180 and 300 s drivers it can be seen that the even modes make the strongest contribution in the corona. The results plotted in Figure (\ref{Fig20}) indicate the ratio of the energy flux for models delivering the same quantity of energy to the energy flux for models where the driver amplitude is kept fixed. With the exception of the fundamental mode, the ratios appear to be constant for all frequencies suggesting the possibility of using the scaling relation to compute the energy flux for different frequencies and modes.  
+The Tables \ref{Table00mode},\ref{Table01mode},\ref{Table02mode} and \ref{Table03mode} show the resulting values of the energy flux ratio from the simulations at different heights. The energy is the ratio of the enrgy flux at a given height to the energy flux at the location of the driver. All the modes for the driver periods 180 and 300 s are shown as a bar chart in Figures (\ref{Fig18}) and (\ref{Fig19}) see also tables \ref{Table180mode} and \ref{Table300mode}. For both the 180 and 300 s drivers it can be seen that the even modes make the strongest contribution in the corona. The results plotted in Figure (\ref{Fig20}) indicate the ratio of the energy flux for models delivering the same quantity of energy to the energy flux for models where the driver amplitude is kept fixed. With the exception of the fundamental mode, the ratios appear to be constant for all frequencies suggesting the possibility of using the scaling relation to compute the energy flux for different frequencies and modes.  
 \begin{figure}[h]
 \includegraphics[scale=3]{imrescale/ratio_varoverconst_eflux_vperiod_for_modes_5p5Mm.jpg}
 \caption{Variation of energy flux ratio at height of 5.5 Mm for a solar atmosphere excited with a $p$-mode driver providing the same amount of energy for all driver modes and periods}
@@ -747,6 +755,13 @@ at height of 50 km}
 \caption{Variation of energy flux ratio at height of 5.5 Mm for a solar atmosphere excited with a 300 s $p$-mode driver 
 located at a height of 50 km}
 \label{Fig19}
+\end{figure}
+
+
+\begin{figure}[t]
+\includegraphics[scale=4]{imrescale/fig20_powerlaw_comparison.jpg}
+\caption{Comparison of the energy flux ratio for the $(0,0)$-mode with the observational power law ratio from the results of  \citet{Ireland2015}. For the simulation results we compute the ratio of the energy flux at $5.5Mm$ to the energy flux at $2Mm$. For the observational data we compute the ratio of the power laws for the results at 193{\AA} and the results at 193{\AA}.}
+\label{Fig20}
 \end{figure}
 
 
